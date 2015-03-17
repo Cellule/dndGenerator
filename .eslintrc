@@ -1,0 +1,55 @@
+{
+  // install/enable parser once/if using es6
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "jasmine": true
+  },
+  "globals": {
+    "__DEV__": false,
+    "__PROD__": false,
+    "__StoreData": false,
+    "jest": false
+  },
+  "plugins": [
+    "react"
+  ],
+  "ecmaFeatures": {
+    //"globalReturn": false
+  },
+  "rules": {
+    // First number is error level 0: ignore, 1: warning, 2: error
+    // Second is option ie: [1, "double"] = Warn using double option
+
+    "react/no-multi-comp": 1,
+    "react/prop-types": 1,
+    "react/display-name": 0,
+    "react/wrap-multilines": 1,
+    "react/self-closing-comp": 1,
+    "react/no-did-mount-set-state": 1,
+    "react/no-did-update-set-state": 1,
+    "react/jsx-uses-react": 1,
+    "react/jsx-uses-vars": 1,
+    "react/react-in-jsx-scope": 1,
+
+    // Code style
+    "indent": [2, 2],
+    "quotes": [2, "double"],
+    "max-len": [1, 80],
+    "block-scoped-var": 0,
+    "no-else-return": 2,
+    "no-eq-null": 2,
+    "no-self-compare": 2,
+    "no-throw-literal": 2,
+    "no-warning-comments": [1, {"terms": ["todo", "fixme"], "location": "start"}],
+    "wrap-iife": [2, "outside"],
+    "yoda": [2, "never", { "exceptRange": true }],
+
+    // Disable default options
+    "no-multi-spaces": 0,
+    "no-mixed-requires": 0,
+    "no-underscore-dangle": 0,
+    "strict": 0,
+  }
+}
