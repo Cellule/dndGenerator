@@ -1,0 +1,256 @@
+{%hd=0}{%dienum=1}{%ac=12}{%pp=10}{%str=0}{%dex=0}{%con=0}{%int=0}{%wis=0}{%cha=0}{generalapp}{\n}{head}{\n}{limbs}{\n}{finish}{\n}{generalatt}{\n}{scores}
+
+generalatt
+1 {\n}<p class="subtitle">Attributes</p>{\n}<p>--------</p>{\n}<p>Alignment: {alignment}</p>{\n}<p>Passive Perception: {%pp}</p>{\n}<p>Armor Class: {%ac}</p>{\n}<p>Hit Dies: {%dienum}d{%hd} + Constitution Bonus</p>
+
+scores
+1 {\n}<p class="subtitle">Ability Scores</p>{\n}<p>--------</p>{\n}<p>Strength: {str}{%str}</p>{\n}<p>Dexterity: {dex}{%dex}</p>{\n}<p>Constitution: {con}{%con}</p>{\n}<p>Intelligence: {int}{%int}</p>{\n}<p>Wisdom: {wis}{%wis}</p>{\n}<p>Charisma: {cha}{%cha}</p>
+
+generalapp
+1 <p class="subtitle">General Appearance</p>{\n}<p>--------</p>{\n}<p>Size: {size}</p>{\n}<p>Body Type: {body}</p>{\n}</p>Appearance: {app}</p>{\n}<p>External Body: {extbody}</p>{\n}<p>Special Movement: {specmove}</p>{\n}
+
+head
+1 <p class="subtitle">Head Shape</p>{\n}--------</p>{\n}Bite: {bite}</p>{\n}Vision: {vision}</p>{\n}Head Feature: {headfeat}</p>{\n}
+
+limbs
+1 <p class="subtitle">Limbs</p>{\n}<p>--------</p>{\n}<p>Hind Limbs: {%hindlimbcount=2}{hindlimbs1}</p>{\n}<p>Fore Limbs: {forelimbs}</p>{\n}<p>Tail: {tail}</p>{\n}
+
+finish
+1 <p class="subtitle">Special Abilities</p>{\n}<p>--------</p>{\n}<p>{finish1}</p>
+
+str
+2 {%str+8}
+4 {%str+12}{%dienum+1}
+8 {%str+16}{%dienum+2}
+4 {%str+18}{%dienum+3}
+
+dex
+2 {%dex+6}{%ac-2}
+4 {%dex+8}{%ac-1}
+8 {%dex+10}
+4 {%dex+12}{%ac+1}
+2 {%dex+16}{%ac+3}
+
+con
+1 {%con+6}{%dienum-1}
+2 {%con+8}
+4 {%con+12}{%dienum+2}
+8 {%con+16}{%ac+1}{%dienum+3}
+4 {%con+18}{%ac+2}{%dienum+4}
+
+int
+1 {%int+1}
+2 {%int+2}
+3 {%int+4}
+3 {%int+6}
+8 {%int+8}
+5 {%int+10}
+3 {%int+12}
+
+wis
+1 {%wis+6}{%pp-3}
+3 {%wis+8}{%pp-1}
+8 {%wis+10}
+4 {%wis+12}{%pp+1}
+
+cha
+2 {%cha+4}
+3 {%cha+6}
+8 {%cha+8}
+5 {%cha+10}
+3 {%cha+12}
+1 {%cha+16}
+
+alignment
+8 Evil
+10 Neutral
+2 Good
+
+size
+2 Tiny {%str-4}{%dex+3}{%con-3}{%ac+2}{%hd+4}
+4 Small {%str-2}{%dex+1}{%con-2}{%ac+1}{%hd+6}{%dienum+1}
+6 Medium {%hd+8}{%dienum+2}
+4 Large {%str+3}{%dex-1}{%con+3}{%ac-1}{%hd+10}{%dienum+4}
+2 Huge {%str+6}{%dex-3}{%con+5}{%ac-2}{%hd+12}{%dienum+6}
+1 Gargantuan {%str+7}{%dex-5}{%con+5}{%ac-2}{%hd+12}{%dienum+10}
+
+body
+6 Biped
+8 Quadruped
+3 Snakelike
+2 Globe {%dex-3}{%ac-1}
+
+app
+4 Muscular {%str+4}{%ac+1}{%dienum+2}
+3 Average
+2 Bone-thin {%ac+1}
+2 Fat {%con+2}{%dex-2}{%ac-1}{%dienum+2}
+
+extbody
+8 Leather
+10 Scales {%ac+2}
+4 Feathers
+10 Thick Fur {%ac+1}{%dienum+1}
+5 Chitin {%ac+3}
+1 Crystal {%ac+2}
+1 Ooze {%ac-1}
+1 Ethereal {%ac+1}
+1 Vaporous {%ac+1}
+2 {extbody} ({element})
+1 {extbody}, {extbody}
+
+specmove
+19 {specmove1}
+1 {specmove1}, {specmove1}
+
+specmove1
+8 None
+3 Fly ({wings})
+2 Swim
+2 Climb
+2 Burrow
+2 Hover 
+
+wings
+6 Feather
+4 Skin
+4 Same as body
+2 Insectoid
+
+bite
+1 None
+2 Mouth
+4 Jaw
+2 Beak
+2 Mandible
+2 Trunk
+2 Worm
+2 Tentacles
+2 Tusks, {bite}
+2 {bite}, {bite}
+
+vision
+5 {eyecount} {eyetype} Eyes (front)
+5 {eyecount} {eyetype} Eyes (side)
+2 {eyecount} {eyetype} Eyestalks
+3 {eyecount} Insectoid
+2 {eyecount} Antennae (can sense vibrations) {%pp+4}
+1 None (hearing) {%pp+2}
+1 None (smell) {%pp+2}
+1 None (psychic) {%int+5}
+
+eyecount
+2 1 {%pp-2}{%wis-1}
+10 2
+4 4 {%pp+1}
+1 6 {%pp+2}
+2 8 {%pp+3}
+1 10 {%pp+4}
+
+eyetype
+8 Normal
+4 Cat
+4 Lizard
+2 Filled
+2 Blank
+
+headfeat
+5 None
+2 Antlers
+3 Horns (on the sides)
+2 Horns (on the spine)
+1 Frontal Horn
+1 Long Tongue
+2 Fin
+2 Mane
+2 {headfeat}, {headfeat}
+
+hindlimbs1
+14 {hindlimbs2}
+3 {%hindlimbcount+2}{hindlimbs1}{%dex+1}
+2 {%hindlimbcount+4}{hindlimbs1}{%dex+2} {%ac+1}
+1 {%hindlimbcount+10}{hindlimbs1}{%dex+3} {%ac+1}{%dienum+1}
+
+hindlimbs2
+2 None (snakelike)
+2 {%hindlimbcount} Feet
+5 {%hindlimbcount} Claws
+2 {%hindlimbcount} Hooves
+2 {%hindlimbcount} Talons
+1 {%hindlimbcount} Tentacles
+
+forelimbs
+18 {%forelimbcount=2}{forelimbs1}
+2 {forelimbs}, {forelimbs}
+
+forelimbs1
+15 {forelimbs2}
+3 {%forelimbcount+2}{forelimbs1}{%dex+1}{%dienum+1}
+
+forelimbs2
+7 {%forelimbcount} Same as Hind
+1 None
+1 {%forelimbcount} Hands
+1 {%forelimbcount} Claws
+1 {%forelimbcount} Pincers
+1 {%forelimbcount} Talons
+1 {%forelimbcount} Blades
+1 {%forelimbcount} Spikes
+1 {%forelimbcount} Tentacles
+
+tail
+8 None
+12 {%tailcount=1}{tail1}
+
+tail1
+2 {%tailcount} Short Tail
+3 {%tailcount} Long Tail
+2 {%tailcount} Spiky End
+2 {%tailcount} Poison Spike
+3 {%tailcount+1}{tail1}{%dienum+1}
+
+finish1
+3 Poisonous
+3 Renerates
+3 Covered in spikes {%ac+1}
+3 Telepathy {%int+5}{%pp+2}
+3 Breath ({element})
+3 Gaze
+3 Roar
+3 Camouflage {%dex+3}
+3 Paralyzing Touch
+3 Light Sensitivity
+3 Physical Damage Resistance ({physResist}) {%con+4}{%ac+2}{%dienum+2}
+3 Elemental Resistance ({element})
+3 Elemental Vulnerability ({element})
+3 Magic Resistance
+3 Magic Vulnerability
+3 Frightful Aura
+3 Darkvision
+3 Magic Detection
+3 Keen Smell {%pp+3}
+3 Keen Hearing {%pp+3}
+3 Keen Sight {%pp+3}
+3 Can generate spider webs
+3 Charm {%cha+7}
+3 High intelligence {%int+7}{%wis+4}{%pp+2}
+3 Innate Spellcaster {%int+3}
+3 Poison Spores
+3 Carapace {%con+4}{%dex-3}{%ac+4}{%dienum+1}
+40 {finish1}</p>{\n}<p>{finish1}
+
+element
+3 Fire
+3 Lightning
+3 Frost
+3 Acid
+2 Thunder
+3 Poison
+1 Necrotic
+1 {element}, {element}
+
+physResist
+2 Blunt
+2 Piercing
+2 Slashing
+2 All
