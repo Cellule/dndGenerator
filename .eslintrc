@@ -2,21 +2,18 @@
   // install/enable parser once/if using es6
   "parser": "babel-eslint",
   "env": {
-    "browser": true,
     "node": true,
     "jasmine": true
   },
   "globals": {
     "__DEV__": false,
     "__PROD__": false,
-    "__StoreData": false,
     "jest": false
   },
   "plugins": [
     "react"
   ],
   "ecmaFeatures": {
-    //"globalReturn": false
   },
   "rules": {
     // First number is error level 0: ignore, 1: warning, 2: error
