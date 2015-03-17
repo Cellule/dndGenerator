@@ -1,0 +1,20 @@
+[
+  { w:3, v:"{$sphy+tattoo of a bear}"},
+  { w:3, v:"{$sphy+tattoo of a wolf}"},
+  { w:3, v:"{$sphy+tattoo of an eagle}"},
+  { w:3, v:"{$sphy+tattoo of a falcon}"},
+  { w:3, v:"{$sphy+tattoo of a dog}"},
+  { w:3, v:"{$sphy+tattoo of a cat}"},
+  { w:3, v:"{$sphy+tattoo of a spider}"},
+  { w:3, v:"{$sphy+tattoo of a rat}"},
+  { w:3, v:"{$sphy+tattoo of a mouse}"},
+  { w:3, v:"{$sphy+tattoo of a fox}"},
+  { w:3, v:"{$sphy+tattoo of a tiger}"},
+  { w:3, v:"{$sphy+tattoo of a lion}"},
+  { w:2, v:"{$sphy+tattoo of a dragon}"},
+  { w:2, v:"{$sphy+tattoo of a wyvern}"},
+  { w:2, v:"{$sphy+tattoo of an octopus}"},
+  { w:2, v:"{$sphy+tattoo of a medusa}"},
+  { w:2, v:"{$sphy+tattoo of a chimera}"},
+  { w:2, v:"{$sphy+tattoo of a kraken}"}
+]

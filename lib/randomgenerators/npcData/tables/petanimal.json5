@@ -1,0 +1,16 @@
+[
+  { w:1, v:"{$quirks+a pet mouse }"},
+  { w:1, v:"{$quirks+a pet dog }"},
+  { w:1, v:"{$quirks+a pet cat }"},
+  { w:1, v:"{$quirks+a pet fox }"},
+  { w:1, v:"{$quirks+a pet turtle }"},
+  { w:1, v:"{$quirks+a pet rat }"},
+  { w:1, v:"{$quirks+a pet falcon }"},
+  { w:1, v:"{$quirks+a pet guinea pig }"},
+  { w:1, v:"{$quirks+a pet hamster }"},
+  { w:1, v:"{$quirks+a pet gecko }"},
+  { w:1, v:"{$quirks+a pet rabbit }"},
+  { w:1, v:"{$quirks+a pet parrot }"},
+  { w:1, v:"{$quirks+a pet ferret }"},
+  { w:1, v:"{$quirks+a pet pseudodragon }"}
+]

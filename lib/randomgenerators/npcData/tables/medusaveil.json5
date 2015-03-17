@@ -1,0 +1,4 @@
+[
+  { w:1, v:"{$quirks+$majPro}{$quirks+always wears a veil to mask her eyes. }"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+always wears a mask to hide her gaze. }"}
+]

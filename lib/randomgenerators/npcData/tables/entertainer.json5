@@ -1,0 +1,10 @@
+[
+  { w:1, v:"{$occupation=acrobat}{%dex+2}"},
+  { w:1, v:"{$occupation=actor}{%cha+2}"},
+  { w:1, v:"{$occupation=clown}{%cha+2}"},
+  { w:1, v:"{$occupation=dancer}{%dex+2}{%con+2}"},
+  { w:1, v:"{$occupation=fortune-teller}{%int+3}{%wis+5}{%cha+1}"},
+  { w:1, v:"{$occupation=juggler}{%dex+2}"},
+  { w:1, v:"{$occupation=prestidigitator}{%int+4}{%dex+1}"},
+  { w:1, v:"{$occupation=storyteller}{%int+2}{%wis+3}{%cha+1}"}
+]

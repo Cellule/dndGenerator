@@ -1,0 +1,3 @@
+[
+  { w:1, v:"{$offense=In battle, }{$offense+$minPro}{$offense+fights with }{$offense+barbweapon}"}
+]

@@ -1,0 +1,12 @@
+[
+  { w:5, v:"{$offense+ a greataxe}"},
+  { w:2, v:"{$offense+ a warhammer}"},
+  { w:3, v:"{$offense+ a two-handed battle totem}"},
+  { w:3, v:"{$offense+ a greatsword}"},
+  { w:3, v:"{$offense+ a greatclub}"},
+  { w:3, v:"{$offense+ an axe and a shield}"},
+  { w:2, v:"{$offense+ his fists}"},
+  { w:2, v:"{$offense+ two axes}"},
+  { w:2, v:"{$offense+ an axe and a sword}"},
+  { w:2, v:"{$offense+ an axe and a mace}"}
+]

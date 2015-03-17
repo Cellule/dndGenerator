@@ -1,0 +1,4 @@
+[
+  { w:1, v:"{$monster+ankheg}"},
+  { w:1, v:"{$monster+angel}"}
+]

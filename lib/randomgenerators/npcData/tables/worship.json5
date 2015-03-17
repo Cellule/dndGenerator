@@ -1,0 +1,6 @@
+[
+  { w:7, v:"{$worship=discretely}"},
+  { w:4, v:"{$worship=quietly}"},
+  { w:2, v:"{$worship=openly}"},
+  { w:1, v:"{$worship=fervently}"}
+]

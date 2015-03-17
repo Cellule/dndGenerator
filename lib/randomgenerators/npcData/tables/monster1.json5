@@ -1,0 +1,15 @@
+[
+  { w:1, v:"{$monster+vampire}"},
+  { w:1, v:"{$monster+dragon}"},
+  { w:1, v:"{$monster+troll}"},
+  { w:1, v:"{$monster+lycanthrope}"},
+  { w:1, v:"{$monster+basilisk}"},
+  { w:1, v:"{$monster+medusa}"},
+  { w:1, v:"{$monster+cockatrice}"},
+  { w:1, v:"{$monster+demon}"},
+  { w:1, v:"{$monster+devil}"},
+  { w:1, v:"{$monster+hydra}"},
+  { w:1, v:"{$monster+minotaur}"},
+  { w:1, v:"{$monster+naga}"},
+  { w:1, v:"{$monster+unicorn}"}
+]

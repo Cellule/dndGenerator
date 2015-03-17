@@ -1,0 +1,15 @@
+[
+  { w:1, v:"{$occupation=astrologer}"},
+  { w:1, v:"{$occupation=cartographer}"},
+  { w:1, v:"{$occupation=historian}"},
+  { w:1, v:"{$occupation=philosopher}{%wis+1}{%moralneutral+1}{religiousquirk}"},
+  { w:1, v:"{$occupation=hermit}{%wis+1}{religiousquirk}"},
+  { w:1, v:"{$occupation=wandering pilgrim}{%wis+1}{%good+3}{%evil-1}{religiousquirk}"},
+  { w:2, v:"{$occupation=barber}{%dex+3}"},
+  { w:1, v:"{$occupation=doctor}{%dex+2}"},
+  { w:1, v:"{$occupation=barrister}{%cha+2}{%lawful+3}"},
+  { w:1, v:"{$occupation=herald}{%cha+3}"},
+  { w:2, v:"{$occupation=scribe}{%dex+1}{religiousquirk}"},
+  { w:2, v:"{$occupation=acolyte}{%wis+1}{religiousquirk}"},
+  { w:2, v:"{$occupation=neophyte}{religiousquirk}"}
+]

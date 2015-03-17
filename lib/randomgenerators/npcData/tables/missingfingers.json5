@@ -1,0 +1,7 @@
+[
+  { w:4, v:"{$sphy+is missing a single finger from }{%dex-1}"},
+  { w:3, v:"{$sphy+is missing two fingers from }{%dex-1}"},
+  { w:3, v:"{$sphy+is missing three fingers from }{%dex-2}"},
+  { w:1, v:"{$sphy+is missing four fingers from }{%dex-2}"},
+  { w:1, v:"{$sphy+is missing all the fingers from }{%dex-4}"}
+]

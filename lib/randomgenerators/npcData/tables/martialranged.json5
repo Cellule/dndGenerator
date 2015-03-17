@@ -1,0 +1,5 @@
+[
+  { w:1, v:"{$weapon=blowgun}"},
+  { w:1, v:"{$weapon=crossbow}"},
+  { w:1, v:"{$weapon=longbow}"}
+]

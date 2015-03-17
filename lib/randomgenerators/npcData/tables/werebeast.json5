@@ -1,0 +1,8 @@
+[
+  { w:3, v:"{$wb=wolf}"},
+  { w:1, v:"{$wb=bear}"},
+  { w:1, v:"{$wb=rat}"},
+  { w:1, v:"{$wb=boar}"},
+  { w:1, v:"{$wb=eagle}"},
+  { w:1, v:"{$wb=tiger}"}
+]

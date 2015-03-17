@@ -1,0 +1,13 @@
+[
+  { w:1, v:"{$attractiveness=creepy}"},
+  { w:1, v:"{$attractiveness=asymmetrical}"},
+  { w:1, v:"{$attractiveness=ugly}"},
+  { w:1, v:"{$attractiveness=repulsive}"},
+  { w:1, v:"{$attractiveness=pockmarked}"},
+  { w:1, v:"{$attractiveness=hideous}"},
+  { w:1, v:"{$attractiveness=repugnant}"},
+  { w:1, v:"{$attractiveness=awful}"},
+  { w:1, v:"{$attractiveness=revolting}"},
+  { w:1, v:"{$attractiveness=disgusting}"},
+  { w:3, v:"{$attractiveness=mediocre}"}
+]

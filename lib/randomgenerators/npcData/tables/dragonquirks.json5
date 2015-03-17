@@ -1,0 +1,8 @@
+[
+  { w:18, v:"{$quirks+}"},
+  { w:3, v:"{$quirks+$majPro}{$quirks+never asks for help. }"},
+  { w:2, v:"{$quirks+$majPro}{$quirks+seeks extreme mastery of what he does. }"},
+  { w:2, v:"{$quirks+$majPro}{$quirks+sees other races as inferior. }"},
+  { w:2, v:"{$quirks+$majPro}{$quirks+has a secret dragon master. }"},
+  { w:6, v:"{$quirks+$majPro}{$quirks+values }{$quirks+$minPoss}{$quirks+clan above anything else. }"}
+]

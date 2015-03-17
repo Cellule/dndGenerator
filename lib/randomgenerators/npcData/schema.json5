@@ -1,0 +1,42 @@
+{
+  physical: {
+    description: "{$name} is a {%age} years old {$gender} {$race} {$occupation}.\n {$majPro}has {$hair} and {$eyecolor} eyes.\n {$majPro}has {$skintexture} {$skintone} skin with a {$skincom} complexion.\n {$majPro}stands {%height} centimeters tall and has {weight} build.\n {$majPro}has {$face} face{$beard}.\n {$sphy}\n {$combat}"
+  },
+  alignment: {
+    good: "{%good}",
+    moralneutral: "{%moralneutral}",
+    evil: "{%evil}",
+    lawful: "{%lawful}",
+    ethicalneutral: "{%ethicalneutral}",
+    chaotic: "{%chaotic}"
+  },
+  relationship: {
+    orientation: "{orientation}",
+    status: "{relationshipstatus}"
+  },
+  religion: {
+    // Multiple choices
+    description: [
+      {w: 10, v: "{$majPro}{$worship} worships {$god}{$goddescr}"},
+      {w: 1, v: "{$majPro}doesn't worship any god."},
+    ]
+  },
+  ptraits: {
+    traits1: "{$traits1}",
+    traits2: "{$traits2}"
+  },
+  pquirks: {
+    description: "{$quirks}"
+  },
+  hook: {
+    description: "{$hook}"
+  },
+  abilities: {
+    str: "{%str}",
+    dex: "{%dex}",
+    con: "{%con}",
+    int: "{%int}",
+    wis: "{%wis}",
+    cha: "{%cha}",
+  },
+}

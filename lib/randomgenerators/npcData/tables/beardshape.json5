@@ -1,0 +1,18 @@
+[
+  { w:1, v:"{$beard+ chinstrap beard}"},
+  { w:1, v:"{$beard+ neckbeard}"},
+  { w:6, v:"{$beard+ beard}"},
+  { w:2, v:"{$beard+ squared beard}"},
+  { w:2, v:"{$beard+ goatee}"},
+  { w:2, v:"{$beard+ sideburns}"},
+  { w:1, v:"{$beard+ goat patch beard}"},
+  { w:1, v:"{$beard+ soul patch}"},
+  { w:1, v:"{$beard+ german goatee}"},
+  { w:1, v:"{$beard+ mutton chops beard}"},
+  { w:1, v:"{$beard+ chin strap}"},
+  { w:1, v:"{$beard+ van dyke beard}"},
+  { w:1, v:"{$beard+ handlebar moustache}"},
+  { w:1, v:"{$beard+ pencil moustache}"},
+  { w:1, v:"{$beard+ fu manchu moustache}"},
+  { w:3, v:"{$beard+ moustache}"}
+]

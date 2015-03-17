@@ -1,0 +1,6 @@
+[
+  { w:2, v:"{$skintexture=smooth}"},
+  { w:3, v:"{$skintexture=rough}"},
+  { w:2, v:"{$skintexture=rugged}"},
+  { w:1, v:"{$skintexture=veiny}"}
+]

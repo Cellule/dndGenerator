@@ -1,0 +1,15 @@
+[
+  { w:1, v:"{$occupation=boat}{$occupation+$workGender}"},
+  { w:1, v:"{$occupation=coach}{$occupation+$workGender}"},
+  { w:3, v:"{$occupation=farmer}{naturequirk}"},
+  { w:3, v:"{$occupation=fisher}{$occupation+$workGender}{%wis+1}"},
+  { w:1, v:"{$occupation=gravedigger}"},
+  { w:1, v:"{$occupation=sheppard}{%wis+1}"},
+  { w:2, v:"{$occupation=trapper}"},
+  { w:1, v:"{$occupation=messenger}"},
+  { w:2, v:"{$occupation=miller}"},
+  { w:2, v:"{$occupation=miner}{%str+2}{%con+2}"},
+  { w:1, v:"{$occupation=peddler}{%cha+2}"},
+  { w:1, v:"{$occupation=ratcather}{%dex+2}"},
+  { w:3, v:"{$occupation=sailor}{%dex+2}{%str+1}"}
+]

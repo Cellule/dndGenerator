@@ -1,0 +1,3 @@
+[
+  { w:1, v:"{$combat+$offense}{$combat+ and }{$combat+minPro}{$combat+$tactics}"}
+]

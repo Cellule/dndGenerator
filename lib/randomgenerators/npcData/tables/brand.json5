@@ -1,0 +1,4 @@
+[
+  { w:2, v:"{$sphy+slave}"},
+  { w:1, v:"{$sphy+prisoner}"}
+]

@@ -1,0 +1,14 @@
+[
+  { w:3, v:"{$occupation=barbarian}{hiStr}{medDex}{hiCon}{lowInt}{lowWis}{medCha}{%moralneutral+2}{%chaotic+2}{%lawful-1}{poorquirk}{militaryquirk}"},
+  { w:4, v:"{$occupation=bard}{medStr}{hiDex}{medCon}{hiInt}{lowWis}{hiCha}{richquirk}"},
+  { w:9, v:"{$occupation=cleric}{medStr}{lowDex}{hiCon}{medInt}{hiWis}{medCha}{religiousquirk}"},
+  { w:2, v:"{$occupation=druid}{lowStr}{medDex}{medCon}{medInt}{hiWis}{medCha}{%good-2}{%evil-2}{%lawful-2}{%chaotic-2}{%moralneutral+2}{%ethicalneutral+2}{religiousquirk}{naturequirk}"},
+  { w:12, v:"{$occupation=fighter}{hiStr}{medDex}{hiCon}{lowInt}{medWis}{medCha}{militaryquirk}"},
+  { w:6, v:"{$occupation=monk}{hiStr}{hiDex}{hiCon}{medInt}{hiWis}{medCha}{%ethicalneutral-2}{%chaotic-2}{%lawful+2}{militaryquirk}"},
+  { w:8, v:"{$occupation=paladin}{hiStr}{lowDex}{hiCon}{lowInt}{medWis}{hiCha}{%evil-3}{%chaotic-1}{%lawful+1}{%good+3}{religiousquirk}{militaryquirk}"},
+  { w:3, v:"{$occupation=ranger}{medStr}{hiDex}{hiCon}{lowInt}{medWis}{medCha}{%moralneutral+2}{%chaotic+2}{naturequirk}"},
+  { w:5, v:"{$occupation=rogue}{lowStr}{hiDex}{medCon}{hiInt}{lowWis}{medCha}{%chaotic+3}{%evil+1}{poorquirk}"},
+  { w:2, v:"{$occupation=sorcerer}{lowStr}{medDex}{medCon}{medInt}{medWis}{hiCha}"},
+  { w:2, v:"{$occupation=warlock}{lowStr}{medDex}{medCon}{medInt}{lowWis}{hiCha}{%evil+1}"},
+  { w:3, v:"{$occupation=wizard}{lowStr}{medDex}{medCon}{hiInt}{medWis}{lowCha}{richquirk}"}
+]

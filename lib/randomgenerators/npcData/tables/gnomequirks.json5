@@ -1,0 +1,12 @@
+[
+  { w:4, v:"{$quirks+}"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+makes the best out of any situation. }"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+is always tinkering in }{$quirks+$minPoss}{$quirks+ free time. }"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+has a solution for everything. }"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+explains everything in great detail. }"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+is way too curious. }"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+talks so fast that }{$quirks+$minPro}{$quirks+ is very difficult to understand. }"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+explains everything in great detail. }"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+explains everything in great detail. }"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+explains everything in great detail. }"}
+]

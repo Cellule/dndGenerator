@@ -1,0 +1,11 @@
+[
+  { w:8, v:"{$quirks+}"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+cannot tolerate rough living conditions. }"},
+  { w:1, v:"{$quirks+$majPro}{frequency}{$quirks+$fr}{$quirks+ uses long words to sound smart. }"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+disregards poorer people. }"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+likes to know how things work. }{%int+2}"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+doesn't like parting with }{$quirks+$minPoss}{$quirks+money or possessions. } {%evil+1}"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+has a very regal look. }{%cha+1}"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+considers everybody else as idiots. }{%int+1}"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+has very little practical experience. }"}
+]

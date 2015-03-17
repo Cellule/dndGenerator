@@ -1,0 +1,6 @@
+[
+  { w:2, v:"{$bp=neck}"},
+  { w:3, v:"{$bp=chest}"},
+  { w:2, v:"{head}"},
+  { w:1, v:"{$bp=back}"}
+]

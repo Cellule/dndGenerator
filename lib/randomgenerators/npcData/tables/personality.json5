@@ -1,0 +1,14 @@
+[
+  { w:1, v:"{$personality=annoying}"},
+  { w:1, v:"{$personality=patronizing}"},
+  { w:1, v:"{$personality=sarcastic}"},
+  { w:1, v:"{$personality=impetuous}"},
+  { w:1, v:"{$personality=sardonic}"},
+  { w:1, v:"{$personality=stoic}"},
+  { w:1, v:"{$personality=fabulous}"},
+  { w:1, v:"{$personality=aggressive}"},
+  { w:1, v:"{$personality=passive aggressive}"},
+  { w:1, v:"{$personality=confrontational}"},
+  { w:1, v:"{$personality=apathetic}"},
+  { w:1, v:"{$personality=sailor-mouthed}"}
+]

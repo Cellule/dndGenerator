@@ -1,0 +1,4 @@
+[
+  { w:3, v:"{specialphysical1}{$sphy+.}"},
+  { w:1, v:"{specialphysical1}{$sphy+ and }{specialphysical2}{$sphy+.}"}
+]

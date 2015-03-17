@@ -1,0 +1,7 @@
+[
+  { w:2, v:"{$faceshape=a sharp, }"},
+  { w:2, v:"{$faceshape=a round, }"},
+  { w:3, v:"{$faceshape=an oval, }"},
+  { w:1, v:"{$faceshape=a soft, }"},
+  { w:2, v:"{$faceshape=a square, }"}
+]

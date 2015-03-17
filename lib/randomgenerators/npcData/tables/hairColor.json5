@@ -1,0 +1,17 @@
+[
+  { w:20, v:"{$hair+brown }"},
+  { w:15, v:"{$hair+auburn }"},
+  { w:8, v:"{$hair+blond }"},
+  { w:8, v:"{$hair+red }"},
+  { w:6, v:"{$hair+golden }"},
+  { w:5, v:"{$hair+silver }"},
+  { w:12, v:"{$hair+gray }"},
+  { w:8, v:"{$hair+white }"},
+  { w:12, v:"{$hair+black }"},
+  { w:3, v:"{$hair+dyed blue }"},
+  { w:3, v:"{$hair+dyed purple }"},
+  { w:3, v:"{$hair+dyed red }"},
+  { w:3, v:"{$hair+dyed green }"},
+  { w:3, v:"{$hair+dyed black }"},
+  { w:3, v:"{$hair+dyed teal }"}
+]

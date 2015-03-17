@@ -1,0 +1,6 @@
+[
+  { w:3, v:"{$hair=cropped}"},
+  { w:5, v:"{$hair=short}"},
+  { w:4, v:"{$hair=long}"},
+  { w:2, v:"{$hair=very long}"}
+]

@@ -1,0 +1,12 @@
+[
+  { w:20, v:"Single"},
+  { w:17, v:"In a relationship{%lawful+1}"},
+  { w:15, v:"Married{%lawful+2}"},
+  { w:3, v:"Divorced"},
+  { w:3, v:"Widowed"},
+  { w:2, v:"Recently broke up{%chaotic+1}"},
+  { w:2, v:"Recently divorced{%chaotic+1}"},
+  { w:2, v:"Recently widowed{%chaotic+1}"},
+  { w:4, v:"Seeing someone who is married{%chaotic+1}{%evil+1}"},
+  { w:6, v:"Married and having an affair{%chaotic+2}{%evil+2}"}
+]
