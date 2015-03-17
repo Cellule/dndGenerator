@@ -40,7 +40,7 @@ forcealign
 0 {%good-5}{%evil+3}{evilgod}
 
 worship
-7 {$worship=discretely} 
+7 {$worship=discretely}
 4 {$worship=quietly}
 2 {$worship=openly}
 1 {$worship=fervently}
@@ -311,7 +311,7 @@ randomtraits1
 1 {$traits1=$majPro}{$traits1+is very good at defusing tensions. }{%moralneutral+2}
 1 {$traits1=$majPro}{$traits1+uses sarcasm and insults commonly. }
 
-randomtraits2        
+randomtraits2
 1 {$traits2=$majPro}{$traits2+is very quick to trust other people. }
 1 {$traits2=$majPro}{$traits2+is very slow to trust other people. }
 1 {$traits2=$majPro}{$traits2+is very obstinate. }
@@ -904,7 +904,7 @@ hairType
 
 hairColor
 20 {$hair+brown }
-15 {$hair+auburn } 
+15 {$hair+auburn }
 8 {$hair+blond }
 8 {$hair+red }
 6 {$hair+golden }
@@ -1380,7 +1380,7 @@ gnomegod
 2 {humangod}
 
 halflinggod
-3 {$god=Yondalla}{$goddescr=, Goddess of halflings, bounty, protection, children, security, leadership, wisdom, creation, family. (Lawful Good)}
+3 {$god=Yondalla}{$goddescr=, Goddess of halflings, bounty, protection, children, security, leadership, wisdom, creation and family. (Lawful Good)}
 2 {humangod}
 
 orcgod
@@ -2521,8 +2521,8 @@ femaleelfname
 1 {$name=Serode}
 1 {$name=Tanye}
 1 {$name=Tarielye}
-                      
-maleelfname           
+
+maleelfname
 1 {$name=Annaeleth}
 1 {$name=Caresta}
 1 {$name=Celenwe}
