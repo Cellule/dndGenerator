@@ -1,17 +1,10 @@
 {
-  "name": "react-starter",
-  "version": "0.0.0",
+  "name": "dnd-generator",
+  "version": "0.1.0",
   "description": "",
   "main": "app/app.js",
-  "jest": {
-    "rootDir": ".",
-    "scriptPreprocessor": "./preprocessor.js",
-    "unmockedModulePathPatterns": [
-      "react"
-    ]
-  },
   "scripts": {
-    "test": "npm run lint&&jest",
+    "test": "gulp test",
     "dev-server": "webpack-dev-server --config webpack-dev-server.config.js --progress --colors --port 2992 --inline",
     "hot-dev-server": "webpack-dev-server --config webpack-hot-dev-server.config.js --hot --progress --colors --port 2992 --inline",
     "build": "webpack --config webpack-production.config.js --progress --profile --colors",
@@ -19,15 +12,8 @@
     "start": "node lib/server-production",
     "lint": "eslint --ext .js --ext .jsx app lib"
   },
-  "keywords": [
-    "webpack",
-    "react",
-    "starter",
-    "boilerplate",
-    "hot"
-  ],
-  "author": "Tobias Koppers @sokra",
-  "license": "MIT",
+  "keywords": [],
+  "author": "Michael Ferris",
   "dependencies": {
     "async": "^0.9.0",
     "babel": "^4.5.5",
@@ -63,8 +49,12 @@
     "bootstrap": "^3.3.2",
     "eslint": "^0.17.0",
     "eslint-plugin-react": "^1.5.0",
-    "jest-cli": "^0.4.0",
+    "gulp": "^3.8.11",
+    "gulp-eslint": "^0.7.0",
+    "gulp-jasmine": "^2.0.0",
+    "jasmine": "^2.2.1",
     "react-a11y": "0.0.6",
-    "react-bootstrap": "^0.16.1"
+    "react-bootstrap": "^0.16.1",
+    "through2": "^0.6.3"
   }
 }
