@@ -6,14 +6,14 @@
     physical: {
       fulldescription: "{$name} is a {%age} years old {$gender} {$race} {$occupation}.\n {$majPro}has {$hair} and {$eyecolor} eyes.\n {$majPro}has {$skintexture} {$skintone} skin with a {$skincom} complexion.\n {$majPro}stands {%height} centimeters tall and has {weight} build.\n {$majPro}has {$face} face{$beard}.\n {$sphy}\n {$combat}",
       name: "{$name}",
-      age: "{%age} years old",
+      age: "{%age}",
       gender: "{$gender}",
       race: "{$race}",
       occupation: "{$occupation}",
       hair: "{$hair}",
       eyes: "{$eyecolor} eyes",
       skin: "{$skintexture} {$skintone} skin with a {$skincom} complexion",
-      height: "{%height} centimeters",
+      height: "{%height}",
       build: "{weight} build",
       face: "{$face} face{$beard}",
       special: "{$sphy}"
