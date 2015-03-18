@@ -4,6 +4,8 @@ var Row = require("react-bootstrap/Row");
 var Col = require("react-bootstrap/Col");
 var _ = require("lodash");
 
+require("./index.less");
+
 var abilityNames = {
   str: "Strength",
   dex: "Dexterity",
@@ -94,10 +96,10 @@ var NpcData = React.createClass({
                         lg={12}
                         md={2}
                         xs={12}
-                        className="no-right-pad no-left-pad"
+                        className="no-right-pad no-left-pad ability"
                       >
                         <Panel>
-                          <p>{abilityNames[key]}</p>
+                          <p><b>{abilityNames[key]}</b></p>
                           <p>{ability}</p>
                         </Panel>
                       </Col>
@@ -109,12 +111,18 @@ var NpcData = React.createClass({
           </Col>
           <Col lg={6} md={12}>
             <Panel header="Physical">
-
+              {this.props.physical}
             </Panel>
           </Col>
           <Col lg={4} md={12}>
             <Panel header="Others">
-
+              {_(this.props)
+                .omit(["description", "physical", "abilities"])
+                .map((elem,key) => {
+                  return [<h3>{key}</h3>, <p>{elem}</p>];
+                })
+                .value()
+              }
             </Panel>
           </Col>
         </Row>
