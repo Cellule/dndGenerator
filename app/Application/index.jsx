@@ -29,8 +29,6 @@ var Application = React.createClass({
             <div style={{float: "right"}}>loading...</div>
             : null
         }
-        <h1>react-starter</h1>
-        <button onClick={this.update}>Update data</button>
         <RouteHandler />
       </div>
     );

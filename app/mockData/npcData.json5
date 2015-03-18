@@ -1,0 +1,31 @@
+{
+  description:
+   { name: 'Tifaceli Qimyra Yowyse Carnove',
+     age: 81,
+     gender: 'female',
+     race: 'rock gnome',
+     occupation: 'bodyguard' },
+  physical:
+   { hair: 'cropped, curled, auburn hair',
+     eyes: 'blue eyes',
+     skin: 'veiny very pale skin with a pink complexion',
+     height: 102,
+     build: 'a fat build',
+     face: 'a square, average face',
+     special: 'She is branded as a slave on her chest.' },
+  alignment:
+   { good: 5,
+     moralneutral: 1,
+     evil: -1,
+     lawful: 3,
+     ethicalneutral: -1,
+     chaotic: 1 },
+  relationship: { orientation: 'Straight', status: 'In a relationship' },
+  religion: { description: 'She quietly worships Garl Glittergold, God of gnomes, protection, humour, trickery, gem cutting. (Neutral Good)' },
+  ptraits:
+   { traits1: 'She is always very calm. ',
+     traits2: 'She rarely speaks. ' },
+  pquirks: { description: 'She makes the best out of any situation. She always has a battle story to tell. She wants to know every side of a story before expressing an opinion. ' },
+  hook: { description: 'She seeks revenge for the death of her son, who never actually existed.' },
+  abilities: { str: 10, dex: 10, con: 14, int: 12, wis: 12, cha: 11 }
+}

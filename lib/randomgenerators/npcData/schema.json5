@@ -3,13 +3,14 @@
     initialisation: "{%str=9}{%dex=9}{%con=9}{%int=9}{%wis=9}{%cha=9}{$combat=}{$sphy=}{$quirks=}{height}{worship}{hair}{eyecolor}{tendencies}{skin}{face}{race}{hooks}{specialphysical}{occupation}{traits}{quirks}{forcealign}",
   },
   output: {
-    physical: {
-      fulldescription: "{$name} is a {%age} years old {$gender} {$race} {$occupation}.\n {$majPro}has {$hair} and {$eyecolor} eyes.\n {$majPro}has {$skintexture} {$skintone} skin with a {$skincom} complexion.\n {$majPro}stands {%height} centimeters tall and has {weight} build.\n {$majPro}has {$face} face{$beard}.\n {$sphy}\n {$combat}",
+    description: {
       name: "{$name}",
       age: "{%age}",
       gender: "{$gender}",
       race: "{$race}",
-      occupation: "{$occupation}",
+      occupation: "{$occupation}"
+    },
+    physical: {
       hair: "{$hair}",
       eyes: "{$eyecolor} eyes",
       skin: "{$skintexture} {$skintone} skin with a {$skincom} complexion",
