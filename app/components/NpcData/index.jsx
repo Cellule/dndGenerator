@@ -118,7 +118,7 @@ var NpcData = React.createClass({
             <Panel header="Others">
               {_(this.props)
                 .omit(["description", "physical", "abilities"])
-                .map((elem,key) => {
+                .map((elem, key) => {
                   return [<h3>{key}</h3>, <p>{elem}</p>];
                 })
                 .value()

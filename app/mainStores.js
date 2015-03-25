@@ -1,3 +1,4 @@
+/*global __StoreData*/
 var ItemsStore = require("items-store/ItemsStore");
 var async = require("async");
 var request = require("superagent");

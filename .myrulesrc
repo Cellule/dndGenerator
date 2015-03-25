@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "global": ["lib"],
+    "frontend": ["app", "config"]
+  },
+  extraRules: {
+    global: {
+      globals: {
+        "__DEV__": false,
+        "__PROD__": false
+      }
+    }
+  }
+}
