@@ -1,6 +1,7 @@
 var React = require("react");
 var Panel = require("react-bootstrap/Panel");
 var Row = require("react-bootstrap/Row");
+var Grid = require("react-bootstrap/Grid");
 var Col = require("react-bootstrap/Col");
 var _ = require("lodash");
 
@@ -71,7 +72,7 @@ var NpcData = React.createClass({
   render() {
 
     return (
-      <div className="npc-data">
+      <Grid className="npc-data" fluid>
         <Row>
           <Col xs={12}>
             <Panel header={this.props.description.name}>
@@ -126,7 +127,11 @@ var NpcData = React.createClass({
             </Panel>
           </Col>
         </Row>
-      </div>
+        <Row>
+            <Panel header="">
+            </Panel>
+        </Row>
+      </Grid>
     );
   }
 });
