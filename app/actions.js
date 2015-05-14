@@ -18,5 +18,5 @@ function getJson(path, options, callback) {
 }
 
 exports.Npc = {
-  generate: getJson.bind(null, "/npc")
+  generate: getJson.bind(null, "/_/npc")
 }

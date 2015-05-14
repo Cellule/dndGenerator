@@ -20,13 +20,18 @@ module.exports = (
     />
     <Route
       name="todolist"
-      path="/:list"
+      path="/list/:list"
       handler={require("./TodoList")}
     />
     <Route
       name="todoitem"
       path="/todo/:item"
       handler={require("./TodoItem")}
+    />
+    <Route
+      name="npc"
+      path="/npc"
+      handler={require("./DisplayNpc")}
     />
     <DefaultRoute name="home" handler={require("./Home")} />
   </Route>
