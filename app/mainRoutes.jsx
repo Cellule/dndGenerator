@@ -28,11 +28,10 @@ module.exports = (
       path="/todo/:item"
       handler={require("./TodoItem")}
     />
-    <Route
+    <DefaultRoute
       name="npc"
-      path="/npc"
+      path="/"
       handler={require("./DisplayNpc")}
     />
-    <DefaultRoute name="home" handler={require("./Home")} />
   </Route>
 );

@@ -36,7 +36,7 @@ module.exports = function(options) {
     // { test: /some-reg-exp$/, loader: "any-loader" }
   ];
   var alias = {
-    "react-bootstrap": "react-bootstrap/lib"
+    "react-bootstrap": "react-bootstrap/lib",
   };
   var aliasLoader = {
 

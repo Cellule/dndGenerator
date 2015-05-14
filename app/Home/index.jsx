@@ -16,7 +16,7 @@ class Home extends React.Component {
         <Row>
           <Col xs={8} xsOffset={2}>
             <Link to="npc">
-              Go to npc
+              Generate random npc
             </Link>
           </Col>
         </Row>
