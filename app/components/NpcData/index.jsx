@@ -104,10 +104,8 @@ var NpcData = React.createClass({
                         xs={12}
                         className="no-right-pad no-left-pad ability"
                       >
-                        <Panel>
-                          <p><b>{abilityNames[key]}</b></p>
-                          <p>{ability}</p>
-                        </Panel>
+                        <p><b>{abilityNames[key]}</b></p>
+                        <p>{ability}</p>
                       </Col>
                     );
                   })

@@ -90,19 +90,29 @@ export default class UserInput extends React.Component{
 
   render(){
     var npcOptions = _.map(userOptions, userOption => {
+      var enable = !(
+        userOption.condition &&
+        !userOption.condition(this.state.npcOptions)
+      );
+
       if(userOption.condition && !userOption.condition(this.state.npcOptions)) {
+        // Comment this if you want the disabled option
         return null;
       }
-      var opts = userOption.options;
-      if(_.isFunction(opts)) {
-        opts = opts(this.state.npcOptions);
-      }
-      var options = _.map(opts, (opt, i) => {
-        if(!opt.name) {
-          return null;
+
+      let options = [];
+      if(enable) {
+        let opts = userOption.options;
+        if(_.isFunction(opts)) {
+          opts = opts(this.state.npcOptions);
         }
-        return <option value={i} key={i}>{opt.name}</option>;
-      });
+        options = _.map(opts, (opt, i) => {
+          if(!opt.name) {
+            return null;
+          }
+          return <option value={i} key={i}>{opt.name}</option>;
+        });
+      }
 
       return (
         <Col xs={12} md={3}>
@@ -121,6 +131,7 @@ export default class UserInput extends React.Component{
             type="select"
             label={userOption.label}
             key={userOption.label}
+            disabled={!enable}
           >
             <option value="random" key="random">Random</option>
             {options}
