@@ -1,2 +1,2 @@
-require("babel/register");
+//require("babel/register");
 require("json5/lib/require");

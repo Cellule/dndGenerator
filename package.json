@@ -7,7 +7,7 @@
     "test": "gulp test",
     "dev-server": "webpack-dev-server --config webpack-dev-server.config.js --progress --colors --port 2992 --inline",
     "hot-dev-server": "webpack-dev-server --config webpack-hot-dev-server.config.js --hot --progress --colors --port 2992 --inline",
-    "build": "webpack --config webpack-production.config.js --progress --profile --colors",
+    "build": "webpack --config webpack-production.config.js --progress --profile --colors&&babel lib -d dist",
     "start-dev": "node lib/server-development",
     "start": "node lib/server-production",
     "lint": "eslint-myrules lint"
@@ -16,7 +16,6 @@
   "author": "Michael Ferris",
   "dependencies": {
     "async": "^0.9.0",
-    "babel": "^5.3.0",
     "body-parser": "^1.9.3",
     "css-loader": "^0.12.0",
     "express": "^4.7.2",
@@ -43,6 +42,7 @@
     "webpack-dev-server": "^1.7.0"
   },
   "devDependencies": {
+    "babel": "^5.3.0",
     "babel-core": "^5.3.0",
     "babel-loader": "^5.0.0",
     "bootstrap": "^3.3.2",
