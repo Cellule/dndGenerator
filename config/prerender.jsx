@@ -8,6 +8,9 @@ var storesDescriptions =
   require("../app/" + __resourceQuery.substr(1) + "StoresDescriptions");
 var html = require("../app/prerender.html");
 
+var actions = require("./../app/actions");
+actions.Npc.generate = function(options, callback) {callback(null, {}); }
+
 // create stores for prerending
 // readItems contains async methods for fetching the data from database
 function createStoresPrerender(readItems) {

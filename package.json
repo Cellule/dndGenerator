@@ -8,10 +8,9 @@
     "dev-server": "webpack-dev-server --config webpack-dev-server.config.js --progress --colors --port 2992 --inline",
     "hot-dev-server": "webpack-dev-server --config webpack-hot-dev-server.config.js --hot --progress --colors --port 2992 --inline",
     "build": "webpack --config webpack-production.config.js --progress --profile --colors",
-    "start": "node lib/server-development",
-    "start-prod": "node lib/server-production",
-    "lint": "eslint-myrules lint",
-    "postinstall": "eslint-myrules cp"
+    "start-dev": "node lib/server-development",
+    "start": "node lib/server-production",
+    "lint": "eslint-myrules lint"
   },
   "keywords": [],
   "author": "Michael Ferris",
