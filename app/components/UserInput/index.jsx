@@ -1,6 +1,8 @@
 var React = require("react");
 var Panel = require("react-bootstrap/Panel");
 var Input = require("react-bootstrap/Input");
+var Col = require("react-bootstrap/Col");
+var Row = require("react-bootstrap/Row");
 var _ = require("lodash");
 
 var races = require("!filter-loader?name!./../../../lib/randomgenerators/npcData/tables/race.json5");
@@ -103,25 +105,27 @@ export default class UserInput extends React.Component{
       });
 
       return (
-        <Input
-          onChange={
-            (e)=>{
-              var npcOptions = this.state.npcOptions;
-              npcOptions[userOption.optionName] = e.target.value === "random" ? null : _.parseInt(e.target.value);
-              this.setState({npcOptions}, () => {
-                if(userOption.onChange) {
-                  userOption.onChange(this);
-                }
-              });
+        <Col xs={12} md={3}>
+          <Input
+            onChange={
+              (e)=>{
+                var npcOptions = this.state.npcOptions;
+                npcOptions[userOption.optionName] = e.target.value === "random" ? null : _.parseInt(e.target.value);
+                this.setState({npcOptions}, () => {
+                  if(userOption.onChange) {
+                    userOption.onChange(this);
+                  }
+                });
+              }
             }
-          }
-          type="select"
-          label={userOption.label}
-          key={userOption.label}
-        >
-          <option value="random" key="random">Random</option>
-          {options}
-        </Input>
+            type="select"
+            label={userOption.label}
+            key={userOption.label}
+          >
+            <option value="random" key="random">Random</option>
+            {options}
+          </Input>
+        </Col>
       );
     });
 
@@ -129,8 +133,10 @@ export default class UserInput extends React.Component{
       <div>
         <Panel header="Choose your NPC">
           <form onSubmit={this.onSubmit.bind(this)}>
-            {npcOptions}
-            <Input type="submit" value="Generate NPC" />
+            <Row>
+              {npcOptions}
+            </Row>
+            <Input type="submit" bsStyle="success" value="Generate NPC" />
           </form>
 
         </Panel>
