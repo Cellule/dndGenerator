@@ -115,7 +115,7 @@ export default class UserInput extends React.Component{
       }
 
       return (
-        <Col xs={12} md={3}>
+        <Col xs={12}>
           <Input
             onChange={
               (e)=>{

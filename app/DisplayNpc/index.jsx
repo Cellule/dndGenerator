@@ -7,6 +7,8 @@ var Col = require("react-bootstrap/Col");
 
 var actions = require("./../actions");
 
+require("./index.less");
+
 export default class DisplayNpc extends React.Component {
 
   constructor(props) {
@@ -34,8 +36,24 @@ export default class DisplayNpc extends React.Component {
     return (
       <div>
         <Row>
-          <Col xs={8} xsOffset={2}>
+          <Col
+            xs={10}
+            xsOffset={1}
+            sm={3}
+            smOffset={0}
+            md={2}
+            className="user-info-col"
+          >
             <UserInput generate={this.generateNpc}/>
+          </Col>
+          <Col
+            xs={10}
+            xsOffset={1}
+            sm={8}
+            smOffset={3}
+            md={8}
+            mdOffset={0}
+          >
             <NpcData npc={this.state.npc} />
           </Col>
         </Row>

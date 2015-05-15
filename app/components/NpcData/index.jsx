@@ -82,7 +82,7 @@ var NpcData = React.createClass({
     var minP = this.props.npc.description.pronounMinus;
 
     return (
-      <Grid className="npc-data" fluid>
+      <div fluid>
         <Row>
           <Col xs={12} md={6}>
             <Panel className="first-row-height" header={<div>Description</div>}>
@@ -119,23 +119,25 @@ var NpcData = React.createClass({
         <Row>
           <Col sm={12} md={6} lg={3}>
             <Panel className="second-row-height" header={<div>Ability Scores</div>}>
-              <Row><table className="no-border">
-                {
-                  _.map(this.props.npc.abilities, (ability, key) => {
-                    return (
-                      <Col
-                        key={key}
-                        lg={12}
-                        md={2}
-                        xs={12}
-                        className="no-right-pad no-left-pad ability"
-                      >
-                          <tr><td><b>{abilityNames[key]}</b></td><td>{ability}</td></tr>
-                      </Col>
-                    );
-                  })
-                }
-              </table></Row>
+              <Row>
+                <table className="no-border">
+                  {
+                    _.map(this.props.npc.abilities, (ability, key) => {
+                      return (
+                        <Col
+                          key={key}
+                          lg={12}
+                          md={2}
+                          xs={12}
+                          className="no-right-pad no-left-pad ability"
+                        >
+                            <tr><td><b>{abilityNames[key]}</b></td><td>{ability}</td></tr>
+                        </Col>
+                      );
+                    })
+                  }
+                </table>
+              </Row>
             </Panel>
           </Col>
           <Col sm={12} md={6}>
@@ -164,11 +166,13 @@ var NpcData = React.createClass({
           </Col>
         </Row>
         <Row>
+          <Col xs={12}>
             <Panel header={<div>Plot Hook</div>}>
               {this.props.npc.hook}
             </Panel>
+          </Col>
         </Row>
-      </Grid>
+      </div>
     );
   }
 });
