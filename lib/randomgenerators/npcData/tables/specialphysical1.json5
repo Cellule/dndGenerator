@@ -19,5 +19,5 @@
   { w:3, v:"{$sphy+$majPro}{$sphy+gestures profusely during a conversation}"},
   { w:3, v:"{$sphy+$majPro}{$sphy+is easily out of breath}{%con-2}"},
   { w:1, v:"{$sphy+$majPro}{$sphy+has a sunken breastbone}"},
-  { w:2, v:"{$sphy+$minPro}{$sphy+cannot whistle}"}
+  { w:2, v:"{$sphy+$majPro}{$sphy+cannot whistle}"}
 ]

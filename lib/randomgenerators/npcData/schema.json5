@@ -8,7 +8,9 @@
       age: "{%age}",
       gender: "{$gender}",
       race: "{$race}",
-      occupation: "{$occupation}"
+      occupation: "{$occupation}",
+      pronounMinus: "{$minPro}",
+      pronounCapit: "{$majPro}"
     },
     physical: {
       hair: "{$hair}",

@@ -1,0 +1,4 @@
+[
+  { w:1, v:"{$weapon=dagger}"},
+  { w:1, v:"{$weapon=shortsword}"}
+]

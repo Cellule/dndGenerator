@@ -3,6 +3,7 @@ var Panel = require("react-bootstrap/Panel");
 var Row = require("react-bootstrap/Row");
 var Grid = require("react-bootstrap/Grid");
 var Col = require("react-bootstrap/Col");
+var Table = require("react-bootstrap/Table");
 var _ = require("lodash");
 
 require("./index.less");
@@ -15,6 +16,7 @@ var abilityNames = {
   wis: "Wisdom",
   cha: "Charisma"
 };
+
 
 var NpcData = React.createClass({
   propTypes: {
@@ -76,24 +78,48 @@ var NpcData = React.createClass({
       return <div>Loading npc...</div>;
     }
 
+    var majP = this.props.npc.description.pronounCapit;
+    var minP = this.props.npc.description.pronounMinus;
+
     return (
       <Grid className="npc-data" fluid>
         <Row>
-          <Col xs={12}>
-            <Panel header={this.props.npc.description.name}>
-              <ul>
-                <li>Age: {this.props.npc.description.age}</li>
-                <li>Gender: {this.props.npc.description.gender}</li>
-                <li>Race: {this.props.npc.description.race}</li>
-                <li>Occupation: {this.props.npc.description.occupation}</li>
-              </ul>
+          <Col xs={12} md={6}>
+            <Panel className="first-row-height" header={<div>Description</div>}>
+              <p>
+                {this.props.npc.description.name} is a {this.props.npc.description.age + " "}
+                years old {this.props.npc.description.gender} {this.props.npc.description.race + " "}
+                {this.props.npc.description.occupation}.
+              </p>
+              <p>
+                {majP} has {this.props.npc.physical.skin}.
+              </p>
+              <p>
+                {majP} stands {this.props.npc.physical.height}cm tall and has a {this.props.npc.physical.build}.
+              </p>
+              <p>
+                {majP} has {this.props.npc.physical.face}.
+              </p>
+              <p>
+                {this.props.npc.physical.special}
+              </p>
+            </Panel>
+          </Col>
+          <Col xs={12} md={6}>
+            <Panel className="first-row-height" header={<div>Personality Traits</div>}>
+              <p>
+                {this.props.npc.religion.description}
+              </p>
+              <p>{this.props.npc.ptraits.traits1}</p>
+              <p>{this.props.npc.ptraits.traits2}</p>
+              <p>{this.props.npc.pquirks}</p>
             </Panel>
           </Col>
         </Row>
         <Row>
-          <Col lg={2} md={12}>
-            <Panel header="Abilities">
-              <Row>
+          <Col sm={12} md={6} lg={3}>
+            <Panel className="second-row-height" header={<div>Ability Scores</div>}>
+              <Row><table className="no-border">
                 {
                   _.map(this.props.npc.abilities, (ability, key) => {
                     return (
@@ -104,34 +130,41 @@ var NpcData = React.createClass({
                         xs={12}
                         className="no-right-pad no-left-pad ability"
                       >
-                        <p><b>{abilityNames[key]}</b></p>
-                        <p>{ability}</p>
+                          <tr><td><b>{abilityNames[key]}</b></td><td>{ability}</td></tr>
                       </Col>
                     );
                   })
                 }
-              </Row>
+              </table></Row>
             </Panel>
           </Col>
-          <Col lg={6} md={12}>
-            <Panel header="Physical">
-              {JSON.stringify(this.props.npc.physical)}
+          <Col sm={12} md={6}>
+            <Panel className="second-row-height" header={<div>Relationships</div>}>
+              <p><b>Sexual Orientation: </b>{this.props.npc.relationship.orientation}</p>
+              <p><b>Relationship Status: </b>{this.props.npc.relationship.status}</p>
             </Panel>
           </Col>
-          <Col lg={4} md={12}>
-            <Panel header="Others">
-              {_(this.props)
-                .omit(["description", "physical", "abilities"])
-                .map((elem, key) => {
-                  return [<h3>{key}</h3>, <p>{elem}</p>];
-                })
-                .value()
-              }
+          <Col sm={12} md={12} lg={3}>
+            <Panel className="second-row-height" header={<div>Alignment Tendencies</div>}>
+              <table className="no-border">
+                <tr>
+                  <td className="width-thin"><b>Good</b></td><td>{this.props.npc.alignment.good}</td>
+                  <td className="width-thin"><b>Lawful</b></td><td>{this.props.npc.alignment.lawful}</td>
+                </tr>
+                <tr>
+                  <td className="width-thin"><b>Neutral</b></td><td>{this.props.npc.alignment.moralneutral}</td>
+                  <td className="width-thin"><b>Neutral</b></td><td>{this.props.npc.alignment.ethicalneutral}</td>
+                </tr>
+                <tr>
+                  <td className="width-thin"><b>Evil</b></td><td>{this.props.npc.alignment.evil}</td>
+                  <td className="width-thin"><b>Chaotic</b></td><td>{this.props.npc.alignment.chaotic}</td>
+                </tr>
+              </table>
             </Panel>
           </Col>
         </Row>
         <Row>
-            <Panel header="">
+            <Panel header={<div>Plot Hook</div>}>
               {this.props.npc.hook}
             </Panel>
         </Row>

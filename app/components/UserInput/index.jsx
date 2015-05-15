@@ -142,7 +142,7 @@ export default class UserInput extends React.Component{
 
     return (
       <div>
-        <Panel header="Choose your NPC">
+        <Panel header={<div>Choose your NPC</div>}>
           <form onSubmit={this.onSubmit.bind(this)}>
             <Row>
               {npcOptions}
