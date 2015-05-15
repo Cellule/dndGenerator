@@ -10,5 +10,6 @@
   { w:1, v:"{$quirks+small animals. }"},
   { w:1, v:"{$quirks+books. }"},
   { w:1, v:"{$quirks+kitchenware. }"},
+  { w:1, v:"{$quirks+grass. }"},
   { w:1, v:"{$quirks+weird clothes. }"}
 ]

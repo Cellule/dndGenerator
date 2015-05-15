@@ -1,0 +1,6 @@
+[
+  { w:3, v:"{$quirks+castle}"},
+  { w:4, v:"{$quirks+farm}"},
+  { w:2, v:"{$quirks+manor}"},
+  { w:1, v:"{$quirks+palace}"}
+]

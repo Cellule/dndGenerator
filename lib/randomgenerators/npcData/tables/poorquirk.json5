@@ -4,6 +4,7 @@
   { w:2, v:"{$quirks+$majPro}{frequency}{$quirks+$fr}{$quirks+ misuses long words to sound smarter. }"},
   { w:2, v:"{$quirks+$majPro}{$quirks+is totally oblivious to etiquette and social expectations. }{%cha-1}"},
   { w:3, v:"{$quirks+$majPro}{$quirks+enjoys tavern brawls. }{%chaotic+1}"},
+  { w:3, v:"{$quirks+$majPro}{$quirks+has no concept of propriety. }{%chaotic+2}"},
   { w:3, v:"{$quirks+$majPro}{$quirks+uses very foul language. }{%chaotic+2}"},
   { w:2, v:"{$quirks+$majPro}{$quirks+doesn't bathe. }{%cha-2}"}
 ]

@@ -5,6 +5,6 @@
   { w:3, v:"{$skintone=regular}"},
   { w:3, v:"{$skintone=tanned}"},
   { w:3, v:"{$skintone=very tanned}"},
-  { w:2, v:"{$skintone=dark-skinned}"},
+  { w:2, v:"{$skintone=dark}"},
   { w:1, v:"{$skintone=sunburned}"}
 ]

@@ -92,6 +92,9 @@ var NpcData = React.createClass({
                 {this.props.npc.description.occupation}.
               </p>
               <p>
+                {majP} has {this.props.npc.physical.hair} and {this.props.npc.physical.eyes}.
+              </p>
+              <p>
                 {majP} has {this.props.npc.physical.skin}.
               </p>
               <p>
