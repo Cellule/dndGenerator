@@ -30,7 +30,6 @@ module.exports = (
     />
     <DefaultRoute
       name="npc"
-      path="/"
       handler={require("./DisplayNpc")}
     />
   </Route>

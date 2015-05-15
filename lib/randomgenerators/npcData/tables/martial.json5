@@ -1,7 +1,17 @@
 [
-  { w:3, v:"{$occupation=bodyguard}{%wis+2}{militaryquirk}"},
-  { w:1, v:"{$occupation=bounty hunter}{%int+3}{militaryquirk}"},
-  { w:1, v:"{$occupation=forester}{%wis+2}{%dex+1}{naturequirk}"},
-  { w:1, v:"{$occupation=jailer}"},
-  { w:3, v:"{$occupation=soldier}{%dex+1}{%str+1}{%con+1}{militaryquirk}"}
+  { w:3,
+    name:"Bodyguard",
+    v:"{$occupation=bodyguard}{%wis+2}{militaryquirk}"},
+  { w:1,
+    name:"Bounty Hunter",
+    v:"{$occupation=bounty hunter}{%int+3}{militaryquirk}"},
+  { w:1,
+    name:"Forester",
+    v:"{$occupation=forester}{%wis+2}{%dex+1}{naturequirk}"},
+  { w:1,
+    name:"Jailer",
+    v:"{$occupation=jailer}"},
+  { w:3,
+    name:"Soldier",
+    v:"{$occupation=soldier}{%dex+1}{%str+1}{%con+1}{militaryquirk}"}
 ]
