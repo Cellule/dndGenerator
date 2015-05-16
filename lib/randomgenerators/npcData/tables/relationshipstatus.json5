@@ -7,6 +7,6 @@
   { w:2, v:"Recently broke up{%chaotic+1}"},
   { w:2, v:"Recently divorced{%chaotic+1}"},
   { w:2, v:"Recently widowed{%chaotic+1}"},
-  { w:4, v:"Seeing someone who is married{%chaotic+1}{%evil+1}"},
-  { w:6, v:"Married and having an affair{%chaotic+2}{%evil+2}"}
+  { w:3, v:"Seeing someone who is married{%chaotic+1}{%evil+1}"},
+  { w:4, v:"Married and having an affair{%chaotic+2}{%evil+2}"}
 ]

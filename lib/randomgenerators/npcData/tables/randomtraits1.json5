@@ -13,6 +13,7 @@
   { w:1, v:"{$traits1=$majPro}{$traits1+is an hopeless romantic. }"},
   { w:1, v:"{$traits1=$majPro}{$traits1+is very selfish. }{%good+2}{%evil-1}"},
   { w:1, v:"{$traits1=$majPro}{$traits1+shows very little empathy towards others. }"},
+  { w:1, v:"{$traits1=$majPro}{$traits1+often spies on other people. }"},
   { w:1, v:"{$traits1=$majPro}{$traits1+is prone to violence. }{%chaotic+2}"},
   { w:1, v:"{$traits1=$majPro}{$traits1+is always ready to help others. }{%good+2}{%evil-1}"},
   { w:1, v:"{$traits1=$majPro}{$traits1+is polite and respectful. }{%lawful+1}"},

@@ -6,5 +6,7 @@
   { w:1, v:"{$quirks+$majPro}{$quirks+is a vocal vegan. }{%good+1}"},
   { w:2, v:"{$quirks+$majPro}{frequency}{$quirks+$fr}{$quirks+ talks to plants. }"},
   { w:3, v:"{$quirks+$majPro}{$quirks+feels uncomfortable in a urban setting. }"},
+  { w:2, v:"{$quirks+$majPro}{$quirks+is a very proficient herbalist. }"},
+  { w:2, v:"{$quirks+$majPro}{$quirks+can tame any animal. }"},
   { w:2, v:"{$quirks+$majPro}{$quirks+will never take a life if given the choice. }{%good+1}"}
 ]

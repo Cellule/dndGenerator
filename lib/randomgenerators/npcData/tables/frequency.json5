@@ -1,5 +1,7 @@
 [
-  { w:5, v:"{$fr=sporadically}"},
+  { w:2, v:"{$fr=sporadically}"},
+  { w:2, v:"{$fr=occasionally}"},
+  { w:2, v:"{$fr=intermittently}"},
   { w:2, v:"{$fr=frequently}"},
   { w:1, v:"{$fr=constantly}"}
 ]

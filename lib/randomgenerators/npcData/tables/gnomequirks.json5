@@ -4,9 +4,9 @@
   { w:1, v:"{$quirks+$majPro}{$quirks+is always tinkering in }{$quirks+$minPoss}{$quirks+ free time. }"},
   { w:1, v:"{$quirks+$majPro}{$quirks+has a solution for everything. }"},
   { w:1, v:"{$quirks+$majPro}{$quirks+explains everything in great detail. }"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+has a fascination with explosions. }"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+has a fascination with alchemy. }"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+is fascinated by magic and its history. }"},
   { w:1, v:"{$quirks+$majPro}{$quirks+is way too curious. }"},
   { w:1, v:"{$quirks+$majPro}{$quirks+talks so fast that }{$quirks+$minPro}{$quirks+ is very difficult to understand. }"},
-  { w:1, v:"{$quirks+$majPro}{$quirks+explains everything in great detail. }"},
-  { w:1, v:"{$quirks+$majPro}{$quirks+explains everything in great detail. }"},
-  { w:1, v:"{$quirks+$majPro}{$quirks+explains everything in great detail. }"}
 ]
