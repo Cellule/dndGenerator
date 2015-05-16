@@ -29,7 +29,7 @@ var userOptions = [
     options: races
   },
   {
-    label: "Gender",
+    label: "Sex",
     optionName: "gender",
     options: genders
   },
