@@ -86,7 +86,7 @@ module.exports = function(options) {
   if(options.prerender) {
     aliasLoader["react-proxy$"] = "react-proxy/unavailable";
     externals.push(
-      /^react(\/.*)?$/,
+      ///^react(\/.*)?$/,
       /^reflux(\/.*)?$/,
       "superagent",
       "async"
