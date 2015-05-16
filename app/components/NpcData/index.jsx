@@ -98,7 +98,7 @@ var NpcData = React.createClass({
                 {majP} has {this.props.npc.physical.skin}.
               </p>
               <p>
-                {majP} stands {this.props.npc.physical.height}cm tall and has a {this.props.npc.physical.build}.
+                {majP} stands {this.props.npc.physical.height}cm tall and has {this.props.npc.physical.build}.
               </p>
               <p>
                 {majP} has {this.props.npc.physical.face}.
