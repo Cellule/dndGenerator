@@ -5,6 +5,8 @@
   { w:1, v:"{$traits2=$majPro}{$traits2+is not very obstinate. }"},
   { w:1, v:"{$traits2=$majPro}{$traits2+is very optimistic. }"},
   { w:1, v:"{$traits2=$majPro}{$traits2+is very pessimistic. }"},
+  { w:1, v:"{$traits2=$majPro}{$traits2+is an example of modesty. }"},
+  { w:1, v:"{$traits2=$majPro}{$traits2+is }{mod}{$traits2+$mod}{$traits2+conceited. }"},
   { w:1, v:"{$traits2=$majPro}{$traits2+is very self-confident. }{%cha+1}"},
   { w:1, v:"{$traits2=$majPro}{$traits2+has no self-confidence. }{%cha-1}"},
   { w:1, v:"{$traits2=$majPro}{$traits2+rarely speaks. }"},
@@ -24,7 +26,5 @@
   { w:1, v:"{$traits2=$majPro}{$traits2+is }{mod}{$traits2+$mod}{$traits2+lazy. }"},
   { w:1, v:"{$traits2=$majPro}{$traits2+can't stand laziness. }{%lawful+2}"},
   { w:1, v:"{$traits2=$majPro}{$traits2+can't keep a secret. }{%wis-1}"},
-  { w:1, v:"{$traits2=$majPro}{$traits2+is very good at keeping secrets. }{%wis-1}"},
-  { w:1, v:"{$traits2=$majPro}{$traits2+is very nimble. }{%dex+2}"},
-  { w:1, v:"{$traits2=$majPro}{$traits2+is very clumsy. }{%dex-3}"}
+  { w:1, v:"{$traits2=$majPro}{$traits2+is very good at keeping secrets. }{%wis-1}"}
 ]

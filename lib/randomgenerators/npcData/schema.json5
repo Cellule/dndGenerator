@@ -1,6 +1,6 @@
 {
   options: {
-    initialisation: "{%str=9}{%dex=9}{%con=9}{%int=9}{%wis=9}{%cha=9}{$combat=}{$sphy=}{$quirks=}{height}{worship}{hair}{eyecolor}{tendencies}{skin}{face}{race}{hooks}{specialphysical}{occupation}{traits}{quirks}{forcealign}",
+    initialisation: "{%str=9}{%dex=9}{%con=9}{%int=9}{%wis=9}{%cha=9}{$sphy=}{$quirks=}{height}{worship}{hair}{eyecolor}{tendencies}{skin}{face}{race}{hooks}{specialphysical}{occupation}{traits}{quirks}{forcealign}",
   },
   output: {
     description: {

@@ -1,6 +1,0 @@
-[
-  { w:25, v:"{$hook+}"},
-  { w:1, v:"{$hook=$majPro}{$hook+needs help gathering }{monster}{$hook+$monster}{$hook+ parts for }{$hook+minPro}{$hook+research.}"},
-  { w:1, v:"{$hook=$majPro}{$hook+needs help testing out }{$hook+minPro}{$hook+latest theory.}"},
-  { w:1, v:"{$hook=$majPro}{$hook+needs help testing out }{$hook+minPro}{$hook+latest invention.}"}
-]
