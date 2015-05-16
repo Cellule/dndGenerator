@@ -4,3 +4,6 @@
 
 #ignore files in build in master
 /build
+
+#do not ignore build in release
+!/build
