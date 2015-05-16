@@ -15,7 +15,7 @@
   { w:2, v:"{$sphy+$majPro}{$sphy+is branded as a }{brand}{$sphy+ on }{$sphy+$minPoss}{bodypart}{$sphy+$bp}"},
   { w:1, v:"{$sphy+$majPro}{$sphy+has }{degree}{$sphy+$degree}{$sphy+scoliose}{%dex-1}"},
   { w:3, v:"{$sphy+$majPro}{$sphy+smells }{degree2}{$sphy+$degree}{badsmell}{%cha-1}"},
-  { w:3, v:"{$sphy+$majPro}{$sphy+smells }{degree2}{$sphy+$degree}{goodsmell}{%cha+1}"},,
+  { w:3, v:"{$sphy+$majPro}{$sphy+smells }{degree2}{$sphy+$degree}{goodsmell}{%cha+1}"},
   { w:2, v:"{$sphy+$majPro}{$sphy+is very nimble}{%dex+2}"},
   { w:2, v:"{$sphy+$majPro}{$sphy+is very clumsy}{%dex-3}"},
   { w:3, v:"{$sphy+$majPro}{$sphy+gestures profusely during a conversation}"},
