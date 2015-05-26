@@ -7,7 +7,7 @@ var Footer = require("./../components/Footer");
 require("../styles/index.less");
 
 if(__DEV__) {
-  require("react-a11y")();
+  require("react-a11y")(React);
 }
 
 var Application = React.createClass({
