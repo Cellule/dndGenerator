@@ -17,8 +17,6 @@ export default class DisplayNpc extends React.Component {
 
     this.generateNpc(this.props.query);
     this.generateNpc = this.generateNpc.bind(this);
-
-
   }
 
   generateNpc(options) {
@@ -37,21 +35,22 @@ export default class DisplayNpc extends React.Component {
       <div>
         <Row>
           <Col
-            xs={10}
-            xsOffset={1}
-            sm={3}
+            xs={12}
+            xsOffset={0}
+            sm={4}
             smOffset={0}
-            md={2}
+            md={3}
+            mdOffset={0}
             className="user-info-col"
           >
             <UserInput generate={this.generateNpc}/>
           </Col>
           <Col
-            xs={10}
-            xsOffset={1}
+            xs={12}
+            xsOffset={0}
             sm={8}
-            smOffset={3}
-            md={8}
+            smOffset={0}
+            md={9}
             mdOffset={0}
           >
             <NpcData npc={this.state.npc} />

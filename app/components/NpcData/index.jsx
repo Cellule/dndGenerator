@@ -1,7 +1,6 @@
 var React = require("react");
 var Panel = require("react-bootstrap/Panel");
 var Row = require("react-bootstrap/Row");
-var Grid = require("react-bootstrap/Grid");
 var Col = require("react-bootstrap/Col");
 var Table = require("react-bootstrap/Table");
 var _ = require("lodash");
@@ -80,11 +79,11 @@ var NpcData = React.createClass({
 
     var majP = this.props.npc.description.pronounCapit;
     var minP = this.props.npc.description.pronounMinus;
-	var quirksArray = this.props.npc.pquirks.description.split(".");
-	quirksArray.length--;
+    var quirksArray = this.props.npc.pquirks.description.split(".");
+    quirksArray.length--;
 
     return (
-      <div fluid>
+      <div fluid className="npc-data">
         <Row>
           <Col xs={12} md={6}>
             <Panel className="first-row-height" header={<div>Description</div>}>

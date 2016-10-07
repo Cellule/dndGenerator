@@ -13,21 +13,6 @@ if(!Object.assign) {
 /*eslint react/react-in-jsx-scope:0, no-undef:0*/
 module.exports = (
   <Route name="app" path="/" handler={require("./Application")}>
-    <Route
-      name="some-page"
-      path="/some-page"
-      handler={require("react-proxy!./SomePage")}
-    />
-    <Route
-      name="todolist"
-      path="/list/:list"
-      handler={require("./TodoList")}
-    />
-    <Route
-      name="todoitem"
-      path="/todo/:item"
-      handler={require("./TodoItem")}
-    />
     <DefaultRoute
       name="npc"
       handler={require("./DisplayNpc")}
