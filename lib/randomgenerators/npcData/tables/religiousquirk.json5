@@ -7,5 +7,5 @@
   { w:1, v:"{$quirks+$majPro}{$quirks+is very intolerant towards other faiths. }"},
   { w:1, v:"{$quirks+$majPro}{$quirks+carries blessed water everywhere. }"},
   { w:1, v:"{$quirks+$majPro}{$quirks+tries to convert everyone }{$quirks+$minPro}{$quirks+meets. }"},
-  { w:1, v:"{$quirks+$majPro}{$quirks+idolizes a religious hero. }"}
+  { w:1, v:"{$quirks+$majPro}{$quirks+idolizes a religious hero. }"},
 ]

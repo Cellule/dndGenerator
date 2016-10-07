@@ -1,11 +1,13 @@
 [
   { w:18, v:"{$quirks+}"},
   { w:3, v:"{$quirks+$majPro}{$quirks+never asks for help. }"},
-  { w:2, v:"{$quirks+$majPro}{$quirks+seeks extreme mastery of what he does. }"},
+  { w:2, v:"{$quirks+$majPro}{$quirks+seeks extreme mastery of what }{$quirks+$minPro}{$quirks+does. }"},
   { w:2, v:"{$quirks+$majPro}{$quirks+sees other races as inferior. }"},
   { w:2, v:"{$quirks+$majPro}{$quirks+keeps all of }{$quirks+$minPoss}{$quirks+promises. }"},
   { w:2, v:"{$quirks+$majPro}{$quirks+despises fear and cowardice. }"},
   { w:2, v:"{$quirks+$majPro}{$quirks+treats adversaries with respect. }"},
+  { w:2, v:"{$quirks+$majPro}{$quirks+values honor above all. }"},
+  { w:2, v:"{$quirks+$majPro}{$quirks+cannot use }{$quirks+$minPoss}{$quirks+breath weapon. }"},
   { w:2, v:"{$quirks+$majPro}{$quirks+has a secret dragon master. }"},
   { w:6, v:"{$quirks+$majPro}{$quirks+values }{$quirks+$minPoss}{$quirks+clan above anything else. }"}
 ]

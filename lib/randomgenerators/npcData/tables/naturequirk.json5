@@ -1,12 +1,20 @@
 [
   { w:16, v:"{$quirks+}"},
-  { w:3, v:"{$quirks+$majPro}{$quirks+spends every morning training. }{%str+2}{%con+2}{%dex+2}"},
-  { w:3, v:"{$quirks+$majPro}{$quirks+likes animals more than people. }{%chaotic+2}"},
+  { w:4, v:"{$quirks+$majPro}{$quirks+spends every morning training. }{%str+2}{%con+2}{%dex+2}"},
+  { w:4, v:"{$quirks+$majPro}{$quirks+likes animals more than people. }{%chaotic+2}"},
   { w:2, v:"{$quirks+$majPro}{$quirks+is a vocal vegetarian. }{%good+1}"},
+  { w:2, v:"{$quirks+$majPro}{$quirks+is a vegetarian. }{%good+1}"},
+  { w:2, v:"{$quirks+$majPro}{$quirks+is a secret vegetarian. }{%good+1}"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+is a vegan. }{%good+1}"},
   { w:1, v:"{$quirks+$majPro}{$quirks+is a vocal vegan. }{%good+1}"},
-  { w:2, v:"{$quirks+$majPro}{frequency}{$quirks+$fr}{$quirks+ talks to plants. }"},
-  { w:3, v:"{$quirks+$majPro}{$quirks+feels uncomfortable in a urban setting. }"},
-  { w:2, v:"{$quirks+$majPro}{$quirks+is a very proficient herbalist. }"},
-  { w:2, v:"{$quirks+$majPro}{$quirks+can tame any animal. }"},
-  { w:2, v:"{$quirks+$majPro}{$quirks+will never take a life if given the choice. }{%good+1}"}
+  { w:1, v:"{$quirks+$majPro}{$quirks+is a secret vegan. }{%good+1}"},
+  { w:3, v:"{$quirks+$majPro}{frequency}{$quirks+$fr}{$quirks+ talks to plants. }"},
+  { w:4, v:"{$quirks+$majPro}{$quirks+feels uncomfortable in a urban setting. }"},
+  { w:3, v:"{$quirks+$majPro}{$quirks+is a very proficient herbalist. }"},
+  { w:3, v:"{$quirks+$majPro}{$quirks+can make a potion out of anything. }"},
+  { w:3, v:"{$quirks+$majPro}{$quirks+sleeps best in a tree. }"},
+  { w:3, v:"{$quirks+$majPro}{$quirks+can always find }{$quirks+$minPoss}{$quirks+way in the woods. }"},
+  { w:3, v:"{$quirks+$majPro}{$quirks+loves eating fresh aliments. }"},
+  { w:3, v:"{$quirks+$majPro}{$quirks+can tame any animal. }"},
+  { w:3, v:"{$quirks+$majPro}{$quirks+will never take a life if given the choice. }{%good+1}"}
 ]

@@ -1,10 +1,13 @@
 [
-  { w:6, v:"{$sphy+of sweat}"},
+  { w:8, v:"{$sphy+of sweat}"},
   { w:2, v:"{$sphy+of dogs}"},
   { w:2, v:"{$sphy+of garbage}"},
   { w:2, v:"{$sphy+of horses}"},
   { w:2, v:"{$sphy+of sewage}"},
+  { w:1, v:"{$sphy+of cabbage}"},
+  { w:1, v:"{$sphy+of sour milk}"},
   { w:2, v:"{$sphy+of dirt}"},
-  { w:3, v:"{$sphy+of tobacco}"},
-  { w:3, v:"{$sphy+of alcohol}"}
+  { w:4, v:"{$sphy+of unwashed clothes}"},
+  { w:4, v:"{$sphy+of tobacco}"},
+  { w:4, v:"{$sphy+of alcohol}"}
 ]

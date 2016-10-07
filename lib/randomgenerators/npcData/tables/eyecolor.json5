@@ -1,7 +1,7 @@
 [
-  { w:4, v:"{$eyecolor=brown}"},
-  { w:3, v:"{$eyecolor=blue}"},
-  { w:2, v:"{$eyecolor=green}"},
+  { w:8, v:"{$eyecolor=brown}"},
+  { w:4, v:"{$eyecolor=blue}"},
+  { w:4, v:"{$eyecolor=green}"},
   { w:2, v:"{$eyecolor=golden}"},
   { w:1, v:"{$eyecolor=cyan}"},
   { w:2, v:"{$eyecolor=gray}"},

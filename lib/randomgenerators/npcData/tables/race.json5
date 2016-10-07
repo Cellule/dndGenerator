@@ -70,7 +70,7 @@
     v:"{$race=tiefling}{%con-1}{%int+2}{%cha+3}{%chaotic+3}{humangod}{tieflinggoodorevil}{tieflingskin}{beard}{age}{gender}{ageBonus}"
   },
   {
-    w:4,
+    w:3,
     name: "Goblin",
     v:"{$race=goblin}{%str-2}{%dex+2}{%con-2}{%int-4}{%wis-3}{%cha-1}{%height-50}{%ethicalneutral+2}{%lawful-2}{%evil+3}{humangod}{orcskin}{$beard=}{age}{gender}{goblinname}"
   },
@@ -80,12 +80,12 @@
     v:"{$race=orc}{%str+5}{%dex-1}{%con+5}{%int-4}{%wis-3}{%height+20}{%good-2}{%chaotic+3}{%evil+2}{orcgod}{orcskin}{beard}{age}{orcgender}"
   },
   {
-    w:2,
+    w:1,
     name: "Troglodyte",
     v:"{$race=troglodyte}{%str+1}{%con+1}{%int-4}{%cha-4}{%good-2}{%chaotic+3}{%evil+2}{humangod}{orcskin}{$beard=}{age}{gender}{goblinname}"
   },
   {
-    w:2,
+    w:1,
     name: "Medusa",
     v:"{$race=medusa}{%dex+3}{%con+2}{%int+1}{%wis+2}{%cha+3}{medusa}{%lawful+2}{goodface}{humangod}{orcskin}{age}{ageBonus}{medusaname}{medusaveil}"
   }

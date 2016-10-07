@@ -3,5 +3,6 @@
   { w:2, v:"{$hair+light green }"},
   { w:3, v:"{$hair+black }"},
   { w:3, v:"{$hair+brown }"},
+  { w:1, v:"{$hair+white }"},
   { w:2, v:"{$hair+green }"}
 ]

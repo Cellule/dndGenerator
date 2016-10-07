@@ -19,7 +19,7 @@
     v:"{$occupation=monk}{hiStr}{hiDex}{hiCon}{medInt}{hiWis}{medCha}{%ethicalneutral-2}{%chaotic-2}{%lawful+2}{militaryquirk}"},
   { w:8,
     name:"Paladin",
-    v:"{$occupation=paladin}{hiStr}{lowDex}{hiCon}{lowInt}{medWis}{hiCha}{%evil-3}{%chaotic-1}{%lawful+1}{%good+3}{religiousquirk}{militaryquirk}"},
+    v:"{$occupation=paladin}{hiStr}{lowDex}{hiCon}{lowInt}{medWis}{hiCha}{%evil-3}{%chaotic-1}{%lawful+3}{%good+3}{religiousquirk}{militaryquirk}"},
   { w:3,
     name:"Ranger",
     v:"{$occupation=ranger}{medStr}{hiDex}{hiCon}{lowInt}{medWis}{medCha}{%moralneutral+2}{%chaotic+2}{naturequirk}"},

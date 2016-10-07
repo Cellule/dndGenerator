@@ -4,6 +4,7 @@
   { w:1, v:"{$precious+robe}"},
   { w:1, v:"{$precious+trinket}"},
   { w:1, v:"{$precious+bracelet}"},
+  { w:1, v:"{$precious+watch}"},
   { w:1, v:"{$precious+amulet}"},
   { w:1, v:"{$precious+tiara}"},
   { w:1, v:"{$precious+gem}"},

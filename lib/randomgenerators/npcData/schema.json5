@@ -15,7 +15,7 @@
     physical: {
       hair: "{$hair}",
       eyes: "{$eyecolor} eyes",
-      skin: "{$skintexture} {$skintone} skin with a {$skincom} complexion",
+      skin: "{$skintexture}{$skintone} {$skincom} skin",
       height: "{%height}",
       build: "{weight} build",
       face: "{$face} face{$beard}",

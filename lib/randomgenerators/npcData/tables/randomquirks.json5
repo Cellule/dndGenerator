@@ -54,7 +54,7 @@
   { w:3, v:"{$quirks+$majPro}{$quirks+sets up local dance clubs. }"},
   { w:4, v:"{$quirks+$majPro}{$quirks+is }{degree2}{$quirks+$degree}{$quirks+allergic to }{aliment}"},
   { w:4, v:"{$quirks+$majPro}{$quirks+is }{degree2}{$quirks+$degree}{$quirks+allergic to }{raceallergy}{$quirks+$racea}{$quirks+. }"},
-  { w:3, v:"{$quirks+$majPro}{$quirks+believes that he is related to }{$quirks+$god}{$quirks+. }"},
+  { w:3, v:"{$quirks+$majPro}{$quirks+believes that }{$quirks+$minPro}{$quirks+is related to }{$quirks+$god}{$quirks+. }"},
   { w:1, v:"{$quirks+$majPro}{$quirks+goes to church to pick up sexual partners. }{%cha+1}"},
   { w:3, v:"{$quirks+$majPro}{$quirks+lies poorly on purpose. }"},
   { w:2, v:"{$quirks+$majPro}{$quirks+secretly wants to become the ruler of the city. }"},

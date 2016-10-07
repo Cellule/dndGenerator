@@ -9,6 +9,10 @@ export default class PageFooter extends React.Component {
   render() {
     return (
         <footer className="bs-docs-footer" role="contentinfo">
+			<div>
+				<p><b> Comments, suggestions, crazy hook or trait idea? </b></p>
+				<p> Email me at: <a href="mailto:etienspb@gmail.com">EtiensPB@gmail.com</a>!</p>
+			</div>
             <div className="bs-docs-social">
               <ul className="bs-docs-social-buttons">
                 <li>

@@ -80,6 +80,8 @@ var NpcData = React.createClass({
 
     var majP = this.props.npc.description.pronounCapit;
     var minP = this.props.npc.description.pronounMinus;
+	var quirksArray = this.props.npc.pquirks.description.split(".");
+	quirksArray.length--;
 
     return (
       <div fluid>
@@ -115,7 +117,13 @@ var NpcData = React.createClass({
               </p>
               <p>{this.props.npc.ptraits.traits1}</p>
               <p>{this.props.npc.ptraits.traits2}</p>
-              <p>{this.props.npc.pquirks}</p>
+                 {
+                   _.map(quirksArray, (value) => {
+                     return (
+                           <p>{value}.</p>
+                     );
+                   })
+                 }
             </Panel>
           </Col>
         </Row>

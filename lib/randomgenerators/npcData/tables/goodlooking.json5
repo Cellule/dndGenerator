@@ -1,7 +1,7 @@
 [
-  { w:3, v:"{$attractiveness=cute}"},
-  { w:3, v:"{$attractiveness=attractive}"},
-  { w:3, v:"{$attractiveness=beautiful}"},
+  { w:4, v:"{$attractiveness=cute}"},
+  { w:5, v:"{$attractiveness=attractive}"},
+  { w:5, v:"{$attractiveness=beautiful}"},
   { w:3, v:"{$attractiveness=glamorous}"},
   { w:3, v:"{$attractiveness=innocent}"},
   { w:2, v:"{$attractiveness=stunning}"},

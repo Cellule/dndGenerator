@@ -8,6 +8,7 @@ var _ = require("lodash");
 var races = require("!filter-loader?name!./../../../lib/randomgenerators/npcData/tables/race.json5");
 var genders = require("!filter-loader?name!./../../../lib/randomgenerators/npcData/tables/gender.json5");
 var alignments = require("!filter-loader?name!./../../../lib/randomgenerators/npcData/tables/forcealign.json5");
+var plothooks = require("!filter-loader?name!./../../../lib/randomgenerators/npcData/tables/hooks.json5");
 
 var classes = require("!filter-loader?name!./../../../lib/randomgenerators/npcData/tables/class.json5");
 var professions = require("!filter-loader?name,table!./../../../lib/randomgenerators/npcData/tables/profession.json5");
@@ -37,6 +38,11 @@ var userOptions = [
     label: "Alignment",
     optionName: "alignment",
     options: alignments
+  },
+  {
+    label: "Plot Hooks",
+    optionName: "plothook",
+    options: plothooks
   },
   {
     label: "Occupation",

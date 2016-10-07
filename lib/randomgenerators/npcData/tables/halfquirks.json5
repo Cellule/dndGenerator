@@ -1,7 +1,11 @@
 [
-  { w:8, v:"{$quirks+}"},
+  { w:12, v:"{$quirks+}"},
   { w:1, v:"{$quirks+$majPro}{$quirks+tries to stay home as much as possible. }"},
   { w:1, v:"{$quirks+$majPro}{$quirks+usually tries not to get noticed. }"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+is very shy. }{%cha-1}"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+has several pet animals. }"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+rides a poney everywhere. }"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+always has a good joke to tell. }{%cha+2}"},
   { w:1, v:"{$quirks+$majPro}{$quirks+knows all there is to know about farms. }"},
   { w:1, v:"{$quirks+$majPro}{$quirks+lived }{$quirks+$minPoss}{$quirks+early years in a caravan. }"},
   { w:1, v:"{$quirks+$majPro}{$quirks+never goes anywhere without }{$quirks+$minPoss}{$quirks+best friend. }"},

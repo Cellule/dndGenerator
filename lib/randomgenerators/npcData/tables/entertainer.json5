@@ -21,6 +21,9 @@
     name:"Prestidigitator",
     v:"{$occupation=prestidigitator}{%int+4}{%dex+1}"},
   { w:1,
+    name:"Funambulist",
+    v:"{$occupation=funambulist}{%dex+3}"},
+  { w:1,
     name:"Storyteller",
-    v:"{$occupation=storyteller}{%int+2}{%wis+3}{%cha+1}"}
+    v:"{$occupation=storyteller}{%int+2}{%wis+2}{%cha+2}"}
 ]

@@ -1,6 +1,6 @@
 [
-  { w:19, v:"{hairLength}{$hair+, }{hairType}{$hair+, }{hairColor}{$hair+hair}"},
+  { w:30, v:"{hairLength}{$hair+, }{hairType}{$hair+, }{hairColor}{$hair+hair}"},
   { w:4, v:"{hairLength}{$hair+, }{hairType}{$hair+, }{hairColor}{$hair+hair shaved on }{rlb}{$hair+$rl}{$hair+side}"},
   { w:3, v:"{hairLength}{$hair+, }{hairColor}{$hair+mohawk}"},
-  { w:5, v:"{$hair=a bald head}"}
+  { w:8, v:"{$hair=a bald head}"}
 ]

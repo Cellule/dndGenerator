@@ -1,10 +1,5 @@
 [
-  { w:1, v:"{$skintone=ghostly}"},
-  { w:2, v:"{$skintone=very pale}"},
-  { w:2, v:"{$skintone=pale}"},
-  { w:3, v:"{$skintone=regular}"},
-  { w:3, v:"{$skintone=tanned}"},
-  { w:3, v:"{$skintone=very tanned}"},
-  { w:2, v:"{$skintone=dark}"},
-  { w:1, v:"{$skintone=sunburned}"}
+  { w:12, v:"{$skintone= }"},
+  { w:2, v:"{$skintone=, sunburned}"},
+  { w:2, v:"{$skintone=, pockmarked}"}
 ]
