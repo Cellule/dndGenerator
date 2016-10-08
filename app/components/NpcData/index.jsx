@@ -1,7 +1,6 @@
 var React = require("react");
 var Panel = require("react-bootstrap/Panel");
 var Row = require("react-bootstrap/Row");
-var Grid = require("react-bootstrap/Grid");
 var Col = require("react-bootstrap/Col");
 var Table = require("react-bootstrap/Table");
 var _ = require("lodash");
@@ -80,11 +79,11 @@ var NpcData = React.createClass({
 
     var majP = this.props.npc.description.pronounCapit;
     var minP = this.props.npc.description.pronounMinus;
-	var quirksArray = this.props.npc.pquirks.description.split(".");
-	quirksArray.length--;
+    var quirksArray = this.props.npc.pquirks.description.split(".");
+    quirksArray.length--;
 
     return (
-      <div fluid>
+      <div fluid className="npc-data">
         <Row>
           <Col xs={12} md={6}>
             <Panel className="first-row-height" header={<div>Description</div>}>
@@ -128,7 +127,7 @@ var NpcData = React.createClass({
           </Col>
         </Row>
         <Row>
-          <Col sm={12} md={6} lg={3}>
+          <Col sm={12} md={6} lg={4}>
             <Panel className="second-row-height" header={<div>Ability Scores</div>}>
               <Row>
                 <table className="no-border">
@@ -142,7 +141,7 @@ var NpcData = React.createClass({
                           xs={12}
                           className="no-right-pad no-left-pad ability"
                         >
-                            <tr><td><b>{abilityNames[key]}</b></td><td>{ability}</td></tr>
+                            <tr><td><b>{abilityNames[key]}</b></td><td className="ability-number">{ability}</td></tr>
                         </Col>
                       );
                     })
@@ -151,26 +150,26 @@ var NpcData = React.createClass({
               </Row>
             </Panel>
           </Col>
-          <Col sm={12} md={6}>
-            <Panel className="second-row-height" header={<div>Relationships</div>}>
-              <p><b>Sexual Orientation: </b>{this.props.npc.relationship.orientation}</p>
-              <p><b>Relationship Status: </b>{this.props.npc.relationship.status}</p>
+          <Col sm={12} md={6} lg={4}>
+            <Panel className="second-row-height " header={<div>Relationships</div>}>
+              <p><b>Sexual Orientation </b></p><p>{this.props.npc.relationship.orientation}</p>
+              <p><b>Relationship Status </b></p><p>{this.props.npc.relationship.status}</p>
             </Panel>
           </Col>
-          <Col sm={12} md={12} lg={3}>
+          <Col sm={12} md={12} lg={4}>
             <Panel className="second-row-height" header={<div>Alignment Tendencies</div>}>
               <table className="no-border">
                 <tr>
-                  <td className="width-thin"><b>Good</b></td><td>{this.props.npc.alignment.good}</td>
-                  <td className="width-thin"><b>Lawful</b></td><td>{this.props.npc.alignment.lawful}</td>
+                  <td className="width-thin"><b>Good</b></td><td className="ability-number">{this.props.npc.alignment.good}</td>
+                  <td className="width-thin"><b>Lawful</b></td><td className="ability-number">{this.props.npc.alignment.lawful}</td>
                 </tr>
                 <tr>
-                  <td className="width-thin"><b>Neutral</b></td><td>{this.props.npc.alignment.moralneutral}</td>
-                  <td className="width-thin"><b>Neutral</b></td><td>{this.props.npc.alignment.ethicalneutral}</td>
+                  <td className="width-thin"><b>Neutral</b></td><td className="ability-number">{this.props.npc.alignment.moralneutral}</td>
+                  <td className="width-thin"><b>Neutral</b></td><td className="ability-number">{this.props.npc.alignment.ethicalneutral}</td>
                 </tr>
                 <tr>
-                  <td className="width-thin"><b>Evil</b></td><td>{this.props.npc.alignment.evil}</td>
-                  <td className="width-thin"><b>Chaotic</b></td><td>{this.props.npc.alignment.chaotic}</td>
+                  <td className="width-thin"><b>Evil</b></td><td className="ability-number">{this.props.npc.alignment.evil}</td>
+                  <td className="width-thin"><b>Chaotic</b></td><td className="ability-number">{this.props.npc.alignment.chaotic}</td>
                 </tr>
               </table>
             </Panel>

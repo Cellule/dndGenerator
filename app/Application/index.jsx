@@ -2,6 +2,8 @@ var React = require("react");
 var StateFromStoreMixin = require("items-store/StateFromStoresMixin");
 var RouteHandler = require("react-router").RouteHandler;
 var Footer = require("./../components/Footer");
+var Header = require("./../components/Header");
+import Grid from "react-bootstrap/Grid";
 
 // Styles
 require("../styles/index.less");
@@ -22,7 +24,7 @@ var Application = React.createClass({
   },
   render: function() {
     return (
-      <div
+      <Grid
         className={ this.state.loading ? "application loading" : "application"}
       >
         {
@@ -30,9 +32,10 @@ var Application = React.createClass({
             <div style={{float: "right"}}>loading...</div>
             : null
         }
+        <Header />
         <RouteHandler />
         <Footer />
-      </div>
+      </Grid>
     );
   },
   update: function() {
