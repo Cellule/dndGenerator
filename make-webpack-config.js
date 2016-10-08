@@ -64,6 +64,18 @@ module.exports = function(options) {
     /node_modules[\\\/]items-store[\\\/]/
   ];
   var plugins = [
+    function() {
+      if(!options.prerender) {
+        this.plugin("done", function(stats) {
+          var jsonStats = stats.toJson({
+            chunkModules: true,
+            exclude: excludeFromStats
+          });
+          jsonStats.publicPath = publicPath;
+          require("fs").writeFileSync(path.join(__dirname, "build", "stats.json"), JSON.stringify(jsonStats));
+        });
+      }
+    },
     new webpack.DefinePlugin({
       "__DEV__": options.debug,
       "__PROD__": !options.debug,
