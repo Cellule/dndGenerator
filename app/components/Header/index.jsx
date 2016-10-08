@@ -7,7 +7,7 @@ export default class PageHeader extends React.Component {
   render() {
     return (
       <div>
-        <BSPageHeader>NPC Generator <small>dungeon master's assistant</small></BSPageHeader>
+        <BSPageHeader>NPC Generator <small>&emsp;D&D 5e</small></BSPageHeader>
       </div>
     );
   }
