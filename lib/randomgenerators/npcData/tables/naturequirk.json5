@@ -1,6 +1,7 @@
 [
   { w:16, v:"{$quirks+}"},
-  { w:4, v:"{$quirks+$majPro}{$quirks+spends every morning training. }{%str+2}{%con+2}{%dex+2}"},
+  { w:2, v:"{$quirks+$majPro}{$quirks+spends every morning training. }{%str+2}{%con+2}{%dex+2}"},
+  { w:3, v:"{$quirks+$majPro}{$quirks+spends every morning meditating. }{%int+2}{%wis+2}{%chaotic-3}"},
   { w:4, v:"{$quirks+$majPro}{$quirks+likes animals more than people. }{%chaotic+2}"},
   { w:2, v:"{$quirks+$majPro}{$quirks+is a vocal vegetarian. }{%good+1}"},
   { w:2, v:"{$quirks+$majPro}{$quirks+is a vegetarian. }{%good+1}"},
@@ -15,6 +16,6 @@
   { w:3, v:"{$quirks+$majPro}{$quirks+sleeps best in a tree. }"},
   { w:3, v:"{$quirks+$majPro}{$quirks+can always find }{$quirks+$minPoss}{$quirks+way in the woods. }"},
   { w:3, v:"{$quirks+$majPro}{$quirks+loves eating fresh aliments. }"},
-  { w:3, v:"{$quirks+$majPro}{$quirks+can tame any animal. }"},
-  { w:3, v:"{$quirks+$majPro}{$quirks+will never take a life if given the choice. }{%good+1}"}
+  { w:3, v:"{$quirks+$majPro}{$quirks+can tame any animal. }{%wis+1}"},
+  { w:3, v:"{$quirks+$majPro}{$quirks+will never take a life if given the choice. }{%good+2}{%evil-2}"}
 ]
