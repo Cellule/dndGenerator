@@ -75,10 +75,12 @@ var NpcData = React.createClass({
 
   _downloadTxtFile () {
 	var element = document.createElement("a");
-	var name = this.props.npc.description.name.split(" ").join("_");
+	var name = this.props.npc.description.name.split(" ")[0];
+	var race = this.props.npc.description.race.split(" ").join("_");
+	var occupation = this.props.npc.description.occupation.split(" ").join("_");
 	var file = new Blob([document.getElementById("downloadData").textContent.split("##").join("\r\n")], {type: 'text/plain'});
 	element.href = URL.createObjectURL(file);
-	element.download = name + ".txt";
+	element.download = name + "_" + race + "_" + occupation + ".txt";
 	document.body.appendChild(element);
 	element.click();
 	document.body.removeChild(element);
