@@ -153,7 +153,7 @@ export default class UserInput extends React.Component{
             <Row>
               {npcOptions}
             </Row>
-            <Input type="submit" bsStyle="success" value="Generate NPC" />
+            <Input className="center-block" type="submit" bsStyle="success" value="Generate NPC" />
           </form>
 
         </Panel>
