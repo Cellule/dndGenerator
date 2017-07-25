@@ -1,6 +1,8 @@
 var React = require("react");
 //var Link = require("react-router").Link;
 var NpcData = require("./../components/NpcData");
+var Footer = require("./../components/Footer");
+var Header = require("./../components/Header");
 var UserInput = require("./../components/UserInput");
 var Row = require("react-bootstrap/Row");
 var Col = require("react-bootstrap/Col");
@@ -41,19 +43,22 @@ export default class DisplayNpc extends React.Component {
             smOffset={0}
             md={3}
             mdOffset={0}
-            className="user-info-col"
+            className="user-info-col top-padding options-panel"
           >
-            <UserInput generate={this.generateNpc}/>
+			<Header />
+            <UserInput npc={this.state.npc} generate={this.generateNpc}/>
           </Col>
           <Col
             xs={12}
             xsOffset={0}
-            sm={8}
+            sm={7}
             smOffset={0}
             md={9}
             mdOffset={0}
+			className="top-padding"
           >
             <NpcData npc={this.state.npc} />
+			<Footer />
           </Col>
         </Row>
       </div>
