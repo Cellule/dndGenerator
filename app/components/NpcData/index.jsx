@@ -1,12 +1,14 @@
 var React = require("react");
 var Panel = require("react-bootstrap/Panel");
 var Row = require("react-bootstrap/Row");
+var Input = require("react-bootstrap/Input");
 var Col = require("react-bootstrap/Col");
 var Table = require("react-bootstrap/Table");
 var _ = require("lodash");
 
 require("./index.less");
 
+  
 var abilityNames = {
   str: "Strength",
   dex: "Dexterity",
@@ -15,7 +17,6 @@ var abilityNames = {
   wis: "Wisdom",
   cha: "Charisma"
 };
-
 
 var NpcData = React.createClass({
   propTypes: {
@@ -72,6 +73,21 @@ var NpcData = React.createClass({
     })
   },
 
+  _downloadTxtFile () {
+	var element = document.createElement("a");
+	var name = this.props.npc.description.name.split(" ")[0];
+	var gender = this.props.npc.description.gender;
+	var race = this.props.npc.description.race.split(" ").join("_");
+	var occupation = this.props.npc.description.occupation.split(" ").join("_");
+	var file = new Blob([document.getElementById("downloadData").textContent.split("##").join("\r\n")], {type: 'text/plain'});
+	element.href = URL.createObjectURL(file);
+	element.download = name + "_" + gender + "_" + race + "_" + occupation + ".txt";
+	document.body.appendChild(element);
+	element.click();
+	document.body.removeChild(element);
+	return false;
+  },
+	  
   render() {
     if(!this.props.npc) {
       return <div>Loading npc...</div>;
@@ -81,40 +97,53 @@ var NpcData = React.createClass({
     var minP = this.props.npc.description.pronounMinus;
     var quirksArray = this.props.npc.pquirks.description.split(".");
     quirksArray.length--;
-
+	
+	  
     return (
-      <div fluid className="npc-data">
+	
+      <div fluid className="npc-data" id="downloadData">
         <Row>
           <Col xs={12} md={6}>
             <Panel className="first-row-height" header={<div>Description</div>}>
+			  <p hidden>##</p>
               <p>
                 {this.props.npc.description.name} is a {this.props.npc.description.age + " "}
                 years old {this.props.npc.description.gender} {this.props.npc.description.race + " "}
                 {this.props.npc.description.occupation}.
-              </p>
+              </p>			  
+			  <p hidden>##</p>
               <p>
                 {majP} has {this.props.npc.physical.hair} and {this.props.npc.physical.eyes}.
-              </p>
+              </p>			  
+			  <p hidden>##</p>
               <p>
                 {majP} has {this.props.npc.physical.skin}.
               </p>
+			  <p hidden>##</p>
               <p>
                 {majP} stands {this.props.npc.physical.height}cm tall and has {this.props.npc.physical.build}.
               </p>
+			  <p hidden>##</p>
               <p>
                 {majP} has {this.props.npc.physical.face}.
               </p>
+			  <p hidden>##</p>
               <p>
                 {this.props.npc.physical.special}
               </p>
+			  <p hidden>##</p>
+			  <p hidden>##</p>
             </Panel>
           </Col>
           <Col xs={12} md={6}>
             <Panel className="first-row-height" header={<div>Personality Traits</div>}>
+			  <p hidden>##</p>
               <p>
                 {this.props.npc.religion.description}
               </p>
+			  <p hidden>##</p>
               <p>{this.props.npc.ptraits.traits1}</p>
+			  <p hidden>##</p>
               <p>{this.props.npc.ptraits.traits2}</p>
                  {
                    _.map(quirksArray, (value) => {
@@ -123,12 +152,15 @@ var NpcData = React.createClass({
                      );
                    })
                  }
+				 <p hidden>##</p>
+				 <p hidden>##</p>
             </Panel>
           </Col>
         </Row>
         <Row>
           <Col sm={12} md={6} lg={4}>
             <Panel className="second-row-height" header={<div>Ability Scores</div>}>
+			  <p hidden>##</p>
               <Row>
                 <table className="no-border">
                   {
@@ -141,46 +173,63 @@ var NpcData = React.createClass({
                           xs={12}
                           className="no-right-pad no-left-pad ability"
                         >
-                            <tr><td><b>{abilityNames[key]}</b></td><td className="ability-number">{ability}</td></tr>
+                            <tr><td><b>{abilityNames[key]}<p hidden> - </p></b></td><td className="ability-number">{ability}<p hidden>##</p></td></tr>
                         </Col>
                       );
                     })
                   }
                 </table>
               </Row>
+			  <p hidden>##</p>
             </Panel>
           </Col>
           <Col sm={12} md={6} lg={4}>
             <Panel className="second-row-height " header={<div>Relationships</div>}>
-              <p><b>Sexual Orientation </b></p><p>{this.props.npc.relationship.orientation}</p>
-              <p><b>Relationship Status </b></p><p>{this.props.npc.relationship.status}</p>
+			  <p hidden>##</p>
+              <p><b>Sexual Orientation </b></p><p hidden>- </p><p>{this.props.npc.relationship.orientation}</p>
+			  <p hidden>##</p>
+              <p><b>Relationship Status </b></p><p hidden>- </p><p>{this.props.npc.relationship.status}</p>
+			  <p hidden>##</p>
+			  <p hidden>##</p>
             </Panel>
           </Col>
           <Col sm={12} md={12} lg={4}>
             <Panel className="second-row-height" header={<div>Alignment Tendencies</div>}>
+			  <p hidden>##</p>
               <table className="no-border">
                 <tr>
-                  <td className="width-thin"><b>Good</b></td><td className="ability-number">{this.props.npc.alignment.good}</td>
-                  <td className="width-thin"><b>Lawful</b></td><td className="ability-number">{this.props.npc.alignment.lawful}</td>
+                  <td className="width-thin"><b>Good</b></td><td hidden>:    </td><td className="ability-number">{this.props.npc.alignment.good}</td>
+				  <td hidden>  </td>
+                  <td className="width-thin"><b>Lawful</b></td><td hidden>: </td><td className="ability-number">{this.props.npc.alignment.lawful}</td>
                 </tr>
+			    <td hidden>##</td>
                 <tr>
-                  <td className="width-thin"><b>Neutral</b></td><td className="ability-number">{this.props.npc.alignment.moralneutral}</td>
-                  <td className="width-thin"><b>Neutral</b></td><td className="ability-number">{this.props.npc.alignment.ethicalneutral}</td>
+                  <td className="width-thin"><b>Neutral</b></td><td hidden>: </td><td className="ability-number">{this.props.npc.alignment.moralneutral}</td>
+				  <td hidden>  </td>
+                  <td className="width-thin"><b>Neutral</b></td><td hidden>: </td><td className="ability-number">{this.props.npc.alignment.ethicalneutral}</td>
                 </tr>
+			    <td hidden>##</td>
                 <tr>
-                  <td className="width-thin"><b>Evil</b></td><td className="ability-number">{this.props.npc.alignment.evil}</td>
-                  <td className="width-thin"><b>Chaotic</b></td><td className="ability-number">{this.props.npc.alignment.chaotic}</td>
+                  <td className="width-thin"><b>Evil</b></td><td hidden>:    </td><td className="ability-number">{this.props.npc.alignment.evil}</td>
+				  <td hidden>  </td>
+                  <td className="width-thin"><b>Chaotic</b></td><td hidden>: </td><td className="ability-number">{this.props.npc.alignment.chaotic}</td>
                 </tr>
               </table>
             </Panel>
           </Col>
         </Row>
+		<p hidden>##</p>
+		<p hidden>##</p>
         <Row>
           <Col xs={12}>
             <Panel header={<div>Plot Hook</div>}>
+			<p hidden>##</p>
               {this.props.npc.hook}
-            </Panel>
+            </Panel>			
           </Col>
+			  <form onSubmit={this._downloadTxtFile}>
+				<Input className="center-block" type="submit" bsStyle="success" value="Download text file"/>
+			  </form>
         </Row>
       </div>
     );
