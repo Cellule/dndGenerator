@@ -1,3 +1,5 @@
+@import "../../styles/custom-bootstrap.less";
+
 .npc-data {
 
   .ability {
@@ -8,20 +10,32 @@
 	
   .ability-number{
 	text-align: right;
+	padding-right: 50px;
+  }
+  
+  .alignment-number{
+	text-align: right;
 	padding-right: 25px;
   }
+  
   .align-center {
     text-align: center;
-  }
+  }  
 
   .width-thin {
-  width: 80px;
+	width: 80px;
   }
 
-  .no-border {
+  .alignment-table {
+    border-collapse: collapse;
+    width: 105%;
+    margin: 0;
+  }
+
+  .ability-table {
     border-collapse: collapse;
     width: 100%;
-    margin: 10px;
+    margin-left: 20px;
   }
   
   .center-container {
@@ -33,10 +47,12 @@
       font-size: 20px;
       font-weight: bold;
       text-align: center;
+	  color: @brand-success;
   }
 
   b{
     font-size: 16px;
+	color: @brand-success;
   }
 
   .first-row-height{

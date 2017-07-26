@@ -4,6 +4,7 @@ var Input = require("react-bootstrap/Input");
 var Col = require("react-bootstrap/Col");
 var Row = require("react-bootstrap/Row");
 var _ = require("lodash");
+var DisplayNpc = require("./../../DisplayNpc");
 
 var races = require("!filter-loader?name!./../../../lib/randomgenerators/npcData/tables/race.json5");
 var genders = require("!filter-loader?name!./../../../lib/randomgenerators/npcData/tables/gender.json5");
@@ -92,6 +93,21 @@ export default class UserInput extends React.Component{
   onSubmit(e){
     e.preventDefault();
     this.props.generate(this.state.npcOptions);
+  }  
+
+  _downloadTxtFile () {
+	var element = document.createElement("a");
+	var name = this.props.npc.description.name.split(" ")[0];	
+	var gender = this.props.npc.description.gender;
+	var race = this.props.npc.description.race.split(" ").join("_");
+	var occupation = this.props.npc.description.occupation.split(" ").join("_");
+	var file = new Blob([document.getElementById("downloadData").textContent.split("##").join("\r\n")], {type: 'text/plain'});
+	element.href = URL.createObjectURL(file);
+	element.download = name + "_" + gender + "_" + race + "_" + occupation + ".txt";
+	document.body.appendChild(element);
+	element.click();
+	document.body.removeChild(element);
+	return false;
   }
 
   render(){
@@ -148,13 +164,17 @@ export default class UserInput extends React.Component{
 
     return (
       <div>
-        <Panel header={<div>Choose your NPC</div>}>
+        <Panel className="hidden-panel">
           <form onSubmit={this.onSubmit.bind(this)}>
             <Row>
               {npcOptions}
             </Row>
-            <Input className="center-block" type="submit" bsStyle="success" value="Generate NPC" />
+            <Input className="center-block generate-button" type="submit" bsStyle="success" value=""/>
           </form>
+		  
+		  <form onSubmit={this._downloadTxtFile.bind(this)}>
+			<Input className="center-block download-button download-button" type="submit" bsStyle="success" value=""/>
+		  </form>
 
         </Panel>
       </div>

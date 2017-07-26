@@ -22,7 +22,7 @@ var Application = React.createClass({
       };
     }
   },
-  render: function() {
+  render: function() {	  
     return (
       <Grid
         className={ this.state.loading ? "application loading" : "application"}
@@ -32,9 +32,7 @@ var Application = React.createClass({
             <div style={{float: "right"}}>loading...</div>
             : null
         }
-        <Header />
         <RouteHandler />
-        <Footer />
       </Grid>
     );
   },
