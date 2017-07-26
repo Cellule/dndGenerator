@@ -173,7 +173,7 @@ export default class UserInput extends React.Component{
           </form>
 		  
 		  <form onSubmit={this._downloadTxtFile.bind(this)}>
-			<Input className="center-block download-button download-button" type="submit" bsStyle="success" value="Download text file"/>
+			<Input className="center-block download-button download-button" type="submit" bsStyle="success" value=""/>
 		  </form>
 
         </Panel>
