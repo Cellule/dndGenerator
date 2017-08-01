@@ -65,4 +65,5 @@
   { w:3, v:"{$hook=$majPro}{$hook+is a fountain of wild magic and cannot control it.}"},
   { w:3, v:"{$hook=$majPro}{$hook+gives the PCs a magical }{$precious=}{precious}{$hook+$precious}{$hook+. Turns out }{$hook+$minPro}{$hook+had stolen it from a wizard who is hellbent on recovering it.}"},
   { w:2, v:"{$hook=$majPro}{$hook+is secretly a vampire.}"},
+  { w:2, v:"{$hook=$majPro}{$hook+carries around a large }{color}{$hook+$color}{$hook+ egg of unknown origin.}"},
 ]

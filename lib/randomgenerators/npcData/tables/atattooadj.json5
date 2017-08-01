@@ -5,7 +5,7 @@
   { w:2, v:"{$tadj=a large }"},
   { w:2, v:"{$tadj=a tiny }"},
   { w:1, v:"{$tadj=an elaborate }"},
-  { w:1, v:"{$tadj=a beautiful}"},
+  { w:1, v:"{$tadj=a beautiful }"},
   { w:1, v:"{$tadj=a badly done }"},
   { w:1, v:"{$tadj=a colorful }"},
   { w:1, v:"{$tadj=a complicated }"},

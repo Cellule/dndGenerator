@@ -61,5 +61,7 @@
   { w:8, v:"{$quirks+$majPro}{$quirks+has }{petanimal}{$quirks+companion named }{petname}"},
   { w:3, v:"{$quirks+$majPro}{$quirks+likes to swim. }"},
   { w:3, v:"{$quirks+$majPro}{$quirks+has a beautiful singing voice. }{%cha+1}"},
-  { w:3, v:"{$quirks+$majPro}{frequency}{$quirks+$fr}{$quirks+ thinks aloud. }"}
+  { w:3, v:"{$quirks+$majPro}{frequency}{$quirks+$fr}{$quirks+ thinks aloud. }"},  
+  { w:2, v:"{$quirks+$majPro}{$quirks+is addicted to a local drug}{%str-1}{%con-1}"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+is heavily addicted to an exotic drug}{%str-2}{%dex-2}{%con-2}{%int-2}{%wis-2}{%cha-2}"}
 ]

@@ -9,8 +9,6 @@
   { w:1, v:"{missingeye}{rl}{$sphy+$rl}{$sphy+eye}"},
   { w:1, v:"{$sphy+is blind}"},
   { w:1, v:"{$sphy+is mute}"},
-  { w:1, v:"{$sphy+is addicted to a local drug}{%str-1}{%con-1}"},
-  { w:1, v:"{$sphy+is heavily addicted to an exotic drug}{%str-2}{%dex-2}{%con-2}{%int-2}{%wis-2}{%cha-2}"},
   { w:1, v:"{$sphy+rolls }{$sphy+$minPoss}{$sphy+\"R\"s profusely}"},
   { w:2, v:"{frequency}{$sphy+$fr}{$sphy+ squints}"},
   { w:1, v:"{$sphy+has }{degree}{$sphy+$degree}{$sphy+lisp}{%cha-2}"},

@@ -1,0 +1,9 @@
+[
+  { w:1, v:"{$furniture=desk}"},
+  { w:1, v:"{$furniture=table}"},
+  { w:1, v:"{$furniture=chair}"},
+  { w:1, v:"{$furniture=ladder}"},
+  { w:1, v:"{$furniture=couch}"},
+  { w:1, v:"{$furniture=bed}"},
+  { w:1, v:"{$furniture=rocking chair}"}
+]
