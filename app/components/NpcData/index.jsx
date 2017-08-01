@@ -183,21 +183,21 @@ var NpcData = React.createClass({
 			  <p hidden>##</p>
               <table className="alignment-table">
                 <tr>
-                  <td className="width-thin"><b>Good</b></td><td hidden>:    </td><td className="alignment-number">{this.props.npc.alignment.good}</td>
+                  <td className="width-thin"><b>Good</b></td><td hidden>:    </td><td className="alignment-number">{Math.max(0, this.props.npc.alignment.good)}</td>
 				  <td hidden>  </td>
-                  <td className="width-thin"><b>Lawful</b></td><td hidden>: </td><td className="alignment-number">{this.props.npc.alignment.lawful}</td>
+                  <td className="width-thin"><b>Lawful</b></td><td hidden>: </td><td className="alignment-number">{Math.max(0, this.props.npc.alignment.lawful)}</td>
                 </tr>
 			    <td hidden>##</td>
                 <tr>
-                  <td className="width-thin"><b>Neutral</b></td><td hidden>: </td><td className="alignment-number">{this.props.npc.alignment.moralneutral}</td>
+                  <td className="width-thin"><b>Neutral</b></td><td hidden>: </td><td className="alignment-number">{Math.max(0, this.props.npc.alignment.moralneutral)}</td>
 				  <td hidden>  </td>
-                  <td className="width-thin"><b>Neutral</b></td><td hidden>: </td><td className="alignment-number">{this.props.npc.alignment.ethicalneutral}</td>
+                  <td className="width-thin"><b>Neutral</b></td><td hidden>: </td><td className="alignment-number">{Math.max(0, this.props.npc.alignment.ethicalneutral)}</td>
                 </tr>
 			    <td hidden>##</td>
                 <tr>
-                  <td className="width-thin"><b>Evil</b></td><td hidden>:    </td><td className="alignment-number">{this.props.npc.alignment.evil}</td>
+                  <td className="width-thin"><b>Evil</b></td><td hidden>:    </td><td className="alignment-number">{Math.max(0, this.props.npc.alignment.evil)}</td>
 				  <td hidden>  </td>
-                  <td className="width-thin"><b>Chaotic</b></td><td hidden>: </td><td className="alignment-number">{this.props.npc.alignment.chaotic}</td>
+                  <td className="width-thin"><b>Chaotic</b></td><td hidden>: </td><td className="alignment-number">{Math.max(0, this.props.npc.alignment.chaotic)}</td>
                 </tr>
               </table>
             </Panel>
