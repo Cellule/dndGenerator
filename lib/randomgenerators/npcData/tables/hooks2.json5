@@ -10,7 +10,7 @@
   { w:1, v:"{$hook=$majPro}{$hook+is followed day and night by a }{personality}{$hook+$personality}{$hook+ speaking mouse.}"},
   { w:1, v:"{$hook=$majPro}{$hook+is followed day and night by a }{personality}{$hook+$personality}{$hook+ speaking snake.}"},
   { w:1, v:"{$hook=$majPro}{$hook+is followed day and night by a }{personality}{$hook+$personality}{$hook+ speaking cat.}"},
-  { w:2000, v:"{$hook=$majPro}{$hook+is followed day and night by an animated }{furniture}{$hook+$furniture.}"},
+  { w:2, v:"{$hook=$majPro}{$hook+is followed day and night by an animated }{furniture}{$hook+$furniture}{$hook+.}"},
   { w:2, v:"{$hook=$majPro}{$hook+has been cursed into speaking only gibberish.}"},
   { w:2, v:"{$hook=$majPro}{$hook+is willingly wearing a cursed }{$precious=}{precious}{$hook+$precious}{$hook+.}"},
   { w:2, v:"{$hook=$majPro}{$hook+has been hexed into constantly hallucinating.}"},
@@ -71,6 +71,7 @@
   { w:2, v:"{$hook=$majPro}{$hook+is a time traveller from a distant future. }{$hook+$majPro}{$hook+needs help sleeping for a few thousand years.}"},
   { w:1, v:"{$hook=$majPro}{$hook+is a time traveller from a distant future. }{$hook+$majPro}{$hook+is trying to alter the course of history.}"},
   { w:3, v:"{$hook=$majPro}{$hook+is possessed by an evil spirit. They argue constantly.}"},
+  { w:2, v:"{$hook=$majPro}{$hook+has started using snakes as currency, and it's starting to catch on.}"},
 ]
 
 
