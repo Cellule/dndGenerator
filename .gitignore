@@ -1,9 +1,3 @@
 /node_modules
 *.sublime-workspace
 /npm-debug.log
-
-#ignore files in build in master
-/build
-
-#do not ignore build in release
-!/build
