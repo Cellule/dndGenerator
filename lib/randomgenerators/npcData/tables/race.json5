@@ -2,126 +2,121 @@
   {
     w:2,
     name: "Aasimar",
+    table:"aasimar",
     v:"{$race=aasimar}{%str+1}{%con+1}{%wis+1}{%cha+3}{humangender}{humangod}{aasimargoodorevil}{humanskin}{age}"
   },
   {
     w:4,
     name: "Dragonborn",
+    table:"dragonborn",
     v:"{$race=dragonborn}{%str+3}{%dex-2}{%con+2}{%int+2}{%wis-1}{%cha+2}{%height+20}{strongweight}{goodorevil}{dragongod}{dragonskin}{age}{$beard=}{dragonhair}{dragonborngender}{dragonquirks}"
   },
   {
-    w:5,
-    name: "Mountain Dwarf",
-    v:"{$race=mountain dwarf}{%con+3}{%str+4}{%dex-2}{%int-1}{%wis+1}{%height-38}{%lawful+2}{%chaotic-2}{%evil-2}{strongweight}{dwarfgod}{nonhumanskin}{longbeard}{age}{dwarfgender}{ageBonus}{dwarfquirks}"
+    w:11,
+    name: "Dwarf",
+    table:"dwarf",
+    v:"{racedwarf}{%height-38}{strongweight}{dwarfgod}{nonhumanskin}{longbeard}{age}{dwarfgender}{ageBonus}{dwarfquirks}"
   },
   {
-    w:6,
-    name: "Hill Dwarf",
-    v:"{$race=hill dwarf}{%con+4}{%str+2}{%dex-2}{%int-1}{%wis+3}{%height-38}{%lawful+2}{%chaotic-2}{%evil-2}{strongweight}{dwarfgod}{nonhumanskin}{longbeard}{age}{dwarfgender}{ageBonus}{dwarfquirks}"
-  },
-  {
-    w:2,
-    name: "Drow",
-    v:"{$race=drow}{%str-1}{%dex+2}{%con-2}{%wis+2}{%int+2}{%cha+4}{%height-5}{%chaotic+3}{%evil+3}{lightweight}{goodface}{drowgod}{$skin+black}{$beard=}{age}{elfgender}{ageBonus}{whitehair}"
-  },
-  {
-    w:6,
-    name: "High Elf",
-    v:"{$race=high elf}{%str-1}{%dex+2}{%con-2}{%wis+2}{%int+2}{%cha+2}{%height-5}{%chaotic+3}{%good+2}{lightweight}{goodface}{elfgod}{elfskin}{$beard=}{age}{elfgender}{ageBonus}{elfquirks}"
-  },
-  {
-    w:8,
-    name: "Wood Elf",
-    v:"{$race=wood elf}{%str-1}{%dex+4}{%con-2}{%wis+4}{%int+4}{%cha+2}{%height-5}{%chaotic+3}{%good+2}{lightweight}{goodface}{elfgod}{elfskin}{$beard=}{age}{elfgender}{ageBonus}{elfquirks}"
+    w:16,
+    name: "Elf",
+    table:"elf",
+    v:"{raceelf}{%height-5}{lightweight}{goodface}{$beard=}{age}{elfgender}{ageBonus}"
   },
   {
     w:2,
     name: "Firbolg",
+    table:"firbolg",
     v:"{$race=firbolg}{%str+3}{%dex-2}{%con+2}{%wis+2}{%height+60}{%chaotic+3}{%good+2}{%moralneutral+2}{strongweight}{elfgod}{firbolgskin}{age}{elfgender}{ageBonus}{naturequirk}{firbolgquirk}"
   },
   {
-    w:4,
-    name: "Forest Gnome",
-    v:"{$race=forest gnome}{%str-2}{%dex+3}{%con-1}{%int+4}{%wis-1}{%height-58}{%good+3}{%evil-1}{gnomegod}{nonhumanskin}{beard}{age}{gnomegender}{ageBonus}{gnomequirks}"
-  },
-  {
-    w:3,
-    name: "Rock Gnome",
-    v:"{$race=rock gnome}{%str-2}{%dex+1}{%con+2}{%int+4}{%wis-1}{%height-58}{%good+3}{%evil-1}{gnomegod}{nonhumanskin}{beard}{age}{gnomegender}{ageBonus}{gnomequirks}"
+    w:7,
+    name: "Gnome",
+    table:"gnome",
+    v:"{racegnome}{%height-58}{gnomegod}{nonhumanskin}{beard}{age}{gnomegender}{ageBonus}{gnomequirks}"
   },
   {
     w:1,
     name: "Goblin",
+    table:"goblin",
     v:"{$race=goblin}{%str-2}{%dex+2}{%con-2}{%int-4}{%wis-3}{%cha-1}{%height-50}{%ethicalneutral+2}{%lawful-2}{%evil+3}{humangod}{orcskin}{$beard=}{age}{gender}{goblinname}"
   },
   {
     w:2,
     name: "Goliath",
+    table:"goliath",
     v:"{$race=goliath}{%str+3}{%dex-2}{%con+3}{%int-2}{%height+60}{%lawful+3}{%chaotic-2}{%good-2}{%evil-2}{%moralneutral+2}{elfgod}{nonhumanskin}{age}{gender}{goliathhair}{strongweight}{goliathtraits1}{goliathname}"
   },
   {
-    w:4,
-    name: "Lightfoot Halfling",
-    v:"{$race=lightfoot halfling}{%str-2}{%dex+4}{%con-1}{%cha+2}{%height-63}{%lawful+3}{%good+3}{halflinggod}{nonhumanskin}{beard}{age}{halflinggender}{halfquirks}"
-  },
-  {
-    w:4,
-    name: "Stout Halfling",
-    v:"{$race=stout halfling}{%str-2}{%dex+4}{%con+1}{%height-63}{%lawful+3}{%good+3}{%chaotic-1}{%evil-1}{halflinggod}{nonhumanskin}{beard}{age}{halflinggender}{halfquirks}"
+    w:8,
+    name: "Halfling",
+    table:"halfling",
+    v:"{racehalfling}{%height-63}{halflinggod}{nonhumanskin}{beard}{age}{halflinggender}{halfquirks}"
   },
   {
     w:25,
     name: "Half-Elf",
+    table:"halfelf",
     v:"{$race=half-elf}{%dex+1}{%int+1}{%cha+2}{%height-5}{%chaotic+2}{humangod}{halfelfskin}{beard}{age}{halfelfgender}"
   },
   {
     w:5,
     name: "Half-Orc",
+    table:"halforc",
     v:"{$race=half-orc}{%str+4}{%dex-1}{%con+3}{%int-3}{%wis-3}{%cha-1}{%height+15}{%chaotic+3}{%good-2}{strongweight}{humangod}{halforcskin}{beard}{age}{halforcgender}"
   },
   {
     w:70,
     name: "Human",
+    table:"human",
     v:"{$race=human}{%str+1}{%dex+1}{%con+1}{%int+1}{%wis+1}{%cha+1}{humangod}{humanskin}{beard}{age}{humangender}"
   },
   {
     w:2,
     name: "Kenku",
+    table:"kenku",
     v:"{$race=kenku}{%str-2}{%dex+3}{%int+1}{%wis+1}{%cha+1}{%height-28}{%lawful-2}{%chaotic+3}{%good-1}{%evil-1}{%moralneutral+2}{humangod}{kenkuskin}{age}{%age-6}{gender}{kenkuquirks}{$beard=}{$hair=}{kenkuname}"
   },
   {
     w:2,
     name: "Lizardfolk",
+    table:"lizardfolk",
 	v:"{$race=lizardfolk}{%str+2}{%int+2}{%con+1}{%wis+2}{%cha-2}{%height+15}{%lawful+2}{%chaotic-3}{%good-1}{%evil-1}{%moralneutral+2}{dragongod}{lizardskin}{age}{%age-4}{lizardgender}{lizardtraits1}{lizardquirks}{$beard=}{dragonhair}"
   },
   {
     w:1,
     name: "Medusa",
+    table:"medusa",
     v:"{$race=medusa}{%dex+3}{%con+2}{%int+1}{%wis+2}{%cha+3}{medusa}{%lawful+2}{lightweight}{goodface}{humangod}{orcskin}{age}{ageBonus}{medusaname}{medusaveil}"
   },
   {
     w:3,
     name: "Orc",
+    table:"orc",
     v:"{$race=orc}{%str+5}{%dex-1}{%con+5}{%int-4}{%wis-3}{%height+20}{%good-2}{%chaotic+3}{%evil+2}{strongweight}{orcgod}{orcskin}{beard}{age}{orcgender}"
   },
   {
     w:2,
     name: "Tabaxi",
+    table:"tabaxi",
     v:"{$race=tabaxi}{%str-1}{%dex+4}{%con+1}{%int+2}{%wis-2}{%cha+1}{%height+10}{%good+1}{%chaotic+3}{lightweight}{humangod}{$hair=}{$beard=}{age}{gender}{$name=}{tabaxiname}{tabaxiskin}{tabaxiobsession}{tabaxiquirks}"
   },
   {
     w:4,
     name: "Tiefling",
+    table:"tiefling",
     v:"{$race=tiefling}{%con-1}{%int+2}{%cha+3}{%chaotic+3}{lightweight}{humangod}{tieflinggoodorevil}{tieflingskin}{beard}{age}{gender}{ageBonus}"
   },
   {
     w:4,
     name: "Triton",
+    table:"triton",
     v:"{$race=triton}{%str+2}{%con+2}{%cha+1}{%lawful+2}{%good+3}{%evil-3}{humangod}{tritonskin}{tritonhair}{tritongender}{$beard=}{age}{%age+%age}{tritonquirks}"
   },
   {
     w:1,
     name: "Troglodyte",
+    table:"troglodyte",
     v:"{$race=troglodyte}{%str+1}{%con+1}{%int-4}{%cha-4}{%good-2}{%chaotic+3}{%evil+2}{humangod}{lizardskin}{$beard=}{dragonhair}{age}{gender}{goblinname}"
   }
 ]

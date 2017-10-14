@@ -6,7 +6,14 @@ var Row = require("react-bootstrap/Row");
 var _ = require("lodash");
 var DisplayNpc = require("./../../DisplayNpc");
 
-var races = require("!filter-loader?name!./../../../lib/randomgenerators/npcData/tables/race.json5");
+var races = require("!filter-loader?name,table!./../../../lib/randomgenerators/npcData/tables/race.json5");
+
+var subraces = {
+	"elf": require("!filter-loader?name!./../../../lib/randomgenerators/npcData/tables/raceelf.json5"),
+	"dwarf": require("!filter-loader?name!./../../../lib/randomgenerators/npcData/tables/racedwarf.json5"),
+	"gnome": require("!filter-loader?name!./../../../lib/randomgenerators/npcData/tables/racegnome.json5"),
+	"halfling": require("!filter-loader?name!./../../../lib/randomgenerators/npcData/tables/racehalfling.json5"),
+};
 var genders = require("!filter-loader?name!./../../../lib/randomgenerators/npcData/tables/gender.json5");
 var alignments = require("!filter-loader?name!./../../../lib/randomgenerators/npcData/tables/forcealign.json5");
 var plothooks = require("!filter-loader?name!./../../../lib/randomgenerators/npcData/tables/hooks.json5");
@@ -28,7 +35,18 @@ var userOptions = [
   {
     label: "Race",
     optionName: "race",
-    options: races
+    options: races,
+    onChange: (component) => {
+      var npcOptions = component.state.npcOptions;
+      npcOptions.subrace = null;
+      component.setState({npcOptions});
+    }
+  },
+  {
+    label: "Subrace",
+    optionName: "subrace",
+	condition: (npcOptions) => (_.isNumber(npcOptions.race) && subraces[races[npcOptions.race].table] !== undefined),
+    options: (npcOptions) => subraces[races[npcOptions.race].table]
   },
   {
     label: "Sex",

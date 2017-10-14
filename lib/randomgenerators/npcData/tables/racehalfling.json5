@@ -1,0 +1,12 @@
+[
+  {
+    w:4,
+    name: "Lightfoot Halfling",
+    v:"{$race=lightfoot halfling}{%str-2}{%dex+4}{%con-1}{%cha+2}{%lawful+3}{%good+3}"
+  },
+  {
+    w:4,
+    name: "Stout Halfling",
+    v:"{$race=stout halfling}{%str-2}{%dex+4}{%con+1}{%lawful+3}{%good+3}{%chaotic-1}{%evil-1}"
+  },
+]
