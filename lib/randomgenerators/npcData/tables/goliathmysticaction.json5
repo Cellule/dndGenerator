@@ -1,0 +1,6 @@
+  [
+  { w:1, v:"{$name+caller}"},
+  { w:1, v:"{$name+watcher}"},
+  { w:1, v:"{$name+seer}"},
+  { w:1, v:"{$name+walker}"},
+]

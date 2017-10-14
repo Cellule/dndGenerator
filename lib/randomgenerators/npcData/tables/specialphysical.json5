@@ -1,5 +1,5 @@
 [
-  { w:3, v:"{$sphy+$majPro}{specialphysical1}{$sphy+.}"},
-  { w:2, v:"{$sphy+$majPro}{specialphysical2}{$sphy+.}"},
-  { w:1, v:"{$sphy+$majPro}{specialphysical1}{$sphy+ and }{$sphy+$minPro}{specialphysical2}{$sphy+.}"}
+  { w:3, v:"{$sphy1+$majPro}{specialphysical1}{$sphy1+.}"},
+  { w:20000, v:"{$sphy2+$majPro}{specialphysical2}{$sphy2+.}"},
+  { w:1, v:"{$sphy1+$majPro}{specialphysical1}{$sphy2+$majPro}{specialphysical2}{$sphy1+.}{$sphy2+.}"}
 ]

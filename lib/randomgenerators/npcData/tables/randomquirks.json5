@@ -51,8 +51,6 @@
   { w:3, v:"{$quirks+$majPro}{$quirks+goes out at night secretly looking for }{mundaneobject}"},
   { w:2, v:"{$quirks+$majPro}{$quirks+owns a box full of dead animals. }{%evil+1}"},
   { w:3, v:"{$quirks+$majPro}{$quirks+sets up local dance clubs. }"},
-  { w:4, v:"{$quirks+$majPro}{$quirks+is }{degree2}{$quirks+$degree}{$quirks+allergic to }{aliment}"},
-  { w:4, v:"{$quirks+$majPro}{$quirks+is }{degree2}{$quirks+$degree}{$quirks+allergic to }{raceallergy}{$quirks+$racea}{$quirks+. }"},
   { w:3, v:"{$quirks+$majPro}{$quirks+believes that }{$quirks+$minPro}{$quirks+is related to }{$quirks+$god}{$quirks+. }"},
   { w:1, v:"{$quirks+$majPro}{$quirks+goes to church to pick up sexual partners. }{%cha+1}"},
   { w:3, v:"{$quirks+$majPro}{$quirks+lies poorly on purpose. }"},
@@ -61,5 +59,7 @@
   { w:8, v:"{$quirks+$majPro}{$quirks+has }{petanimal}{$quirks+companion named }{petname}"},
   { w:3, v:"{$quirks+$majPro}{$quirks+likes to swim. }"},
   { w:3, v:"{$quirks+$majPro}{$quirks+has a beautiful singing voice. }{%cha+1}"},
-  { w:3, v:"{$quirks+$majPro}{frequency}{$quirks+$fr}{$quirks+ thinks aloud. }"}
+  { w:3, v:"{$quirks+$majPro}{frequency}{$quirks+$fr}{$quirks+ thinks aloud. }"},  
+  { w:2, v:"{$quirks+$majPro}{$quirks+is addicted to a local drug}{%str-1}{%con-1}"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+is heavily addicted to an exotic drug}{%str-2}{%dex-2}{%con-2}{%int-2}{%wis-2}{%cha-2}"}
 ]

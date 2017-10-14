@@ -1,5 +1,8 @@
 [
-  { w:4, v:"{$degree=lightly }"},
+  { w:2, v:"{$degree=lightly }"},
+  { w:2, v:"{$degree=slightly }"},
   { w:5, v:"{$degree=}"},
-  { w:3, v:"{$degree=heavily }"}
+  { w:3, v:"{$degree=heavily }"},
+  { w:2, v:"{$degree=severely }"},
+  { w:1, v:"{$degree=mightily }"}
 ]

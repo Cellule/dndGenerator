@@ -1,5 +1,6 @@
 [
-  { w:7, v:"{$tadj=}"},
+  { w:12, v:"{$tadj=}"},
+  { w:1, v:"{$tadj=fresh }"},
   { w:1, v:"{$tadj=small }"},
   { w:1, v:"{$tadj=large }"},
   { w:1, v:"{$tadj=tiny }"},

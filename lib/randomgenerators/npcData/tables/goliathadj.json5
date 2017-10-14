@@ -1,0 +1,6 @@
+ [
+  { w:1, v:"{$name=Keen}{%wis+2}"},
+  { w:1, v:"{$name=Strong}{%str+2}"},
+  { w:1, v:"{$name=Lone}{%con+2}"},
+  { w:1, v:"{$name=Wise}{%wis+2}"},
+]

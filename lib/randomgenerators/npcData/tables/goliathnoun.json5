@@ -1,0 +1,12 @@
+  [
+  { w:1, v:"{$name+killer}"},
+  { w:1, v:"{$name+eye}"},
+  { w:1, v:"{$name+hunter}"},
+  { w:1, v:"{$name+stalker}"},
+  { w:1, v:"{$name+wolf}"},
+  { w:1, v:"{$name+bear}"},
+  { w:1, v:"{$name+dragon}"},
+  { w:1, v:"{$name+fighter}"},
+  { w:1, v:"{$name+arm}"},
+  { w:1, v:"{$name+heart}"},
+]

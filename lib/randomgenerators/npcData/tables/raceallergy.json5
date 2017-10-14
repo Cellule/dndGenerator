@@ -3,10 +3,11 @@
   { w:2, v:"{$racea=elves}"},
   { w:2, v:"{$racea=tieflings}"},
   { w:2, v:"{$racea=dragonborns}"},
+  { w:1, v:"{$racea=demons}"},
+  { w:1, v:"{$racea=dragons}"},
   { w:2, v:"{$racea=gnomes}"},
   { w:2, v:"{$racea=halflings}"},
   { w:1, v:"{$racea=orcs}"},
   { w:1, v:"{$racea=goblins}"},
-  { w:1, v:"{$racea=troglodytes}"},
   { w:1, v:"{$racea=kobolds}"}
 ]

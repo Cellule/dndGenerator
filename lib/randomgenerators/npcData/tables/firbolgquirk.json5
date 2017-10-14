@@ -1,0 +1,12 @@
+[
+  { w:1, v:"{$quirks+$majPro}{$quirks+has been outcast for a murder }{$quirks+$minPro}{$quirks+was forced to commit. }"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+has been outcast for a murder }{$quirks+$minPro}{$quirks+committed. }{%evil+2}"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+got lost years ago and could never find }{$quirks+$minPoss}{$quirks+home. }{%int-2}"},
+  { w:2, v:"{$quirks+$majPoss}{$quirks+clan was slain by }{raceallergy}{$quirks+$racea}{$quirks+. }"},
+  { w:1, v:"{$quirks+$majPoss}{$quirks+homeland was destroyed by an earthquake. }"},
+  { w:1, v:"{$quirks+$majPoss}{$quirks+homeland was destroyed by a tsunami. }"},
+  { w:1, v:"{$quirks+$majPoss}{$quirks+homeland was destroyed by a viscious storm. }"},
+  { w:1, v:"{$quirks+$majPoss}{$quirks+can sit for hours watching plants grow. }"},
+  { w:1, v:"{$quirks+$majPoss}{$quirks+tries to keep away from crowds. }"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+follows omens to determine }{$quirks+$minPoss}{$quirks+ daily actions. }{%good+1}"}
+]

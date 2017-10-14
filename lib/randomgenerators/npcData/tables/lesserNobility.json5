@@ -1,20 +1,20 @@
 [
   { w:1,
     name:"Explorer",
-    v:"{$occupation=explorer}{%wis+1}{%dex+1}{%con+1}"},
+    v:"{$occupation=explorer}{%wis+1}{%dex+1}{%con+1}{kenkuname}"},
   { w:2,
     name:"Diplomat",
-    v:"{$occupation=diplomat}{%cha+1}{%int+1}"},
+    v:"{$occupation=diplomat}{%cha+1}{%int+1}{kenkunamequiet}"},
   { w:2,
     name:"Knight",
-    v:"{$occupation=knight}{%dex+1}{%str+2}{%con+2}{militaryquirk}"},
+    v:"{$occupation=knight}{%dex+1}{%str+2}{%con+2}{militaryquirk}{kenkunamefighting}"},
   { w:1,
     name:"Minister",
-    v:"{$occupation=minister}{%cha+1}{religiousquirk}"},
+    v:"{$occupation=minister}{%cha+1}{religiousquirk}{kenkunamequiet}"},
   { w:1,
     name:"Page",
-    v:"{$occupation=page}{%dex+1}{%str+1}{%int-1}{militaryquirk}"},
+    v:"{$occupation=page}{%dex+1}{%str+1}{%int-1}{militaryquirk}{kenkunamequiet}"},
   { w:2,
     name:"Squire",
-    v:"{$occupation=squire}{%str+1}{%dex+1}{militaryquirk}"}
+    v:"{$occupation=squire}{%str+1}{%dex+1}{militaryquirk}{kenkunamefighting}"}
 ]

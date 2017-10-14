@@ -1,0 +1,12 @@
+[
+  { w:15, v:"{$quirks+}"},
+  { w:2, v:"{$quirks+$majPro}{$quirks+only respects powerful and competent leaders. }"},
+  { w:2, v:"{$quirks+$majPro}{$quirks+openly mocks human society's structure. }"},
+  { w:2, v:"{$quirks+$majPro}{frequency}{$quirks+$fr}{$quirks+ challenges others to duels to the death. }{%chaotic+2}"},
+  { w:2, v:"{$quirks+$majPro}{$quirks+feels at home in high altitude. }"},
+  { w:2, v:"{$quirks+$majPro}{$quirks+enjoys winter and cold temperatures. }"},
+  { w:2, v:"{$quirks+$majPro}{$quirks+will turn anything into an opportunity for training. }"},
+  { w:2, v:"{$quirks+$majPro}{$quirks+enjoys messing with other humanoids with }{$quirks+$minPoss}{$quirks+stature. }"},
+  { w:2, v:"{$quirks+$majPro}{$quirks+dislikes depending on others. }"},
+  { w:1, v:"{$quirks+$majPro}{$quirks+maintains a friendly relationships with nearby giants. }"},
+]

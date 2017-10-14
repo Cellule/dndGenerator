@@ -1,0 +1,13 @@
+[
+  { w:20, v:"{$kenkuname+}"},
+  { w:1, v:"{$kenkuname=Whisper}"},
+  { w:1, v:"{$kenkuname=Breeze}"},
+  { w:1, v:"{$kenkuname=Light Step}"},
+  { w:1, v:"{$kenkuname=Breath}"},
+  { w:1, v:"{$kenkuname=Rustling Leaves}"},
+  { w:1, v:"{$kenkuname=Page Turning}"},
+  { w:1, v:"{$kenkuname=Murmur}"},
+  { w:1, v:"{$kenkuname=Pitter-Patter}"},
+  { w:1, v:"{$kenkuname=Flutter}"},
+  { w:1, v:"{$kenkuname=Quill Scratch}"},
+]

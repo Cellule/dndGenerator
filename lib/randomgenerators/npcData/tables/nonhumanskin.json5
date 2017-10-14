@@ -1,6 +1,7 @@
 [
-  { w:1, v:"{$skincom=white}"},
-  { w:1, v:"{$skincom=pink}"},
-  { w:1, v:"{$skincom=brown}"},
-  { w:1, v:"{$skincom=golden}"}
+  { w:1, v:"{$skin+white}"},
+  { w:1, v:"{$skin+pink}"},
+  { w:1, v:"{$skin+brown}"},
+  { w:1, v:"{$skin+gray}"},
+  { w:1, v:"{$skin+golden}"}
 ]

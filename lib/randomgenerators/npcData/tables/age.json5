@@ -20,5 +20,7 @@
   { w:1, v:"{%age=62}{%int+2}{%wis+3}{%str-2}{%con-2}{%dex-2}{%height-3}"},
   { w:1, v:"{%age=65}{%int+2}{%wis+3}{%str-2}{%con-2}{%dex-2}{%height-3}"},
   { w:1, v:"{%age=70}{%int+2}{%wis+3}{%str-2}{%con-2}{%dex-2}{%height-3}"},
-  { w:1, v:"{%age=75}{%int+2}{%wis+3}{%str-2}{%con-2}{%dex-2}{%height-3}"}
+  { w:1, v:"{%age=75}{%int+1}{%wis+3}{%str-2}{%con-2}{%dex-2}{%height-3}"},
+  { w:1, v:"{%age=80}{%int+1}{%wis+3}{%str-2}{%con-3}{%dex-3}{%height-5}"},
+  { w:1, v:"{%age=90}{%wis+4}{%str-3}{%con-3}{%dex-4}{%height-5}"},
 ]

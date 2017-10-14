@@ -22,6 +22,7 @@
   { w:1, v:"{$traits2=$majPro}{$traits2+doesn't care about risks or odds. }"},
   { w:1, v:"{$traits2=$majPro}{$traits2+judges people by their actions, not their words. }"},
   { w:1, v:"{$traits2=$majPro}{$traits2+takes everything at face-value. }"},
+  { w:2, v:"{$traits2=$majPro}{$traits2+constantly looks for the loophole. }{%lawful-2}{%chaotic+2}{%int+1}"},
   { w:1, v:"{$traits2=$majPro}{$traits2+is a perfectionist. }{%str+1}{%dex+1}{%con+1}{%int+1}{%wis+1}{%cha+1}"},
   { w:1, v:"{$traits2=$majPro}{$traits2+is }{mod}{$traits2+$mod}{$traits2+lazy. }"},
   { w:1, v:"{$traits2=$majPro}{$traits2+can't stand laziness. }{%lawful+2}"},
