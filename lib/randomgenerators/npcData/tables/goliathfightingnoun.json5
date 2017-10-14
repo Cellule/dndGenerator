@@ -1,0 +1,7 @@
+ [
+  { w:1, v:"{$name=Heart}"},
+  { w:1, v:"{$name=Bone}"},
+  { w:1, v:"{$name=Skull}"},
+  { w:1, v:"{$name=Fort}"},
+  { w:1, v:"{$name=Earth}"},
+]

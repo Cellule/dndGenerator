@@ -1,10 +1,11 @@
 {
   options: {
-    initialisation: "{%str=9}{%dex=9}{%con=9}{%int=9}{%wis=9}{%cha=9}{$sphy=}{$quirks=}{height}{worship}{hair}{eyecolor}{tendencies}{skin}{face}{race}{hooks}{specialphysical}{occupation}{traits}{quirks}{forcealign}",
+    initialisation: "{$lizardtraits=}{$goliathtraits=}{$kenkuname=}{$sphy1=}{$sphy2=}{$quirks=}{%str=9}{%dex=9}{%con=9}{%int=9}{%wis=9}{%cha=9}{height}{weight}{worship}{hair}{eyecolor}{tendencies}{skin}{face}{race}{occupation}{hooks}{traits}{specialphysical}{quirks}{forcealign}",
   },
   output: {
     description: {
       name: "{$name}",
+      kenkuname: "{$kenkuname}",
       age: "{%age}",
       gender: "{$gender}",
       race: "{$race}",
@@ -15,11 +16,12 @@
     physical: {
       hair: "{$hair}",
       eyes: "{$eyecolor} eyes",
-      skin: "{$skintexture}{$skintone} {$skincom} skin",
+      skin: "{$skin}{$skintype}",
       height: "{%height}",
-      build: "{weight} build",
+      build: "{$build} build",
       face: "{$face} face{$beard}",
-      special: "{$sphy}"
+      special1: "{$sphy1}",
+      special2: "{$sphy2}"
     },
     alignment: {
       good: "{%good}",
@@ -41,6 +43,8 @@
       ]
     },
     ptraits: {
+      traitslizards: "{$lizardtraits}",
+      traitsgoliaths: "{$goliathtraits}",
       traits1: "{$traits1}",
       traits2: "{$traits2}"
     },

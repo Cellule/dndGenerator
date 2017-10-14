@@ -23,6 +23,7 @@ var NpcData = React.createClass({
     npc: React.PropTypes.shape({
       description: React.PropTypes.shape({
         name: React.PropTypes.string.isRequired,
+        kenkuname: React.PropTypes.string.isRequired,
         age: React.PropTypes.number.isRequired,
         gender: React.PropTypes.string.isRequired,
         race: React.PropTypes.string.isRequired,
@@ -35,7 +36,8 @@ var NpcData = React.createClass({
         height: React.PropTypes.number.isRequired,
         build: React.PropTypes.string.isRequired,
         face: React.PropTypes.string.isRequired,
-        special: React.PropTypes.string.isRequired
+        special1: React.PropTypes.string.isRequired,
+        special2: React.PropTypes.string.isRequired
       }).isRequired,
       alignment: React.PropTypes.shape({
         good: React.PropTypes.number.isRequired,
@@ -53,6 +55,8 @@ var NpcData = React.createClass({
         description: React.PropTypes.string.isRequired
       }).isRequired,
       ptraits: React.PropTypes.shape({
+        traitslizards: React.PropTypes.string.isRequired,
+        traitsgoliaths: React.PropTypes.string.isRequired,
         traits1: React.PropTypes.string.isRequired,
         traits2: React.PropTypes.string.isRequired
       }).isRequired,
@@ -83,6 +87,19 @@ var NpcData = React.createClass({
     var quirksArray = this.props.npc.pquirks.description.split(".");
     quirksArray.length--;
 	
+    if (this.props.npc.description.race == "lizardman" || this.props.npc.description.race == "lizardwoman")
+	{
+		this.props.npc.ptraits.traits1 = this.props.npc.ptraits.traitslizards;
+	}
+    if (this.props.npc.description.race == "goliath")
+	{
+		this.props.npc.ptraits.traits1 = this.props.npc.ptraits.traitsgoliaths;
+	}
+	if (this.props.npc.description.race == "kenku")
+	{
+		this.props.npc.description.name = this.props.npc.description.kenkuname;
+	}
+	
 	  
     return (
 	
@@ -90,45 +107,49 @@ var NpcData = React.createClass({
         <Row>
           <Col xs={12} md={6}>
             <Panel className="first-row-height" header={<div>Description</div>}>
-			  <p hidden>##</p>
+			  <p hidden>#</p>
               <p>
                 {this.props.npc.description.name} is a {this.props.npc.description.age + " "}
                 years old {this.props.npc.description.gender} {this.props.npc.description.race + " "}
                 {this.props.npc.description.occupation}.
               </p>			  
-			  <p hidden>##</p>
+			  <p hidden>#</p>
               <p>
-                {majP} has {this.props.npc.physical.hair} and {this.props.npc.physical.eyes}.
+                {majP} has {this.props.npc.physical.hair}{this.props.npc.physical.eyes}.
               </p>			  
-			  <p hidden>##</p>
+			  <p hidden>#</p>
               <p>
                 {majP} has {this.props.npc.physical.skin}.
               </p>
-			  <p hidden>##</p>
+			  <p hidden>#</p>
               <p>
                 {majP} stands {this.props.npc.physical.height}cm tall and has {this.props.npc.physical.build}.
               </p>
-			  <p hidden>##</p>
+			  <p hidden>#</p>
               <p>
                 {majP} has {this.props.npc.physical.face}.
               </p>
-			  <p hidden>##</p>
+			  <p hidden>#</p>
               <p>
-                {this.props.npc.physical.special}
+                {this.props.npc.physical.special1}
               </p>
-			  <p hidden>##</p>
-			  <p hidden>##</p>
+			  <p hidden>#</p>
+              <p>
+                {this.props.npc.physical.special2}
+              </p>
+			  <p hidden>#</p>
+			  <p hidden>#</p>
             </Panel>
           </Col>
           <Col xs={12} md={6}>
             <Panel className="first-row-height" header={<div>Personality Traits</div>}>
-			  <p hidden>##</p>
+			  <p hidden>#</p>
               <p>
                 {this.props.npc.religion.description}
               </p>
-			  <p hidden>##</p>
+			  <p hidden>#</p>
               <p>{this.props.npc.ptraits.traits1}</p>
-			  <p hidden>##</p>
+			  <p hidden>#</p>
               <p>{this.props.npc.ptraits.traits2}</p>
                  {
                    _.map(quirksArray, (value) => {
@@ -137,15 +158,15 @@ var NpcData = React.createClass({
                      );
                    })
                  }
-				 <p hidden>##</p>
-				 <p hidden>##</p>
+				 <p hidden>#</p>
+				 <p hidden>#</p>
             </Panel>
           </Col>
         </Row>
         <Row>
           <Col sm={12} md={6} lg={4}>
             <Panel className="second-row-height" header={<div>Ability Scores</div>}>
-			  <p hidden>##</p>
+			  <p hidden>#</p>
               <Row>
                 <table className="ability-table">
                   {
@@ -158,42 +179,42 @@ var NpcData = React.createClass({
                           xs={12}
                           className="no-right-pad no-left-pad ability"
                         >
-                            <tr><td><b>{abilityNames[key]}</b><p hidden> - </p></td><td className="ability-number">{ability}<p hidden>##</p></td></tr>
+                            <tr><td><b>{abilityNames[key]}</b><p hidden> - </p></td><td className="ability-number">{ability}<p hidden>#</p></td></tr>
                         </Col>
                       );
                     })
                   }
                 </table>
               </Row>
-			  <p hidden>##</p>
+			  <p hidden>#</p>
             </Panel>
           </Col>
           <Col sm={12} md={6} lg={4}>
             <Panel className="second-row-height" header={<div>Relationships</div>}>
-			  <p hidden>##</p>
+			  <p hidden>#</p>
               <p><b>Sexual Orientation </b></p><p hidden>- </p><p>{this.props.npc.relationship.orientation}</p>
-			  <p hidden>##</p>
+			  <p hidden>#</p>
               <p><b>Relationship Status </b></p><p hidden>- </p><p>{this.props.npc.relationship.status}</p>
-			  <p hidden>##</p>
-			  <p hidden>##</p>
+			  <p hidden>#</p>
+			  <p hidden>#</p>
             </Panel>
           </Col>
           <Col sm={12} md={12} lg={4}>
             <Panel className="second-row-height" header={<div>Alignment Tendencies</div>}>
-			  <p hidden>##</p>
+			  <p hidden>#</p>
               <table className="alignment-table">
                 <tr>
                   <td className="width-thin"><b>Good</b></td><td hidden>:    </td><td className="alignment-number">{Math.max(0, this.props.npc.alignment.good)}</td>
 				  <td hidden>  </td>
                   <td className="width-thin"><b>Lawful</b></td><td hidden>: </td><td className="alignment-number">{Math.max(0, this.props.npc.alignment.lawful)}</td>
                 </tr>
-			    <td hidden>##</td>
+			    <td hidden>#</td>
                 <tr>
                   <td className="width-thin"><b>Neutral</b></td><td hidden>: </td><td className="alignment-number">{Math.max(0, this.props.npc.alignment.moralneutral)}</td>
 				  <td hidden>  </td>
                   <td className="width-thin"><b>Neutral</b></td><td hidden>: </td><td className="alignment-number">{Math.max(0, this.props.npc.alignment.ethicalneutral)}</td>
                 </tr>
-			    <td hidden>##</td>
+			    <td hidden>#</td>
                 <tr>
                   <td className="width-thin"><b>Evil</b></td><td hidden>:    </td><td className="alignment-number">{Math.max(0, this.props.npc.alignment.evil)}</td>
 				  <td hidden>  </td>
@@ -203,12 +224,12 @@ var NpcData = React.createClass({
             </Panel>
           </Col>
         </Row>
-		<p hidden>##</p>
-		<p hidden>##</p>
+		<p hidden>#</p>
+		<p hidden>#</p>
         <Row>
           <Col xs={12}>
             <Panel header={<div>Plot Hook</div>} className="align-center">
-			<p hidden>##</p>
+			<p hidden>#</p>
               {this.props.npc.hook}
             </Panel>			
           </Col>

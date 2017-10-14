@@ -45,7 +45,7 @@
   { w:4, v:"{$hook=$majPro}{$hook+needs help organizing a }{contest}{$hook+.}"},
   { w:2, v:"{$hook=$majPro}{$hook+is possessed by an evil spirit who makes }{$hook+$minHim}{$hook+ do horrible things at night, without remembering them.}"},
   { w:2, v:"{$hook=$majPro}{$hook+is possessed by an evil spirit during the day and can only control }{$hook+$minHim}{$hook+self at night.}"},
-  { w:2, v:"{$hook=$majPro}{$hook+is currently being chased by a band of bandits attempting to rob }{$hook+$minPoss}{$hook+and asks the PCs for protection.}"},
+  { w:2, v:"{$hook=$majPro}{$hook+is currently being chased by a band of bandits attempting to rob }{$hook+$minHim}{$hook+and asks the PCs for protection.}"},
   { w:2, v:"{$hook=$majPro}{$hook+is currently chasing a bandit and asks the PCs for help.}"},
   { w:2, v:"{$hook=$majPro}{$hook+is currently being chased by law enforcement and asks the PCs for protection.}"},
   { w:2, v:"{$hook=$majPro}{$hook+has been hired to steal items from the PCs.}"},

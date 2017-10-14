@@ -1,0 +1,12 @@
+[
+  { w:3, v:"{$hair=a spiked head and }"},
+  { w:3, v:"{$hair=a ridged head and }"},
+  { w:3, v:"{$hair=a crested head and }"},
+  { w:3, v:"{$hair=a bumpy head and }"},
+  { w:3, v:"{$hair=a plated head and }"},
+  { w:1, v:"{$hair=a bright frill and }"},
+  { w:1, v:"{$hair=a colorful frill and }"},
+  { w:1, v:"{$hair=a dark frill and }"},
+  { w:1, v:"{$hair=a bony frill and }"},
+  { w:8, v:"{$hair=a smooth head and }"}
+]

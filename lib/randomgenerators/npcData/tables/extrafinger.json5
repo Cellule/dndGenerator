@@ -1,5 +1,5 @@
 [
-  { w:5, v:"{$sphy+has an extra finger on }"},
-  { w:1, v:"{$sphy+has two extra fingers on }"},
-  { w:4, v:"{$sphy+has an extra thumb on }"}
+  { w:5, v:"{$sphy2+has an extra finger on }"},
+  { w:1, v:"{$sphy2+has two extra fingers on }"},
+  { w:4, v:"{$sphy2+has an extra thumb on }"}
 ]

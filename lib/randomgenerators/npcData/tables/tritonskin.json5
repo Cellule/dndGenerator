@@ -1,0 +1,8 @@
+[
+  { w:1, v:"{$skin+light blue}"},
+  { w:1, v:"{$skin+dark blue}"},
+  { w:1, v:"{$skin+blue}"},
+  { w:1, v:"{$skin+green}"},
+  { w:1, v:"{$skin+cyan}"},
+  { w:1, v:"{$skin+aqua}"},
+]

@@ -101,7 +101,7 @@ export default class UserInput extends React.Component{
 	var gender = this.props.npc.description.gender;
 	var race = this.props.npc.description.race.split(" ").join("_");
 	var occupation = this.props.npc.description.occupation.split(" ").join("_");
-	var file = new Blob([document.getElementById("downloadData").textContent.split("##").join("\r\n")], {type: 'text/plain'});
+	var file = new Blob([document.getElementById("downloadData").textContent.split("#").join("\r\n")], {type: 'text/plain'});
 	element.href = URL.createObjectURL(file);
 	element.download = name + "_" + gender + "_" + race + "_" + occupation + ".txt";
 	document.body.appendChild(element);

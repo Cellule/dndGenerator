@@ -6,5 +6,7 @@
   { w:1, v:"{$quirks+$majPoss}{$quirks+homeland was destroyed by an earthquake. }"},
   { w:1, v:"{$quirks+$majPoss}{$quirks+homeland was destroyed by a tsunami. }"},
   { w:1, v:"{$quirks+$majPoss}{$quirks+homeland was destroyed by a viscious storm. }"},
+  { w:1, v:"{$quirks+$majPoss}{$quirks+can sit for hours watching plants grow. }"},
+  { w:1, v:"{$quirks+$majPoss}{$quirks+tries to keep away from crowds. }"},
   { w:1, v:"{$quirks+$majPro}{$quirks+follows omens to determine }{$quirks+$minPoss}{$quirks+ daily actions. }{%good+1}"}
 ]
