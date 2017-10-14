@@ -2,7 +2,7 @@
   {
     w:2,
     name: "Aasimar",
-    v:"{$race=aasimar}{%str+1}{%con+1}{%wis+1}{%cha+3}{humangender}{humangod}{aasimargoodorevil}{humanskin}{beard}{age}"
+    v:"{$race=aasimar}{%str+1}{%con+1}{%wis+1}{%cha+3}{humangender}{humangod}{aasimargoodorevil}{humanskin}{age}"
   },
   {
     w:4,

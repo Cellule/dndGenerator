@@ -46,6 +46,7 @@ In order to publish to azure you need to follow these steps.
   - `npm install` to refresh modules
   - `npm run build` to build
 - Commit and push the changes in the `build` folder to the release branch
+- Make sure to add any new image in \build\public\, they might have a weird name though!
 
 Once a new commit is pushed on the `release` branch, Azure will detect and publish your new code automatically.
 It might take a few minutes to deploy (usually really fast).
