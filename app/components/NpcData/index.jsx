@@ -107,6 +107,17 @@ var NpcData = React.createClass({
 		this.props.npc.description.name = this.props.npc.description.kenkuname;
 	}
 	
+	var specialPhysical1 = "";
+	if (this.props.npc.physical.special1 != "")
+	{
+		specialPhysical1 = <div><p hidden>#</p><p>{this.props.npc.physical.special1}</p></div>;
+	}
+	var specialPhysical2 = "";
+	if (this.props.npc.physical.special2 != "")
+	{
+		specialPhysical2 = <div><p hidden>#</p><p>{this.props.npc.physical.special2}</p></div>;
+	}
+	
 	  
     return (
 	
@@ -122,28 +133,22 @@ var NpcData = React.createClass({
               </p>			  
 			  <p hidden>#</p>
               <p>
-                {majP} has {this.props.npc.physical.hair}{this.props.npc.physical.eyes}.
+                {majP}has {this.props.npc.physical.hair}{this.props.npc.physical.eyes}.
               </p>			  
 			  <p hidden>#</p>
               <p>
-                {majP} has {this.props.npc.physical.skin}.
+                {majP}has {this.props.npc.physical.skin}.
               </p>
 			  <p hidden>#</p>
               <p>
-                {majP} stands {this.props.npc.physical.height}cm ({toFeet(this.props.npc.physical.height)}) tall and has {this.props.npc.physical.build}.
+                {majP}stands {this.props.npc.physical.height}cm ({toFeet(this.props.npc.physical.height)}) tall and has {this.props.npc.physical.build}.
               </p>
 			  <p hidden>#</p>
               <p>
-                {majP} has {this.props.npc.physical.face}.
+                {majP}has {this.props.npc.physical.face}.
               </p>
-			  <p hidden>#</p>
-              <p>
-                {this.props.npc.physical.special1}
-              </p>
-			  <p hidden>#</p>
-              <p>
-                {this.props.npc.physical.special2}
-              </p>
+              {specialPhysical1}
+              {specialPhysical2}
 			  <p hidden>#</p>
 			  <p hidden>#</p>
             </Panel>
@@ -213,7 +218,7 @@ var NpcData = React.createClass({
                 <tr>
                   <td className="width-thin"><b>Good</b></td><td hidden>:    </td><td className="alignment-number">{Math.max(0, this.props.npc.alignment.good)}</td>
 				  <td hidden>  </td>
-                  <td className="width-thin"><b>Lawful</b></td><td hidden>: </td><td className="alignment-number">{Math.max(0, this.props.npc.alignment.lawful)}</td>
+                  <td className="width-thin"><b>Lawful</b></td><td hidden>:  </td><td className="alignment-number">{Math.max(0, this.props.npc.alignment.lawful)}</td>
                 </tr>
 			    <td hidden>#</td>
                 <tr>
