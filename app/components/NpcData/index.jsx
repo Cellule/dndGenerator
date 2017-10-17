@@ -166,7 +166,10 @@ var NpcData = React.createClass({
                  {
                    _.map(quirksArray, (value) => {
                      return (
-                           <p>{value}.</p>
+						   <div>
+						   <p hidden>#</p>
+                           <p>{value.replace(/^\s+|\s+$/g, "")}.</p>
+						   </div>
                      );
                    })
                  }
