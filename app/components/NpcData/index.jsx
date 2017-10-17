@@ -18,6 +18,13 @@ var abilityNames = {
   cha: "Charisma"
 };
 
+function toFeet(n) {
+  var realFeet = ((n*0.393700) / 12);
+  var feet = Math.floor(realFeet);
+  var inches = Math.round((realFeet - feet) * 12);
+  return feet + "'" + inches + '\"';
+}
+
 var NpcData = React.createClass({
   propTypes: {
     npc: React.PropTypes.shape({
@@ -123,7 +130,7 @@ var NpcData = React.createClass({
               </p>
 			  <p hidden>#</p>
               <p>
-                {majP} stands {this.props.npc.physical.height}cm tall and has {this.props.npc.physical.build}.
+                {majP} stands {this.props.npc.physical.height}cm ({toFeet(this.props.npc.physical.height)}) tall and has {this.props.npc.physical.build}.
               </p>
 			  <p hidden>#</p>
               <p>
@@ -179,7 +186,7 @@ var NpcData = React.createClass({
                           xs={12}
                           className="no-right-pad no-left-pad ability"
                         >
-                            <tr><td><b>{abilityNames[key]}</b><p hidden> - </p></td><td className="ability-number">{ability}<p hidden>#</p></td></tr>
+                            <tr><td><b>{abilityNames[key]}</b><p hidden> - </p></td><td className="ability-number">{Math.max(3, ability)}<p hidden>#</p></td></tr>
                         </Col>
                       );
                     })
