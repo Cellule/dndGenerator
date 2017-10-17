@@ -2,7 +2,7 @@
   {
     w:2,
     name: "Drow",
-    v:"{$race=drow}{%str-1}{%dex+2}{%con-2}{%wis+2}{%int+2}{%cha+4}{%chaotic+3}{%evil+3}{drowgod}{$skin+black}{whitehair}"
+    v:"{$race=drow}{%str-1}{%dex+2}{%con-2}{%wis+2}{%int+2}{%cha+4}{%chaotic+3}{%evil+3}{drowgod}{$skin+black}{whitehair}{drowquirks}"
   },
   {
     w:6,
