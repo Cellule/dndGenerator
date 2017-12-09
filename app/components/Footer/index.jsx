@@ -10,6 +10,7 @@ export default class PageFooter extends React.Component {
     return (
         <footer className="bs-docs-footer" role="contentinfo">
 			<div>
+				<p><b> Background image by <a href="https://www.artstation.com/artwork/J1QAd">Julien Gauthier</a></b></p>
 				<p><b> Comments, suggestions, crazy hook or trait idea? </b></p>
 				<p> Email me at: <a href="mailto:etienspb@gmail.com">EtiensPB@gmail.com</a>!</p>
 			</div>
