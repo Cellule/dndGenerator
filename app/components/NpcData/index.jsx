@@ -246,6 +246,8 @@ var NpcData = React.createClass({
             <Panel header={<div>Plot Hook</div>} className="align-center">
 			<p hidden>#</p>
               {this.props.npc.hook}
+			<p hidden>#</p>
+			<p hidden>#</p>
             </Panel>			
           </Col>
         </Row>
