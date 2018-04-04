@@ -9,12 +9,14 @@ export default class PageFooter extends React.Component {
   render() {
     return (
         <footer className="bs-docs-footer" role="contentinfo">
-			<div>
-				<p><b>I made a video game! Feel free to check it out! :)</b></p>
-				<a href="http://store.steampowered.com/app/769410/Electromaze_Tower_Defense/"><div className="center-block EMD-button"/></a>
+			<div>				
+				<a href="https://discord.gg/VVb6hDr" target="_blank"><p><b>Follow my next RPG on discord!</b></p></a>
 			</div>
 			<div>
-				<p><b> Background image by <a href="https://www.artstation.com/artwork/J1QAd">Julien Gauthier</a></b></p>
+				<p><b>I made a video game! Feel free to check it out! :)</b></p>
+				<a href="http://store.steampowered.com/app/769410/Electromaze_Tower_Defense/" target="_blank"><div className="center-block EMD-button"/></a>
+			</div>
+			<div>
 				<p><b> Comments, suggestions, crazy hook or trait idea? </b></p>
 				<p> Email me at: <a href="mailto:etienspb@gmail.com">EtiensPB@gmail.com</a>!</p>
 			</div>
