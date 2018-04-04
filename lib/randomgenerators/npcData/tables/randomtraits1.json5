@@ -40,6 +40,6 @@
   { w:2, v:"{$traits1=$majPro}{$traits1+is a very good diplomat and always works towards resolution of conflict. } {%lawful+2}{%moralneutral+2}"},
   { w:2, v:"{$traits1=$majPro}{$traits1+is very good at defusing tensions. }{%moralneutral+2}"},
   { w:2, v:"{$traits1=$majPro}{$traits1+often spies on other people. }"},
-  { w:2, v:"{$traits1=$majPro}{$traits1+is always fair play. }{%lawful+2}{%chaotic-2}"},
+  { w:2, v:"{$traits1=$majPro}{$traits1+always plays fair. }{%lawful+2}{%chaotic-2}"},
   { w:2, v:"{$traits1=$majPro}{$traits1+hates fair play. }{%lawful-2}{%chaotic+2}"},
 ]

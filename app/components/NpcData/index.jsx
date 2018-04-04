@@ -21,7 +21,7 @@ var abilityNames = {
 function toFeet(n) {
   var realFeet = ((n*0.393700) / 12);
   var feet = Math.floor(realFeet);
-  var inches = Math.round((realFeet - feet) * 12);
+  var inches = Math.floor((realFeet - feet) * 12);
   return feet + "'" + inches + '\"';
 }
 
