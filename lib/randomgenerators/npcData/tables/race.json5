@@ -21,7 +21,7 @@
     w:16,
     name: "Elf",
     table:"elf",
-    v:"{raceelf}{%height-5}{lightweight}{goodface}{$beard=}{age}{elfgender}{ageBonus}"
+    v:"{elfgender}{raceelf}{%height-5}{lightweight}{goodface}{$beard=}{age}{ageBonus}"
   },
   {
     w:2,
