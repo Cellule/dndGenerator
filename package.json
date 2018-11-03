@@ -5,7 +5,7 @@
   "dependencies": {
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
-    "react-scripts": "2.1.1"
+    "react-scripts": "git+https://github.com/Cellule/dnd-generator-react-scripts.git"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -23,7 +23,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "json5-loader": "^1.0.1",
+    "bootstrap": "^3.3.7",
+    "node-sass": "^4.9.4",
     "prop-types": "^15.6.2",
     "react-bootstrap": "^0.32.4"
   }

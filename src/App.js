@@ -4,7 +4,7 @@ import DisplayNpc from "./DisplayNpc";
 
 import "./styles/index.less";
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <Grid>
@@ -14,4 +14,3 @@ class App extends Component {
   }
 }
 
-export default App;

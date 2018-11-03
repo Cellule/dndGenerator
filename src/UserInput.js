@@ -1,26 +1,31 @@
-import {Panel, Col, Row} from "react-bootstrap";
-import Input from "./Input";
-import React from "react";
+import {
+  Panel,
+  Col,
+  Row,
+  FormGroup,
+  FormControl,
+  ControlLabel,
+  Button
+} from "react-bootstrap";
+import React, {Component} from "react";
 import PropTypes from 'prop-types';
 
-/* eslint-disable import/no-webpack-loader-syntax */
+var races = require("./npcData/tables/race.json");
+var genders = require("./npcData/tables/gender.json");
+var alignments = require("./npcData/tables/forcealign.json");
+var plothooks = require("./npcData/tables/hooks.json");
 
-var races = require("json5-loader!./npcData/tables/race.json5");
-var genders = require("json5-loader!./npcData/tables/gender.json5");
-var alignments = require("json5-loader!./npcData/tables/forcealign.json5");
-var plothooks = require("json5-loader!./npcData/tables/hooks.json5");
-
-var classes = require("json5-loader!./npcData/tables/class.json5");
-var professions = require("json5-loader!./npcData/tables/profession.json5");
+var classes = require("./npcData/tables/class.json");
+var professions = require("./npcData/tables/profession.json");
 
 var professionCategories = {
-  "learned": require("json5-loader!./npcData/tables/learned.json5"),
-  "lesserNobility": require("json5-loader!./npcData/tables/lesserNobility.json5"),
-  "professional": require("json5-loader!./npcData/tables/professional.json5"),
-  "workClass": require("json5-loader!./npcData/tables/workClass.json5"),
-  "martial": require("json5-loader!./npcData/tables/martial.json5"),
-  "underclass": require("json5-loader!./npcData/tables/underclass.json5"),
-  "entertainer": require("json5-loader!./npcData/tables/entertainer.json5"),
+  "learned": require("./npcData/tables/learned.json"),
+  "lesserNobility": require("./npcData/tables/lesserNobility.json"),
+  "professional": require("./npcData/tables/professional.json"),
+  "workClass": require("./npcData/tables/workClass.json"),
+  "martial": require("./npcData/tables/martial.json"),
+  "underclass": require("./npcData/tables/underclass.json"),
+  "entertainer": require("./npcData/tables/entertainer.json"),
 };
 
 var userOptions = [
@@ -80,7 +85,8 @@ var userOptions = [
   },
 ];
 
-export default class UserInput extends React.Component{
+export default class UserInput extends Component {
+  static propTypes = {generate: PropTypes.func.isRequired}
 
   constructor(props){
     super(props);
@@ -136,27 +142,27 @@ export default class UserInput extends React.Component{
       }
 
       return (
-        <Col xs={12}>
-          <Input
-            onChange={
-              (e)=>{
-                var npcOptions = this.state.npcOptions;
-                npcOptions[userOption.optionName] = e.target.value === "random" ? null : parseInt(e.target.value);
-                this.setState({npcOptions}, () => {
-                  if(userOption.onChange) {
-                    userOption.onChange(this);
-                  }
-                });
+        <Col xs={12} key={userOption.label}>
+          <FormGroup>
+            <ControlLabel>{userOption.label}</ControlLabel>
+            <FormControl componentClass="select"
+              onChange={
+                (e)=>{
+                  var npcOptions = this.state.npcOptions;
+                  npcOptions[userOption.optionName] = e.target.value === "random" ? null : parseInt(e.target.value);
+                  this.setState({npcOptions}, () => {
+                    if(userOption.onChange) {
+                      userOption.onChange(this);
+                    }
+                  });
+                }
               }
-            }
-            type="select"
-            label={userOption.label}
-            key={userOption.label}
-            disabled={!enable}
-          >
-            <option value="random" key="random">Random</option>
-            {options}
-          </Input>
+              disabled={!enable}
+            >
+              <option value="random" key="random">Random</option>
+              {options}
+            </FormControl>
+          </FormGroup>
         </Col>
       );
     });
@@ -168,11 +174,11 @@ export default class UserInput extends React.Component{
             <Row>
               {npcOptions}
             </Row>
-            <Input className="center-block generate-button" type="submit" bsStyle="success" value=""/>
+            <Button type="submit" className="center-block generate-button" bsStyle="success" >Submit</Button>
           </form>
 
           <form onSubmit={this._downloadTxtFile.bind(this)}>
-            <Input className="center-block download-button download-button" type="submit" bsStyle="success" value=""/>
+            <Button type="submit" className="center-block download-button download-button" bsStyle="success" >Submit</Button>
           </form>
 
         </Panel>
@@ -180,5 +186,3 @@ export default class UserInput extends React.Component{
     );
   }
 }
-
-UserInput.propTypes = {generate: PropTypes.func.isRequired};
