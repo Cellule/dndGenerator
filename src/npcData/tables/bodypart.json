@@ -1,0 +1,7 @@
+[{
+    "w": 1,
+    "v": "{rl}{$bp=$rl}{bodypart1}"
+}, {
+    "w": 1,
+    "v": "{bodypart2}"
+}]

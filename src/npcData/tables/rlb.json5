@@ -1,5 +1,0 @@
-[
-  { w:5, v:"{$rl=the left }"},
-  { w:5, v:"{$rl=the right }"},
-  { w:2, v:"{$rl=both }"}
-]

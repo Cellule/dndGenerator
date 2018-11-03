@@ -1,0 +1,36 @@
+[{
+    "w": 1,
+    "name": "Learned",
+    "table": "learned",
+    "v": "{learned}{%int+4}{%wis+3}{%str-2}{%moralneutral+2}{richquirk}"
+}, {
+    "w": 2,
+    "name": "Lesser Nobility",
+    "table": "lesserNobility",
+    "v": "{lesserNobility}{%int+2}{%cha+2}{%lawful+2}{%good+2}{richquirk}"
+}, {
+    "w": 3,
+    "name": "Professional",
+    "table": "professional",
+    "v": "{professional}{%str+1}{%dex+1}{richquirk}"
+}, {
+    "w": 5,
+    "name": "Working Class",
+    "table": "workClass",
+    "v": "{workClass}{%str+2}{%con+2}{%int-1}{%cha-1}{%moralneutral+2}{poorquirk}"
+}, {
+    "w": 3,
+    "name": "Martial",
+    "table": "martial",
+    "v": "{martial}{%str+3}{%con+3}{%int-1}{%cha+1}{%lawful+3}"
+}, {
+    "w": 3,
+    "name": "Underclass",
+    "table": "underclass",
+    "v": "{underclass}{%str+1}{%dex+2}{%int-1}{%cha-1}{%chaotic+3}{%lawful-1}{poorquirk}"
+}, {
+    "w": 1,
+    "name": "Entertainer",
+    "table": "entertainer",
+    "v": "{entertainer}{%dex+2}{%cha+2}{%chaotic+3}"
+}]

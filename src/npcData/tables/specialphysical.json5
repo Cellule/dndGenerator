@@ -1,5 +1,0 @@
-[
-  { w:3, v:"{$sphy+$majPro}{specialphysical1}{$sphy+.}"},
-  { w:2, v:"{$sphy+$majPro}{specialphysical2}{$sphy+.}"},
-  { w:1, v:"{$sphy+$majPro}{specialphysical1}{$sphy+ and }{$sphy+$minPro}{specialphysical2}{$sphy+.}"}
-]

@@ -1,0 +1,19 @@
+[{
+    "w": 1,
+    "v": "{simpleweapon}"
+}, {
+    "w": 1,
+    "v": "{simplefinesse}"
+}, {
+    "w": 1,
+    "v": "{simpleranged}"
+}, {
+    "w": 3,
+    "v": "{martialweapon}"
+}, {
+    "w": 1,
+    "v": "{martialfinesse}"
+}, {
+    "w": 1,
+    "v": "{martialranged}"
+}]

@@ -1,0 +1,7 @@
+[{
+    "w": 1,
+    "v": "{male}{malehalflingname}{halflingsurname}"
+}, {
+    "w": 1,
+    "v": "{female}{femalehalflingname}{halflingsurname}"
+}]

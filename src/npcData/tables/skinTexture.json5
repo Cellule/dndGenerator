@@ -1,7 +1,0 @@
-[
-  { w:4, v:"{$skintexture=smooth}"},
-  { w:5, v:"{$skintexture=rough}"},
-  { w:3, v:"{$skintexture=rugged}"},
-  { w:2, v:"{$skintexture=silky}"},
-  { w:1, v:"{$skintexture=veiny}"}
-]

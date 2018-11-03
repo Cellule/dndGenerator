@@ -1,4 +1,0 @@
-[
-  { w:4, v:"{faceshape}{highattractiveness}{$face=$faceshape}{$face+$attractiveness}"},
-  { w:1, v:"{face}"}
-]

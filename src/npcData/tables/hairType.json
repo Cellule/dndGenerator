@@ -1,0 +1,13 @@
+[{
+    "w": 3,
+    "v": "{$hair+straight}"
+}, {
+    "w": 3,
+    "v": "{$hair+wavy}"
+}, {
+    "w": 3,
+    "v": "{$hair+curled}"
+}, {
+    "w": 1,
+    "v": "{$hair+braided}"
+}]

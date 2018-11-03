@@ -1,0 +1,43 @@
+[{
+    "w": 35,
+    "v": "{$quirks+}"
+}, {
+    "w": 2,
+    "v": "{$quirks+$majPro}{$quirks+is disgusted by human architecture. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+feels more comfortable while surrounded by nature. }"
+}, {
+    "w": 2,
+    "v": "{$quirks+$majPro}{$quirks+is secretly captivated by dwarves. }"
+}, {
+    "w": 2,
+    "v": "{$quirks+$majPro}{$quirks+has a deep knowledge of ancient secrets. }"
+}, {
+    "w": 2,
+    "v": "{$quirks+$majPro}{$quirks+has a deep knowledge of ancient magic. }"
+}, {
+    "w": 2,
+    "v": "{$quirks+$majPro}{$quirks+knows the name of all the local plants. }"
+}, {
+    "w": 2,
+    "v": "{$quirks+$majPro}{$quirks+will only speak common if absolutely forced to. }"
+}, {
+    "w": 4,
+    "v": "{$quirks+$majPro}{$quirks+never knows the current time and date. }"
+}, {
+    "w": 2,
+    "v": "{$quirks+$majPro}{$quirks+paints }{goodlooking}{$quirks+$attractiveness}{$quirks+ paintings in }{$quirks+$minPoss}{$quirks+spare time. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{frequency}{$quirks+$fr}{$quirks+ uses terms from a different language as }{$quirks+$minPro}{$quirks+speaks. }"
+}, {
+    "w": 4,
+    "v": "{$quirks+$majPro}{$quirks+is always late. }"
+}, {
+    "w": 1,
+    "v": "{$quirks+$majPro}{$quirks+has never declared himself an adult. }"
+}, {
+    "w": 2,
+    "v": "{$quirks+$majPro}{$quirks+is deeply xenophobic. }"
+}]

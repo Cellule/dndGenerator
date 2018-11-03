@@ -1,6 +1,0 @@
-[
-  { w:1, v:"{$sphy+hand}"},
-  { w:1, v:"{$sphy+arm}"},
-  { w:1, v:"{$sphy+foot}"},
-  { w:1, v:"{$sphy+leg}"}
-]

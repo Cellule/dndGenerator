@@ -1,0 +1,208 @@
+[{
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+is looking for }{$hook+$minPoss}{$hook+lost }{relationship}{$hook+$rela}{$hook+, who never actually existed.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+has recently obtained a fake map to a great treasure.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+seeks revenge for the death of }{$hook+$minPoss}{relationship}{$hook+$rela}{$hook+, who never actually existed.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+needs the party to deliver a tamed }{monster}{$hook+$monster}{$hook+ to a local wizard.}"
+}, {
+    "w": 1,
+    "v": "{$hook=$majPro}{$hook+needs the party to deliver a tamed }{monster}{$hook+$monster}{$hook+ to a local zoo.}"
+}, {
+    "w": 1,
+    "v": "{$hook=$majPro}{$hook+needs the party to deliver a tamed }{monster}{$hook+$monster}{$hook+ to a local circus.}"
+}, {
+    "w": 1,
+    "v": "{$hook=$majPro}{$hook+needs the party to deliver a tamed }{monster}{$hook+$monster}{$hook+ to a local museum.}"
+}, {
+    "w": 1,
+    "v": "{$hook=$majPro}{$hook+is followed day and night by a }{personality}{$hook+$personality}{$hook+ speaking crow.}"
+}, {
+    "w": 1,
+    "v": "{$hook=$majPro}{$hook+is followed day and night by a }{personality}{$hook+$personality}{$hook+ speaking mouse.}"
+}, {
+    "w": 1,
+    "v": "{$hook=$majPro}{$hook+is followed day and night by a }{personality}{$hook+$personality}{$hook+ speaking snake.}"
+}, {
+    "w": 1,
+    "v": "{$hook=$majPro}{$hook+is followed day and night by a }{personality}{$hook+$personality}{$hook+ speaking cat.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+has been cursed into speaking only gibberish.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+is willingly wearing a cursed }{$precious=}{precious}{$hook+$precious}{$hook+.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+has been hexed into constantly hallucinating.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+has been hexed and is now constantly hungry.}"
+}, {
+    "w": 1,
+    "v": "{$hook=$majPro}{$hook+has been hexed into becoming minuscule.}"
+}, {
+    "w": 1,
+    "v": "{$hook=$majPro}{$hook+has been hexed into becoming gigantic.}"
+}, {
+    "w": 3,
+    "v": "{$hook=$majPro}{$hook+is being constantly pranked by a leprechaun.}"
+}, {
+    "w": 3,
+    "v": "{$hook=$majPro}{$hook+is being constantly psychologically tortured by a crazed leprechaun.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+needs help sabotaging a }{contest}{$hook+.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+is a were}{werebeast}{$hook+$wb}{$hook+.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+is a were}{werebeast}{$hook+$wb}{$hook+ and tries to convince the PCs to let }{$hook+$minHim}{$hook+ change them as well.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+is a were}{werebeast}{$hook+$wb}{$hook+ and wants to get rid of it.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+is a were}{werebeast}{$hook+$wb}{$hook+ and is looking for acceptance within society.}"
+}, {
+    "w": 3,
+    "v": "{$hook=$majPro}{$hook+approaches the PC by falling from the sky. }{$hook+$majPro}{$hook+has 50% chance of surviving the landing.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+is currently chasing a band of bandits and asks the PCs for help.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+is currently being chased by a band of bandits }{$hook+$minPro}{$hook+just stole from and asks the PCs for protection.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+is a doppleganger.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+is actually a doppleganger who killed }{$hook+$name}{$hook+ and is living }{$hook+$minPoss}{$hook+life.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+is a doppleganger posing as one of the PCs.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+lives with an incubus.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+lives with a succubus.}"
+}, {
+    "w": 1,
+    "v": "{$hook=$majPro}{$hook+lives with an incubus. They are trying to fit in with society.}"
+}, {
+    "w": 1,
+    "v": "{$hook=$majPro}{$hook+lives with a succubus. They are trying to fit in with society.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+is raising an Otyugh in the town's sewer system. It's always hungry.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPoss}{$hook+home has been infested by zombies. Upon further inquiry, the zombies are asking for help.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPoss}{$hook+home has been infested by zombies. Upon further inquiry, the zombies are asking for brains.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPoss}{$hook+home has been infested by zombies. Upon further inquiry, the zombies used to live there, and are claiming the house as belonging to them.}"
+}, {
+    "w": 3,
+    "v": "{$hook=$majPro}{$hook+is a serial killer at night.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+is a cannibal.}"
+}, {
+    "w": 1,
+    "v": "{$hook=$majPro}{$hook+is a cannibal. }{$hook+$majPro}{$hook+wants to convert the PCs to }{$hook+$minPoss}{$hook+ways.}"
+}, {
+    "w": 3,
+    "v": "{$hook=$majPro}{$hook+is a secret vigilante.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+is a secret vigilante, and considers the PCs a threat to society.}"
+}, {
+    "w": 3,
+    "v": "{$hook=$majPro}{$hook+is addicted to }{monster}{$hook+$monster}{$hook+ blood.}"
+}, {
+    "w": 3,
+    "v": "{$hook=$majPro}{$hook+wants the PCs to help }{$hook+$minPoss}{$hook+tame }{amonster}{$hook+$monster}{$hook+.}"
+}, {
+    "w": 3,
+    "v": "{$hook=$majPro}{$hook+is being stalked by a gibbering mouth at night}"
+}, {
+    "w": 3,
+    "v": "{$hook=$majPro}{$hook+is actually an Oni posing as a }{$hook+$race}{$hook+.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+has fallen in love with a dryad from a local forest.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+has fallen in love with a mermaid from the nearest water source.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+has fallen in love with a fairy from the nearby woods.}"
+}, {
+    "w": 1,
+    "v": "{$hook=$majPro}{$hook+is obsessively in love with a dryad. }{$hook+$majPro}{$hook+keeps her locked up in }{$hook+$minPoss}{$hook+basement.}"
+}, {
+    "w": 1,
+    "v": "{$hook=$majPro}{$hook+is obsessively in love with a mermaid. }{$hook+$majPro}{$hook+keeps her locked up in }{$hook+$minPoss}{$hook+basement.}"
+}, {
+    "w": 1,
+    "v": "{$hook=$majPro}{$hook+is obsessively in love with a fairy. }{$hook+$majPro}{$hook+keeps her locked up in }{$hook+$minPoss}{$hook+basement.}"
+}, {
+    "w": 3,
+    "v": "{$hook=$majPro}{$hook+has been enslaved by a demon.}"
+}, {
+    "w": 3,
+    "v": "{$hook=$majPro}{$hook+is being controlled by an illithid.}"
+}, {
+    "w": 3,
+    "v": "{$hook=$majPro}{$hook+is being harassed about a threat of impending doom by a pseudodragon.}"
+}, {
+    "w": 3,
+    "v": "{$hook=$majPro}{$hook+is slowly becoming a plant.}"
+}, {
+    "w": 3,
+    "v": "{$hook=$majPro}{$hook+is followed by multiple animals at all time.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+is openly a vampire.}"
+}, {
+    "w": 1,
+    "v": "{$hook=$majPro}{$hook+talks very fast and incomprehensibly to the NPCs before turning to stone.}"
+}, {
+    "w": 1,
+    "v": "{$hook=$majPro}{$hook+talks very fast and incomprehensibly to the NPCs before turning to dust.}"
+}, {
+    "w": 3,
+    "v": "{$hook=$majPro}{$hook+is actually a }{dragons}{$hook+$dragon}{$hook+ dragon.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+has recently come into possession of an unreasonable amount of fish, and it's not clear why.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+gives the PCs a magical }{$precious=}{precious}{$hook+$precious}{$hook+. Turns out }{$hook+$minPro}{$hook+had stolen it from an imp who is hellbent on recovering it.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+is a time traveller from a distant past.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+is a time traveller from a distant past. }{$hook+$majPro}{$hook+is obsessed with finding her descendants.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+is a time traveller from a distant past. }{$hook+$majPro}{$hook+is obsessed with finding the treasure }{$hook+$minPro}{$hook+buried thousands of years ago.}"
+}, {
+    "w": 2,
+    "v": "{$hook=$majPro}{$hook+is a time traveller from a distant future. }{$hook+$majPro}{$hook+needs help sleeping for a few thousand years.}"
+}, {
+    "w": 1,
+    "v": "{$hook=$majPro}{$hook+is a time traveller from a distant future. }{$hook+$majPro}{$hook+is trying to alter the course of history.}"
+}]

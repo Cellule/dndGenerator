@@ -1,9 +1,0 @@
-[
-  { w:1, v:"{$attractiveness=average}"},
-  { w:1, v:"{$attractiveness=bland}"},
-  { w:1, v:"{$attractiveness=unremarkable}"},
-  { w:1, v:"{$attractiveness=forgettable}"},
-  { w:1, v:"{$attractiveness=typical}"},
-  { w:1, v:"{$attractiveness=common}"},
-  { w:1, v:"{$attractiveness=ordinary}"}
-]

@@ -1,0 +1,124 @@
+[{
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+acts on impulse. }{%wis-1}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+has an even temper. }{%wis+1}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+would rather act than talk or think. }{%chaotic+1}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+will ponder the pros and cons before making a decision. }{%chaotic-1}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+gets bored easily. }{%chaotic+2}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+has a highly variable mood. }{%chaotic+2}"
+}, {
+    "w": 1,
+    "v": "{$traits1=$majPro}{$traits1+is bipolar. }{%chaotic+3}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+is always serene. }{%wis+2}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+is very patient. }{%wis+1}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+is very impatient. }{%wis-1}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+rarely thinks ahead. }{%wis-1}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+is always very calm. }{%wis+1}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+is always prepared. }{%chaotic-1}{%wis+1}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+is always very excited. }{%dex+1}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+always has a backup plan. }{%int+1}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+is very focused. }{%int+1}{%wis+1}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+is very cynical. }"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+is an hopeless romantic. }"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+uses sarcasm and insults commonly. }{%evil+1}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+always goes straight to the point. }"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+is very direct. }"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+changes subject very often. }"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+is always ironic. }"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+is very selfish. }{%good-1}{%evil+1}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+will always prioritize }{$traits1+$minPoss}{$traits+needs. }{%evil+1}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+will always prioritize the needs of other people, even to }{$traits1+$minPoss}{$traits+detriment. }{%evil-2}{%good+2}{%wis-2}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+shows very little empathy towards others. }"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+is very empathic towards others. }{%wis+2}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+is always ready to help others. }{%good+2}{%evil-1}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+is polite and respectful. }{%lawful+1}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+is a pacifist. }{%chaotic+2}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+is kind and generous. }{%evil-1}{%good+2}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+easily holds grudges. }{%evil+1}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+is very benevolent. }{%good+1}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+is prone to violence. }{%chaotic+2}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+is a very good diplomat and always works towards resolution of conflict. } {%lawful+2}{%moralneutral+2}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+is very good at defusing tensions. }{%moralneutral+2}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+often spies on other people. }"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+is always fair play. }{%lawful+2}{%chaotic-2}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+hates fair play. }{%lawful-2}{%chaotic+2}"
+}, {
+    "w": 2,
+    "v": "{$traits1=$majPro}{$traits1+constantly looks for the loophole. }{%lawful-2}{%chaotic+2}{%int+1}"
+}]

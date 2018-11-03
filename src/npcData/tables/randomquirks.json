@@ -1,0 +1,190 @@
+[{
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+has a constant wanderlust and is unable to live at the same place for more than a few months. }{%chaotic+2}"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+doesn't like change. }{%lawful+1}"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{frequency}{$quirks+$fr}{$quirks+ quotes }{$quirks+$minPoss}{$quirks+father. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{frequency}{$quirks+$fr}{$quirks+ quotes proverbs. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{frequency}{$quirks+$fr}{$quirks+ misquotes proverbs. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+falls in and out of love easily. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+believes in soulmates. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+is always joking, even at innapropriate times. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+has a joke for every situation. }{%cha+1}"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+doesn't like listening to jokes. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+is constantly flattering people }{$quirks+$minPro}{$quirks+talks to. } {%cha+2}"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+is a compulsive gambler. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+is an alcoholic. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{frequency}{$quirks+$fr}{$quirks+ lies. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+believes in whatever deity is most helpful to }{$quirks+$minPoss}{$quirks+at a given moment. }"
+}, {
+    "w": 2,
+    "v": "{$quirks+$majPro}{$quirks+is kleptomaniac. }{%dex+2}"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+always does what }{$quirks+$minPro}{$quirks+is told not to. }{%chaotic+2}"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+gets very mad at any semblance of an insult. }{%chaotic+2}"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+has a story for everything. }{%wis+1}{%cha+1}"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+sees insults as an art. }"
+}, {
+    "w": 2,
+    "v": "{$quirks+$majPro}{$quirks+is a cross-dresser. }"
+}, {
+    "w": 2,
+    "v": "{$quirks+$majPro}{$quirks+runs everywhere instead of walking. }{%con+2}"
+}, {
+    "w": 2,
+    "v": "{$quirks+$majPro}{$quirks+dreams of becoming rich and famous. }"
+}, {
+    "w": 2,
+    "v": "{$quirks+$majPro}{$quirks+admires the local lord. }"
+}, {
+    "w": 4,
+    "v": "{$quirks+$majPro}{$quirks+knows all the gossip around town. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+is always sharing }{$quirks+$minPoss}{$quirks+wisdom. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+believes in destiny. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+argues about everything. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+spaces out often, lost in thought. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+makes anyone }{$quirks+$minPro}{$quirks+speaks to feel like the most important person in the world. }{%cha+2}"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+cares about }{$quirks+$minPoss}{$quirks+friends and will do anything for them. }{%good+1}"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+reads every book }{$quirks+$minPro}{$quirks+comes across. }{%int+1}"
+}, {
+    "w": 4,
+    "v": "{$quirks+$majPro}{$quirks+loves discovering new mysteries and solving them. }{%int+2}"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+wants to know every side of a story before expressing an opinion. }{%moralneutral+2}"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+is }{mod}{$quirks+$mod}{$quirks+paranoid. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+works hard to play hard afterwards. }{%chaotic+1}"
+}, {
+    "w": 4,
+    "v": "{$quirks+$majPro}{$quirks+stretches the truth to tell a good story. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+is haunted by horrible memories. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+has lost many friends. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+has a crude sense of humour. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+likes finding direct solutions to problems. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+always carries food in }{$quirks+$minPoss}{$quirks+pockets. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{frequency}{$quirks+$fr}{$quirks+ asks questions. }{%int+1}"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+is a local sport champion. }{%cha+1}"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{frequency}{$quirks+$fr}{$quirks+ laughs at inappropriate times. }{%cha-1}"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+reacts violently to }{mundaneobject}{%chaotic+1}"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+is fascinated by }{mundaneobject}"
+}, {
+    "w": 4,
+    "v": "{$quirks+$majPro}{$quirks+doesn't like }{$quirks+$minPoss}{$quirks+profession, has always dreamed of becoming a }{$quirks+$occupation}{$quirks+. }{occupation}"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+believes that all }{raceallergy}{$quirks+$racea}{$quirks+ are planning to destroy the world. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+goes out at night secretly looking for }{mundaneobject}"
+}, {
+    "w": 2,
+    "v": "{$quirks+$majPro}{$quirks+owns a box full of dead animals. }{%evil+1}"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+sets up local dance clubs. }"
+}, {
+    "w": 4,
+    "v": "{$quirks+$majPro}{$quirks+is }{degree2}{$quirks+$degree}{$quirks+allergic to }{aliment}"
+}, {
+    "w": 4,
+    "v": "{$quirks+$majPro}{$quirks+is }{degree2}{$quirks+$degree}{$quirks+allergic to }{raceallergy}{$quirks+$racea}{$quirks+. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+believes that }{$quirks+$minPro}{$quirks+is related to }{$quirks+$god}{$quirks+. }"
+}, {
+    "w": 1,
+    "v": "{$quirks+$majPro}{$quirks+goes to church to pick up sexual partners. }{%cha+1}"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+lies poorly on purpose. }"
+}, {
+    "w": 5,
+    "v": "{$quirks+$majPro}{$quirks+collects }{collection}"
+}, {
+    "w": 2,
+    "v": "{$quirks+$majPro}{$quirks+secretly wants to become the ruler of the city. }"
+}, {
+    "w": 8,
+    "v": "{$quirks+$majPro}{$quirks+has }{petanimal}{$quirks+companion named }{petname}"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+likes to swim. }"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{$quirks+has a beautiful singing voice. }{%cha+1}"
+}, {
+    "w": 3,
+    "v": "{$quirks+$majPro}{frequency}{$quirks+$fr}{$quirks+ thinks aloud. }"
+}]

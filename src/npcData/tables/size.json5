@@ -1,7 +1,0 @@
-[
-  { w:1, v:"{$size=a very small }"},
-  { w:3, v:"{$size=a small }"},
-  { w:10, v:"{$size=a }"},
-  { w:3, v:"{$size=a large }"},
-  { w:1, v:"{$size=a very large }"}
-]

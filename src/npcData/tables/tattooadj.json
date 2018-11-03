@@ -1,0 +1,34 @@
+[{
+    "w": 7,
+    "v": "{$tadj=}"
+}, {
+    "w": 1,
+    "v": "{$tadj=small }"
+}, {
+    "w": 1,
+    "v": "{$tadj=large }"
+}, {
+    "w": 1,
+    "v": "{$tadj=tiny }"
+}, {
+    "w": 1,
+    "v": "{$tadj=elaborate }"
+}, {
+    "w": 1,
+    "v": "{$tadj=badly done }"
+}, {
+    "w": 1,
+    "v": "{$tadj=complicated }"
+}, {
+    "w": 1,
+    "v": "{$tadj=shocking }"
+}, {
+    "w": 1,
+    "v": "{$tadj=provocative }"
+}, {
+    "w": 1,
+    "v": "{$tadj=bland }"
+}, {
+    "w": 1,
+    "v": "{$tadj=exceptional }"
+}]

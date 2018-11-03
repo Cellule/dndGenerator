@@ -1,0 +1,10 @@
+[{
+    "w": 1,
+    "v": "{$sphy+wears an eyepatch on }{$sphy+$minPoss}"
+}, {
+    "w": 1,
+    "v": "{$sphy+has a glass }"
+}, {
+    "w": 1,
+    "v": "{$sphy+is blind from }{$sphy+$minPoss}"
+}]

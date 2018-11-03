@@ -1,0 +1,25 @@
+[{
+    "w": 8,
+    "v": "{$eyecolor=brown}"
+}, {
+    "w": 4,
+    "v": "{$eyecolor=blue}"
+}, {
+    "w": 4,
+    "v": "{$eyecolor=green}"
+}, {
+    "w": 2,
+    "v": "{$eyecolor=golden}"
+}, {
+    "w": 1,
+    "v": "{$eyecolor=cyan}"
+}, {
+    "w": 2,
+    "v": "{$eyecolor=gray}"
+}, {
+    "w": 2,
+    "v": "{$eyecolor=black}"
+}, {
+    "w": 1,
+    "v": "{$eyecolor=red}"
+}]

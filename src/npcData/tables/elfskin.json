@@ -1,0 +1,19 @@
+[{
+    "w": 1,
+    "v": "{$skincom=blueish}"
+}, {
+    "w": 2,
+    "v": "{$skincom=pink}"
+}, {
+    "w": 2,
+    "v": "{$skincom=golden}"
+}, {
+    "w": 2,
+    "v": "{$skincom=silver}"
+}, {
+    "w": 3,
+    "v": "{$skincom=green}"
+}, {
+    "w": 2,
+    "v": "{$skincom=copper}"
+}]
