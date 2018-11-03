@@ -1,0 +1,14 @@
+[
+  { w:5, v:"{$god=Asgorath}{$goddescr=, the Ninefold Dragon, head deity of dragonkind.(All alignments)}"},
+  { w:1, v:"{$god=Astilabor}{%moralneutral+2}{%lawful+2}{$goddescr=, Goddess of acquisitiveness, status, wealth. (Lawful Neutral)}"},
+  { w:1, v:"{$god=Bahamut}{%lawful+2}{%good+2}{$goddescr=, God of good dragons, wind, wisdom, justice. (Lawful Good)}"},
+  { w:1, v:"{$god=Faluzure}{%chaotic+2}{%evil+2}{$goddescr=, God of decay, undeath, exhaustion. (Chaotic Evil)}"},
+  { w:1, v:"{$god=Garyx}{%chaotic+2}{%evil+2}{$goddescr=, God of fire, destruction, renewal. (Chaotic Evil)}"},
+  { w:1, v:"{$god=Hlal}{%chaotic+2}{%neutral+2}{$goddescr=, Goddess of humor, tricks, messages. (Chaotic Neutral)}"},
+  { w:1, v:"{$god=Kereska}{%good+2}{%ethicalneutral+2}{$goddescr=, Goddess of dragon magic and magical creativity. (Neutral Good)}"},
+  { w:1, v:"{$god=Lendys}{%moralneutral+2}{%lawful+2}{$goddescr=, God of balance, justice. (Lawful Neutral)}"},
+  { w:1, v:"{$god=Tamara}{%lawful+2}{%good+2}{$goddescr=, Goddess of life, light, mercy. (Lawful Good)}"},
+  { w:1, v:"{$god=Task}{%chaotic+2}{%neutral+2}{$goddescr=, God of greed, selfishness. (Chaotic Neutral)}"},
+  { w:4, v:"{$god=Zorquan}{$goddescr=, God of the essence of dragons.(All alignments)}"},
+  { w:15, v:"{humangod}"}
+]

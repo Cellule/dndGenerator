@@ -1,0 +1,5 @@
+[
+  { w:12, v:"{$skintone= }"},
+  { w:2, v:"{$skintone=, sunburned}"},
+  { w:2, v:"{$skintone=, pockmarked}"}
+]

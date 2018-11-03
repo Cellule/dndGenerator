@@ -1,0 +1,11 @@
+[
+  { w:10, v:"{$sphy+tattoo of the word }{abstractword}{$sphy+$aword}"},
+  { w:4, v:"{$sphy+tattoo of a poem about }{abstractword}{$sphy+$aword}"},
+  { w:4, v:"{$sphy+tattoo of the lyrics of a song quote about }{abstractword}{$sphy+$aword}"},
+  { w:6, v:"{$sphy+tattoo of an inspirational quote about }{abstractword}{$sphy+$aword}"},
+  { w:4, v:"{$sphy+tattoo of the word }{abstractword}{$sphy+$aword}{$sphy+ translated into }{language}{$sphy+$lang}"},
+  { w:2, v:"{$sphy+tattoo of a poem about }{abstractword}{$sphy+$aword}{$sphy+ translated into }{language}{$sphy+$lang}"},
+  { w:3, v:"{$sphy+tattoo of an inspirational quote about }{abstractword}{$sphy+$aword}{$sphy+ translated into }{language}{$sphy+$lang}"},
+  { w:3, v:"{$sphy+tattoo of the lyrics of a song quote about }{abstractword}{$sphy+$aword}{$sphy+ written in }{language}{$sphy+$lang}"},
+  { w:3, v:"{$sphy+tattoo of the name of }{$sphy+$minPoss}{relationship}{$sphy+$rela}{$sphy+.}"},
+]

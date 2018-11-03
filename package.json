@@ -1,6 +1,6 @@
 {
   "name": "dnd-generator",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "react": "^16.6.0",
@@ -21,5 +21,10 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "json5-loader": "^1.0.1",
+    "prop-types": "^15.6.2",
+    "react-bootstrap": "^0.32.4"
+  }
 }

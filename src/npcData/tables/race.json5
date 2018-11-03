@@ -1,0 +1,92 @@
+[
+  {
+    w:5,
+    name: "Mountain Dwarf",
+    v:"{$race=mountain dwarf}{%con+3}{%str+4}{%dex-2}{%int-1}{%wis+1}{%height-38}{%lawful+2}{%chaotic-2}{%evil-2}{dwarfgod}{nonhumanskin}{longbeard}{age}{dwarfgender}{ageBonus}{dwarfquirks}"
+  },
+  {
+    w:6,
+    name: "Hill Dwarf",
+    v:"{$race=hill dwarf}{%con+4}{%str+2}{%dex-2}{%int-1}{%wis+3}{%height-38}{%lawful+2}{%chaotic-2}{%evil-2}{dwarfgod}{nonhumanskin}{longbeard}{age}{dwarfgender}{ageBonus}{dwarfquirks}"
+  },
+  {
+    w:6,
+    name: "Wood Elf",
+    v:"{$race=wood elf}{%str-1}{%dex+4}{%con-2}{%wis+4}{%int+4}{%cha+2}{%height-5}{%chaotic+3}{%good+2}{goodface}{elfgod}{elfskin}{$beard=}{age}{elfgender}{ageBonus}{elfquirks}"
+  },
+  {
+    w:4,
+    name: "High Elf",
+    v:"{$race=high elf}{%str-1}{%dex+2}{%con-2}{%wis+2}{%int+2}{%cha+2}{%height-5}{%chaotic+3}{%good+2}{goodface}{elfgod}{elfskin}{$beard=}{age}{elfgender}{ageBonus}{elfquirks}"
+  },
+  {
+    w:3,
+    name: "Drow",
+    v:"{$race=drow}{%str-1}{%dex+2}{%con-2}{%wis+2}{%int+2}{%cha+4}{%height-5}{%chaotic+3}{%evil+3}{goodface}{drowgod}{$skincom=black}{$beard=}{age}{elfgender}{ageBonus}{whitehair}"
+  },
+  {
+    w:4,
+    name: "Lightfoot Halfling",
+    v:"{$race=lightfoot halfling}{%str-2}{%dex+4}{%con-1}{%cha+2}{%height-63}{%lawful+3}{%good+3}{halflinggod}{nonhumanskin}{beard}{age}{halflinggender}{halfquirks}"
+  },
+  {
+    w:4,
+    name: "Stout Halfling",
+    v:"{$race=stout halfling}{%str-2}{%dex+4}{%con+1}{%height-63}{%lawful+3}{%good+3}{%chaotic-1}{%evil-1}{halflinggod}{nonhumanskin}{beard}{age}{halflinggender}{halfquirks}"
+  },
+  {
+    w:60,
+    name: "Human",
+    v:"{$race=human}{%str+1}{%dex+1}{%con+1}{%int+1}{%wis+1}{%cha+1}{humangod}{humanskin}{beard}{age}{humangender}"
+  },
+  {
+    w:5,
+    name: "Dragonborn",
+    v:"{$race=dragonborn}{%str+3}{%dex-2}{%con+2}{%int+2}{%wis-1}{%cha+2}{%height+20}{goodorevil}{dragongod}{dragonskin}{age}{$beard=}{dragonborngender}{dragonquirks}"
+  },
+  {
+    w:3,
+    name: "Rock Gnome",
+    v:"{$race=rock gnome}{%str-2}{%dex+1}{%con+2}{%int+4}{%wis-1}{%height-58}{%good+3}{%evil-1}{gnomegod}{nonhumanskin}{beard}{age}{gnomegender}{ageBonus}{gnomequirks}"
+  },
+  {
+    w:4,
+    name: "Forest Gnome",
+    v:"{$race=forest gnome}{%str-2}{%dex+3}{%con-1}{%int+4}{%wis-1}{%height-58}{%good+3}{%evil-1}{gnomegod}{nonhumanskin}{beard}{age}{gnomegender}{ageBonus}{gnomequirks}"
+  },
+  {
+    w:20,
+    name: "Half-Elf",
+    v:"{$race=half-elf}{%dex+1}{%int+1}{%cha+2}{%height-5}{%chaotic+2}{humangod}{halfelfskin}{beard}{age}{halfelfgender}"
+  },
+  {
+    w:4,
+    name: "Half-Orc",
+    v:"{$race=half-orc}{%str+4}{%dex-1}{%con+3}{%int-3}{%wis-3}{%cha-1}{%height+15}{%chaotic+3}{%good-2}{humangod}{halforcskin}{beard}{age}{halforcgender}"
+  },
+  {
+    w:4,
+    name: "Tiefling",
+    v:"{$race=tiefling}{%con-1}{%int+2}{%cha+3}{%chaotic+3}{humangod}{tieflinggoodorevil}{tieflingskin}{beard}{age}{gender}{ageBonus}"
+  },
+  {
+    w:2,
+    name: "Goblin",
+    v:"{$race=goblin}{%str-2}{%dex+2}{%con-2}{%int-4}{%wis-3}{%cha-1}{%height-50}{%ethicalneutral+2}{%lawful-2}{%evil+3}{humangod}{orcskin}{$beard=}{age}{gender}{goblinname}"
+  },
+  {
+    w:2,
+    name: "Orc",
+    v:"{$race=orc}{%str+5}{%dex-1}{%con+5}{%int-4}{%wis-3}{%height+20}{%good-2}{%chaotic+3}{%evil+2}{orcgod}{orcskin}{beard}{age}{orcgender}"
+  },
+  {
+    w:1,
+    name: "Troglodyte",
+    v:"{$race=troglodyte}{%str+1}{%con+1}{%int-4}{%cha-4}{%good-2}{%chaotic+3}{%evil+2}{humangod}{orcskin}{$beard=}{age}{gender}{goblinname}"
+  },
+  {
+    w:1,
+    name: "Medusa",
+    v:"{$race=medusa}{%dex+3}{%con+2}{%int+1}{%wis+2}{%cha+3}{medusa}{%lawful+2}{goodface}{humangod}{orcskin}{age}{ageBonus}{medusaname}{medusaveil}"
+  }
+]

@@ -1,0 +1,5 @@
+[
+  { w:5, v:"{$god=Lolth}{%chaotic+2}{%evil+2}{$goddescr=, Goddess of drows, spiders, darkness, chaos, evil, assassination. (Chaotic Evil)}"},
+  { w:1, v:"{$god=Ghaunadaur}{%chaotic+2}{%evil+2}{$goddescr=, Patron of abominations, oozes, slimes, jellies, outcasts, ropers and rebels. (Chaotic Evil)}"},
+  { w:4, v:"{humangod}"}
+]

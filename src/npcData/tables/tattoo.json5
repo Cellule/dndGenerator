@@ -1,0 +1,7 @@
+[
+  { w:3, v:"{texttat}"},
+  { w:4, v:"{animaltat}"},
+  { w:1, v:"{$sphy+tattoo of a }{weapon}{$sphy+$weapon}"},
+  { w:2, v:"{$sphy+abstract tattoo}"},
+  { w:3, v:"{$sphy+tribal tattoo}"}
+]

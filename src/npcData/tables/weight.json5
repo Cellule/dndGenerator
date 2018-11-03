@@ -1,0 +1,11 @@
+[
+  { w:1, v:"an anorexic{%str-3}{%con-2}"},
+  { w:5, v:"a skinny{%str-2}{%dex+1}{%con-2}"},
+  { w:12, v:"a lean{%str-1}{%dex+1}"},
+  { w:10, v:"an athletic{%str+1}{%dex+1}{%con+1}"},
+  { w:12, v:"a muscular{%str+2}{%con+1}"},
+  { w:18, v:"a regular"},
+  { w:4, v:"a fat{%dex-1}{%con+1}"},
+  { w:2, v:"an overweight{%str+1}{%dex-2}{%con-1}{%cha-1}"},
+  { w:1, v:"an obese{%dex-4}{%str+1}{%con-2}{%cha-2}"},
+]
