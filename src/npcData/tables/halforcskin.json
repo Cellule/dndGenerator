@@ -1,7 +1,4 @@
-[{
-    "w": 3,
-    "v": "{orcskin}"
-}, {
-    "w": 2,
-    "v": "{humanskin}"
-}]
+[
+  { "w":3, "v":"{orcskin}"},
+  { "w":2, "v":"{humanskin}"}
+]

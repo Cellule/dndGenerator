@@ -1,28 +1,11 @@
-[{
-    "w": 3,
-    "v": "{$org=wizards' guild}"
-}, {
-    "w": 3,
-    "v": "{$org=fighters' club}"
-}, {
-    "w": 3,
-    "v": "{$org=thiefs' guild}"
-}, {
-    "w": 3,
-    "v": "{$org=witchs' coven}"
-}, {
-    "w": 2,
-    "v": "{$org=assassins' guild}"
-}, {
-    "w": 1,
-    "v": "{$org=cult's hideout}"
-}, {
-    "w": 3,
-    "v": "{$org=clergy}"
-}, {
-    "w": 3,
-    "v": "{$org=monks' monastery}"
-}, {
-    "w": 3,
-    "v": "{$org=traders' guild}"
-}]
+[
+  { "w":3, "v":"{$org=wizards' guild}"},
+  { "w":3, "v":"{$org=fighters' club}"},
+  { "w":3, "v":"{$org=thiefs' guild}"},
+  { "w":3, "v":"{$org=witchs' coven}"},
+  { "w":2, "v":"{$org=assassins' guild}"},
+  { "w":1, "v":"{$org=cult's hideout}"},
+  { "w":3, "v":"{$org=clergy}"},
+  { "w":3, "v":"{$org=monks' monastery}"},
+  { "w":3, "v":"{$org=traders' guild}"}
+]

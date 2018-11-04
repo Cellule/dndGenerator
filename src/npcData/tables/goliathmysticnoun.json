@@ -1,0 +1,13 @@
+ [
+  { "w":1, "v":"{$name=Sky}"},
+  { "w":1, "v":"{$name=Sun}"},
+  { "w":1, "v":"{$name=Moon}"},
+  { "w":1, "v":"{$name=Fire}"},
+  { "w":1, "v":"{$name=Water}"},
+  { "w":1, "v":"{$name=Air}"},
+  { "w":1, "v":"{$name=Earth}"},
+  { "w":1, "v":"{$name=Night}"},
+  { "w":1, "v":"{$name=Light}"},
+  { "w":1, "v":"{$name=Dark}"},
+  { "w":1, "v":"{$name=Word}{%cha+2}"}
+]

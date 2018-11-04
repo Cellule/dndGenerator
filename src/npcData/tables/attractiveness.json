@@ -1,19 +1,8 @@
-[{
-    "w": 6,
-    "v": "{goodfacemod}{goodlooking}{$faceshape+$mod}"
-}, {
-    "w": 14,
-    "v": "{goodlooking}"
-}, {
-    "w": 4,
-    "v": "{badfacemod}{badlooking}{$faceshape+$mod}"
-}, {
-    "w": 10,
-    "v": "{badlooking}"
-}, {
-    "w": 8,
-    "v": "{mod}{normallooking}{$faceshape+$mod}"
-}, {
-    "w": 30,
-    "v": "{normallooking}"
-}]
+[
+  { "w":6, "v":"{goodfacemod}{goodlooking}{$faceshape+$mod}"},
+  { "w":14, "v":"{goodlooking}"},
+  { "w":4, "v":"{badfacemod}{badlooking}{$faceshape+$mod}"},
+  { "w":10, "v":"{badlooking}"},
+  { "w":8, "v":"{mod}{normallooking}{$faceshape+$mod}"},
+  { "w":30, "v":"{normallooking}"}
+]

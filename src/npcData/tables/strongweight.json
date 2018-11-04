@@ -1,0 +1,12 @@
+[
+  { "w":1, "v":"{$build=a skinny}{%str-2}{%dex+1}{%con-2}"},
+  { "w":2, "v":"{$build=a lean}{%str-1}{%dex+1}"},
+  { "w":4, "v":"{$build=an athletic}{%str+1}{%dex+1}{%con+1}"},
+  { "w":12, "v":"{$build=a muscular}{%str+2}{%con+1}"},
+  { "w":6, "v":"{$build=a regular}"},
+  { "w":16, "v":"{$build=a beefy}{%str+2}{%dex-1}{%con+2}{%height+3}"},
+  { "w":8, "v":"{$build=a massive}{%str+3}{%dex-2}{%con+3}{%height+5}"},
+  { "w":4, "v":"{$build=a round}{%dex-1}{%con+1}"},
+  { "w":3, "v":"{$build=a fat}{%dex-1}{%str+1}"},
+  { "w":1, "v":"{$build=an overweight}{%str+1}{%dex-2}{%con-1}{%cha-1}"}
+]

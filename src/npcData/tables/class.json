@@ -1,57 +1,44 @@
-[{
-    "w": 3,
-    "name": "Artificier",
-    "v": "{$occupation=artificier}{medStr}{medDex}{medCon}{hiInt}{medWis}{medCha}{richquirk}{weirdQuirk}"
-}, {
-    "w": 3,
-    "name": "Barbarian",
-    "v": "{$occupation=barbarian}{hiStr}{medDex}{hiCon}{lowInt}{lowWis}{medCha}{%moralneutral+2}{%chaotic+2}{%lawful-1}{poorquirk}{militaryquirk}"
-}, {
-    "w": 4,
-    "name": "Bard",
-    "v": "{$occupation=bard}{medStr}{hiDex}{medCon}{hiInt}{lowWis}{hiCha}{richquirk}"
-}, {
-    "w": 9,
-    "name": "Cleric",
-    "v": "{$occupation=cleric}{medStr}{lowDex}{hiCon}{medInt}{hiWis}{medCha}{religiousquirk}"
-}, {
-    "w": 2,
-    "name": "Druid",
-    "v": "{$occupation=druid}{lowStr}{medDex}{medCon}{medInt}{hiWis}{medCha}{%good-2}{%evil-2}{%lawful-2}{%chaotic-2}{%moralneutral+2}{%ethicalneutral+2}{religiousquirk}{naturequirk}"
-}, {
-    "w": 12,
-    "name": "Fighter",
-    "v": "{$occupation=fighter}{hiStr}{medDex}{hiCon}{lowInt}{medWis}{medCha}{militaryquirk}"
-}, {
-    "w": 6,
-    "name": "Monk",
-    "v": "{$occupation=monk}{hiStr}{hiDex}{hiCon}{medInt}{hiWis}{medCha}{%ethicalneutral-2}{%chaotic-2}{%lawful+2}{militaryquirk}"
-}, {
-    "w": 3,
-    "name": "Mystic",
-    "v": "{$occupation=mystic}{lowStr}{medDex}{lowCon}{hiInt}{hiWis}{medCha}{weirdQuirk}"
-}, {
-    "w": 8,
-    "name": "Paladin",
-    "v": "{$occupation=paladin}{hiStr}{lowDex}{hiCon}{lowInt}{medWis}{hiCha}{%evil-3}{%chaotic-1}{%lawful+3}{%good+3}{religiousquirk}{militaryquirk}"
-}, {
-    "w": 3,
-    "name": "Ranger",
-    "v": "{$occupation=ranger}{medStr}{hiDex}{hiCon}{lowInt}{medWis}{medCha}{%moralneutral+2}{%chaotic+2}{naturequirk}"
-}, {
-    "w": 5,
-    "name": "Rogue",
-    "v": "{$occupation=rogue}{lowStr}{hiDex}{medCon}{hiInt}{lowWis}{medCha}{%chaotic+3}{%evil+1}{poorquirk}"
-}, {
-    "w": 2,
-    "name": "Sorcerer",
-    "v": "{$occupation=sorcerer}{lowStr}{medDex}{medCon}{medInt}{medWis}{hiCha}{weirdQuirk}"
-}, {
-    "w": 2,
-    "name": "Warlock",
-    "v": "{$occupation=warlock}{lowStr}{medDex}{medCon}{medInt}{lowWis}{hiCha}{%evil+1}{weirdQuirk}"
-}, {
-    "w": 3,
-    "name": "Wizard",
-    "v": "{$occupation=wizard}{lowStr}{medDex}{medCon}{hiInt}{medWis}{lowCha}{richquirk}{weirdQuirk}"
-}]
+[
+  { "w":3,
+    "name":"Artificier",
+    "v":"{$occupation=artificier}{medStr}{medDex}{medCon}{hiInt}{medWis}{medCha}{richquirk}{weirdQuirk}{kenkunamemetal}"},
+  { "w":3,
+    "name":"Barbarian",
+    "v":"{$occupation=barbarian}{hiStr}{medDex}{hiCon}{lowInt}{lowWis}{medCha}{%moralneutral+2}{%chaotic+2}{%lawful-1}{poorquirk}{militaryquirk}{kenkunamefighting}"},
+  { "w":4,
+    "name":"Bard",
+    "v":"{$occupation=bard}{medStr}{hiDex}{medCon}{hiInt}{lowWis}{hiCha}{richquirk}{kenkuname}"},
+  { "w":9,
+    "name":"Cleric",
+    "v":"{$occupation=cleric}{medStr}{lowDex}{hiCon}{medInt}{hiWis}{medCha}{religiousquirk}{kenkuname}"},
+  { "w":2,
+    "name":"Druid",
+    "v":"{$occupation=druid}{lowStr}{medDex}{medCon}{medInt}{hiWis}{medCha}{%good-2}{%evil-2}{%lawful-2}{%chaotic-2}{%moralneutral+2}{%ethicalneutral+2}{religiousquirk}{naturequirk}{kenkunameanimal}"},
+  { "w":12,
+    "name":"Fighter",
+    "v":"{$occupation=fighter}{hiStr}{medDex}{hiCon}{lowInt}{medWis}{medCha}{militaryquirk}{kenkunamefighting}"},
+  { "w":6,
+    "name":"Monk",
+    "v":"{$occupation=monk}{hiStr}{hiDex}{hiCon}{medInt}{hiWis}{medCha}{%ethicalneutral-2}{%chaotic-2}{%lawful+2}{militaryquirk}{kenkunamequiet}"},
+  { "w":3,
+    "name":"Mystic",
+    "v":"{$occupation=mystic}{lowStr}{medDex}{lowCon}{hiInt}{hiWis}{medCha}{weirdQuirk}{kenkunamequiet}"},
+  { "w":8,
+    "name":"Paladin",
+    "v":"{$occupation=paladin}{hiStr}{lowDex}{hiCon}{lowInt}{medWis}{hiCha}{%evil-3}{%chaotic-1}{%lawful+3}{%good+3}{religiousquirk}{militaryquirk}{kenkuname}"},
+  { "w":3,
+    "name":"Ranger",
+    "v":"{$occupation=ranger}{medStr}{hiDex}{hiCon}{lowInt}{medWis}{medCha}{%moralneutral+2}{%chaotic+2}{naturequirk}{kenkunameanimal}"},
+  { "w":5,
+    "name":"Rogue",
+    "v":"{$occupation=rogue}{lowStr}{hiDex}{medCon}{hiInt}{lowWis}{medCha}{%chaotic+3}{%evil+1}{poorquirk}{kenkuname}"},
+  { "w":2,
+    "name":"Sorcerer",
+    "v":"{$occupation=sorcerer}{lowStr}{medDex}{medCon}{medInt}{medWis}{hiCha}{weirdQuirk}{kenkunamequiet}"},
+  { "w":2,
+    "name":"Warlock",
+    "v":"{$occupation=warlock}{lowStr}{medDex}{medCon}{medInt}{lowWis}{hiCha}{%evil+1}{weirdQuirk}{kenkuname}"},
+  { "w":3,
+    "name":"Wizard",
+    "v":"{$occupation=wizard}{lowStr}{medDex}{medCon}{hiInt}{medWis}{lowCha}{richquirk}{weirdQuirk}{kenkunamequiet}"}
+]

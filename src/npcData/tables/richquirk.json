@@ -1,61 +1,22 @@
-[{
-    "w": 20,
-    "v": "{$quirks+}"
-}, {
-    "w": 2,
-    "v": "{$quirks+$majPro}{$quirks+cannot tolerate rough living conditions. }"
-}, {
-    "w": 2,
-    "v": "{$quirks+$majPro}{frequency}{$quirks+$fr}{$quirks+ uses long words to sound smart. }"
-}, {
-    "w": 2,
-    "v": "{$quirks+$majPro}{frequency}{$quirks+$fr}{$quirks+ gives money to the poor. }{%good+1}"
-}, {
-    "w": 2,
-    "v": "{$quirks+$majPro}{$quirks+disregards poorer people. }"
-}, {
-    "w": 2,
-    "v": "{$quirks+$majPro}{$quirks+inherited a }{inheritance}{$quirks+. }"
-}, {
-    "w": 2,
-    "v": "{$quirks+$majPro}{$quirks+only dresses in very expensive clothes. }"
-}, {
-    "w": 2,
-    "v": "{$quirks+$majPro}{$quirks+always wears a fancy hat. }"
-}, {
-    "w": 2,
-    "v": "{$quirks+$majPro}{$quirks+loves partying. }"
-}, {
-    "w": 2,
-    "v": "{$quirks+$majPro}{$quirks+uses a beautiful walking cane. }"
-}, {
-    "w": 1,
-    "v": "{$quirks+$majPro}{$quirks+wears a lot of cheap jewelry. }"
-}, {
-    "w": 1,
-    "v": "{$quirks+$majPro}{$quirks+wears a lot of beautiful jewelry. }"
-}, {
-    "w": 1,
-    "v": "{$quirks+$majPro}{$quirks+wears fancy spectacles. }"
-}, {
-    "w": 1,
-    "v": "{$quirks+$majPro}{$quirks+wears cheap spectacles. }"
-}, {
-    "w": 2,
-    "v": "{$quirks+$majPro}{$quirks+is always accompanied by }{$quirks+$minPoss}{$quirks+servants. }"
-}, {
-    "w": 2,
-    "v": "{$quirks+$majPro}{$quirks+likes to know how things work. }{%int+2}"
-}, {
-    "w": 2,
-    "v": "{$quirks+$majPro}{$quirks+doesn't like parting with }{$quirks+$minPoss}{$quirks+money or possessions. } {%evil+1}"
-}, {
-    "w": 2,
-    "v": "{$quirks+$majPro}{$quirks+has a very regal look. }{%cha+1}"
-}, {
-    "w": 2,
-    "v": "{$quirks+$majPro}{$quirks+considers everyone else as idiots. }{%int+1}"
-}, {
-    "w": 2,
-    "v": "{$quirks+$majPro}{$quirks+has very little practical experience. }"
-}]
+[
+  { "w":20, "v":"{$quirks+}"},
+  { "w":2, "v":"{$quirks+$majPro}{$quirks+cannot tolerate rough living conditions. }"},
+  { "w":2, "v":"{$quirks+$majPro}{frequency}{$quirks+$fr}{$quirks+ uses long words to sound smart. }"},
+  { "w":2, "v":"{$quirks+$majPro}{frequency}{$quirks+$fr}{$quirks+ gives money to the poor. }{%good+1}"},
+  { "w":2, "v":"{$quirks+$majPro}{$quirks+disregards poorer people. }"},
+  { "w":2, "v":"{$quirks+$majPro}{$quirks+inherited a }{inheritance}{$quirks+. }"},
+  { "w":2, "v":"{$quirks+$majPro}{$quirks+only dresses in very expensive clothes. }"},
+  { "w":2, "v":"{$quirks+$majPro}{$quirks+always wears a fancy hat. }"},
+  { "w":2, "v":"{$quirks+$majPro}{$quirks+loves partying. }"},
+  { "w":2, "v":"{$quirks+$majPro}{$quirks+uses a beautiful walking cane. }"},
+  { "w":1, "v":"{$quirks+$majPro}{$quirks+wears a lot of cheap jewelry. }"},
+  { "w":1, "v":"{$quirks+$majPro}{$quirks+wears a lot of beautiful jewelry. }"},
+  { "w":1, "v":"{$quirks+$majPro}{$quirks+wears fancy spectacles. }"},
+  { "w":1, "v":"{$quirks+$majPro}{$quirks+wears cheap spectacles. }"},
+  { "w":2, "v":"{$quirks+$majPro}{$quirks+is always accompanied by }{$quirks+$minPoss}{$quirks+servants. }"},
+  { "w":2, "v":"{$quirks+$majPro}{$quirks+likes to know how things work. }{%int+2}"},
+  { "w":2, "v":"{$quirks+$majPro}{$quirks+doesn't like parting with }{$quirks+$minPoss}{$quirks+money or possessions. } {%evil+1}"},
+  { "w":2, "v":"{$quirks+$majPro}{$quirks+has a very regal look. }{%cha+1}"},
+  { "w":2, "v":"{$quirks+$majPro}{$quirks+considers everyone else as idiots. }{%int+1}"},
+  { "w":2, "v":"{$quirks+$majPro}{$quirks+has very little practical experience. }"}
+]

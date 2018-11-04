@@ -1,22 +1,9 @@
-[{
-    "w": 1,
-    "v": "{$skincom=white}"
-}, {
-    "w": 1,
-    "v": "{$skincom=pink}"
-}, {
-    "w": 1,
-    "v": "{$skincom=red}"
-}, {
-    "w": 1,
-    "v": "{$skincom=brown}"
-}, {
-    "w": 1,
-    "v": "{$skincom=black}"
-}, {
-    "w": 1,
-    "v": "{$skincom=golden}"
-}, {
-    "w": 1,
-    "v": "{$skincom=chocolate}"
-}]
+[
+  { "w":1, "v":"{$skin+white}"},
+  { "w":1, "v":"{$skin+pink}"},
+  { "w":1, "v":"{$skin+red}"},
+  { "w":1, "v":"{$skin+brown}"},
+  { "w":1, "v":"{$skin+black}"},
+  { "w":1, "v":"{$skin+golden}"},
+  { "w":1, "v":"{$skin+chocolate}"}
+]

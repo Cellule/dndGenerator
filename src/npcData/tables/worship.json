@@ -1,22 +1,9 @@
-[{
-    "w": 7,
-    "v": "{$worship=discretely}"
-}, {
-    "w": 4,
-    "v": "{$worship=quietly}"
-}, {
-    "w": 3,
-    "v": "{$worship=openly}"
-}, {
-    "w": 2,
-    "v": "{$worship=proudly}"
-}, {
-    "w": 1,
-    "v": "{$worship=loudly}"
-}, {
-    "w": 1,
-    "v": "{$worship=zealously}"
-}, {
-    "w": 1,
-    "v": "{$worship=fervently}"
-}]
+[
+  { "w":7, "v":"{$worship=discretely}"},
+  { "w":4, "v":"{$worship=quietly}"},
+  { "w":3, "v":"{$worship=openly}"},
+  { "w":2, "v":"{$worship=proudly}"},
+  { "w":1, "v":"{$worship=loudly}"},
+  { "w":1, "v":"{$worship=zealously}"},
+  { "w":1, "v":"{$worship=fervently}"}
+]

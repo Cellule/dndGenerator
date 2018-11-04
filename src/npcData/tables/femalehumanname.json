@@ -1,295 +1,100 @@
-[{
-    "w": 1,
-    "v": "{$name=Adelaide}"
-}, {
-    "w": 1,
-    "v": "{$name=Aleida}"
-}, {
-    "w": 1,
-    "v": "{$name=Alexia}"
-}, {
-    "w": 1,
-    "v": "{$name=Alianor}"
-}, {
-    "w": 1,
-    "v": "{$name=Alice}"
-}, {
-    "w": 1,
-    "v": "{$name=Alys}"
-}, {
-    "w": 1,
-    "v": "{$name=Amelia}"
-}, {
-    "w": 1,
-    "v": "{$name=Amity}"
-}, {
-    "w": 1,
-    "v": "{$name=Anastas}"
-}, {
-    "w": 1,
-    "v": "{$name=Angmar}"
-}, {
-    "w": 1,
-    "v": "{$name=Anne}"
-}, {
-    "w": 1,
-    "v": "{$name=Arabella}"
-}, {
-    "w": 1,
-    "v": "{$name=Ariana}"
-}, {
-    "w": 1,
-    "v": "{$name=Ariel}"
-}, {
-    "w": 1,
-    "v": "{$name=Atheena}"
-}, {
-    "w": 1,
-    "v": "{$name=Avery}"
-}, {
-    "w": 1,
-    "v": "{$name=Ayleth}"
-}, {
-    "w": 1,
-    "v": "{$name=Beatrix}"
-}, {
-    "w": 1,
-    "v": "{$name=Benevolence}"
-}, {
-    "w": 1,
-    "v": "{$name=Bertha}"
-}, {
-    "w": 1,
-    "v": "{$name=Bess}"
-}, {
-    "w": 1,
-    "v": "{$name=Beverly}"
-}, {
-    "w": 1,
-    "v": "{$name=Brangian}"
-}, {
-    "w": 1,
-    "v": "{$name=Brunhild}"
-}, {
-    "w": 1,
-    "v": "{$name=Catherine}"
-}, {
-    "w": 1,
-    "v": "{$name=Catrain}"
-}, {
-    "w": 1,
-    "v": "{$name=Cedany}"
-}, {
-    "w": 1,
-    "v": "{$name=Cristiana}"
-}, {
-    "w": 1,
-    "v": "{$name=Diana}"
-}, {
-    "w": 1,
-    "v": "{$name=Dimia}"
-}, {
-    "w": 1,
-    "v": "{$name=Duraina}"
-}, {
-    "w": 1,
-    "v": "{$name=Eleanor}"
-}, {
-    "w": 1,
-    "v": "{$name=Eliose}"
-}, {
-    "w": 1,
-    "v": "{$name=Elizabeth}"
-}, {
-    "w": 1,
-    "v": "{$name=Ella}"
-}, {
-    "w": 1,
-    "v": "{$name=Ellyn}"
-}, {
-    "w": 1,
-    "v": "{$name=Emeline}"
-}, {
-    "w": 1,
-    "v": "{$name=Emma}"
-}, {
-    "w": 1,
-    "v": "{$name=Enndolynn}"
-}, {
-    "w": 1,
-    "v": "{$name=Esme}"
-}, {
-    "w": 1,
-    "v": "{$name=Evelyn}"
-}, {
-    "w": 1,
-    "v": "{$name=Farfelee}"
-}, {
-    "w": 1,
-    "v": "{$name=Fay}"
-}, {
-    "w": 1,
-    "v": "{$name=Fira}"
-}, {
-    "w": 1,
-    "v": "{$name=Gith}"
-}, {
-    "w": 1,
-    "v": "{$name=Gloriana}"
-}, {
-    "w": 1,
-    "v": "{$name=Godiva}"
-}, {
-    "w": 1,
-    "v": "{$name=Guinevere}"
-}, {
-    "w": 1,
-    "v": "{$name=Gussalen}"
-}, {
-    "w": 1,
-    "v": "{$name=Gwendolyn}"
-}, {
-    "w": 1,
-    "v": "{$name=Harley}"
-}, {
-    "w": 1,
-    "v": "{$name=Helena}"
-}, {
-    "w": 1,
-    "v": "{$name=Helewys}"
-}, {
-    "w": 1,
-    "v": "{$name=Hildegard}"
-}, {
-    "w": 1,
-    "v": "{$name=Idla}"
-}, {
-    "w": 1,
-    "v": "{$name=Isabel}"
-}, {
-    "w": 1,
-    "v": "{$name=Isolde}"
-}, {
-    "w": 1,
-    "v": "{$name=Ivy}"
-}, {
-    "w": 1,
-    "v": "{$name=Jacquelyn}"
-}, {
-    "w": 1,
-    "v": "{$name=Jade}"
-}, {
-    "w": 1,
-    "v": "{$name=Janet}"
-}, {
-    "w": 1,
-    "v": "{$name=Jasmine}"
-}, {
-    "w": 1,
-    "v": "{$name=Jetta}"
-}, {
-    "w": 1,
-    "v": "{$name=Josselyn}"
-}, {
-    "w": 1,
-    "v": "{$name=Juliana}"
-}, {
-    "w": 1,
-    "v": "{$name=Katelyn}"
-}, {
-    "w": 1,
-    "v": "{$name=Katrina}"
-}, {
-    "w": 1,
-    "v": "{$name=Kaylein}"
-}, {
-    "w": 1,
-    "v": "{$name=Krea}"
-}, {
-    "w": 1,
-    "v": "{$name=Laila}"
-}, {
-    "w": 1,
-    "v": "{$name=Lily}"
-}, {
-    "w": 1,
-    "v": "{$name=Lindsey}"
-}, {
-    "w": 1,
-    "v": "{$name=Loreena}"
-}, {
-    "w": 1,
-    "v": "{$name=Luanda}"
-}, {
-    "w": 1,
-    "v": "{$name=Maerwynn}"
-}, {
-    "w": 1,
-    "v": "{$name=Malkyn}"
-}, {
-    "w": 1,
-    "v": "{$name=Margaret}"
-}, {
-    "w": 1,
-    "v": "{$name=Maria}"
-}, {
-    "w": 1,
-    "v": "{$name=Marigold}"
-}, {
-    "w": 1,
-    "v": "{$name=Mary}"
-}, {
-    "w": 1,
-    "v": "{$name=Matilda}"
-}, {
-    "w": 1,
-    "v": "{$name=Millicent}"
-}, {
-    "w": 1,
-    "v": "{$name=Mirabelle}"
-}, {
-    "w": 1,
-    "v": "{$name=Muriel}"
-}, {
-    "w": 1,
-    "v": "{$name=Peronell}"
-}, {
-    "w": 1,
-    "v": "{$name=Phrowenia}"
-}, {
-    "w": 1,
-    "v": "{$name=Rainydayas}"
-}, {
-    "w": 1,
-    "v": "{$name=Rosa}"
-}, {
-    "w": 1,
-    "v": "{$name=Rose}"
-}, {
-    "w": 1,
-    "v": "{$name=Ryia}"
-}, {
-    "w": 1,
-    "v": "{$name=Seraphina}"
-}, {
-    "w": 1,
-    "v": "{$name=Susanna}"
-}, {
-    "w": 1,
-    "v": "{$name=Sybbyl}"
-}, {
-    "w": 1,
-    "v": "{$name=Thea}"
-}, {
-    "w": 1,
-    "v": "{$name=Velma}"
-}, {
-    "w": 1,
-    "v": "{$name=Victoria}"
-}, {
-    "w": 1,
-    "v": "{$name=Wendy}"
-}, {
-    "w": 1,
-    "v": "{$name=Winifred}"
-}]
+[
+  { "w":1, "v":"{$name=Adelaide}"},
+  { "w":1, "v":"{$name=Aleida}"},
+  { "w":1, "v":"{$name=Alexia}"},
+  { "w":1, "v":"{$name=Alianor}"},
+  { "w":1, "v":"{$name=Alice}"},
+  { "w":1, "v":"{$name=Alys}"},
+  { "w":1, "v":"{$name=Amelia}"},
+  { "w":1, "v":"{$name=Amity}"},
+  { "w":1, "v":"{$name=Anastas}"},
+  { "w":1, "v":"{$name=Angmar}"},
+  { "w":1, "v":"{$name=Anne}"},
+  { "w":1, "v":"{$name=Arabella}"},
+  { "w":1, "v":"{$name=Ariana}"},
+  { "w":1, "v":"{$name=Ariel}"},
+  { "w":1, "v":"{$name=Atheena}"},
+  { "w":1, "v":"{$name=Avery}"},
+  { "w":1, "v":"{$name=Ayleth}"},
+  { "w":1, "v":"{$name=Beatrix}"},
+  { "w":1, "v":"{$name=Benevolence}"},
+  { "w":1, "v":"{$name=Bertha}"},
+  { "w":1, "v":"{$name=Bess}"},
+  { "w":1, "v":"{$name=Beverly}"},
+  { "w":1, "v":"{$name=Brangian}"},
+  { "w":1, "v":"{$name=Brunhild}"},
+  { "w":1, "v":"{$name=Catherine}"},
+  { "w":1, "v":"{$name=Catrain}"},
+  { "w":1, "v":"{$name=Cedany}"},
+  { "w":1, "v":"{$name=Cristiana}"},
+  { "w":1, "v":"{$name=Diana}"},
+  { "w":1, "v":"{$name=Dimia}"},
+  { "w":1, "v":"{$name=Duraina}"},
+  { "w":1, "v":"{$name=Eleanor}"},
+  { "w":1, "v":"{$name=Eliose}"},
+  { "w":1, "v":"{$name=Elizabeth}"},
+  { "w":1, "v":"{$name=Ella}"},
+  { "w":1, "v":"{$name=Ellyn}"},
+  { "w":1, "v":"{$name=Emeline}"},
+  { "w":1, "v":"{$name=Emma}"},
+  { "w":1, "v":"{$name=Enndolynn}"},
+  { "w":1, "v":"{$name=Esme}"},
+  { "w":1, "v":"{$name=Evelyn}"},
+  { "w":1, "v":"{$name=Farfelee}"},
+  { "w":1, "v":"{$name=Fay}"},
+  { "w":1, "v":"{$name=Fira}"},
+  { "w":1, "v":"{$name=Gith}"},
+  { "w":1, "v":"{$name=Gloriana}"},
+  { "w":1, "v":"{$name=Godiva}"},
+  { "w":1, "v":"{$name=Guinevere}"},
+  { "w":1, "v":"{$name=Gussalen}"},
+  { "w":1, "v":"{$name=Gwendolyn}"},
+  { "w":1, "v":"{$name=Harley}"},
+  { "w":1, "v":"{$name=Helena}"},
+  { "w":1, "v":"{$name=Helewys}"},
+  { "w":1, "v":"{$name=Hildegard}"},
+  { "w":1, "v":"{$name=Idla}"},
+  { "w":1, "v":"{$name=Isabel}"},
+  { "w":1, "v":"{$name=Isolde}"},
+  { "w":1, "v":"{$name=Ivy}"},
+  { "w":1, "v":"{$name=Jacquelyn}"},
+  { "w":1, "v":"{$name=Jade}"},
+  { "w":1, "v":"{$name=Janet}"},
+  { "w":1, "v":"{$name=Jasmine}"},
+  { "w":1, "v":"{$name=Jetta}"},
+  { "w":1, "v":"{$name=Josselyn}"},
+  { "w":1, "v":"{$name=Juliana}"},
+  { "w":1, "v":"{$name=Katelyn}"},
+  { "w":1, "v":"{$name=Katrina}"},
+  { "w":1, "v":"{$name=Kaylein}"},
+  { "w":1, "v":"{$name=Krea}"},
+  { "w":1, "v":"{$name=Laila}"},
+  { "w":1, "v":"{$name=Lily}"},
+  { "w":1, "v":"{$name=Lindsey}"},
+  { "w":1, "v":"{$name=Loreena}"},
+  { "w":1, "v":"{$name=Luanda}"},
+  { "w":1, "v":"{$name=Maerwynn}"},
+  { "w":1, "v":"{$name=Malkyn}"},
+  { "w":1, "v":"{$name=Margaret}"},
+  { "w":1, "v":"{$name=Maria}"},
+  { "w":1, "v":"{$name=Marigold}"},
+  { "w":1, "v":"{$name=Mary}"},
+  { "w":1, "v":"{$name=Matilda}"},
+  { "w":1, "v":"{$name=Millicent}"},
+  { "w":1, "v":"{$name=Mirabelle}"},
+  { "w":1, "v":"{$name=Muriel}"},
+  { "w":1, "v":"{$name=Peronell}"},
+  { "w":1, "v":"{$name=Phrowenia}"},
+  { "w":1, "v":"{$name=Rainydayas}"},
+  { "w":1, "v":"{$name=Rosa}"},
+  { "w":1, "v":"{$name=Rose}"},
+  { "w":1, "v":"{$name=Ryia}"},
+  { "w":1, "v":"{$name=Seraphina}"},
+  { "w":1, "v":"{$name=Susanna}"},
+  { "w":1, "v":"{$name=Sybbyl}"},
+  { "w":1, "v":"{$name=Thea}"},
+  { "w":1, "v":"{$name=Velma}"},
+  { "w":1, "v":"{$name=Victoria}"},
+  { "w":1, "v":"{$name=Wendy}"},
+  { "w":1, "v":"{$name=Winifred}"}
+]

@@ -1,151 +1,52 @@
-[{
-    "w": 1,
-    "v": "{$name=Dalthu}"
-}, {
-    "w": 1,
-    "v": "{$name=Derthag}"
-}, {
-    "w": 1,
-    "v": "{$name=Eghuglat}"
-}, {
-    "w": 1,
-    "v": "{$name=Fozhug}"
-}, {
-    "w": 1,
-    "v": "{$name=Gelub}"
-}, {
-    "w": 1,
-    "v": "{$name=Glush}"
-}, {
-    "w": 1,
-    "v": "{$name=Gomatug}"
-}, {
-    "w": 1,
-    "v": "{$name=Hugmug}"
-}, {
-    "w": 1,
-    "v": "{$name=Jorgagu}"
-}, {
-    "w": 1,
-    "v": "{$name=Jughragh}"
-}, {
-    "w": 1,
-    "v": "{$name=Kebub}"
-}, {
-    "w": 1,
-    "v": "{$name=Kurbag}"
-}, {
-    "w": 1,
-    "v": "{$name=Maknok}"
-}, {
-    "w": 1,
-    "v": "{$name=Nofhug}"
-}, {
-    "w": 1,
-    "v": "{$name=Oakgu}"
-}, {
-    "w": 1,
-    "v": "{$name=Oogorim}"
-}, {
-    "w": 1,
-    "v": "{$name=Orgug}"
-}, {
-    "w": 1,
-    "v": "{$name=Ortguth}"
-}, {
-    "w": 1,
-    "v": "{$name=Pofhug}"
-}, {
-    "w": 1,
-    "v": "{$name=Poogugh}"
-}, {
-    "w": 1,
-    "v": "{$name=Puiltag}"
-}, {
-    "w": 1,
-    "v": "{$name=Quomaugh}"
-}, {
-    "w": 1,
-    "v": "{$name=Rurigig}"
-}, {
-    "w": 1,
-    "v": "{$name=Sargulg}"
-}, {
-    "w": 1,
-    "v": "{$name=Sarod}"
-}, {
-    "w": 1,
-    "v": "{$name=Shamar}"
-}, {
-    "w": 1,
-    "v": "{$name=Smegugh}"
-}, {
-    "w": 1,
-    "v": "{$name=Zog}"
-}, {
-    "w": 1,
-    "v": "{$name=Sogugh}"
-}, {
-    "w": 1,
-    "v": "{$name=Sugorim}"
-}, {
-    "w": 1,
-    "v": "{$name=Tozhug}"
-}, {
-    "w": 1,
-    "v": "{$name=Trugagh}"
-}, {
-    "w": 1,
-    "v": "{$name=Tulgan}"
-}, {
-    "w": 1,
-    "v": "{$name=Ulmragha}"
-}, {
-    "w": 1,
-    "v": "{$name=Urg}"
-}, {
-    "w": 1,
-    "v": "{$name=Vakmu}"
-}, {
-    "w": 1,
-    "v": "{$name=Varthurg}"
-}, {
-    "w": 1,
-    "v": "{$name=Vitgurat}"
-}, {
-    "w": 1,
-    "v": "{$name=Vlorg}"
-}, {
-    "w": 1,
-    "v": "{$name=Woglug}"
-}, {
-    "w": 1,
-    "v": "{$name=Xarlug}"
-}, {
-    "w": 1,
-    "v": "{$name=Xepug}"
-}, {
-    "w": 1,
-    "v": "{$name=Xig}"
-}, {
-    "w": 1,
-    "v": "{$name=Xug}"
-}, {
-    "w": 1,
-    "v": "{$name=Xugha}"
-}, {
-    "w": 1,
-    "v": "{$name=Xugor}"
-}, {
-    "w": 1,
-    "v": "{$name=Xuk}"
-}, {
-    "w": 1,
-    "v": "{$name=Yambagorn}"
-}, {
-    "w": 1,
-    "v": "{$name=Zarod}"
-}, {
-    "w": 1,
-    "v": "{$name=Zonagh}"
-}]
+[
+  { "w":1, "v":"{$name=Dalthu}"},
+  { "w":1, "v":"{$name=Derthag}"},
+  { "w":1, "v":"{$name=Eghuglat}"},
+  { "w":1, "v":"{$name=Fozhug}"},
+  { "w":1, "v":"{$name=Gelub}"},
+  { "w":1, "v":"{$name=Glush}"},
+  { "w":1, "v":"{$name=Gomatug}"},
+  { "w":1, "v":"{$name=Hugmug}"},
+  { "w":1, "v":"{$name=Jorgagu}"},
+  { "w":1, "v":"{$name=Jughragh}"},
+  { "w":1, "v":"{$name=Kebub}"},
+  { "w":1, "v":"{$name=Kurbag}"},
+  { "w":1, "v":"{$name=Maknok}"},
+  { "w":1, "v":"{$name=Nofhug}"},
+  { "w":1, "v":"{$name=Oakgu}"},
+  { "w":1, "v":"{$name=Oogorim}"},
+  { "w":1, "v":"{$name=Orgug}"},
+  { "w":1, "v":"{$name=Ortguth}"},
+  { "w":1, "v":"{$name=Pofhug}"},
+  { "w":1, "v":"{$name=Poogugh}"},
+  { "w":1, "v":"{$name=Puiltag}"},
+  { "w":1, "v":"{$name=Quomaugh}"},
+  { "w":1, "v":"{$name=Rurigig}"},
+  { "w":1, "v":"{$name=Sargulg}"},
+  { "w":1, "v":"{$name=Sarod}"},
+  { "w":1, "v":"{$name=Shamar}"},
+  { "w":1, "v":"{$name=Smegugh}"},
+  { "w":1, "v":"{$name=Zog}"},
+  { "w":1, "v":"{$name=Sogugh}"},
+  { "w":1, "v":"{$name=Sugorim}"},
+  { "w":1, "v":"{$name=Tozhug}"},
+  { "w":1, "v":"{$name=Trugagh}"},
+  { "w":1, "v":"{$name=Tulgan}"},
+  { "w":1, "v":"{$name=Ulmragha}"},
+  { "w":1, "v":"{$name=Urg}"},
+  { "w":1, "v":"{$name=Vakmu}"},
+  { "w":1, "v":"{$name=Varthurg}"},
+  { "w":1, "v":"{$name=Vitgurat}"},
+  { "w":1, "v":"{$name=Vlorg}"},
+  { "w":1, "v":"{$name=Woglug}"},
+  { "w":1, "v":"{$name=Xarlug}"},
+  { "w":1, "v":"{$name=Xepug}"},
+  { "w":1, "v":"{$name=Xig}"},
+  { "w":1, "v":"{$name=Xug}"},
+  { "w":1, "v":"{$name=Xugha}"},
+  { "w":1, "v":"{$name=Xugor}"},
+  { "w":1, "v":"{$name=Xuk}"},
+  { "w":1, "v":"{$name=Yambagorn}"},
+  { "w":1, "v":"{$name=Zarod}"},
+  { "w":1, "v":"{$name=Zonagh}"}
+]

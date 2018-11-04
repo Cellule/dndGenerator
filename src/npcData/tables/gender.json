@@ -1,9 +1,12 @@
-[{
-    "w": 1,
+[
+  {
+    "w":1,
     "name": "Male",
-    "v": "{$gender=male}{$majPro=He }{$minPro=he }{$workGender=man}{$majPoss=His }{$minPoss=his }{$minHim=him}"
-}, {
-    "w": 1,
+    "v":"{$gender=male}{$majPro=He }{$minPro=he }{$workGender=man}{$majPoss=His }{$minPoss=his }{$minHim=him}"
+  },
+  {
+    "w":1,
     "name": "Female",
-    "v": "{$gender=female}{%str-1}{%dex+1}{%con-1}{%wis+1}{%cha+1}{$majPoss=Her }{$minPoss=her }{$majPro=She }{$minPro=she }{%height-10}{$workGender=woman}{$minHim=her}{$beard=}"
-}]
+    "v":"{$gender=female}{%str-1}{%dex+1}{%con-1}{%wis+1}{%cha+1}{$majPoss=Her }{$minPoss=her }{$majPro=She }{$minPro=she }{%height-10}{$workGender=woman}{$minHim=her}{$beard=}"
+  }
+]

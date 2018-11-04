@@ -1,0 +1,4 @@
+[
+  { "w":1, "v":"{male}{maletritonname}{tritonsurname}"},
+  { "w":1, "v":"{female}{femaletritonname}{tritonsurname}"}
+]

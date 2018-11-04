@@ -1,0 +1,6 @@
+[
+  { "w":1, "v":"{$kenkucolor=black}"},
+  { "w":1, "v":"{$kenkucolor=dark blue}"},
+  { "w":1, "v":"{$kenkucolor=dark gray}"},
+  { "w":1, "v":"{$kenkucolor=dark brown}"}
+]

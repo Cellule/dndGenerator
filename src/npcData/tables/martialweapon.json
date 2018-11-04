@@ -1,37 +1,14 @@
-[{
-    "w": 1,
-    "v": "{$weapon=battleaxe}"
-}, {
-    "w": 1,
-    "v": "{$weapon=flail}"
-}, {
-    "w": 1,
-    "v": "{$weapon=greataxe}"
-}, {
-    "w": 1,
-    "v": "{$weapon=glaive}"
-}, {
-    "w": 1,
-    "v": "{$weapon=greatsword}"
-}, {
-    "w": 1,
-    "v": "{$weapon=lance}"
-}, {
-    "w": 1,
-    "v": "{$weapon=longsword}"
-}, {
-    "w": 1,
-    "v": "{$weapon=maul}"
-}, {
-    "w": 1,
-    "v": "{$weapon=morningstar}"
-}, {
-    "w": 1,
-    "v": "{$weapon=pike}"
-}, {
-    "w": 1,
-    "v": "{$weapon=trident}"
-}, {
-    "w": 1,
-    "v": "{$weapon=warhammer}"
-}]
+[
+  { "w":1, "v":"{$weapon=battleaxe}"},
+  { "w":1, "v":"{$weapon=flail}"},
+  { "w":1, "v":"{$weapon=greataxe}"},
+  { "w":1, "v":"{$weapon=glaive}"},
+  { "w":1, "v":"{$weapon=greatsword}"},
+  { "w":1, "v":"{$weapon=lance}"},
+  { "w":1, "v":"{$weapon=longsword}"},
+  { "w":1, "v":"{$weapon=maul}"},
+  { "w":1, "v":"{$weapon=morningstar}"},
+  { "w":1, "v":"{$weapon=pike}"},
+  { "w":1, "v":"{$weapon=trident}"},
+  { "w":1, "v":"{$weapon=warhammer}"}
+]

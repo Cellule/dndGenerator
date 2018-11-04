@@ -1,133 +1,46 @@
-[{
-    "w": 1,
-    "v": "{$name=Akchar}"
-}, {
-    "w": 1,
-    "v": "{$name=Ammeros}"
-}, {
-    "w": 1,
-    "v": "{$name=Andlech}"
-}, {
-    "w": 1,
-    "v": "{$name=Aradani}"
-}, {
-    "w": 1,
-    "v": "{$name=Arkzer}"
-}, {
-    "w": 1,
-    "v": "{$name=Arrias}"
-}, {
-    "w": 1,
-    "v": "{$name=Ashes}"
-}, {
-    "w": 1,
-    "v": "{$name=Beldani}"
-}, {
-    "w": 1,
-    "v": "{$name=Damthos}"
-}, {
-    "w": 1,
-    "v": "{$name=Dharxes}"
-}, {
-    "w": 1,
-    "v": "{$name=Dibis}"
-}, {
-    "w": 1,
-    "v": "{$name=Dimwure}"
-}, {
-    "w": 1,
-    "v": "{$name=Ekthor}"
-}, {
-    "w": 1,
-    "v": "{$name=Euphoria}"
-}, {
-    "w": 1,
-    "v": "{$name=Grilia}"
-}, {
-    "w": 1,
-    "v": "{$name=Iathor}"
-}, {
-    "w": 1,
-    "v": "{$name=Karzire}"
-}, {
-    "w": 1,
-    "v": "{$name=Kosus}"
-}, {
-    "w": 1,
-    "v": "{$name=Kyris}"
-}, {
-    "w": 1,
-    "v": "{$name=Lokeus}"
-}, {
-    "w": 1,
-    "v": "{$name=Magoria}"
-}, {
-    "w": 1,
-    "v": "{$name=Maledos}"
-}, {
-    "w": 1,
-    "v": "{$name=Maloth}"
-}, {
-    "w": 1,
-    "v": "{$name=Mavrakas}"
-}, {
-    "w": 1,
-    "v": "{$name=Natari}"
-}, {
-    "w": 1,
-    "v": "{$name=Nephira}"
-}, {
-    "w": 1,
-    "v": "{$name=Nithyis}"
-}, {
-    "w": 1,
-    "v": "{$name=Pescyra}"
-}, {
-    "w": 1,
-    "v": "{$name=Reakas}"
-}, {
-    "w": 1,
-    "v": "{$name=Royola}"
-}, {
-    "w": 1,
-    "v": "{$name=Salthor}"
-}, {
-    "w": 1,
-    "v": "{$name=Seirilypsis}"
-}, {
-    "w": 1,
-    "v": "{$name=Shalech}"
-}, {
-    "w": 1,
-    "v": "{$name=Shazer}"
-}, {
-    "w": 1,
-    "v": "{$name=Skaros}"
-}, {
-    "w": 1,
-    "v": "{$name=Urakos}"
-}, {
-    "w": 1,
-    "v": "{$name=Uricis}"
-}, {
-    "w": 1,
-    "v": "{$name=Urixikas}"
-}, {
-    "w": 1,
-    "v": "{$name=Valshoon}"
-}, {
-    "w": 1,
-    "v": "{$name=Yorazis}"
-}, {
-    "w": 1,
-    "v": "{$name=Yuzis}"
-}, {
-    "w": 1,
-    "v": "{$name=Zorcius}"
-}, {
-    "w": 1,
-    "v": "{$name=Zorris}"
-}, {
-    "w": 1,
-    "v": "{$name=Zorrut}"
-}]
+[
+  { "w":1, "v":"{$name=Akchar}"},
+  { "w":1, "v":"{$name=Ammeros}"},
+  { "w":1, "v":"{$name=Andlech}"},
+  { "w":1, "v":"{$name=Aradani}"},
+  { "w":1, "v":"{$name=Arkzer}"},
+  { "w":1, "v":"{$name=Arrias}"},
+  { "w":1, "v":"{$name=Ashes}"},
+  { "w":1, "v":"{$name=Beldani}"},
+  { "w":1, "v":"{$name=Damthos}"},
+  { "w":1, "v":"{$name=Dharxes}"},
+  { "w":1, "v":"{$name=Dibis}"},
+  { "w":1, "v":"{$name=Dimwure}"},
+  { "w":1, "v":"{$name=Ekthor}"},
+  { "w":1, "v":"{$name=Euphoria}"},
+  { "w":1, "v":"{$name=Grilia}"},
+  { "w":1, "v":"{$name=Iathor}"},
+  { "w":1, "v":"{$name=Karzire}"},
+  { "w":1, "v":"{$name=Kosus}"},
+  { "w":1, "v":"{$name=Kyris}"},
+  { "w":1, "v":"{$name=Lokeus}"},
+  { "w":1, "v":"{$name=Magoria}"},
+  { "w":1, "v":"{$name=Maledos}"},
+  { "w":1, "v":"{$name=Maloth}"},
+  { "w":1, "v":"{$name=Mavrakas}"},
+  { "w":1, "v":"{$name=Natari}"},
+  { "w":1, "v":"{$name=Nephira}"},
+  { "w":1, "v":"{$name=Nithyis}"},
+  { "w":1, "v":"{$name=Pescyra}"},
+  { "w":1, "v":"{$name=Reakas}"},
+  { "w":1, "v":"{$name=Royola}"},
+  { "w":1, "v":"{$name=Salthor}"},
+  { "w":1, "v":"{$name=Seirilypsis}"},
+  { "w":1, "v":"{$name=Shalech}"},
+  { "w":1, "v":"{$name=Shazer}"},
+  { "w":1, "v":"{$name=Skaros}"},
+  { "w":1, "v":"{$name=Urakos}"},
+  { "w":1, "v":"{$name=Uricis}"},
+  { "w":1, "v":"{$name=Urixikas}"},
+  { "w":1, "v":"{$name=Valshoon}"},
+  { "w":1, "v":"{$name=Yorazis}"},
+  { "w":1, "v":"{$name=Yuzis}"},
+  { "w":1, "v":"{$name=Zorcius}"},
+  { "w":1, "v":"{$name=Zorris}"},
+  { "w":1, "v":"{$name=Zorrut}"}
+]

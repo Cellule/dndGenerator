@@ -1,67 +1,26 @@
-[{
-    "w": 1,
-    "v": "{%age=14}{%dex+2}{%height-25}{$beard=}"
-}, {
-    "w": 1,
-    "v": "{%age=15}{%dex+2}{%height-8}{$beard=}"
-}, {
-    "w": 1,
-    "v": "{%age=16}{%dex+1}{%height-5}{$beard=}"
-}, {
-    "w": 2,
-    "v": "{%age=18}{%str+1}{%con+1}{%height-2}{$beard=}"
-}, {
-    "w": 2,
-    "v": "{%age=20}{%str+2}{%con+2}"
-}, {
-    "w": 2,
-    "v": "{%age=23}{%str+2}{%con+2}"
-}, {
-    "w": 2,
-    "v": "{%age=26}{%str+2}{%con+2}"
-}, {
-    "w": 2,
-    "v": "{%age=29}{%str+1}{%con+1}"
-}, {
-    "w": 2,
-    "v": "{%age=32}{%str+1}{%con+1}"
-}, {
-    "w": 2,
-    "v": "{%age=35}"
-}, {
-    "w": 2,
-    "v": "{%age=38}{%int+1}{%wis+1}{%dex-1}"
-}, {
-    "w": 2,
-    "v": "{%age=41}{%int+1}{%wis+1}{%dex-1}"
-}, {
-    "w": 2,
-    "v": "{%age=44}{%int+1}{%wis+1}{%dex-1}"
-}, {
-    "w": 2,
-    "v": "{%age=47}{%int+1}{%wis+1}{%str-1}{%con-1}{%dex-1}"
-}, {
-    "w": 2,
-    "v": "{%age=50}{%int+1}{%wis+1}{%str-1}{%con-1}{%dex-1}"
-}, {
-    "w": 2,
-    "v": "{%age=53}{%int+1}{%wis+2}{%str-1}{%con-1}{%dex-1}"
-}, {
-    "w": 1,
-    "v": "{%age=56}{%int+1}{%wis+2}{%str-1}{%con-1}{%dex-1}{%height-3}"
-}, {
-    "w": 1,
-    "v": "{%age=59}{%int+1}{%wis+2}{%str-1}{%con-1}{%dex-1}{%height-3}"
-}, {
-    "w": 1,
-    "v": "{%age=62}{%int+2}{%wis+3}{%str-2}{%con-2}{%dex-2}{%height-3}"
-}, {
-    "w": 1,
-    "v": "{%age=65}{%int+2}{%wis+3}{%str-2}{%con-2}{%dex-2}{%height-3}"
-}, {
-    "w": 1,
-    "v": "{%age=70}{%int+2}{%wis+3}{%str-2}{%con-2}{%dex-2}{%height-3}"
-}, {
-    "w": 1,
-    "v": "{%age=75}{%int+2}{%wis+3}{%str-2}{%con-2}{%dex-2}{%height-3}"
-}]
+[
+  { "w":1, "v":"{%age=14}{%dex+2}{%height-25}{$beard=}"},
+  { "w":1, "v":"{%age=15}{%dex+2}{%height-8}{$beard=}"},
+  { "w":1, "v":"{%age=16}{%dex+1}{%height-5}{$beard=}"},
+  { "w":2, "v":"{%age=18}{%str+1}{%con+1}{%height-2}{$beard=}"},
+  { "w":2, "v":"{%age=20}{%str+2}{%con+2}"},
+  { "w":2, "v":"{%age=23}{%str+2}{%con+2}"},
+  { "w":2, "v":"{%age=26}{%str+2}{%con+2}"},
+  { "w":2, "v":"{%age=29}{%str+1}{%con+1}"},
+  { "w":2, "v":"{%age=32}{%str+1}{%con+1}"},
+  { "w":2, "v":"{%age=35}"},
+  { "w":2, "v":"{%age=38}{%int+1}{%wis+1}{%dex-1}"},
+  { "w":2, "v":"{%age=41}{%int+1}{%wis+1}{%dex-1}"},
+  { "w":2, "v":"{%age=44}{%int+1}{%wis+1}{%dex-1}"},
+  { "w":2, "v":"{%age=47}{%int+1}{%wis+1}{%str-1}{%con-1}{%dex-1}"},
+  { "w":2, "v":"{%age=50}{%int+1}{%wis+1}{%str-1}{%con-1}{%dex-1}"},
+  { "w":2, "v":"{%age=53}{%int+1}{%wis+2}{%str-1}{%con-1}{%dex-1}"},
+  { "w":1, "v":"{%age=56}{%int+1}{%wis+2}{%str-1}{%con-1}{%dex-1}{%height-3}"},
+  { "w":1, "v":"{%age=59}{%int+1}{%wis+2}{%str-1}{%con-1}{%dex-1}{%height-3}"},
+  { "w":1, "v":"{%age=62}{%int+2}{%wis+3}{%str-2}{%con-2}{%dex-2}{%height-3}"},
+  { "w":1, "v":"{%age=65}{%int+2}{%wis+3}{%str-2}{%con-2}{%dex-2}{%height-3}"},
+  { "w":1, "v":"{%age=70}{%int+2}{%wis+3}{%str-2}{%con-2}{%dex-2}{%height-3}"},
+  { "w":1, "v":"{%age=75}{%int+1}{%wis+3}{%str-2}{%con-2}{%dex-2}{%height-3}"},
+  { "w":1, "v":"{%age=80}{%int+1}{%wis+3}{%str-2}{%con-3}{%dex-3}{%height-5}"},
+  { "w":1, "v":"{%age=90}{%wis+4}{%str-3}{%con-3}{%dex-4}{%height-5}"}
+]

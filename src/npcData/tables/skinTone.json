@@ -1,10 +1,6 @@
-[{
-    "w": 12,
-    "v": "{$skintone= }"
-}, {
-    "w": 2,
-    "v": "{$skintone=, sunburned}"
-}, {
-    "w": 2,
-    "v": "{$skintone=, pockmarked}"
-}]
+[
+  { "w":20, "v":"{$skintone= }"},
+  { "w":3, "v":"{$skintone=, sunburned, }"},
+  { "w":1, "v":"{$skintone=, dirty, }"},
+  { "w":3, "v":"{$skintone=, pockmarked, }"}
+]

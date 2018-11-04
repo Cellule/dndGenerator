@@ -1,151 +1,52 @@
-[{
-    "w": 1,
-    "v": "{$name+ Aeraagamae}"
-}, {
-    "w": 1,
-    "v": "{$name+ Aerabriniel}"
-}, {
-    "w": 1,
-    "v": "{$name+ Aldarina}"
-}, {
-    "w": 1,
-    "v": "{$name+ Aldaviel}"
-}, {
-    "w": 1,
-    "v": "{$name+ Bertanonel}"
-}, {
-    "w": 1,
-    "v": "{$name+ Birdiir}"
-}, {
-    "w": 1,
-    "v": "{$name+ Birlond}"
-}, {
-    "w": 1,
-    "v": "{$name+ Cromelon}"
-}, {
-    "w": 1,
-    "v": "{$name+ Cromviel}"
-}, {
-    "w": 1,
-    "v": "{$name+ Dlaralthor}"
-}, {
-    "w": 1,
-    "v": "{$name+ Dlarraithar}"
-}, {
-    "w": 1,
-    "v": "{$name+ Elendiir}"
-}, {
-    "w": 1,
-    "v": "{$name+ Eleneth}"
-}, {
-    "w": 1,
-    "v": "{$name+ Elervir}"
-}, {
-    "w": 1,
-    "v": "{$name+ Falavaul}"
-}, {
-    "w": 1,
-    "v": "{$name+ Gadilinion}"
-}, {
-    "w": 1,
-    "v": "{$name+ Galamin}"
-}, {
-    "w": 1,
-    "v": "{$name+ Galarina}"
-}, {
-    "w": 1,
-    "v": "{$name+ Galathaniel}"
-}, {
-    "w": 1,
-    "v": "{$name+ Garaitinu}"
-}, {
-    "w": 1,
-    "v": "{$name+ Gwamiel}"
-}, {
-    "w": 1,
-    "v": "{$name+ Haelond}"
-}, {
-    "w": 1,
-    "v": "{$name+ Isilielenion}"
-}, {
-    "w": 1,
-    "v": "{$name+ Kevadirtinu}"
-}, {
-    "w": 1,
-    "v": "{$name+ Kithollal}"
-}, {
-    "w": 1,
-    "v": "{$name+ Lantaththar}"
-}, {
-    "w": 1,
-    "v": "{$name+ Laranonel}"
-}, {
-    "w": 1,
-    "v": "{$name+ Larentansel}"
-}, {
-    "w": 1,
-    "v": "{$name+ Lithtaur}"
-}, {
-    "w": 1,
-    "v": "{$name+ Maerethar}"
-}, {
-    "w": 1,
-    "v": "{$name+ Maltanthir}"
-}, {
-    "w": 1,
-    "v": "{$name+ Mithanmae}"
-}, {
-    "w": 1,
-    "v": "{$name+ Mithanmyr}"
-}, {
-    "w": 1,
-    "v": "{$name+ Mithmirelen}"
-}, {
-    "w": 1,
-    "v": "{$name+ Nalllithe}"
-}, {
-    "w": 1,
-    "v": "{$name+ Nellynnthar}"
-}, {
-    "w": 1,
-    "v": "{$name+ Nhaendrin}"
-}, {
-    "w": 1,
-    "v": "{$name+ Noroelwa}"
-}, {
-    "w": 1,
-    "v": "{$name+ Orren}"
-}, {
-    "w": 1,
-    "v": "{$name+ Orrina}"
-}, {
-    "w": 1,
-    "v": "{$name+ Rhuivaul}"
-}, {
-    "w": 1,
-    "v": "{$name+ Runelenrin}"
-}, {
-    "w": 1,
-    "v": "{$name+ Runlithmae}"
-}, {
-    "w": 1,
-    "v": "{$name+ Sharondalan}"
-}, {
-    "w": 1,
-    "v": "{$name+ Taldilindar}"
-}, {
-    "w": 1,
-    "v": "{$name+ Talraidal}"
-}, {
-    "w": 1,
-    "v": "{$name+ Talthanryl}"
-}, {
-    "w": 1,
-    "v": "{$name+ Tathviel}"
-}, {
-    "w": 1,
-    "v": "{$name+ Wervanion}"
-}, {
-    "w": 1,
-    "v": "{$name+ Yraudhen}"
-}]
+[
+  { "w":1, "v":"{$name+ Aeraagamae}"},
+  { "w":1, "v":"{$name+ Aerabriniel}"},
+  { "w":1, "v":"{$name+ Aldarina}"},
+  { "w":1, "v":"{$name+ Aldaviel}"},
+  { "w":1, "v":"{$name+ Bertanonel}"},
+  { "w":1, "v":"{$name+ Birdiir}"},
+  { "w":1, "v":"{$name+ Birlond}"},
+  { "w":1, "v":"{$name+ Cromelon}"},
+  { "w":1, "v":"{$name+ Cromviel}"},
+  { "w":1, "v":"{$name+ Dlaralthor}"},
+  { "w":1, "v":"{$name+ Dlarraithar}"},
+  { "w":1, "v":"{$name+ Elendiir}"},
+  { "w":1, "v":"{$name+ Eleneth}"},
+  { "w":1, "v":"{$name+ Elervir}"},
+  { "w":1, "v":"{$name+ Falavaul}"},
+  { "w":1, "v":"{$name+ Gadilinion}"},
+  { "w":1, "v":"{$name+ Galamin}"},
+  { "w":1, "v":"{$name+ Galarina}"},
+  { "w":1, "v":"{$name+ Galathaniel}"},
+  { "w":1, "v":"{$name+ Garaitinu}"},
+  { "w":1, "v":"{$name+ Gwamiel}"},
+  { "w":1, "v":"{$name+ Haelond}"},
+  { "w":1, "v":"{$name+ Isilielenion}"},
+  { "w":1, "v":"{$name+ Kevadirtinu}"},
+  { "w":1, "v":"{$name+ Kithollal}"},
+  { "w":1, "v":"{$name+ Lantaththar}"},
+  { "w":1, "v":"{$name+ Laranonel}"},
+  { "w":1, "v":"{$name+ Larentansel}"},
+  { "w":1, "v":"{$name+ Lithtaur}"},
+  { "w":1, "v":"{$name+ Maerethar}"},
+  { "w":1, "v":"{$name+ Maltanthir}"},
+  { "w":1, "v":"{$name+ Mithanmae}"},
+  { "w":1, "v":"{$name+ Mithanmyr}"},
+  { "w":1, "v":"{$name+ Mithmirelen}"},
+  { "w":1, "v":"{$name+ Nalllithe}"},
+  { "w":1, "v":"{$name+ Nellynnthar}"},
+  { "w":1, "v":"{$name+ Nhaendrin}"},
+  { "w":1, "v":"{$name+ Noroelwa}"},
+  { "w":1, "v":"{$name+ Orren}"},
+  { "w":1, "v":"{$name+ Orrina}"},
+  { "w":1, "v":"{$name+ Rhuivaul}"},
+  { "w":1, "v":"{$name+ Runelenrin}"},
+  { "w":1, "v":"{$name+ Runlithmae}"},
+  { "w":1, "v":"{$name+ Sharondalan}"},
+  { "w":1, "v":"{$name+ Taldilindar}"},
+  { "w":1, "v":"{$name+ Talraidal}"},
+  { "w":1, "v":"{$name+ Talthanryl}"},
+  { "w":1, "v":"{$name+ Tathviel}"},
+  { "w":1, "v":"{$name+ Wervanion}"},
+  { "w":1, "v":"{$name+ Yraudhen}"}
+]

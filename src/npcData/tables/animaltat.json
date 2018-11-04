@@ -1,148 +1,51 @@
-[{
-    "w": 8,
-    "v": "{$sphy+tattoo of a skull}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a wolf}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a bear}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of an eagle}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a falcon}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a fish}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a shark}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a cobra}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a snake}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a crocodile}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a deer}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a gorilla}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of an elephant}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a horse}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a rabbit}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a goat}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a gecko}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a lizard}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a turtle}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a panther}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a dog}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a cat}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a scorpion}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a scarab}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a spider}"
-}, {
-    "w": 2,
-    "v": "{$sphy+tattoo of a fly}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a rat}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a mouse}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a fox}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a tiger}"
-}, {
-    "w": 3,
-    "v": "{$sphy+tattoo of a lion}"
-}, {
-    "w": 2,
-    "v": "{$sphy+tattoo of an armadillo}"
-}, {
-    "w": 2,
-    "v": "{$sphy+tattoo of a dragon}"
-}, {
-    "w": 2,
-    "v": "{$sphy+tattoo of a wyvern}"
-}, {
-    "w": 2,
-    "v": "{$sphy+tattoo of an octopus}"
-}, {
-    "w": 2,
-    "v": "{$sphy+tattoo of a medusa}"
-}, {
-    "w": 2,
-    "v": "{$sphy+tattoo of a minotaur}"
-}, {
-    "w": 2,
-    "v": "{$sphy+tattoo of a manatee}"
-}, {
-    "w": 2,
-    "v": "{$sphy+tattoo of a giraffe}"
-}, {
-    "w": 2,
-    "v": "{$sphy+tattoo of a koala}"
-}, {
-    "w": 2,
-    "v": "{$sphy+tattoo of an unicorn}"
-}, {
-    "w": 2,
-    "v": "{$sphy+tattoo of an umber hulk}"
-}, {
-    "w": 2,
-    "v": "{$sphy+tattoo of a ghost}"
-}, {
-    "w": 2,
-    "v": "{$sphy+tattoo of a demon}"
-}, {
-    "w": 2,
-    "v": "{$sphy+tattoo of a wurm}"
-}, {
-    "w": 2,
-    "v": "{$sphy+tattoo of a zombie}"
-}, {
-    "w": 2,
-    "v": "{$sphy+tattoo of a jellyfish}"
-}, {
-    "w": 2,
-    "v": "{$sphy+tattoo of a chimera}"
-}, {
-    "w": 2,
-    "v": "{$sphy+tattoo of a kraken}"
-}]
+[
+  { "w":8, "v":"{$sphy1+tattoo of a skull}"},
+  { "w":3, "v":"{$sphy1+tattoo of a wolf}"},
+  { "w":3, "v":"{$sphy1+tattoo of a bear}"},
+  { "w":3, "v":"{$sphy1+tattoo of an eagle}"},
+  { "w":3, "v":"{$sphy1+tattoo of a falcon}"},
+  { "w":3, "v":"{$sphy1+tattoo of a fish}"},
+  { "w":3, "v":"{$sphy1+tattoo of a shark}"},
+  { "w":3, "v":"{$sphy1+tattoo of a cobra}"},
+  { "w":3, "v":"{$sphy1+tattoo of a snake}"},
+  { "w":3, "v":"{$sphy1+tattoo of a crocodile}"},
+  { "w":3, "v":"{$sphy1+tattoo of a deer}"},
+  { "w":3, "v":"{$sphy1+tattoo of a gorilla}"},
+  { "w":3, "v":"{$sphy1+tattoo of an elephant}"},
+  { "w":3, "v":"{$sphy1+tattoo of a horse}"},
+  { "w":3, "v":"{$sphy1+tattoo of a rabbit}"},
+  { "w":3, "v":"{$sphy1+tattoo of a goat}"},
+  { "w":3, "v":"{$sphy1+tattoo of a gecko}"},
+  { "w":3, "v":"{$sphy1+tattoo of a lizard}"},
+  { "w":3, "v":"{$sphy1+tattoo of a turtle}"},
+  { "w":3, "v":"{$sphy1+tattoo of a panther}"},
+  { "w":3, "v":"{$sphy1+tattoo of a dog}"},
+  { "w":3, "v":"{$sphy1+tattoo of a cat}"},
+  { "w":3, "v":"{$sphy1+tattoo of a scorpion}"},
+  { "w":3, "v":"{$sphy1+tattoo of a scarab}"},
+  { "w":3, "v":"{$sphy1+tattoo of a spider}"},
+  { "w":2, "v":"{$sphy1+tattoo of a fly}"},
+  { "w":3, "v":"{$sphy1+tattoo of a rat}"},
+  { "w":3, "v":"{$sphy1+tattoo of a mouse}"},
+  { "w":3, "v":"{$sphy1+tattoo of a fox}"},
+  { "w":3, "v":"{$sphy1+tattoo of a tiger}"},
+  { "w":3, "v":"{$sphy1+tattoo of a lion}"},
+  { "w":2, "v":"{$sphy1+tattoo of an armadillo}"},
+  { "w":2, "v":"{$sphy1+tattoo of a dragon}"},
+  { "w":2, "v":"{$sphy1+tattoo of a wyvern}"},
+  { "w":2, "v":"{$sphy1+tattoo of an octopus}"},
+  { "w":2, "v":"{$sphy1+tattoo of a medusa}"},
+  { "w":2, "v":"{$sphy1+tattoo of a minotaur}"},
+  { "w":2, "v":"{$sphy1+tattoo of a manatee}"},
+  { "w":2, "v":"{$sphy1+tattoo of a giraffe}"},
+  { "w":2, "v":"{$sphy1+tattoo of a koala}"},
+  { "w":2, "v":"{$sphy1+tattoo of an unicorn}"},
+  { "w":2, "v":"{$sphy1+tattoo of an umber hulk}"},
+  { "w":2, "v":"{$sphy1+tattoo of a ghost}"},
+  { "w":2, "v":"{$sphy1+tattoo of a demon}"},
+  { "w":2, "v":"{$sphy1+tattoo of a wurm}"},
+  { "w":2, "v":"{$sphy1+tattoo of a zombie}"},
+  { "w":2, "v":"{$sphy1+tattoo of a jellyfish}"},
+  { "w":2, "v":"{$sphy1+tattoo of a chimera}"},
+  { "w":2, "v":"{$sphy1+tattoo of a kraken}"}
+]

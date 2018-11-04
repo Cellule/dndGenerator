@@ -1,7 +1,4 @@
-[{
-    "w": 5,
-    "v": "{goodfacemod}{goodlooking}{$faceshape+$mod}"
-}, {
-    "w": 2,
-    "v": "{goodlooking}"
-}]
+[
+  { "w":5, "v":"{goodfacemod}{goodlooking}{$faceshape+$mod}"},
+  { "w":2, "v":"{goodlooking}"}
+]

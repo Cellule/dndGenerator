@@ -1,73 +1,26 @@
-[{
-    "w": 1,
-    "v": "{$name+ Fensys}"
-}, {
-    "w": 1,
-    "v": "{$name+ Lilfyx}"
-}, {
-    "w": 1,
-    "v": "{$name+ Mybys}"
-}, {
-    "w": 1,
-    "v": "{$name+ Mydira}"
-}, {
-    "w": 1,
-    "v": "{$name+ Niniana}"
-}, {
-    "w": 1,
-    "v": "{$name+ Odagyra}"
-}, {
-    "w": 1,
-    "v": "{$name+ Inaxi}"
-}, {
-    "w": 1,
-    "v": "{$name+ Isodira}"
-}, {
-    "w": 1,
-    "v": "{$name+ Isona}"
-}, {
-    "w": 1,
-    "v": "{$name+ Isowyse}"
-}, {
-    "w": 1,
-    "v": "{$name+ Jolin}"
-}, {
-    "w": 1,
-    "v": "{$name+ Jomila}"
-}, {
-    "w": 1,
-    "v": "{$name+ Jonove}"
-}, {
-    "w": 1,
-    "v": "{$name+ Kriceli}"
-}, {
-    "w": 1,
-    "v": "{$name+ Lilbys}"
-}, {
-    "w": 1,
-    "v": "{$name+ Ylodysa}"
-}, {
-    "w": 1,
-    "v": "{$name+ Ylofyx}"
-}, {
-    "w": 1,
-    "v": "{$name+ Yohani}"
-}, {
-    "w": 1,
-    "v": "{$name+ Yowyse}"
-}, {
-    "w": 1,
-    "v": "{$name+ Yoxis}"
-}, {
-    "w": 1,
-    "v": "{$name+ Odakini}"
-}, {
-    "w": 1,
-    "v": "{$name+ Odawyn}"
-}, {
-    "w": 1,
-    "v": "{$name+ Orwyse}"
-}, {
-    "w": 1,
-    "v": "{$name+ Pritra}"
-}]
+[
+  { "w":1, "v":"{$name+ Fensys}"},
+  { "w":1, "v":"{$name+ Lilfyx}"},
+  { "w":1, "v":"{$name+ Mybys}"},
+  { "w":1, "v":"{$name+ Mydira}"},
+  { "w":1, "v":"{$name+ Niniana}"},
+  { "w":1, "v":"{$name+ Odagyra}"},
+  { "w":1, "v":"{$name+ Inaxi}"},
+  { "w":1, "v":"{$name+ Isodira}"},
+  { "w":1, "v":"{$name+ Isona}"},
+  { "w":1, "v":"{$name+ Isowyse}"},
+  { "w":1, "v":"{$name+ Jolin}"},
+  { "w":1, "v":"{$name+ Jomila}"},
+  { "w":1, "v":"{$name+ Jonove}"},
+  { "w":1, "v":"{$name+ Kriceli}"},
+  { "w":1, "v":"{$name+ Lilbys}"},
+  { "w":1, "v":"{$name+ Ylodysa}"},
+  { "w":1, "v":"{$name+ Ylofyx}"},
+  { "w":1, "v":"{$name+ Yohani}"},
+  { "w":1, "v":"{$name+ Yowyse}"},
+  { "w":1, "v":"{$name+ Yoxis}"},
+  { "w":1, "v":"{$name+ Odakini}"},
+  { "w":1, "v":"{$name+ Odawyn}"},
+  { "w":1, "v":"{$name+ Orwyse}"},
+  { "w":1, "v":"{$name+ Pritra}"}
+]

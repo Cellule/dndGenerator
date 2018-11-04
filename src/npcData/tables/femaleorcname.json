@@ -1,130 +1,45 @@
-[{
-    "w": 1,
-    "v": "{$name=Atub}"
-}, {
-    "w": 1,
-    "v": "{$name=Bagrak}"
-}, {
-    "w": 1,
-    "v": "{$name=Bagrak}"
-}, {
-    "w": 1,
-    "v": "{$name=Bogdub}"
-}, {
-    "w": 1,
-    "v": "{$name=Bolar}"
-}, {
-    "w": 1,
-    "v": "{$name=Borba}"
-}, {
-    "w": 1,
-    "v": "{$name=Bugdurash}"
-}, {
-    "w": 1,
-    "v": "{$name=Bula}"
-}, {
-    "w": 1,
-    "v": "{$name=Bulak}"
-}, {
-    "w": 1,
-    "v": "{$name=Bum}"
-}, {
-    "w": 1,
-    "v": "{$name=Durgat}"
-}, {
-    "w": 1,
-    "v": "{$name=Durgat}"
-}, {
-    "w": 1,
-    "v": "{$name=Durz}"
-}, {
-    "w": 1,
-    "v": "{$name=Gashnakh}"
-}, {
-    "w": 1,
-    "v": "{$name=Ghak}"
-}, {
-    "w": 1,
-    "v": "{$name=Gharol}"
-}, {
-    "w": 1,
-    "v": "{$name=Ghob}"
-}, {
-    "w": 1,
-    "v": "{$name=Glasha}"
-}, {
-    "w": 1,
-    "v": "{$name=Gluronk}"
-}, {
-    "w": 1,
-    "v": "{$name=Gonk}"
-}, {
-    "w": 1,
-    "v": "{$name=Kharzug}"
-}, {
-    "w": 1,
-    "v": "{$name=Lambug}"
-}, {
-    "w": 1,
-    "v": "{$name=Lash}"
-}, {
-    "w": 1,
-    "v": "{$name=Lazgar}"
-}, {
-    "w": 1,
-    "v": "{$name=Mor}"
-}, {
-    "w": 1,
-    "v": "{$name=Murbol}"
-}, {
-    "w": 1,
-    "v": "{$name=Nargol}"
-}, {
-    "w": 1,
-    "v": "{$name=Nargol}"
-}, {
-    "w": 1,
-    "v": "{$name=Orbul}"
-}, {
-    "w": 1,
-    "v": "{$name=Ragash}"
-}, {
-    "w": 1,
-    "v": "{$name=Rolfish}"
-}, {
-    "w": 1,
-    "v": "{$name=Rulfim}"
-}, {
-    "w": 1,
-    "v": "{$name=Sharn}"
-}, {
-    "w": 1,
-    "v": "{$name=Shazgob}"
-}, {
-    "w": 1,
-    "v": "{$name=Snak}"
-}, {
-    "w": 1,
-    "v": "{$name=Snak}"
-}, {
-    "w": 1,
-    "v": "{$name=Ugor}"
-}, {
-    "w": 1,
-    "v": "{$name=Ulumpha}"
-}, {
-    "w": 1,
-    "v": "{$name=Umog}"
-}, {
-    "w": 1,
-    "v": "{$name=Urzoth}"
-}, {
-    "w": 1,
-    "v": "{$name=Urzul}"
-}, {
-    "w": 1,
-    "v": "{$name=Ushat}"
-}, {
-    "w": 1,
-    "v": "{$name=Ushug}"
-}]
+[
+  { "w":1, "v":"{$name=Atub}"},
+  { "w":1, "v":"{$name=Bagrak}"},
+  { "w":1, "v":"{$name=Bagrak}"},
+  { "w":1, "v":"{$name=Bogdub}"},
+  { "w":1, "v":"{$name=Bolar}"},
+  { "w":1, "v":"{$name=Borba}"},
+  { "w":1, "v":"{$name=Bugdurash}"},
+  { "w":1, "v":"{$name=Bula}"},
+  { "w":1, "v":"{$name=Bulak}"},
+  { "w":1, "v":"{$name=Bum}"},
+  { "w":1, "v":"{$name=Durgat}"},
+  { "w":1, "v":"{$name=Durgat}"},
+  { "w":1, "v":"{$name=Durz}"},
+  { "w":1, "v":"{$name=Gashnakh}"},
+  { "w":1, "v":"{$name=Ghak}"},
+  { "w":1, "v":"{$name=Gharol}"},
+  { "w":1, "v":"{$name=Ghob}"},
+  { "w":1, "v":"{$name=Glasha}"},
+  { "w":1, "v":"{$name=Gluronk}"},
+  { "w":1, "v":"{$name=Gonk}"},
+  { "w":1, "v":"{$name=Kharzug}"},
+  { "w":1, "v":"{$name=Lambug}"},
+  { "w":1, "v":"{$name=Lash}"},
+  { "w":1, "v":"{$name=Lazgar}"},
+  { "w":1, "v":"{$name=Mor}"},
+  { "w":1, "v":"{$name=Murbol}"},
+  { "w":1, "v":"{$name=Nargol}"},
+  { "w":1, "v":"{$name=Nargol}"},
+  { "w":1, "v":"{$name=Orbul}"},
+  { "w":1, "v":"{$name=Ragash}"},
+  { "w":1, "v":"{$name=Rolfish}"},
+  { "w":1, "v":"{$name=Rulfim}"},
+  { "w":1, "v":"{$name=Sharn}"},
+  { "w":1, "v":"{$name=Shazgob}"},
+  { "w":1, "v":"{$name=Snak}"},
+  { "w":1, "v":"{$name=Snak}"},
+  { "w":1, "v":"{$name=Ugor}"},
+  { "w":1, "v":"{$name=Ulumpha}"},
+  { "w":1, "v":"{$name=Umog}"},
+  { "w":1, "v":"{$name=Urzoth}"},
+  { "w":1, "v":"{$name=Urzul}"},
+  { "w":1, "v":"{$name=Ushat}"},
+  { "w":1, "v":"{$name=Ushug}"}
+]

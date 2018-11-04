@@ -1,4 +1,3 @@
-[{
-    "w": 1,
-    "v": "{$worship+ claims to worship }{$worship+$god}{$worship+, but secretly}"
-}]
+[
+  { "w":1, "v":"{$worship+ claims to worship }{$worship+$god}{$worship+, but secretly}"}
+]

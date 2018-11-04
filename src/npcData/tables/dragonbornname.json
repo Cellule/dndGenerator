@@ -1,262 +1,113 @@
-[{
-    "w": 1,
-    "v": "{$name=Askook}"
-}, {
-    "w": 1,
-    "v": "{$name=Avrae}"
-}, {
-    "w": 1,
-    "v": "{$name=Benarg}"
-}, {
-    "w": 1,
-    "v": "{$name=Beroan}"
-}, {
-    "w": 1,
-    "v": "{$name=Bevurth}"
-}, {
-    "w": 1,
-    "v": "{$name=Caydranth}"
-}, {
-    "w": 1,
-    "v": "{$name=Chenth}"
-}, {
-    "w": 1,
-    "v": "{$name=Cheselth}"
-}, {
-    "w": 1,
-    "v": "{$name=Ciamathy}"
-}, {
-    "w": 1,
-    "v": "{$name=Corinth}"
-}, {
-    "w": 1,
-    "v": "{$name=Daganae}"
-}, {
-    "w": 1,
-    "v": "{$name=Deventh}"
-}, {
-    "w": 1,
-    "v": "{$name=Erfolg}"
-}, {
-    "w": 1,
-    "v": "{$name=Franae}"
-}, {
-    "w": 1,
-    "v": "{$name=Fundor}"
-}, {
-    "w": 1,
-    "v": "{$name=Galzra}"
-}, {
-    "w": 1,
-    "v": "{$name=Gavarenth}"
-}, {
-    "w": 1,
-    "v": "{$name=Ginarth}"
-}, {
-    "w": 1,
-    "v": "{$name=Gretiem}"
-}, {
-    "w": 1,
-    "v": "{$name=Inilthud}"
-}, {
-    "w": 1,
-    "v": "{$name=Jura}"
-}, {
-    "w": 1,
-    "v": "{$name=Kaleth}"
-}, {
-    "w": 1,
-    "v": "{$name=Kamirth}"
-}, {
-    "w": 1,
-    "v": "{$name=Kimerth}"
-}, {
-    "w": 1,
-    "v": "{$name=Kindrael}"
-}, {
-    "w": 1,
-    "v": "{$name=Livjatan}"
-}, {
-    "w": 1,
-    "v": "{$name=Livjatan}"
-}, {
-    "w": 1,
-    "v": "{$name=Malliath}"
-}, {
-    "w": 1,
-    "v": "{$name=Margantha}"
-}, {
-    "w": 1,
-    "v": "{$name=Mesarth}"
-}, {
-    "w": 1,
-    "v": "{$name=Miath}"
-}, {
-    "w": 1,
-    "v": "{$name=Mirelth}"
-}, {
-    "w": 1,
-    "v": "{$name=Mnerolth}"
-}, {
-    "w": 1,
-    "v": "{$name=Morelth}"
-}, {
-    "w": 1,
-    "v": "{$name=Mylanth}"
-}, {
-    "w": 1,
-    "v": "{$name=Nessonth}"
-}, {
-    "w": 1,
-    "v": "{$name=Norrutus}"
-}, {
-    "w": 1,
-    "v": "{$name=Peddrenth}"
-}, {
-    "w": 1,
-    "v": "{$name=Perenth}"
-}, {
-    "w": 1,
-    "v": "{$name=Perrath}"
-}, {
-    "w": 1,
-    "v": "{$name=Porath}"
-}, {
-    "w": 1,
-    "v": "{$name=Rasenth}"
-}, {
-    "w": 1,
-    "v": "{$name=Rusorth}"
-}, {
-    "w": 1,
-    "v": "{$name=Salanth}"
-}, {
-    "w": 1,
-    "v": "{$name=Serelath}"
-}, {
-    "w": 1,
-    "v": "{$name=Sirath}"
-}, {
-    "w": 1,
-    "v": "{$name=Sorth}"
-}, {
-    "w": 1,
-    "v": "{$name=Syralth}"
-}, {
-    "w": 1,
-    "v": "{$name=Syrreth}"
-}, {
-    "w": 1,
-    "v": "{$name=Talurth}"
-}, {
-    "w": 1,
-    "v": "{$name=Tavrinth}"
-}, {
-    "w": 1,
-    "v": "{$name=Tenelth}"
-}, {
-    "w": 1,
-    "v": "{$name=Tessith}"
-}, {
-    "w": 1,
-    "v": "{$name=Tulvir}"
-}, {
-    "w": 1,
-    "v": "{$name=Tulvir}"
-}, {
-    "w": 1,
-    "v": "{$name=Umbaroth}"
-}, {
-    "w": 1,
-    "v": "{$name=Vinarth}"
-}, {
-    "w": 1,
-    "v": "{$name=Vaatnilaus}"
-}, {
-    "w": 1,
-    "v": "{$name=Reluthkrein}"
-}, {
-    "w": 1,
-    "v": "{$name=Ammunro}"
-}, {
-    "w": 1,
-    "v": "{$name=Aakfaasoth}"
-}, {
-    "w": 1,
-    "v": "{$name=Kulgutfrul}"
-}, {
-    "w": 1,
-    "v": "{$name=Wahlfusbel}"
-}, {
-    "w": 1,
-    "v": "{$name=Kestmuzven}"
-}, {
-    "w": 1,
-    "v": "{$name=Qethondbex}"
-}, {
-    "w": 1,
-    "v": "{$name=Praanviik}"
-}, {
-    "w": 1,
-    "v": "{$name=Qothfunt}"
-}, {
-    "w": 1,
-    "v": "{$name=Diiniddein}"
-}, {
-    "w": 1,
-    "v": "{$name=Feyngraagkol}"
-}, {
-    "w": 1,
-    "v": "{$name=Gronmonwol}"
-}, {
-    "w": 1,
-    "v": "{$name=Kaanhaaldir}"
-}, {
-    "w": 1,
-    "v": "{$name=Lehkraskol}"
-}, {
-    "w": 1,
-    "v": "{$name=Nosbelbeyn}"
-}, {
-    "w": 1,
-    "v": "{$name=Vengraagmon}"
-}, {
-    "w": 1,
-    "v": "{$name=Ruthloninhus}"
-}, {
-    "w": 1,
-    "v": "{$name=Viirtu}"
-}, {
-    "w": 1,
-    "v": "{$name=Kulmey}"
-}, {
-    "w": 1,
-    "v": "{$name=Haalsaanthur}"
-}, {
-    "w": 1,
-    "v": "{$name=Suldrembrod}"
-}, {
-    "w": 1,
-    "v": "{$name=Koorshulkril}"
-}, {
-    "w": 1,
-    "v": "{$name=Pahbelrii}"
-}, {
-    "w": 1,
-    "v": "{$name=Kolpelgeh}"
-}, {
-    "w": 1,
-    "v": "{$name=Kriistbodrem}"
-}, {
-    "w": 1,
-    "v": "{$name=Malkiimkrin}"
-}, {
-    "w": 1,
-    "v": "{$name=Strundrogkrii}"
-}, {
-    "w": 1,
-    "v": "{$name=Faadbii}"
-}, {
-    "w": 1,
-    "v": "{$name=Leinol}"
-}]
+[
+  { "w":1, "v":"{$name=Askook}"},
+  { "w":1, "v":"{$name=Avrae}"},
+  { "w":1, "v":"{$name=Benarg}"},
+  { "w":1, "v":"{$name=Beroan}"},
+  { "w":1, "v":"{$name=Bevurth}"},
+  { "w":1, "v":"{$name=Caydranth}"},
+  { "w":1, "v":"{$name=Chenth}"},
+  { "w":1, "v":"{$name=Cheselth}"},
+  { "w":1, "v":"{$name=Ciamathy}"},
+  { "w":1, "v":"{$name=Corinth}"},
+  { "w":1, "v":"{$name=Daganae}"},
+  { "w":1, "v":"{$name=Deventh}"},
+  { "w":1, "v":"{$name=Erfolg}"},
+  { "w":1, "v":"{$name=Franae}"},
+  { "w":1, "v":"{$name=Fundor}"},
+  { "w":1, "v":"{$name=Galzra}"},
+  { "w":1, "v":"{$name=Gavarenth}"},
+  { "w":1, "v":"{$name=Ginarth}"},
+  { "w":1, "v":"{$name=Gretiem}"},
+  { "w":1, "v":"{$name=Inilthud}"},
+  { "w":1, "v":"{$name=Jura}"},
+  { "w":1, "v":"{$name=Kaleth}"},
+  { "w":1, "v":"{$name=Kamirth}"},
+  { "w":1, "v":"{$name=Kimerth}"},
+  { "w":1, "v":"{$name=Kindrael}"},
+  { "w":1, "v":"{$name=Livjatan}"},
+  { "w":1, "v":"{$name=Livjatan}"},
+  { "w":1, "v":"{$name=Malliath}"},
+  { "w":1, "v":"{$name=Margantha}"},
+  { "w":1, "v":"{$name=Mesarth}"},
+  { "w":1, "v":"{$name=Miath}"},
+  { "w":1, "v":"{$name=Mirelth}"},
+  { "w":1, "v":"{$name=Mnerolth}"},
+  { "w":1, "v":"{$name=Morelth}"},
+  { "w":1, "v":"{$name=Mylanth}"},
+  { "w":1, "v":"{$name=Nessonth}"},
+  { "w":1, "v":"{$name=Norrutus}"},
+  { "w":1, "v":"{$name=Peddrenth}"},
+  { "w":1, "v":"{$name=Perenth}"},
+  { "w":1, "v":"{$name=Perrath}"},
+  { "w":1, "v":"{$name=Porath}"},
+  { "w":1, "v":"{$name=Rasenth}"},
+  { "w":1, "v":"{$name=Rusorth}"},
+  { "w":1, "v":"{$name=Salanth}"},
+  { "w":1, "v":"{$name=Serelath}"},
+  { "w":1, "v":"{$name=Sirath}"},
+  { "w":1, "v":"{$name=Sorth}"},
+  { "w":1, "v":"{$name=Syralth}"},
+  { "w":1, "v":"{$name=Syrreth}"},
+  { "w":1, "v":"{$name=Talurth}"},
+  { "w":1, "v":"{$name=Tavrinth}"},
+  { "w":1, "v":"{$name=Tenelth}"},
+  { "w":1, "v":"{$name=Tessith}"},
+  { "w":1, "v":"{$name=Tulvir}"},
+  { "w":1, "v":"{$name=Tulvir}"},
+  { "w":1, "v":"{$name=Umbaroth}"},
+  { "w":1, "v":"{$name=Vinarth}"},
+  { "w":1, "v":"{$name=Vaatnilaus}"},
+  { "w":1, "v":"{$name=Reluthkrein}"},
+  { "w":1, "v":"{$name=Ammunro}"},
+  { "w":1, "v":"{$name=Aakfaasoth}"},
+  { "w":1, "v":"{$name=Kulgutfrul}"},
+  { "w":1, "v":"{$name=Wahlfusbel}"},
+  { "w":1, "v":"{$name=Kestmuzven}"},
+  { "w":1, "v":"{$name=Qethondbex}"},
+  { "w":1, "v":"{$name=Praanviik}"},
+  { "w":1, "v":"{$name=Qothfunt}"},
+  { "w":1, "v":"{$name=Diiniddein}"},
+  { "w":1, "v":"{$name=Feyngraagkol}"},
+  { "w":1, "v":"{$name=Gronmonwol}"},
+  { "w":1, "v":"{$name=Kaanhaaldir}"},
+  { "w":1, "v":"{$name=Lehkraskol}"},
+  { "w":1, "v":"{$name=Nosbelbeyn}"},
+  { "w":1, "v":"{$name=Vengraagmon}"},
+  { "w":1, "v":"{$name=Ruthloninhus}"},
+  { "w":1, "v":"{$name=Viirtu}"},
+  { "w":1, "v":"{$name=Kulmey}"},
+  { "w":1, "v":"{$name=Haalsaanthur}"},
+  { "w":1, "v":"{$name=Suldrembrod}"},
+  { "w":1, "v":"{$name=Koorshulkril}"},
+  { "w":1, "v":"{$name=Pahbelrii}"},
+  { "w":1, "v":"{$name=Kolpelgeh}"},
+  { "w":1, "v":"{$name=Kriistbodrem}"},
+  { "w":1, "v":"{$name=Malkiimkrin}"},
+  { "w":1, "v":"{$name=Strundrogkrii}"},
+  { "w":1, "v":"{$name=Faadbii}"},
+  { "w":1, "v":"{$name=Leinol}"},
+  { "w":1, "v":"{$name=Achuak}"},
+  { "w":1, "v":"{$name=Aryte}"},
+  { "w":1, "v":"{$name=Baeshra}"},
+  { "w":1, "v":"{$name=Darastrix}"},
+  { "w":1, "v":"{$name=Garurt}"},
+  { "w":1, "v":"{$name=Irhtos}"},
+  { "w":1, "v":"{$name=Jhank}"},
+  { "w":1, "v":"{$name=Kepesk}"},
+  { "w":1, "v":"{$name=Kethend}"},
+  { "w":1, "v":"{$name=Korth}"},
+  { "w":1, "v":"{$name=Kosj}"},
+  { "w":1, "v":"{$name=Kothar}"},
+  { "w":1, "v":"{$name=Litrix}"},
+  { "w":1, "v":"{$name=Mirik}"},
+  { "w":1, "v":"{$name=Othokent}"},
+  { "w":1, "v":"{$name=Sauriv}"},
+  { "w":1, "v":"{$name=Throden}"},
+  { "w":1, "v":"{$name=Thurkear}"},
+  { "w":1, "v":"{$name=Usk}"},
+  { "w":1, "v":"{$name=Valignat}"},
+  { "w":1, "v":"{$name=Vargach}"},
+  { "w":1, "v":"{$name=Verthica}"},
+  { "w":1, "v":"{$name=Vutha}"},
+  { "w":1, "v":"{$name=Vyth}"}
+]

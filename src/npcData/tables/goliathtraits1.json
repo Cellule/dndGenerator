@@ -1,0 +1,10 @@
+[
+  { "w":2, "v":"{$goliathtraits=$majPro}{$goliathtraits+is very competitive. }"},
+  { "w":2, "v":"{$goliathtraits=$majPro}{$goliathtraits+sees everything as a challenge. }"},
+  { "w":2, "v":"{$goliathtraits=$majPro}{$goliathtraits+values skill and talent over all else. }"},
+  { "w":2, "v":"{$goliathtraits=$majPro}{$goliathtraits+always keeps score. }"},
+  { "w":2, "v":"{$goliathtraits=$majPro}{$goliathtraits+is constantly trying to outdo }{$goliathtraits+$minHim}{$goliathtraits+self. }"},
+  { "w":2, "v":"{$goliathtraits=$majPro}{$goliathtraits+is always fair play. }"},
+  { "w":2, "v":"{$goliathtraits=$majPro}{$goliathtraits+is very dedicated. }"},
+  { "w":2, "v":"{$goliathtraits=$majPro}{$goliathtraits+will always give a fighting chance to }{$goliathtraits+$minPoss}{$goliathtraits+opponents. }"}
+]

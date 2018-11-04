@@ -1,93 +1,71 @@
-[{
-    "w": 2,
-    "name": "Armorer",
-    "v": "{$occupation=armorer}"
-}, {
-    "w": 1,
-    "name": "Painter",
-    "v": "{$occupation=painter}{%dex+1}"
-}, {
-    "w": 1,
-    "name": "Baker",
-    "v": "{$occupation=baker}"
-}, {
-    "w": 1,
-    "name": "Banker",
-    "v": "{$occupation=banker}"
-}, {
-    "w": 3,
-    "name": "Blacksmith",
-    "v": "{$occupation=blacksmith}"
-}, {
-    "w": 1,
-    "name": "Bowyer",
-    "v": "{$occupation=bowyer}"
-}, {
-    "w": 2,
-    "name": "Brewer",
-    "v": "{$occupation=brewer}"
-}, {
-    "w": 2,
-    "name": "Butcher",
-    "v": "{$occupation=butcher}"
-}, {
-    "w": 3,
-    "name": "Carpenter",
-    "v": "{$occupation=carpenter}{%int+1}"
-}, {
-    "w": 1,
-    "name": "Clothier",
-    "v": "{$occupation=clothier}"
-}, {
-    "w": 2,
-    "name": "Cook",
-    "v": "{$occupation=cook}"
-}, {
-    "w": 1,
-    "name": "Furrier",
-    "v": "{$occupation=furrier}"
-}, {
-    "w": 1,
-    "name": "Goldsmith",
-    "v": "{$occupation=goldsmith}"
-}, {
-    "w": 4,
-    "name": "Innkeeper",
-    "v": "{$occupation=innkeeper}{%cha+2}"
-}, {
-    "w": 2,
-    "name": "Jeweler",
-    "v": "{$occupation=jeweler}{%int+1}{%dex+1}"
-}, {
-    "w": 3,
-    "name": "Leatherworker",
-    "v": "{$occupation=leatherworker}"
-}, {
-    "w": 2,
-    "name": "Locksmith",
-    "v": "{$occupation=locksmith}{%dex+1}"
-}, {
-    "w": 2,
-    "name": "Mason",
-    "v": "{$occupation=mason}"
-}, {
-    "w": 3,
-    "name": "Merchant",
-    "v": "{$occupation=merchant}{%cha+2}"
-}, {
-    "w": 1,
-    "name": "Tinker",
-    "v": "{$occupation=tinker}{%int+3}{%dex+2}"
-}, {
-    "w": 1,
-    "name": "Torturer",
-    "v": "{$occupation=torturer}{%cha+2}{%str+2}{%dex+1}{%evil+2}{getevilgod}"
-}, {
-    "w": 2,
-    "name": "Trader",
-    "v": "{$occupation=trader}{%cha+2}{%int+3}"
-}, {
-    "w": 3,
-    "name": "Weaver",
-    "v": "{$occupation=weaver}{%dex+1}"
-}]
+[
+  { "w":2,
+    "name":"Armorer",
+    "v":"{$occupation=armorer}{kenkunamemetal}"},
+  { "w":1,
+    "name":"Painter",
+    "v":"{$occupation=painter}{%dex+1}{kenkunamequiet}"},
+  { "w":1,
+    "name":"Baker",
+    "v":"{$occupation=baker}{kenkuname}"},
+  { "w":1,
+    "name":"Banker",
+    "v":"{$occupation=banker}{kenkunamequiet}"},
+  { "w":3,
+    "name":"Blacksmith",
+    "v":"{$occupation=blacksmith}{kenkunamemetal}"},
+  { "w":1,
+    "name":"Bowyer",
+    "v":"{$occupation=bowyer}{kenkuname}"},
+  { "w":2,
+    "name":"Brewer",
+    "v":"{$occupation=brewer}{kenkuname}"},
+  { "w":2,
+    "name":"Butcher",
+    "v":"{$occupation=butcher}{kenkunameanimal}"},
+  { "w":3,
+    "name":"Carpenter",
+    "v":"{$occupation=carpenter}{%int+1}{kenkuname}"},
+  { "w":1,
+    "name":"Clothier",
+    "v":"{$occupation=clothier}{kenkuname}"},
+  { "w":2,
+    "name":"Cook",
+    "v":"{$occupation=cook}{kenkuname}"},
+  { "w":1,
+    "name":"Furrier",
+    "v":"{$occupation=furrier}{kenkunameanimal}"},
+  { "w":1,
+    "name":"Goldsmith",
+    "v":"{$occupation=goldsmith}{kenkunamemetal}"},
+  { "w":4,
+    "name":"Innkeeper",
+    "v":"{$occupation=innkeeper}{%cha+2}{kenkuname}"},
+  { "w":2,
+    "name":"Jeweler",
+    "v":"{$occupation=jeweler}{%int+1}{%dex+1}{kenkuname}"},
+  { "w":3,
+    "name":"Leatherworker",
+    "v":"{$occupation=leatherworker}{kenkuname}"},
+  { "w":2,
+    "name":"Locksmith",
+    "v":"{$occupation=locksmith}{%dex+1}{kenkunamemetal}"},
+  { "w":2,
+    "name":"Mason",
+    "v":"{$occupation=mason}{kenkuname}"},
+  { "w":3,
+    "name":"Merchant",
+    "v":"{$occupation=merchant}{%cha+2}{kenkuname}"},
+  { "w":1,
+    "name":"Tinker",
+    "v":"{$occupation=tinker}{%int+3}{%dex+2}{kenkunamemetal}"},
+  { "w":1,
+    "name":"Torturer",
+    "v":"{$occupation=torturer}{%cha+2}{%str+2}{%dex+1}{%evil+2}{getevilgod}{kenkunamefighting}"},
+  { "w":2,
+    "name":"Trader",
+    "v":"{$occupation=trader}{%cha+2}{%int+3}{kenkuname}"},
+  { "w":3,
+    "name":"Weaver",
+    "v":"{$occupation=weaver}{%dex+1}{kenkuname}"}
+]

@@ -1,19 +1,8 @@
-[{
-    "w": 2,
-    "v": "{$bp=lip}"
-}, {
-    "w": 1,
-    "v": "{rl}{$bp=$rl}{$bp+cheek}"
-}, {
-    "w": 1,
-    "v": "{$bp=forehead}"
-}, {
-    "w": 2,
-    "v": "{$bp=nose}"
-}, {
-    "w": 3,
-    "v": "{rl}{$bp=$rl}{$bp+eyebrow}"
-}, {
-    "w": 5,
-    "v": "{rl}{$bp=$rl}{$bp+ear}"
-}]
+[
+  { "w":2, "v":"{$bp=lip}"},
+  { "w":1, "v":"{rl}{$bp=$rl}{$bp+cheek}"},
+  { "w":1, "v":"{$bp=forehead}"},
+  { "w":2, "v":"{$bp=nose}"},
+  { "w":3, "v":"{rl}{$bp=$rl}{$bp+eyebrow}"},
+  { "w":5, "v":"{rl}{$bp=$rl}{$bp+ear}"}
+]

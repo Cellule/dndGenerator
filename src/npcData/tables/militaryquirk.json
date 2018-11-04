@@ -1,37 +1,14 @@
-[{
-    "w": 7,
-    "v": "{$quirks+}"
-}, {
-    "w": 1,
-    "v": "{$quirks+$majPro}{$quirks+spends every morning training. }{%str+2}{%con+2}{%dex+2}"
-}, {
-    "w": 1,
-    "v": "{$quirks+$majPro}{$quirks+will never say no to a duel. }"
-}, {
-    "w": 1,
-    "v": "{$quirks+$majPro}{$quirks+can see an opening in any defense. }"
-}, {
-    "w": 1,
-    "v": "{$quirks+$majPro}{$quirks+never surrenders. }"
-}, {
-    "w": 1,
-    "v": "{$quirks+$majPro}{$quirks+loves training people. }"
-}, {
-    "w": 1,
-    "v": "{$quirks+$majPro}{$quirks+compares everything to a fight. }"
-}, {
-    "w": 1,
-    "v": "{$quirks+$majPro}{$quirks+sees fighting as a solution to any problem. }{%wis-2}"
-}, {
-    "w": 1,
-    "v": "{$quirks+$majPro}{$quirks+judges people on their fighting skills. }"
-}, {
-    "w": 1,
-    "v": "{$quirks+$majPro}{$quirks+used to be bullied as a child and learned to fight so that it wouldn't happen again. }"
-}, {
-    "w": 1,
-    "v": "{$quirks+$majPro}{$quirks+always obeys }{$quirks+$minPoss}{$quirks+ superiors. }"
-}, {
-    "w": 1,
-    "v": "{$quirks+$majPro}{$quirks+always has a battle story to tell. }"
-}]
+[
+  { "w":7, "v":"{$quirks+}"},
+  { "w":1, "v":"{$quirks+$majPro}{$quirks+spends every morning training. }{%str+2}{%con+2}{%dex+2}"},
+  { "w":1, "v":"{$quirks+$majPro}{$quirks+will never say no to a duel. }"},
+  { "w":1, "v":"{$quirks+$majPro}{$quirks+can see an opening in any defense. }"},
+  { "w":1, "v":"{$quirks+$majPro}{$quirks+never surrenders. }"},
+  { "w":1, "v":"{$quirks+$majPro}{$quirks+loves training people. }"},
+  { "w":1, "v":"{$quirks+$majPro}{$quirks+compares everything to a fight. }"},
+  { "w":1, "v":"{$quirks+$majPro}{$quirks+sees fighting as a solution to any problem. }{%wis-2}"},
+  { "w":1, "v":"{$quirks+$majPro}{$quirks+judges people on their fighting skills. }"},
+  { "w":1, "v":"{$quirks+$majPro}{$quirks+used to be bullied as a child and learned to fight so that it wouldn't happen again. }"},
+  { "w":1, "v":"{$quirks+$majPro}{$quirks+always obeys }{$quirks+$minPoss}{$quirks+ superiors. }"},
+  { "w":1, "v":"{$quirks+$majPro}{$quirks+always has a battle story to tell. }"}
+]

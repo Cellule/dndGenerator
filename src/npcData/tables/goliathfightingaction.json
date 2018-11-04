@@ -1,0 +1,6 @@
+  [
+  { "w":1, "v":"{$name+shaker}"},
+  { "w":1, "v":"{$name+breaker}"},
+  { "w":1, "v":"{$name+crusher}"},
+  { "w":1, "v":"{$name+smasher}"}
+]

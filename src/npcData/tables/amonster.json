@@ -1,7 +1,4 @@
-[{
-    "w": 13,
-    "v": "{$monster=a }{monster1}"
-}, {
-    "w": 2,
-    "v": "{$monster=an }{monster2}"
-}]
+[
+  { "w":13, "v":"{$monster=a }{monster1}"},
+  { "w":2, "v":"{$monster=an }{monster2}"}
+]

@@ -1,16 +1,7 @@
-[{
-    "w": 3,
-    "v": "{$hair=cropped}"
-}, {
-    "w": 5,
-    "v": "{$hair=short}"
-}, {
-    "w": 5,
-    "v": "{$hair=long}"
-}, {
-    "w": 3,
-    "v": "{$hair=very long}"
-}, {
-    "w": 1,
-    "v": "{$hair=extremely long}"
-}]
+[
+  { "w":3, "v":"{$hair=cropped}"},
+  { "w":5, "v":"{$hair=short}"},
+  { "w":5, "v":"{$hair=long}"},
+  { "w":3, "v":"{$hair=very long}"},
+  { "w":1, "v":"{$hair=extremely long}"}
+]

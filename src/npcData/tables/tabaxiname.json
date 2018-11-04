@@ -1,0 +1,9 @@
+[
+  { "w":10, "v":"{tabaxifirstname}{$name+ }{tabaxinounname}"},
+  { "w":4, "v":"{tabaxinounname}{$name+ }{tabaxilastname}"},
+  { "w":8, "v":"{tabaxinounname}{$name+s }{tabaxilastname}"},
+  { "w":6, "v":"{tabaxinumbername}{$name+ }{tabaxinounname}{$name+s}"},
+  { "w":4, "v":"{tabaxinumbername}{$name+ }{tabaxinounname}{$name+s }{tabaxilastname}"},
+  { "w":4, "v":"{tabaxinumbername}{$name+ }{tabaxifirstname}{$name+ }{tabaxinounname}{$name+s}"},
+  { "w":1, "v":"{tabaxinumbername}{$name+ }{tabaxifirstname}{$name+ }{tabaxinounname}{$name+s}{tabaxilastname}"}
+]

@@ -1,0 +1,3 @@
+[
+  { "w":1, "v":"{$skintexture=}{$skintone=}{tabaxiskintexture}{tabaxiskinpattern}{$skin=$skintexture}{$skin+$skintone}{tabaxiskincolor}{$skintype= fur}"}
+]

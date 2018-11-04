@@ -1,25 +1,10 @@
-[{
-    "w": 8,
-    "v": "{$lang=elvish}"
-}, {
-    "w": 2,
-    "v": "{$lang=celestial}"
-}, {
-    "w": 5,
-    "v": "{$lang=draconic}"
-}, {
-    "w": 6,
-    "v": "{$lang=dwarvish}"
-}, {
-    "w": 2,
-    "v": "{$lang=infernal}"
-}, {
-    "w": 2,
-    "v": "{$lang=sylvan}"
-}, {
-    "w": 2,
-    "v": "{$lang=orcish}"
-}, {
-    "w": 2,
-    "v": "{$lang=deep speech}"
-}]
+[
+  { "w":8, "v":"{$lang=elvish}"},
+  { "w":2, "v":"{$lang=celestial}"},
+  { "w":5, "v":"{$lang=draconic}"},
+  { "w":6, "v":"{$lang=dwarvish}"},
+  { "w":2, "v":"{$lang=infernal}"},
+  { "w":2, "v":"{$lang=sylvan}"},
+  { "w":2, "v":"{$lang=orcish}"},
+  { "w":2, "v":"{$lang=deep speech}"}
+]

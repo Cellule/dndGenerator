@@ -1,13 +1,6 @@
-[{
-    "w": 6,
-    "v": "{$mod=slightly }"
-}, {
-    "w": 3,
-    "v": "{$mod=very }"
-}, {
-    "w": 1,
-    "v": "{$mod=incredibly }"
-}, {
-    "w": 1,
-    "v": "{$mod=extremely }"
-}]
+[
+  { "w":6, "v":"{$mod=slightly }"},
+  { "w":3, "v":"{$mod=very }"},
+  { "w":1, "v":"{$mod=incredibly }"},
+  { "w":1, "v":"{$mod=extremely }"}
+]

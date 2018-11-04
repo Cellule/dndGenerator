@@ -1,0 +1,9 @@
+[
+  { "w":1, "v":"{$quirks+$majPro}{$quirks+seeks to spread misery and despair. }"},
+  { "w":1, "v":"{$quirks+$majPro}{$quirks+seeks to spread lies and fear. }{%int+3}"},
+  { "w":1, "v":"{$quirks+$majPro}{$quirks+seeks to spread sadness and sorrow. }"},
+  { "w":1, "v":"{$quirks+$majPro}{$quirks+seeks to raise an army of followers. }{%cha+2}"},
+  { "w":1, "v":"{$quirks+$majPro}{$quirks+seeks to eradicate good aasimars. }"},
+  { "w":1, "v":"{$quirks+$majPro}{$quirks+seeks to eradicate followers of good gods. }"},
+  { "w":1, "v":"{$quirks+$majPro}{$quirks+seeks mindless destruction }{%chaotic+3}"}
+]

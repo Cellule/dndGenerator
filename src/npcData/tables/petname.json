@@ -1,4 +1,3 @@
-[{
-    "w": 1,
-    "v": "{petname1}{$quirks+. }"
-}]
+[
+  { "w":1, "v":"{petname1}{$quirks+. }"}
+]

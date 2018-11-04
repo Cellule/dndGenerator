@@ -1,37 +1,14 @@
-[{
-    "w": 1,
-    "v": "{male}{malegnomename1}{malegnomename2}{malegnomename3}{malegnomename4}"
-}, {
-    "w": 1,
-    "v": "{female}{femalegnomename1}{femalegnomename2}{femalegnomename3}{femalegnomename4}"
-}, {
-    "w": 1,
-    "v": "{male}{malegnomename1}{malegnomename2}{malegnomename4}{malegnomename3}"
-}, {
-    "w": 1,
-    "v": "{male}{malegnomename1}{malegnomename3}{malegnomename2}{malegnomename4}"
-}, {
-    "w": 1,
-    "v": "{male}{malegnomename1}{malegnomename3}{malegnomename4}{malegnomename2}"
-}, {
-    "w": 1,
-    "v": "{male}{malegnomename1}{malegnomename4}{malegnomename2}{malegnomename3}"
-}, {
-    "w": 1,
-    "v": "{male}{malegnomename1}{malegnomename4}{malegnomename3}{malegnomename2}"
-}, {
-    "w": 1,
-    "v": "{female}{femalegnomename1}{femalegnomename2}{femalegnomename4}{femalegnomename3}"
-}, {
-    "w": 1,
-    "v": "{female}{femalegnomename1}{femalegnomename3}{femalegnomename2}{femalegnomename4}"
-}, {
-    "w": 1,
-    "v": "{female}{femalegnomename1}{femalegnomename3}{femalegnomename4}{femalegnomename2}"
-}, {
-    "w": 1,
-    "v": "{female}{femalegnomename1}{femalegnomename4}{femalegnomename2}{femalegnomename3}"
-}, {
-    "w": 1,
-    "v": "{female}{femalegnomename1}{femalegnomename4}{femalegnomename3}{femalegnomename2}"
-}]
+[
+  { "w":1, "v":"{male}{malegnomename1}{malegnomename2}{malegnomename3}{malegnomename4}"},
+  { "w":1, "v":"{female}{femalegnomename1}{femalegnomename2}{femalegnomename3}{femalegnomename4}"},
+  { "w":1, "v":"{male}{malegnomename1}{malegnomename2}{malegnomename4}{malegnomename3}"},
+  { "w":1, "v":"{male}{malegnomename1}{malegnomename3}{malegnomename2}{malegnomename4}"},
+  { "w":1, "v":"{male}{malegnomename1}{malegnomename3}{malegnomename4}{malegnomename2}"},
+  { "w":1, "v":"{male}{malegnomename1}{malegnomename4}{malegnomename2}{malegnomename3}"},
+  { "w":1, "v":"{male}{malegnomename1}{malegnomename4}{malegnomename3}{malegnomename2}"},
+  { "w":1, "v":"{female}{femalegnomename1}{femalegnomename2}{femalegnomename4}{femalegnomename3}"},
+  { "w":1, "v":"{female}{femalegnomename1}{femalegnomename3}{femalegnomename2}{femalegnomename4}"},
+  { "w":1, "v":"{female}{femalegnomename1}{femalegnomename3}{femalegnomename4}{femalegnomename2}"},
+  { "w":1, "v":"{female}{femalegnomename1}{femalegnomename4}{femalegnomename2}{femalegnomename3}"},
+  { "w":1, "v":"{female}{femalegnomename1}{femalegnomename4}{femalegnomename3}{femalegnomename2}"}
+]

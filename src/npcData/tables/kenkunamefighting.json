@@ -1,0 +1,18 @@
+[
+  { "w":30, "v":"{$kenkuname+}"},
+  { "w":1, "v":"{$kenkuname=Cut}"},
+  { "w":1, "v":"{$kenkuname=Scream}"},
+  { "w":1, "v":"{$kenkuname=Shout}"},
+  { "w":1, "v":"{$kenkuname=Battle}"},
+  { "w":1, "v":"{$kenkuname=Stab}"},
+  { "w":1, "v":"{$kenkuname=Blades Clashing}"},
+  { "w":1, "v":"{$kenkuname=Arrow}"},
+  { "w":1, "v":"{$kenkuname=Crossbow}"},
+  { "w":1, "v":"{$kenkuname=Unsheathing}"},
+  { "w":1, "v":"{$kenkuname=Groan}"},
+  { "w":1, "v":"{$kenkuname=Punch}"},
+  { "w":1, "v":"{$kenkuname=Slap}"},
+  { "w":1, "v":"{$kenkuname=Boom}"},
+  { "w":1, "v":"{$kenkuname=Catapult}"},
+  { "w":1, "v":"{$kenkuname=Trebuchet}"}
+]
