@@ -17,7 +17,7 @@ function toFeet(n) {
   var realFeet = ((n*0.393700) / 12);
   var feet = Math.floor(realFeet);
   var inches = Math.floor((realFeet - feet) * 12);
-  return feet + "'" + inches + '\"';
+  return feet + "'" + inches + '"';
 }
 
 export default class NpcData extends Component {
@@ -178,24 +178,23 @@ export default class NpcData extends Component {
               <Panel.Body>
               <p hidden>#</p>
               <Row>
-                <table className="ability-table">
-                  {
-                    Object.keys(this.props.npc.abilities).map(key => {
-                      const ability = this.props.npc.abilities[key];
-                      return (
-                        <Col
-                          key={key}
-                          lg={12}
-                          md={2}
-                          xs={12}
-                          className="no-right-pad no-left-pad ability"
-                        >
-                          <tr><td><b>{abilityNames[key]}</b><p hidden> - </p></td><td className="ability-number">{Math.max(3, ability)}<p hidden>#</p></td></tr>
-                        </Col>
-                      );
-                    })
-                  }
-                </table>
+                <Col
+                  lg={12}
+                  md={2}
+                  xs={12}
+                  className="no-right-pad no-left-pad ability"
+                >
+                  <table className="ability-table">
+                    {
+                      Object.keys(this.props.npc.abilities).map(key => {
+                        const ability = this.props.npc.abilities[key];
+                        return (
+                            <tr key={key}><td><b>{abilityNames[key]}</b><p hidden> - </p></td><td className="ability-number">{Math.max(3, ability)}<p hidden>#</p></td></tr>
+                            );
+                          })
+                        }
+                  </table>
+                </Col>
               </Row>
               <p hidden>#</p>
               </Panel.Body>
