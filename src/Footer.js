@@ -30,14 +30,14 @@ export default class PageFooter extends Component {
             <ul className="bs-docs-social-buttons">
               <li>
                 <iframe className="github-btn"
-                  src="http://ghbtns.com/github-btn.html?user=cellule&repo=dndGenerator&type=watch&count=true"
+                  src="https://ghbtns.com/github-btn.html?user=cellule&repo=dndGenerator&type=watch&count=true"
                   width={95}
                   height={20}
                   title="Star on GitHub" />
               </li>
               <li>
                 <iframe className="github-btn"
-                  src="http://ghbtns.com/github-btn.html?user=cellule&repo=dndGenerator&type=fork&count=true"
+                  src="https://ghbtns.com/github-btn.html?user=cellule&repo=dndGenerator&type=fork&count=true"
                   width={92}
                   height={20}
                   title="Fork on GitHub" />

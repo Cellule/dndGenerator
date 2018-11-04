@@ -133,11 +133,3 @@ export function printDebugGen(npc) {
     console.log(lines.join("\n"))
   }
 }
-
-//while(true) {
-//  const res = generate();
-//  if (!res.description.name) {
-//    printDebugGen(res);
-//    break;
-//  }
-//}
