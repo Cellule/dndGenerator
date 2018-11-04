@@ -185,6 +185,7 @@ export default class NpcData extends Component {
                   className="no-right-pad no-left-pad ability"
                 >
                   <table className="ability-table">
+                    <tbody>
                     {
                       Object.keys(this.props.npc.abilities).map(key => {
                         const ability = this.props.npc.abilities[key];
@@ -193,6 +194,7 @@ export default class NpcData extends Component {
                             );
                           })
                         }
+                    </tbody>
                   </table>
                 </Col>
               </Row>
@@ -219,23 +221,25 @@ export default class NpcData extends Component {
               <Panel.Body>
               <p hidden>#</p>
               <table className="alignment-table">
+              <tbody>
                 <tr>
                   <td className="width-thin"><b>Good</b></td><td hidden>:    </td><td className="alignment-number">{Math.max(0, this.props.npc.alignment.good)}</td>
                   <td hidden>  </td>
                   <td className="width-thin"><b>Lawful</b></td><td hidden>:  </td><td className="alignment-number">{Math.max(0, this.props.npc.alignment.lawful)}</td>
                 </tr>
-                <td hidden>#</td>
+                <tr hidden><td>#</td></tr>
                 <tr>
                   <td className="width-thin"><b>Neutral</b></td><td hidden>: </td><td className="alignment-number">{Math.max(0, this.props.npc.alignment.moralneutral)}</td>
                   <td hidden>  </td>
                   <td className="width-thin"><b>Neutral</b></td><td hidden>: </td><td className="alignment-number">{Math.max(0, this.props.npc.alignment.ethicalneutral)}</td>
                 </tr>
-                <td hidden>#</td>
+                <tr hidden><td>#</td></tr>
                 <tr>
                   <td className="width-thin"><b>Evil</b></td><td hidden>:    </td><td className="alignment-number">{Math.max(0, this.props.npc.alignment.evil)}</td>
                   <td hidden>  </td>
                   <td className="width-thin"><b>Chaotic</b></td><td hidden>: </td><td className="alignment-number">{Math.max(0, this.props.npc.alignment.chaotic)}</td>
                 </tr>
+              </tbody>
               </table>
               </Panel.Body>
             </Panel>

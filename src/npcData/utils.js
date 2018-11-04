@@ -1,3 +1,5 @@
+export const debugGen = process.env.NODE_ENV === "development";
+
 export function chooseRandomWithWeight(arr, totalWeight) {
   var rnum = ((Math.random() * totalWeight) + 1) | 0;
   var i = 0;
@@ -13,18 +15,25 @@ export function getGroups(val) {
   }
   val = val.replace("{\\n}", "\n");
   var r = val.match(/{((\\{|\\}|[^{}])*)}|((\\{|\\}|[^{}])+)/g).map(function(g) {
-    //todo: replace escaped \{ and \}
-    if(g[0] === "{") {
-      var res = {};
-      for (const op of operators) {
-        var m = g.match(op.regex);
-        if (m) {
-          return op.makeOperator(m);
+    const mapGroup = () => {
+      //todo: replace escaped \{ and \}
+      if(g[0] === "{") {
+        var res = {};
+        for (const op of operators) {
+          var m = g.match(op.regex);
+          if (m) {
+            return op.makeOperator(m);
+          }
         }
+        return res;
       }
-      return res;
+      return g;
     }
-    return g;
+    const r = mapGroup();
+    if (debugGen && typeof r !== "string") {
+      r.original = g;
+    }
+    return r;
   });
   return r;
 }

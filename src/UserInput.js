@@ -36,6 +36,14 @@ const professionCategories = {
   entertainer: getTableOptions("entertainer"),
 };
 
+if (process.env.NODE_ENV === 'development') {
+  for (const prof of professions) {
+    if (!professionCategories[prof.table]) {
+      throw new Error(`Missing profession category "${prof.table}"`);
+    }
+  }
+}
+
 var userOptions = [
   {
     label: "Race",
@@ -147,6 +155,7 @@ export default class UserInput extends Component {
       }
 
       let options = [];
+      const selectedOption = this.state.npcOptions[userOption.optionName];
       if(enable) {
         let opts = userOption.options;
         if(typeof opts === "function") {
@@ -156,7 +165,7 @@ export default class UserInput extends Component {
           if(!opt.name) {
             return null;
           }
-          return <option value={i} key={i}>{opt.name}</option>;
+          return <option value={i} key={i} selected={selectedOption === i}>{opt.name}</option>;
         });
       }
 

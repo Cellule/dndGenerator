@@ -1,25 +1,35 @@
 
 import data from "./index";
 import schema from "./schema.json";
-import {getGroups, chooseRandomWithWeight} from "./utils";
+import {getGroups, chooseRandomWithWeight, debugGen} from "./utils";
 
-export function generate(options = {}) {
-  options.race = options.race !== undefined ? options.race|0 : null;
-  options.subrace = options.subrace !== undefined ? options.subrace|0 : null;
-  options.classorprof = options.classorprof !== undefined ?
-    options.classorprof|0 : null;
-  options.occupation1 = options.occupation1 !== undefined ?
-    options.occupation1|0 : null;
-  options.occupation2 = options.occupation2 !== undefined ?
-    options.occupation2|0 : null;
-  options.alignment = options.alignment !== undefined ?
-    options.alignment|0 : null;
-  options.plothook = options.plothook !== undefined ?
-    options.plothook|0 : null;
-  options.gender = options.gender !== undefined ?
-    options.gender|0 : null;
+function numberOrNull(v) {
+  return typeof v === "number" ? v|0 : null;
+}
+
+export function generate({
+  race,
+  subrace,
+  classorprof,
+  occupation1,
+  occupation2,
+  alignment,
+  plothook,
+  gender,
+} = {}) {
+  const options = {
+    race: numberOrNull(race),
+    subrace: numberOrNull(subrace),
+    classorprof: numberOrNull(classorprof),
+    occupation1: numberOrNull(occupation1),
+    occupation2: numberOrNull(occupation2),
+    alignment: numberOrNull(alignment),
+    plothook: numberOrNull(plothook),
+    gender: numberOrNull(gender),
+  };
 
   const context = {vars: {}};
+  let debugNode = {o: "root", childs: []};
   function processGroups(groups) {
     var result;
     var addToResult = function(value) {
@@ -32,21 +42,30 @@ export function generate(options = {}) {
     };
     groups.forEach(function(instruction) {
       if(typeof instruction === "string") {
+        debugNode.childs.push(instruction);
         addToResult(instruction);
-      }
-      else if(typeof instruction === "function") {
-        var insRes = instruction(data, context, options);
-        if(insRes !== undefined) {
-          if(Array.isArray(insRes)) {
-            addToResult(processGroups(insRes));
-          }
-          else {
-            addToResult(insRes);
+      } else {
+        const oldNode = debugNode;
+        if (debugGen) {
+          const node = {o: instruction.original, childs: []};
+          debugNode.childs.push(node);
+          debugNode = node;
+        }
+        if(typeof instruction === "function") {
+          var insRes = instruction(data, context, options);
+          if(insRes !== undefined) {
+            if(Array.isArray(insRes)) {
+              addToResult(processGroups(insRes));
+            }
+            else {
+              addToResult(insRes);
+            }
           }
         }
-      }
-      else if(Array.isArray(instruction)) {
-        addToResult(processGroups(instruction));
+        else if(Array.isArray(instruction)) {
+          addToResult(processGroups(instruction));
+        }
+        debugNode = oldNode;
       }
     });
     return result;
@@ -84,5 +103,41 @@ export function generate(options = {}) {
     processGroups(getGroups(schema.options.initialisation));
   }
 
-  return processSchema(schema.output);
+
+  const npc = processSchema(schema.output);
+  if (debugGen) {
+    npc.debug = debugNode;
+  }
+  return npc;
 }
+
+export function printDebugGen(npc) {
+  const debugNode = npc.debug;
+  if (debugNode) {
+    let depth = 0;
+    let lines = [];
+    const indent = () => " ".repeat(depth);
+    const processNode = node => {
+      if (typeof node === "string") {
+        lines.push(indent() + `-> ${node}`);
+      } else {
+        lines.push(indent() + `-> ${node.o}`);
+        depth++;
+        for (const child of node.childs) {
+          processNode(child);
+        }
+        depth--;
+      }
+    }
+    processNode(debugNode);
+    console.log(lines.join("\n"))
+  }
+}
+
+//while(true) {
+//  const res = generate();
+//  if (!res.description.name) {
+//    printDebugGen(res);
+//    break;
+//  }
+//}
