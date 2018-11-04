@@ -8,8 +8,22 @@ export default class PageFooter extends Component {
   render() {
     return (
       <footer className="bs-docs-footer" role="contentinfo">
+        <ul className="bs-docs-social-buttons">
+          <li>
+            <div>
+              <p className="footer-outline"><b>Check out my video game!</b></p>
+              <a href="http://store.steampowered.com/app/769410/Electromaze_Tower_Defense/" target="_blank" rel="noopener noreferrer"><div className="center-block EMD-button"/></a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <p className="footer-outline"><b>Follow my next RPG on discord!</b></p>
+              <a href="https://discord.gg/VVb6hDr" target="_blank" rel="noopener noreferrer"><div className="center-block GM-button"/></a>
+            </div>
+          </li>
+        </ul>
         <div>
-          <p><b> Comments, suggestions, crazy hook or trait idea? </b></p>
+          <p className="footer-outline"><b> Comments, suggestions, crazy hook or trait idea? </b></p>
           <p> Email me at: <a href="mailto:etienspb@gmail.com">EtiensPB@gmail.com</a>!</p>
         </div>
           <div className="bs-docs-social">

@@ -5,6 +5,7 @@ import {getGroups, chooseRandomWithWeight} from "./utils";
 
 export function generate(options = {}) {
   options.race = options.race !== undefined ? options.race|0 : null;
+  options.subrace = options.subrace !== undefined ? options.subrace|0 : null;
   options.classorprof = options.classorprof !== undefined ?
     options.classorprof|0 : null;
   options.occupation1 = options.occupation1 !== undefined ?

@@ -12,6 +12,14 @@ import PropTypes from 'prop-types';
 import {getTableOptions} from "./npcData/index";
 
 const races = getTableOptions("race");
+
+const subraces = {
+  elf: getTableOptions("raceelf"),
+  dwarf: getTableOptions("racedwarf"),
+  gnome: getTableOptions("racegnome"),
+  halfling: getTableOptions("racehalfling"),
+}
+
 const genders = getTableOptions("gender");
 const alignments = getTableOptions("forcealign");
 const plothooks = getTableOptions("hooks");
@@ -32,7 +40,18 @@ var userOptions = [
   {
     label: "Race",
     optionName: "race",
-    options: races
+    options: races,
+    onChange: (component) => {
+      var npcOptions = component.state.npcOptions;
+      npcOptions.subrace = null;
+      component.setState({npcOptions});
+    }
+  },
+  {
+    label: "Subrace",
+    optionName: "subrace",
+    condition: (npcOptions) => (typeof npcOptions.race === "number" && subraces[races[npcOptions.race].table] !== undefined),
+    options: (npcOptions) => subraces[races[npcOptions.race].table]
   },
   {
     label: "Sex",

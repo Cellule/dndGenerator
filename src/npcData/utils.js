@@ -174,6 +174,17 @@ const operators = [
       } else if(tablename.match(/gender$/) && isNumber(options.gender)) {
         return chooseOption(options.gender);
       }
+      if(isNumber(options.subrace) &&
+        (
+          tablename === "raceelf" ||
+          tablename === "racedwarf" ||
+          tablename === "racegnome" ||
+          tablename === "racehalfling" ||
+          tablename === "racegenasi"
+        )
+      ) {
+        return chooseOption(options.subrace);
+      }
 
       if(isNumber(options.classorprof)) {
         if(tablename === "occupation") {
