@@ -9,23 +9,23 @@ import {
 } from "react-bootstrap";
 import React, {Component} from "react";
 import PropTypes from 'prop-types';
+import {getTableOptions} from "./npcData/index";
 
-var races = require("./npcData/tables/race.json");
-var genders = require("./npcData/tables/gender.json");
-var alignments = require("./npcData/tables/forcealign.json");
-var plothooks = require("./npcData/tables/hooks.json");
+const races = getTableOptions("race");
+const genders = getTableOptions("gender");
+const alignments = getTableOptions("forcealign");
+const plothooks = getTableOptions("hooks");
+const classes = getTableOptions("class");
+const professions = getTableOptions("profession");
 
-var classes = require("./npcData/tables/class.json");
-var professions = require("./npcData/tables/profession.json");
-
-var professionCategories = {
-  "learned": require("./npcData/tables/learned.json"),
-  "lesserNobility": require("./npcData/tables/lesserNobility.json"),
-  "professional": require("./npcData/tables/professional.json"),
-  "workClass": require("./npcData/tables/workClass.json"),
-  "martial": require("./npcData/tables/martial.json"),
-  "underclass": require("./npcData/tables/underclass.json"),
-  "entertainer": require("./npcData/tables/entertainer.json"),
+const professionCategories = {
+  learned: getTableOptions("learned"),
+  lesserNobility: getTableOptions("lesserNobility"),
+  professional: getTableOptions("professional"),
+  workClass: getTableOptions("workClass"),
+  martial: getTableOptions("martial"),
+  underclass: getTableOptions("underclass"),
+  entertainer: getTableOptions("entertainer"),
 };
 
 var userOptions = [
@@ -174,11 +174,11 @@ export default class UserInput extends Component {
             <Row>
               {npcOptions}
             </Row>
-            <Button type="submit" className="center-block generate-button" bsStyle="success" >Submit</Button>
+            <Button type="submit" className="center-block generate-button" bsStyle="success" />
           </form>
 
           <form onSubmit={this._downloadTxtFile.bind(this)}>
-            <Button type="submit" className="center-block download-button download-button" bsStyle="success" >Submit</Button>
+            <Button type="submit" className="center-block download-button download-button" bsStyle="success" />
           </form>
 
         </Panel>

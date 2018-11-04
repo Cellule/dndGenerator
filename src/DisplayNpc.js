@@ -3,6 +3,7 @@ import {Col, Row} from "react-bootstrap";
 import Footer from "./Footer";
 import UserInput from "./UserInput";
 import NpcData from "./NpcData";
+import {generate} from "./npcData/generate";
 
 import "./DisplayNpc.less"
 
@@ -16,13 +17,12 @@ export default class DisplayNpc extends Component {
   }
 
   generateNpc(options) {
+    const npc = generate(options);
+    setTimeout(() => this.setState({npc}));
     //actions.Npc.generate(options, (err, res) => {
     //  if(err) {
     //    console.error(err);
     //  }
-    //  this.setState({
-    //    npc: res.body
-    //  });
     //});
   }
 

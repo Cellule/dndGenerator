@@ -200,7 +200,7 @@ export default class NpcData extends Component {
           <Col xs={12}>
             <Panel header={<div>Plot Hook</div>} className="align-center">
             <p hidden>##</p>
-              {this.props.npc.hook}
+              {this.props.npc.hook.description}
             </Panel>
           </Col>
         </Row>
