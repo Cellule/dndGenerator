@@ -39,6 +39,9 @@ export default class DisplayNpc extends Component {
             mdOffset={0}
             className="user-info-col top-padding options-panel"
           >
+            <div>
+              <div className="title-image"></div>
+            </div>
             <UserInput npc={this.state.npc} generate={this.generateNpc}/>
           </Col>
           <Col

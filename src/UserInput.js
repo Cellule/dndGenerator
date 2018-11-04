@@ -170,6 +170,7 @@ export default class UserInput extends Component {
     return (
       <div>
         <Panel className="hidden-panel">
+          <Panel.Body>
           <form onSubmit={this.onSubmit.bind(this)}>
             <Row>
               {npcOptions}
@@ -180,7 +181,7 @@ export default class UserInput extends Component {
           <form onSubmit={this._downloadTxtFile.bind(this)}>
             <Button type="submit" className="center-block download-button download-button" bsStyle="success" />
           </form>
-
+          </Panel.Body>
         </Panel>
       </div>
     );

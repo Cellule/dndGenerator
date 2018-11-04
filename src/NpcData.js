@@ -79,11 +79,12 @@ export default class NpcData extends Component {
     quirksArray.length--;
 
     return (
-
-      <div fluid className="npc-data" id="downloadData">
+      <div className="npc-data" id="downloadData">
         <Row>
           <Col xs={12} md={6}>
-            <Panel className="first-row-height" header={<div>Description</div>}>
+            <Panel className="first-row-height">
+              <Panel.Heading>Description</Panel.Heading>
+              <Panel.Body>
               <p hidden>##</p>
               <p>
                 {this.props.npc.description.name} is a {this.props.npc.description.age + " "}
@@ -112,10 +113,13 @@ export default class NpcData extends Component {
               </p>
               <p hidden>##</p>
               <p hidden>##</p>
+            </Panel.Body>
             </Panel>
           </Col>
           <Col xs={12} md={6}>
-            <Panel className="first-row-height" header={<div>Personality Traits</div>}>
+            <Panel className="first-row-height">
+              <Panel.Heading>Personality Traits</Panel.Heading>
+              <Panel.Body>
               <p hidden>##</p>
               <p>
                 {this.props.npc.religion.description}
@@ -125,16 +129,19 @@ export default class NpcData extends Component {
               <p hidden>##</p>
               <p>{this.props.npc.ptraits.traits2}</p>
                  {
-                   quirksArray.map(value => <p>{value}.</p>)
+                   quirksArray.map(value => <p key={value}>{value}.</p>)
                  }
                  <p hidden>##</p>
                  <p hidden>##</p>
+              </Panel.Body>
             </Panel>
           </Col>
         </Row>
         <Row>
           <Col sm={12} md={6} lg={4}>
-            <Panel className="second-row-height" header={<div>Ability Scores</div>}>
+            <Panel className="second-row-height">
+              <Panel.Heading>Ability Scores</Panel.Heading>
+              <Panel.Body>
               <p hidden>##</p>
               <Row>
                 <table className="ability-table">
@@ -157,20 +164,26 @@ export default class NpcData extends Component {
                 </table>
               </Row>
               <p hidden>##</p>
+              </Panel.Body>
             </Panel>
           </Col>
           <Col sm={12} md={6} lg={4}>
-            <Panel className="second-row-height" header={<div>Relationships</div>}>
+            <Panel className="second-row-height">
+              <Panel.Heading>Relationships</Panel.Heading>
+              <Panel.Body>
               <p hidden>##</p>
               <p><b>Sexual Orientation </b></p><p hidden>- </p><p>{this.props.npc.relationship.orientation}</p>
               <p hidden>##</p>
               <p><b>Relationship Status </b></p><p hidden>- </p><p>{this.props.npc.relationship.status}</p>
               <p hidden>##</p>
               <p hidden>##</p>
+              </Panel.Body>
             </Panel>
           </Col>
           <Col sm={12} md={12} lg={4}>
-            <Panel className="second-row-height" header={<div>Alignment Tendencies</div>}>
+            <Panel className="second-row-height">
+              <Panel.Heading>Alignment Tendencies</Panel.Heading>
+              <Panel.Body>
               <p hidden>##</p>
               <table className="alignment-table">
                 <tr>
@@ -191,6 +204,7 @@ export default class NpcData extends Component {
                   <td className="width-thin"><b>Chaotic</b></td><td hidden>: </td><td className="alignment-number">{this.props.npc.alignment.chaotic}</td>
                 </tr>
               </table>
+              </Panel.Body>
             </Panel>
           </Col>
         </Row>
@@ -198,9 +212,12 @@ export default class NpcData extends Component {
         <p hidden>##</p>
         <Row>
           <Col xs={12}>
-            <Panel header={<div>Plot Hook</div>} className="align-center">
-            <p hidden>##</p>
+            <Panel className="align-center">
+            <Panel.Heading>Plot Hook</Panel.Heading>
+            <Panel.Body>
+              <p hidden>##</p>
               {this.props.npc.hook.description}
+            </Panel.Body>
             </Panel>
           </Col>
         </Row>
