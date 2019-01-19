@@ -1,30 +1,31 @@
 import React, { Component } from 'react';
-import {Col, Row} from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import Footer from "./Footer";
 import UserInput from "./UserInput";
 import NpcData from "./NpcData";
-import {generate, printDebugGen} from "./npcData/generate";
+import { generate, printDebugGen } from "./npcData/generate";
+import { NpcGenerateOptions, Npc } from './npcData/index';
 
 import "./DisplayNpc.less"
 
-export default class DisplayNpc extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {npc: null}
+interface IState {
+  npc: Npc
+}
 
-    this.generateNpc(this.props.query);
+export default class DisplayNpc extends Component<{}, IState> {
+  constructor(props: any) {
+    super(props);
+    // Generate initial npc
+    const { npc, debugNode } = generate({});
+    printDebugGen(debugNode);
+    this.state = { npc };
     this.generateNpc = this.generateNpc.bind(this);
   }
 
-  generateNpc(options) {
-    const npc = generate(options);
-    printDebugGen(npc);
-    setTimeout(() => this.setState({npc}));
-    //actions.Npc.generate(options, (err, res) => {
-    //  if(err) {
-    //    console.error(err);
-    //  }
-    //});
+  generateNpc(options: NpcGenerateOptions) {
+    const { npc, debugNode } = generate(options);
+    printDebugGen(debugNode);
+    this.setState({ npc });
   }
 
   render() {
@@ -43,7 +44,7 @@ export default class DisplayNpc extends Component {
             <div>
               <div className="title-image"></div>
             </div>
-            <UserInput npc={this.state.npc} generate={this.generateNpc}/>
+            <UserInput npc={this.state.npc} generate={this.generateNpc} />
           </Col>
           <Col
             xs={12}

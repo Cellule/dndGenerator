@@ -1,11 +1,12 @@
 {
   "name": "dnd-generator",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "dependencies": {
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
-    "react-scripts": "git+https://github.com/Cellule/dnd-generator-react-scripts.git"
+    "react-scripts": "git+https://github.com/Cellule/dnd-generator-react-scripts.git",
+    "typescript": "^3.2.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -23,6 +24,10 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@types/node": "^10.12.18",
+    "@types/react": "^16.7.20",
+    "@types/react-bootstrap": "^0.32.15",
+    "@types/react-dom": "^16.0.11",
     "bootstrap": "^3.3.7",
     "prop-types": "^15.6.2",
     "react-bootstrap": "^0.32.4"
