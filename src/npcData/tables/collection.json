@@ -4,5 +4,12 @@
   { "w":2, "v":"{$quirks+cute rocks. }"},
   { "w":2, "v":"{$quirks+weird bones. }"},
   { "w":2, "v":"{$quirks+bottle corks. }"},
+  { "w":2, "v":"{$quirks+iridescent feathers. }"},
+  { "w":2, "v":"{$quirks+sea shells. }"},
+  { "w":2, "v":"{$quirks+dried rose petals. }"},
+  { "w":1, "v":"{$quirks+tiny animal skulls. }{$evil+1}"},
+  { "w":2, "v":"{$quirks+handkerchiefs. }"},
+  { "w":2, "v":"{$quirks+buttons. }"},
+  { "w":2, "v":"{$quirks+thimbles. }"},
   { "w":2, "v":"{$quirks+labels. }"}
 ]
