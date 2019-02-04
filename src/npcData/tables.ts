@@ -1,7 +1,6 @@
 import { Option, WeightedValue } from "./index";
 import { getGroups } from "./utils";
 import path from "path";
-import fs from "fs";
 
 interface TableEntry {
   w: number,
@@ -31,7 +30,8 @@ function importTable(tableName: string, r: (id: string) => any) {
   tables[name] = convertedTable;
 }
 
-if (process && process.env && process.env.MOCHA && process.env.NODE_ENV === "test") {
+if (process.env.NODE_ENV === "test") {
+  const fs = require("fs");
   const dir = path.join(__dirname, "./tables");
   const dirContent = fs.readdirSync(dir);
   for (const table of dirContent) {
