@@ -11,6 +11,27 @@
       "url": "http://localhost:3000",
       "webRoot": "${workspaceFolder}/src",
       "sourceMaps": true
-    }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Tests",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "env": {
+        "debug": "true"
+      },
+      "args": [
+          "-r",
+          "${workspaceFolder}/mocha-setup",
+          "${workspaceFolder}/src/**/*.spec.ts",
+          "--no-timeouts",
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "protocol": "inspector",
+      "skipFiles": [
+        "<node_internals>/**/*.js"
+      ]
+    },
   ]
 }
