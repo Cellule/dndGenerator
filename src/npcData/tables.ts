@@ -31,7 +31,7 @@ function importTable(tableName: string, r: (id: string) => any) {
   tables[name] = convertedTable;
 }
 
-if (process && process.env && process.env.MOCHA) {
+if (process && process.env && process.env.MOCHA && process.env.NODE_ENV === "test") {
   const dir = path.join(__dirname, "./tables");
   const dirContent = fs.readdirSync(dir);
   for (const table of dirContent) {

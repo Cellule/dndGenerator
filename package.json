@@ -34,7 +34,6 @@
     "bootstrap": "^3.3.7",
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
-    "prop-types": "^15.6.2",
     "react-bootstrap": "^0.32.4",
     "ts-node": "^8.0.2"
   }
