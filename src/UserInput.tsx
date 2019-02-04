@@ -8,7 +8,6 @@ import {
   Button
 } from "react-bootstrap";
 import React, { Component } from "react";
-import PropTypes from 'prop-types';
 import { NamedOption, getNamedTableOptions, getTableReferenceOptions } from "./npcData/tables";
 import { NpcGenerateOptions, Npc } from "./npcData/index";
 
@@ -129,8 +128,6 @@ const userOptions: {
   ];
 
 export default class UserInput extends Component<IProps, IState> {
-  static propTypes = { generate: PropTypes.func.isRequired }
-
   constructor(props: IProps) {
     super(props);
     this.state = {
