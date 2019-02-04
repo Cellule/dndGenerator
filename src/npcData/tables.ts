@@ -11,6 +11,15 @@ interface Tables {
   [name: string]: TableEntry
 }
 const tables = {} as Tables;
+let isInitialized = false;
+
+function initAvailableTables(files: string[]) {
+  for (const file of files) {
+    const name = path.basename(file, ".json");
+    tables[name] = {w: 0, options: []};
+  }
+  isInitialized = true;
+}
 
 function importTable(tableName: string, r: (id: string) => any) {
   const name = path.basename(tableName, ".json");
@@ -26,26 +35,43 @@ function importTable(tableName: string, r: (id: string) => any) {
       original: row.v
     }
   });
-  var convertedTable = { w: totalWeight, options };
-  tables[name] = convertedTable;
+  tables[name].options = options;
+  tables[name].w = totalWeight;
 }
 
-if (process.env.NODE_ENV === "test") {
-  const fs = require("fs");
-  const dir = path.join(__dirname, "./tables");
-  const dirContent = fs.readdirSync(dir);
-  for (const table of dirContent) {
-    // eslint-disable-next-line
-    importTable(table, t => require(path.join(dir, t)));
+function ensureTablesAreInitialized() {
+  if (!isInitialized) {
+    if (process.env.NODE_ENV === "test") {
+      const fs = require("fs");
+      const dir = path.join(__dirname, "./tables");
+      const dirContent: string[] = fs.readdirSync(dir).filter((f: string) => f.endsWith(".json"));
+      initAvailableTables(dirContent);
+      for (const table of dirContent) {
+        // eslint-disable-next-line
+        importTable(table, t => require(path.join(dir, t)));
+      }
+    } else {
+      const r = require.context('./tables/', false, /\.json$/);
+      initAvailableTables(r.keys());
+      r.keys().forEach((key: string) => {
+        importTable(key, r);
+      });
+    }
   }
-} else {
-  const r = require.context('./tables/', false, /\.json$/);
-  r.keys().forEach((key: string) => {
-    importTable(key, r);
-  });
 }
 
-export default tables;
+export function getTableNames() {
+  ensureTablesAreInitialized();
+  return Object.keys(tables);
+}
+
+export function getTable(tableName: string) {
+  ensureTablesAreInitialized();
+  if (!(tableName in tables)) {
+    throw new Error(`Unable to find table [${tableName}]`);
+  }
+  return tables[tableName];
+}
 
 export interface NamedOption extends Option {
   name?: string;
@@ -54,21 +80,25 @@ export interface TableReferenceOption extends NamedOption {
   table: string;
 }
 
-export function getNamedTableOptions(tablename: string): NamedOption[] {
-  const options = tables[tablename].options;
+export function getNamedTableOptions(tableName: string): NamedOption[] {
+  const options = getTable(tableName).options;
   return options as NamedOption[];
 }
 
-export function getTableReferenceOptions(tablename: keyof Tables): TableReferenceOption[] {
-  const options = tables[tablename].options as any;
+export function getTableReferenceOptions(tableName: string): TableReferenceOption[] {
+  const options = getTable(tableName).options as any;
   for (const opt of options) {
     if (!("table" in opt)) {
-      throw new Error(`Missing "table" property in table ${tablename} option ${opt.original}`);
+      throw new Error(`Missing "table" property in table ${tableName} option ${opt.original}`);
     }
   }
   return options as TableReferenceOption[];
 }
 
-export function getTableOptions(tablename: string) {
-  return tables[tablename].options;
+export function getTableWeight(tableName: string) {
+  return getTable(tableName).w;
+}
+
+export function getTableOptions(tableName: string) {
+  return getTable(tableName).options;
 }

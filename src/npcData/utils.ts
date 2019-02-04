@@ -1,5 +1,5 @@
 import { Group, Operator } from "./index";
-import tables from "./tables";
+import {getTable} from "./tables";
 export const debugGen = process.env.NODE_ENV === "development";
 
 export function chooseRandomWithWeight<T>(arr: {
@@ -189,13 +189,8 @@ const operators: {
     {
       regex: /^{(.*)}/, makeOperator(m) {
         const tablename = m[1];
+        const t = getTable(tablename);
         return function operator(context, options) {
-          const t = tables[tablename];
-          if (!t) {
-            console.log("Unable to find table [%s]", tablename);
-            return undefined;
-          }
-
           function chooseOption(index: number) {
             if ((index >>> 0) >= t.options.length) {
               console.warn("Index [%d] for table [%s]", index, tablename);
