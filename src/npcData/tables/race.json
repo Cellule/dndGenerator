@@ -75,7 +75,7 @@
     "w":2,
     "name": "Kenku",
     "table":"kenku",
-    "v":"{$race=kenku}{%str-2}{%dex+3}{%int+1}{%wis+1}{%cha+1}{%height-28}{%lawful-2}{%chaotic+3}{%good-1}{%evil-1}{%moralneutral+2}{humangod}{kenkuskin}{age}{%age-6}{gender}{kenkuquirks}{$beard=}{$hair=}{kenkuname}"
+    "v":"{$race=kenku}{%str-2}{%dex+3}{%int+1}{%wis+1}{%cha+1}{%height-28}{%lawful-2}{%chaotic+3}{%good-1}{%evil-1}{%moralneutral+2}{humangod}{kenkuskin}{age}{%age-6}{gender}{kenkuquirks}{$beard=}{$hair=}{kenkuname}{$name=$kenkuname}"
   },
   {
     "w":2,
