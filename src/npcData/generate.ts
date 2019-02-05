@@ -95,11 +95,8 @@ export function generate({
     return result;
   }
 
-  // treat options
-  if (schema.options) {
-    // process inititalisation first, most of the selection is done here
-    processGroups(getGroups(schema.options.initialisation));
-  }
+  // process inititalisation first, most of the selection is done here
+  processGroups(getGroups(schema.options.initialisation));
 
   // Force to Npc type because we know schema.output matches the Npc type
   const npc: Npc = processSchema(schema.output) as any;

@@ -1,5 +1,6 @@
 import { Group, Operator } from "./index";
 import {getTable} from "./tables";
+import * as s from "./staticAnalysis";
 export const debugGen = process.env.NODE_ENV === "development";
 
 export function chooseRandomWithWeight<T>(arr: {
@@ -28,13 +29,13 @@ function mapGroup(g: string): Group {
   return g;
 }
 
-
+export const reGroup = /{((\\{|\\}|[^{}])*)}|((\\{|\\}|[^{}])+)/g;
 export function getGroups(val: string): Group[] {
   if (typeof val !== "string" || val.length === 0) {
     throw new Error("Empty value to get group");
   }
   val = val.replace("{\\n}", "\n");
-  const r = (val.match(/{((\\{|\\}|[^{}])*)}|((\\{|\\}|[^{}])+)/g) || [])
+  const r = (val.match(reGroup) || [])
     .map(g => {
       const r = mapGroup(g);
       if (debugGen && typeof r !== "string") {
@@ -66,9 +67,10 @@ All supported operations
 {\n} : output an endline
 {table} : replace by table element
 */
-const operators: {
+export const operators: {
   regex: RegExp,
   makeOperator: (m: RegExpMatchArray) => Operator,
+  analysis: (m: RegExpMatchArray) => s.StaticAnalysis,
 }[] = [
     // {%v1=%v2}
     {
@@ -77,7 +79,11 @@ const operators: {
         return function operator(context) {
           context.vars[v1] = +context.vars[v2];
         };
-      }
+      },
+      analysis: m => ({
+        def: [new s.NumberDef(m[1])],
+        use: [new s.NumberUse(m[2])]
+      })
     },
     // {%v1=15}
     {
@@ -86,7 +92,10 @@ const operators: {
         return function operator(context) {
           context.vars[v1] = value;
         };
-      }
+      },
+      analysis: m => ({
+        def: [new s.NumberDef(m[1])]
+      })
     },
     // {%v1+%v2}
     {
@@ -95,7 +104,11 @@ const operators: {
         return function operator(context) {
           context.vars[v1] = (+context.vars[v1]) + (+context.vars[v2]);
         };
-      }
+      },
+      analysis: m => ({
+        def: [new s.NumberDef(m[1])],
+        use: [new s.NumberUse(m[1]), new s.NumberUse(m[2])]
+      })
     },
     // {%v1+15}
     {
@@ -104,7 +117,11 @@ const operators: {
         return function operator(context) {
           context.vars[v1] = (+context.vars[v1]) + value;
         };
-      }
+      },
+      analysis: m => ({
+        def: [new s.NumberDef(m[1])],
+        use: [new s.NumberUse(m[1])]
+      })
     },
     // {%v1-%v2}
     {
@@ -113,7 +130,11 @@ const operators: {
         return function operator(context) {
           context.vars[v1] = (+context.vars[v1]) - (+context.vars[v2]);
         };
-      }
+      },
+      analysis: m => ({
+        def: [new s.NumberDef(m[1])],
+        use: [new s.NumberUse(m[1]), new s.NumberUse(m[2])]
+      })
     },
     // {%v1-15}
     {
@@ -122,7 +143,11 @@ const operators: {
         return function operator(context) {
           context.vars[v1] = (+context.vars[v1]) - value;
         };
-      }
+      },
+      analysis: m => ({
+        def: [new s.NumberDef(m[1])],
+        use: [new s.NumberUse(m[1])]
+      })
     },
     // {%v1}
     {
@@ -131,7 +156,10 @@ const operators: {
         return function operator(context) {
           return (+context.vars[v1]) | 0;
         };
-      }
+      },
+      analysis: m => ({
+        use: [new s.NumberUse(m[1])]
+      })
     },
     // {$s1=$s2}
     {
@@ -140,7 +168,11 @@ const operators: {
         return function operator(context) {
           context.vars[s1] = String(context.vars[s2]);
         };
-      }
+      },
+      analysis: m => ({
+        def: [new s.StringDef(m[1])],
+        use: [new s.StringUse(m[2])]
+      })
     },
     // {$s1=du text lala.}
     {
@@ -149,7 +181,10 @@ const operators: {
         return function operator(context) {
           context.vars[s1] = text;
         };
-      }
+      },
+      analysis: m => ({
+        def: [new s.StringDef(m[1])],
+      })
     },
     // {$s1+$s2}
     {
@@ -158,7 +193,11 @@ const operators: {
         return function operator(context) {
           context.vars[s1] += String(context.vars[s2]);
         };
-      }
+      },
+      analysis: m => ({
+        def: [new s.StringDef(m[1])],
+        use: [new s.StringUse(m[1]), new s.StringUse(m[2])]
+      })
     },
     // {$s1+du text lala.}
     {
@@ -167,7 +206,11 @@ const operators: {
         return function operator(context) {
           context.vars[s1] += text;
         };
-      }
+      },
+      analysis: m => ({
+        def: [new s.StringDef(m[1])],
+        use: [new s.StringUse(m[1])]
+      })
     },
     // {$s1}
     {
@@ -176,14 +219,18 @@ const operators: {
         return function operator(context) {
           return context.vars[s1];
         };
-      }
+      },
+      analysis: m => ({
+        use: [new s.StringUse(m[1])]
+      })
     },
     {
       regex: /^{\\n}$/, makeOperator() {
         return function operator() {
           return "\n";
         };
-      }
+      },
+      analysis: m => ({})
     },
     // {table}
     {
@@ -261,6 +308,9 @@ const operators: {
           }
           return chooseRandomWithWeight(t.options, t.w);
         };
-      }
+      },
+      analysis: m => ({
+        table: m[1]
+      })
     }
   ];
