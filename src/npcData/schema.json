@@ -1,6 +1,6 @@
 {
   "options": {
-    "initialisation": "{$lizardtraits=}{$goliathtraits=}{$kenkuname=}{$sphy1=}{$sphy2=}{$quirks=}{%str=9}{%dex=9}{%con=9}{%int=9}{%wis=9}{%cha=9}{height}{weight}{worship}{hair}{eyecolor}{tendencies}{skin}{face}{race}{occupation}{hooks}{traits}{specialphysical}{quirks}{forcealign}"
+    "initialisation": "{$lizardtraits=}{$goliathtraits=}{$kenkuname=}{$beard=}{$sphy1=}{$sphy2=}{$quirks=}{%str=9}{%dex=9}{%con=9}{%int=9}{%wis=9}{%cha=9}{height}{weight}{worship}{hair}{eyecolor}{tendencies}{skin}{face}{race}{occupation}{hooks}{traits}{specialphysical}{quirks}{forcealign}"
   },
   "output": {
     "description": {
