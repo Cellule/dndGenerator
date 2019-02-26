@@ -140,7 +140,8 @@ export default class UserInput extends Component<IProps, IState> {
     this.props.generate(this.state.npcOptions);
   }
 
-  _downloadTxtFile() {
+  _downloadTxtFile(e: any) {
+    e.preventDefault();
     const element = document.createElement("a");
     const name = this.props.npc.description.name.split(" ")[0];
     const gender = this.props.npc.description.gender;
