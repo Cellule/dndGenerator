@@ -62,7 +62,7 @@ export default class NpcData extends Component<IProps> {
                 <p hidden>#</p>
                 <p>
                   {npc.description.name} is a {npc.description.age + " "}
-                  years old {npc.description.gender} {npc.description.race + " "}
+                  year old {npc.description.gender} {npc.description.race + " "}
                   {npc.description.occupation}.
               </p>
                 <p hidden>#</p>
