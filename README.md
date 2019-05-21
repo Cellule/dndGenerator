@@ -1,5 +1,7 @@
-# Dungeon and Dragon NPC generator
-Website for generating npc with caracteristics and backstory with attributes
+# Non-Player Character generator
+Website for generating randomized Non-Player Characters (NPCs) with attributes, in-depth and unique descriptions as well as a plot hook
+
+[![Build Status](https://dev.azure.com/cellule/NpcGenerator/_apis/build/status/NpcGenerator-CI?branchName=master)](https://dev.azure.com/cellule/NpcGenerator/_build/latest?definitionId=1?branchName=master)
 
 ## Development
 ### Setup
@@ -10,20 +12,10 @@ $ git clone https://github.com/Cellule/dndGenerator.git
 $ cd dndGenerator
 $ npm install
 ```
-### Development
-Start Webpack hot server
+
+### Run locally
+Start local server
 ```
 $ npm start
 ```
 
-## Deployment
-
-Currently the website is hosted on [Azure Blob Storage](https://azure.microsoft.com/‎)
-
-In order to publish to azure you need to follow these steps.
-- Commit and push all your development work in master
-- Build the app in console
-  - `npm install` to refresh modules
-  - `npm run build` to build
-- Copy content of the build folder to the Azure storage account
-  - This can be done directly in VS Code using "Azure Storage" extension
