@@ -17,8 +17,8 @@ export default class PageFooter extends Component {
           </li>
           <li>
             <div>
-              <p className="footer-outline"><b>Follow my next RPG on discord!</b></p>
-              <a href="https://discord.gg/VVb6hDr" target="_blank" rel="noopener noreferrer"><div className="center-block GM-button"/></a>
+              <p className="footer-outline"><b>Download my new Android RPG!</b></p>
+              <a href="https://play.google.com/store/apps/details?id=com.BaronnerieGames.Guildmasters" target="_blank" rel="noopener noreferrer"><div className="center-block GM-button"/></a>
             </div>
           </li>
         </ul>
