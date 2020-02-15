@@ -18,7 +18,10 @@ function toFeet(n: number) {
   const inches = Math.floor((realFeet - feet) * 12);
   return feet + "'" + inches + '"';
 }
-
+function modifierScore(ability: number) {
+  const modifier  = Math.round((Math.max(3, ability) - 10) / 2 );
+  return modifier <= 0 ? `${modifier}` :  `+${modifier}`;
+}
 interface IProps {
   npc: Npc | null
 }
@@ -129,7 +132,7 @@ export default class NpcData extends Component<IProps> {
                           abilities.map(({ key, name }) => {
                             const ability = npc.abilities[key];
                             return (
-                              <tr key={key}><td><b>{name}</b><p hidden> - </p></td><td className="ability-number">{Math.max(3, ability)}<p hidden>#</p></td></tr>
+                              <tr key={key}><td><b>{name}</b><p hidden> - </p></td><td className="ability-number">{Math.max(3, ability)} [{modifierScore(ability)}] <p hidden>#</p></td></tr>
                             );
                           })
                         }
