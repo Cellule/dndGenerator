@@ -18,10 +18,15 @@ function toFeet(n: number) {
   const inches = Math.floor((realFeet - feet) * 12);
   return feet + "'" + inches + '"';
 }
-function modifierScore(ability: number) {
-  const modifier  = Math.round((Math.max(3, ability) - 10) / 2 );
-  return modifier <= 0 ? `${modifier}` :  `+${modifier}`;
+
+function renderAbility(abilityBase: number) {
+  const ability = Math.max(3, abilityBase);
+  // Info on modifiers
+  // https://dnd5e.info/using-ability-scores/ability-scores-and-modifiers/
+  const modifier = Math.round((ability - 10) / 2 );
+  return `${ability} [${modifier <= 0 ? modifier : `+${modifier}`}]`
 }
+
 interface IProps {
   npc: Npc | null
 }
@@ -132,7 +137,7 @@ export default class NpcData extends Component<IProps> {
                           abilities.map(({ key, name }) => {
                             const ability = npc.abilities[key];
                             return (
-                              <tr key={key}><td><b>{name}</b><p hidden> - </p></td><td className="ability-number">{Math.max(3, ability)} [{modifierScore(ability)}] <p hidden>#</p></td></tr>
+                              <tr key={key}><td><b>{name}</b><p hidden> - </p></td><td className="ability-number">{renderAbility(ability)}<p hidden>#</p></td></tr>
                             );
                           })
                         }
