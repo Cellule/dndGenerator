@@ -1,3 +1,4 @@
+import { JSONUncrush } from 'jsoncrush';
 import React, { Component } from 'react';
 import { Col, Row } from "react-bootstrap";
 import Footer from "./Footer";
@@ -15,10 +16,29 @@ interface IState {
 export default class DisplayNpc extends Component<{}, IState> {
   constructor(props: any) {
     super(props);
-    // Generate initial npc
-    const { npc, debugNode } = generate({});
-    printDebugGen(debugNode);
-    this.state = { npc };
+
+    // Check url query for npc data
+    let loadedQueryData = false;
+    const url = new URL(window.location.href);
+    if (url.searchParams.has('d')) {
+      try {
+        const crushedJson = url.searchParams.get('d') || '';
+        const npc = JSON.parse(JSONUncrush(decodeURIComponent(crushedJson)));
+        this.state = { npc };
+        loadedQueryData = true;
+      } catch (e) {
+        console.error(e);
+        loadedQueryData = false;
+      }
+    }
+
+    // Generate initial npc, if we didn't load data from url query
+    if (!loadedQueryData) {
+      const { npc, debugNode } = generate({});
+      printDebugGen(debugNode);
+      this.state = { npc };
+    }
+
     this.generateNpc = this.generateNpc.bind(this);
   }
 
