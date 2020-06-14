@@ -1,3 +1,4 @@
+import { JSONCrush } from 'jsoncrush';
 import {
   Panel,
   Col,
@@ -213,6 +214,9 @@ export default class UserInput extends Component<IProps, IState> {
       );
     });
 
+    const npcDataUrl = new URL(window.location.href);
+    npcDataUrl.searchParams.set('d', JSONCrush(JSON.stringify(this.props.npc)));
+
     return (
       <div>
         <Panel className="hidden-panel">
@@ -227,6 +231,10 @@ export default class UserInput extends Component<IProps, IState> {
             <form onSubmit={this._downloadTxtFile.bind(this)}>
               <Button type="submit" className="center-block download-button download-button" bsStyle="success" />
             </form>
+
+            <a className="center-block npc-link" href={npcDataUrl.toString()}>
+              🔗 Bookmark
+            </a>
           </Panel.Body>
         </Panel>
       </div>
