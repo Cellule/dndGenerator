@@ -23,7 +23,7 @@ function renderAbility(abilityBase: number) {
   const ability = Math.max(3, abilityBase);
   // Info on modifiers
   // https://dnd5e.info/using-ability-scores/ability-scores-and-modifiers/
-  const modifier = Math.round((ability - 10) / 2 );
+  const modifier = Math.floor((ability - 10) / 2 );
   return `${ability} [${modifier <= 0 ? modifier : `+${modifier}`}]`
 }
 
