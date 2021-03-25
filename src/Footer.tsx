@@ -11,14 +11,8 @@ export default class PageFooter extends Component {
         <ul className="bs-docs-social-buttons">
           <li>
             <div>
-              <p className="footer-outline"><b>Check out my video game!</b></p>
-              <a href="http://store.steampowered.com/app/769410/Electromaze_Tower_Defense/" target="_blank" rel="noopener noreferrer"><div className="center-block EMD-button" /></a>
-            </div>
-          </li>
-          <li>
-            <div>
-              <p className="footer-outline"><b>Download my new Android RPG!</b></p>
-              <a href="https://play.google.com/store/apps/details?id=com.BaronnerieGames.Guildmasters" target="_blank" rel="noopener noreferrer"><div className="center-block GM-button" /></a>
+              <p className="footer-outline"><b>Check out my latest video game!</b></p>
+              <a href="https://www.baronneriegames.com/breach-wanderers" target="_blank" rel="noopener noreferrer"><div className="center-block BW-button" /></a>
             </div>
           </li>
         </ul>
