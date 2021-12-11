@@ -1,5 +1,5 @@
 diff --git a/node_modules/react-scripts/config/webpack.config.js b/node_modules/react-scripts/config/webpack.config.js
-index 26c2a65..0315802 100644
+index 26c2a65..f0fa732 100644
 --- a/node_modules/react-scripts/config/webpack.config.js
 +++ b/node_modules/react-scripts/config/webpack.config.js
 @@ -71,6 +71,7 @@ const swSrc = paths.swSrc;
@@ -17,7 +17,7 @@ index 26c2a65..0315802 100644
 +            {
 +              test: lessRegex,
 +              use: getStyleLoaders({ importLoaders: 2 }, 'less-loader'),
-+              sideEffect: isEnvProduction
++              sideEffects: isEnvProduction
 +            },
              // Opt-in support for SASS (using .scss or .sass extensions).
              // By default we support SASS Modules with the

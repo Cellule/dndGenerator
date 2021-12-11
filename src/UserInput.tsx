@@ -1,4 +1,4 @@
-import { JSONCrush } from "jsoncrush";
+import jsoncrush from "jsoncrush";
 import {
   Col,
   Row,
@@ -250,7 +250,7 @@ export default class UserInput extends Component<IProps, IState> {
     });
 
     const npcDataUrl = new URL(window.location.href);
-    npcDataUrl.searchParams.set("d", JSONCrush(JSON.stringify(this.props.npc)));
+    npcDataUrl.searchParams.set("d", jsoncrush.crush(JSON.stringify(this.props.npc)));
 
     return (
       <div>

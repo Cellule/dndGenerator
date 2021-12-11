@@ -1,4 +1,4 @@
-import { JSONUncrush } from "jsoncrush";
+import jsoncrush from "jsoncrush";
 import React, { Component } from "react";
 import { Col, Row } from "react-bootstrap";
 import Footer from "./Footer";
@@ -23,7 +23,7 @@ export default class DisplayNpc extends Component<{}, IState> {
     if (url.searchParams.has("d")) {
       try {
         const crushedJson = url.searchParams.get("d") || "";
-        const npc = JSON.parse(JSONUncrush(decodeURIComponent(crushedJson)));
+        const npc = JSON.parse(jsoncrush.uncrush(decodeURIComponent(crushedJson)));
         this.state = { npc };
         loadedQueryData = true;
       } catch (e) {
