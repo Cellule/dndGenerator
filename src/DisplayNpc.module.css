@@ -1,0 +1,22 @@
+.titleImage {
+  margin: 23px auto;
+  background-image: url("./images/npcgenerator.png");
+  background-size: 100% 100%;
+  border: none;
+  width: 220px;
+  height: 32px;
+}
+
+.userInfoCol {
+  border-radius: 8px;
+  background-color: rgba(46, 56, 55, 0.5);
+  border: none;
+  color: #ebebec;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  height: 100%;
+  padding-bottom: 23px;
+}
+
+.topPadding {
+  margin-top: 60px;
+}

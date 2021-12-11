@@ -1,16 +1,16 @@
-import { JSONUncrush } from 'jsoncrush';
-import React, { Component } from 'react';
+import { JSONUncrush } from "jsoncrush";
+import React, { Component } from "react";
 import { Col, Row } from "react-bootstrap";
 import Footer from "./Footer";
 import UserInput from "./UserInput";
 import NpcData from "./NpcData";
 import { generate, printDebugGen } from "./npcData/generate";
-import { NpcGenerateOptions, Npc } from './npcData/index';
+import { NpcGenerateOptions, Npc } from "./npcData/index";
 
-import "./DisplayNpc.less"
+import styles from "./DisplayNpc.module.css";
 
 interface IState {
-  npc: Npc
+  npc: Npc;
 }
 
 export default class DisplayNpc extends Component<{}, IState> {
@@ -20,9 +20,9 @@ export default class DisplayNpc extends Component<{}, IState> {
     // Check url query for npc data
     let loadedQueryData = false;
     const url = new URL(window.location.href);
-    if (url.searchParams.has('d')) {
+    if (url.searchParams.has("d")) {
       try {
-        const crushedJson = url.searchParams.get('d') || '';
+        const crushedJson = url.searchParams.get("d") || "";
         const npc = JSON.parse(JSONUncrush(decodeURIComponent(crushedJson)));
         this.state = { npc };
         loadedQueryData = true;
@@ -50,31 +50,13 @@ export default class DisplayNpc extends Component<{}, IState> {
 
   render() {
     return (
-      <div>
+      <div className={styles.topPadding}>
         <Row>
-          <Col
-            xs={12}
-            xsOffset={0}
-            sm={4}
-            smOffset={0}
-            md={3}
-            mdOffset={0}
-            className="user-info-col top-padding options-panel"
-          >
-            <div>
-              <div className="title-image"></div>
-            </div>
+          <Col sm={12} md={4} lg={3} className={`${styles.userInfoCol}  options-panel`}>
+            <div className={styles.titleImage} />
             <UserInput npc={this.state.npc} generate={this.generateNpc} />
           </Col>
-          <Col
-            xs={12}
-            xsOffset={0}
-            sm={7}
-            smOffset={0}
-            md={9}
-            mdOffset={0}
-            className="top-padding"
-          >
+          <Col sm={12} md={7} lg={9}>
             <NpcData npc={this.state.npc} />
             <Footer />
           </Col>
