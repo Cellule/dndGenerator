@@ -1,4 +1,6 @@
 
+@import "./custom-bootstrap.scss";
+
 body {
   background-image: url("../images/bgdragon.jpg");
   background-attachment: fixed;
@@ -6,3 +8,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@import "./DisplayNpc.scss";
+@import "./UserInput.scss";
+@import "./NpcData.scss";
+@import "./Footer.scss";

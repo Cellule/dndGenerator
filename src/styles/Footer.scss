@@ -1,0 +1,114 @@
+
+/*
+ * Footer
+ *
+ * Separated section of content at the bottom of all pages, save the homepage.
+ */
+
+.bs-docs-footer {
+  padding-top: 25px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  color: #F2E5DE;
+  text-align: center;
+
+  &-links {
+    padding-left: 0;
+    margin-top: 20px;
+    color: #999;
+  }
+  &-links li {
+    display: inline;
+    padding: 0 2px;
+  }
+  &-links li:first-child {
+    padding-left: 0;
+  }
+
+  @include media-breakpoint-down(md) {
+    & p {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+
+  /*
+   * Social buttons
+   *
+   * Twitter and GitHub social action buttons (for homepage and footer).
+   */
+  .bs-docs-social {
+    margin-bottom: 20px;
+    text-align: center;
+    &-buttons {
+      display: inline-block;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+    }
+    &-buttons li {
+      display: inline-block;
+      padding: 0px;
+      line-height: 1;
+    }
+    &-buttons .twitter-follow-button {
+      width: 225px !important;
+    }
+    &-buttons .twitter-share-button {
+      width: 98px !important;
+    }
+  }
+  /* Style the GitHub buttons via CSS instead of inline attributes */
+  .github-btn {
+    overflow: hidden;
+    border: 0;
+  }
+
+  .footer-outline {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+
+  .EMD-button {
+    color: #0000;
+    border: none;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+    background-image: url("../images/emd.png");
+    background-size: 100% 100%;
+    width: 185px;
+    height: 70px;
+    box-shadow: none;
+  }
+
+  .GM-button {
+    color: #0000;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+    background-image: url("../images/GMLogo.png");
+    background-size: 100% 100%;
+    width: 280px;
+    height: 120px;
+    box-shadow: none;
+  }
+
+  .BW-button {
+    color: #0000;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+    background-image: url("../images/BW_Header_Capsule.jpg");
+    background-size: 100% 100%;
+    width: 304px;
+    height: 142px;
+    box-shadow: none;
+  }
+}

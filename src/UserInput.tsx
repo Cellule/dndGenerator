@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import { Button, Col, Form, FormGroup, FormLabel, Row } from "react-bootstrap";
 import { Npc, NpcGenerateOptions } from "./npcData/index";
 import { getNamedTableOptions, getTableReferenceOptions, NamedOption } from "./npcData/tables";
-import styles from "./UserInput.module.css";
 
 const races = getTableReferenceOptions("race");
 
@@ -220,8 +219,8 @@ export default class UserInput extends Component<IProps, IState> {
 
     return (
       <div>
-        <div className={styles.npcOptions}>{npcOptions}</div>
-        <div className={styles.bottomOptions}>
+        <div className="npc-options">{npcOptions}</div>
+        <div className="bottom-options">
           <Button
             type="submit"
             className="generate-button"
@@ -234,7 +233,7 @@ export default class UserInput extends Component<IProps, IState> {
             variant="success"
             onClick={this._downloadTxtFile}
           />
-          <a className={styles.npcLink} href={npcDataUrl.toString()}>
+          <a className="npc-link" href={npcDataUrl.toString()}>
             🔗 Bookmark
           </a>
         </div>

@@ -1,6 +1,6 @@
-@import "./styles/custom-bootstrap.less";
 
 .npc-data {
+  $npc-bold-color: #813619;
   .ability-number {
     text-align: right;
     padding-right: 50px;
@@ -40,12 +40,12 @@
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    color: @brand-success;
+    color: $npc-bold-color;
   }
 
   b {
     font-size: 16px;
-    color: @brand-success;
+    color: $npc-bold-color;
   }
 
   .first-row-height {
