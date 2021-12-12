@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import { Container } from "react-bootstrap";
 import DisplayNpc from "./DisplayNpc";
 
@@ -15,4 +15,3 @@ export default class App extends Component {
     );
   }
 }
-

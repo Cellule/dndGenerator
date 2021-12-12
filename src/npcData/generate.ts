@@ -1,4 +1,3 @@
-
 import {
   DebugNode,
   Group,
@@ -62,8 +61,7 @@ export function generate({
               result += String(insRes);
             }
           }
-        }
-        else if (Array.isArray(instruction)) {
+        } else if (Array.isArray(instruction)) {
           result += String(processGroups(instruction));
         }
         debugNode = oldNode;
@@ -120,8 +118,8 @@ export function printDebugGen(debugNode: DebugNode) {
         }
         depth--;
       }
-    }
+    };
     processNode(debugNode);
-    console.log(lines.join("\n"))
+    console.log(lines.join("\n"));
   }
 }

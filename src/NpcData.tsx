@@ -43,10 +43,7 @@ export default class NpcData extends Component<IProps> {
     const quirksArray = npc.pquirks.description.split(".");
     quirksArray.length--;
 
-    if (
-      npc.description.race === "lizardman" ||
-      npc.description.race === "lizardwoman"
-    ) {
+    if (npc.description.race === "lizardman" || npc.description.race === "lizardwoman") {
       npc.ptraits.traits1 = npc.ptraits.traitslizards;
     }
     if (npc.description.race === "goliath") {
@@ -95,8 +92,7 @@ export default class NpcData extends Component<IProps> {
                 </p>
                 <p hidden>#</p>
                 <p>
-                  {majP}stands {npc.physical.height}cm (
-                  {toFeet(npc.physical.height)}) tall and has{" "}
+                  {majP}stands {npc.physical.height}cm ({toFeet(npc.physical.height)}) tall and has{" "}
                   {npc.physical.build}.
                 </p>
                 <p hidden>#</p>
@@ -192,17 +188,13 @@ export default class NpcData extends Component<IProps> {
                         <b>Good</b>
                       </td>
                       <td hidden>: </td>
-                      <td className="alignment-number">
-                        {Math.max(0, npc.alignment.good)}
-                      </td>
+                      <td className="alignment-number">{Math.max(0, npc.alignment.good)}</td>
                       <td hidden> </td>
                       <td className="width-thin">
                         <b>Lawful</b>
                       </td>
                       <td hidden>: </td>
-                      <td className="alignment-number">
-                        {Math.max(0, npc.alignment.lawful)}
-                      </td>
+                      <td className="alignment-number">{Math.max(0, npc.alignment.lawful)}</td>
                     </tr>
                     <tr hidden>
                       <td>#</td>
@@ -232,17 +224,13 @@ export default class NpcData extends Component<IProps> {
                         <b>Evil</b>
                       </td>
                       <td hidden>: </td>
-                      <td className="alignment-number">
-                        {Math.max(0, npc.alignment.evil)}
-                      </td>
+                      <td className="alignment-number">{Math.max(0, npc.alignment.evil)}</td>
                       <td hidden> </td>
                       <td className="width-thin">
                         <b>Chaotic</b>
                       </td>
                       <td hidden>: </td>
-                      <td className="alignment-number">
-                        {Math.max(0, npc.alignment.chaotic)}
-                      </td>
+                      <td className="alignment-number">{Math.max(0, npc.alignment.chaotic)}</td>
                     </tr>
                   </tbody>
                 </table>

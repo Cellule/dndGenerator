@@ -1,4 +1,3 @@
-
 export class AnalysisNode {
   name: string;
   type: string;
@@ -36,7 +35,7 @@ export class NumberUse extends Use {
 }
 
 export interface StaticAnalysis {
-  def?: Definition[],
-  use?: Use[],
-  table?: string,
+  def?: Definition[];
+  use?: Use[];
+  table?: string;
 }
