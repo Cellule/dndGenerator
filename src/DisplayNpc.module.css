@@ -1,22 +1,41 @@
+.titleImageWrapper {
+  margin: 0 12px 12px 12px;
+}
+
 .titleImage {
-  margin: 23px auto;
+  margin: 0 auto;
   background-image: url("./images/npcgenerator.png");
   background-size: 100% 100%;
   border: none;
-  width: 220px;
+  max-width: 220px;
   height: 32px;
 }
 
 .userInfoCol {
-  border-radius: 8px;
-  background-color: rgba(46, 56, 55, 0.5);
-  border: none;
-  color: #ebebec;
-  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  margin-bottom: 20px;
   height: 100%;
-  padding-bottom: 23px;
 }
 
-.topPadding {
+.userInfo {
+  border: none;
+  background-color: rgba(46, 56, 55, 0.5);
+  border-radius: 8px;
+  color: var(--bs-white);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  padding-bottom: 23px;
+  padding-top: 23px;
+}
+
+.displayNpcRoot {
   margin-top: 60px;
+}
+
+.displayNpcRoot :global(.card) {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .displayNpcRoot {
+    margin-top: 1rem;
+  }
 }

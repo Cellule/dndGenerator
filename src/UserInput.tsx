@@ -6,6 +6,7 @@ import {
   FormControl,
   FormLabel,
   Button,
+  Form,
 } from "react-bootstrap";
 import React, { Component } from "react";
 import {
@@ -147,12 +148,11 @@ export default class UserInput extends Component<IProps, IState> {
     };
   }
 
-  onSubmit(e: any) {
+  onSubmit = (e: any) => {
     this.props.generate(this.state.npcOptions);
   }
 
-  _downloadTxtFile(e: any) {
-    e.preventDefault();
+  _downloadTxtFile = (e: any) => {
     const element = document.createElement("a");
     const name = this.props.npc.description.name.split(" ")[0];
     const gender = this.props.npc.description.gender;
@@ -221,8 +221,7 @@ export default class UserInput extends Component<IProps, IState> {
           <Col>
             <FormGroup>
               <FormLabel>{userOption.label}</FormLabel>
-              <FormControl
-                as="select"
+              <Form.Select
                 value={selectedOption ?? undefined}
                 onChange={(e: any) => {
                   const npcOptions = this.state.npcOptions;
@@ -242,7 +241,7 @@ export default class UserInput extends Component<IProps, IState> {
                   Random
                 </option>
                 {options}
-              </FormControl>
+              </Form.Select>
             </FormGroup>
           </Col>
         </Row>
@@ -260,13 +259,13 @@ export default class UserInput extends Component<IProps, IState> {
             type="submit"
             className="generate-button"
             variant="success"
-            onClick={this.onSubmit.bind(this)}
+            onClick={this.onSubmit}
           />
           <Button
             type="submit"
             className="download-button"
             variant="success"
-            onClick={this._downloadTxtFile.bind(this)}
+            onClick={this._downloadTxtFile}
           />
           <a className={styles.npcLink} href={npcDataUrl.toString()}>
             🔗 Bookmark

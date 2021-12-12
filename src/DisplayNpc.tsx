@@ -23,7 +23,9 @@ export default class DisplayNpc extends Component<{}, IState> {
     if (url.searchParams.has("d")) {
       try {
         const crushedJson = url.searchParams.get("d") || "";
-        const npc = JSON.parse(jsoncrush.uncrush(decodeURIComponent(crushedJson)));
+        const npc = JSON.parse(
+          jsoncrush.uncrush(decodeURIComponent(crushedJson))
+        );
         this.state = { npc };
         loadedQueryData = true;
       } catch (e) {
@@ -50,11 +52,15 @@ export default class DisplayNpc extends Component<{}, IState> {
 
   render() {
     return (
-      <div className={styles.topPadding}>
+      <div className={styles.displayNpcRoot}>
         <Row>
-          <Col sm={12} md={4} lg={3} className={`${styles.userInfoCol}  options-panel`}>
-            <div className={styles.titleImage} />
-            <UserInput npc={this.state.npc} generate={this.generateNpc} />
+          <Col sm={12} md={4} lg={3} className={styles.userInfoCol}>
+            <div className={styles.userInfo}>
+              <div className={styles.titleImageWrapper}>
+                <div className={styles.titleImage} />
+              </div>
+              <UserInput npc={this.state.npc} generate={this.generateNpc} />
+            </div>
           </Col>
           <Col sm={12} md={7} lg={9}>
             <NpcData npc={this.state.npc} />
