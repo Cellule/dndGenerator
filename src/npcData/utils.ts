@@ -1,6 +1,6 @@
 import { Group, Operator } from "./index";
-import { getTable } from "./tables";
 import * as s from "./staticAnalysis";
+import { getTable } from "./tables";
 export const debugGen = process.env.NODE_ENV === "development";
 
 export function chooseRandomWithWeight<T>(

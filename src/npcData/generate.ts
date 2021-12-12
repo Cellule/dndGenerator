@@ -1,16 +1,16 @@
 import {
   DebugNode,
   Group,
+  Npc,
   NpcGenerateOptions,
+  Operator,
   SchemaDescriptor,
   SchemaElement,
   SchemaResult,
   WeightedValue,
-  Npc,
-  Operator,
 } from "./index.js";
 import schema from "./schema.json";
-import { getGroups, chooseRandomWithWeight, debugGen } from "./utils";
+import { chooseRandomWithWeight, debugGen, getGroups } from "./utils";
 
 function numberOrNull(v: any) {
   return typeof v === "number" ? v | 0 : null;

@@ -1,7 +1,6 @@
 // Code taken from https://github.com/react-bootstrap/react-bootstrap/tree/master/docs
 import React, { Component } from "react";
 import packageJSON from "../package.json";
-
 import "./Footer.less";
 
 export default class PageFooter extends Component {

@@ -1,9 +1,9 @@
 import { expect } from "chai";
 import "mocha";
-import { getTableNames, getTable } from "./tables";
-import { StaticAnalysis, Definition, Use, AnalysisNode } from "./staticAnalysis";
-import { reGroup, operators } from "./utils";
 import schema from "./schema.json";
+import { AnalysisNode, Definition, StaticAnalysis, Use } from "./staticAnalysis";
+import { getTable, getTableNames } from "./tables";
+import { operators, reGroup } from "./utils";
 
 it("parses tables", () => {
   for (const tableName of getTableNames()) {

@@ -1,8 +1,8 @@
 import jsoncrush from "jsoncrush";
-import { Col, Row, FormGroup, FormControl, FormLabel, Button, Form } from "react-bootstrap";
 import React, { Component } from "react";
-import { NamedOption, getNamedTableOptions, getTableReferenceOptions } from "./npcData/tables";
-import { NpcGenerateOptions, Npc } from "./npcData/index";
+import { Button, Col, Form, FormGroup, FormLabel, Row } from "react-bootstrap";
+import { Npc, NpcGenerateOptions } from "./npcData/index";
+import { getNamedTableOptions, getTableReferenceOptions, NamedOption } from "./npcData/tables";
 import styles from "./UserInput.module.css";
 
 const races = getTableReferenceOptions("race");

@@ -1,6 +1,6 @@
+import path from "path";
 import { Option, WeightedValue } from "./index";
 import { getGroups } from "./utils";
-import path from "path";
 
 interface TableEntry {
   w: number;
