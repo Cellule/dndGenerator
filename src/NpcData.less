@@ -1,20 +1,12 @@
-
 @import "./styles/custom-bootstrap.less";
 
 .npc-data {
-
-  .ability {
-    p {
-      text-align: right;
-    }
-  }
-
-  .ability-number{
+  .ability-number {
     text-align: right;
     padding-right: 50px;
   }
 
-  .alignment-number{
+  .alignment-number {
     text-align: right;
     padding-right: 25px;
   }
@@ -44,11 +36,11 @@
     margin: 0 auto;
   }
 
-  .panel-heading  {
+  .card-header {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    color: @brand-success !important; // Todo:: get rid of !important
+    color: @brand-success;
   }
 
   b {
@@ -56,12 +48,11 @@
     color: @brand-success;
   }
 
-  .first-row-height{
-    height: 340px;
+  .first-row-height {
+    min-height: 380px;
   }
 
-  .second-row-height{
-    height: 220px;
+  .second-row-height {
+    min-height: 250px;
   }
-
 }

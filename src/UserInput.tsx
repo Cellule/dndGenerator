@@ -1,16 +1,21 @@
-import { JSONCrush } from 'jsoncrush';
+import jsoncrush from "jsoncrush";
 import {
-  Panel,
   Col,
   Row,
   FormGroup,
   FormControl,
-  ControlLabel,
-  Button
+  FormLabel,
+  Button,
+  Form,
 } from "react-bootstrap";
 import React, { Component } from "react";
-import { NamedOption, getNamedTableOptions, getTableReferenceOptions } from "./npcData/tables";
+import {
+  NamedOption,
+  getNamedTableOptions,
+  getTableReferenceOptions,
+} from "./npcData/tables";
 import { NpcGenerateOptions, Npc } from "./npcData/index";
+import styles from "./UserInput.module.css";
 
 const races = getTableReferenceOptions("race");
 
@@ -19,7 +24,7 @@ const subraces: { [race: string]: NamedOption[] } = {
   dwarf: getNamedTableOptions("racedwarf"),
   gnome: getNamedTableOptions("racegnome"),
   halfling: getNamedTableOptions("racehalfling"),
-}
+};
 
 const genders = getNamedTableOptions("gender");
 const alignments = getNamedTableOptions("forcealign");
@@ -37,7 +42,7 @@ const professionCategories: { [prof: string]: NamedOption[] } = {
   entertainer: getNamedTableOptions("entertainer"),
 };
 
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === "development") {
   for (const prof of professions) {
     if (!professionCategories[prof.table]) {
       throw new Error(`Missing profession category "${prof.table}"`);
@@ -48,113 +53,130 @@ if (process.env.NODE_ENV === 'development') {
 interface IProps {
   npc: Npc;
   generate: (options: NpcGenerateOptions) => void;
-};
+}
 
 interface IState {
-  npcOptions: NpcGenerateOptions
-};
+  npcOptions: NpcGenerateOptions;
+}
 
 const userOptions: {
   label: string;
   optionName: keyof NpcGenerateOptions;
-  options: { name?: string }[] | ((npcOptions: NpcGenerateOptions) => { name?: string }[]),
-  condition?: (npcOptions: NpcGenerateOptions) => boolean,
+  options:
+    | { name?: string }[]
+    | ((npcOptions: NpcGenerateOptions) => { name?: string }[]);
+  condition?: (npcOptions: NpcGenerateOptions) => boolean;
   onChange?: (component: Component<IProps, IState>) => void;
 }[] = [
-    {
-      label: "Race",
-      optionName: "race",
-      options: races,
-      onChange: (component) => {
-        const npcOptions = component.state.npcOptions;
-        npcOptions.subrace = null;
-        component.setState({ npcOptions });
-      }
+  {
+    label: "Race",
+    optionName: "race",
+    options: races,
+    onChange: (component) => {
+      const npcOptions = component.state.npcOptions;
+      npcOptions.subrace = null;
+      component.setState({ npcOptions });
     },
-    {
-      label: "Subrace",
-      optionName: "subrace",
-      condition: (npcOptions) => (typeof npcOptions.race === "number" && subraces[races[npcOptions.race].table] !== undefined),
-      options: (npcOptions) => subraces[races[npcOptions.race || 0].table]
+  },
+  {
+    label: "Subrace",
+    optionName: "subrace",
+    condition: (npcOptions) =>
+      typeof npcOptions.race === "number" &&
+      subraces[races[npcOptions.race].table] !== undefined,
+    options: (npcOptions) => subraces[races[npcOptions.race || 0].table],
+  },
+  {
+    label: "Sex",
+    optionName: "gender",
+    options: genders,
+  },
+  {
+    label: "Alignment",
+    optionName: "alignment",
+    options: alignments,
+  },
+  {
+    label: "Plot Hooks",
+    optionName: "plothook",
+    options: plothooks,
+  },
+  {
+    label: "Occupation",
+    optionName: "classorprof",
+    options: [{ name: "Class" }, { name: "Profession" }],
+    onChange: (component) => {
+      const npcOptions = component.state.npcOptions;
+      npcOptions.occupation1 = null;
+      npcOptions.occupation2 = null;
+      component.setState({ npcOptions });
     },
-    {
-      label: "Sex",
-      optionName: "gender",
-      options: genders
+  },
+  {
+    label: "Class",
+    optionName: "occupation1",
+    condition: (npcOptions) => npcOptions.classorprof === 0,
+    options: classes,
+  },
+  {
+    label: "Social Class",
+    optionName: "occupation1",
+    condition: (npcOptions) => npcOptions.classorprof === 1,
+    options: professions,
+    onChange: (component) => {
+      const npcOptions = component.state.npcOptions;
+      npcOptions.occupation2 = null;
+      component.setState({ npcOptions });
     },
-    {
-      label: "Alignment",
-      optionName: "alignment",
-      options: alignments
-    },
-    {
-      label: "Plot Hooks",
-      optionName: "plothook",
-      options: plothooks
-    },
-    {
-      label: "Occupation",
-      optionName: "classorprof",
-      options: [{ name: "Class" }, { name: "Profession" }],
-      onChange: (component) => {
-        const npcOptions = component.state.npcOptions;
-        npcOptions.occupation1 = null;
-        npcOptions.occupation2 = null;
-        component.setState({ npcOptions });
-      }
-    },
-    {
-      label: "Class",
-      optionName: "occupation1",
-      condition: (npcOptions) => npcOptions.classorprof === 0,
-      options: classes
-    },
-    {
-      label: "Social Class",
-      optionName: "occupation1",
-      condition: (npcOptions) => npcOptions.classorprof === 1,
-      options: professions,
-      onChange: (component) => {
-        const npcOptions = component.state.npcOptions;
-        npcOptions.occupation2 = null;
-        component.setState({ npcOptions });
-      }
-    },
-    {
-      label: "Profession",
-      optionName: "occupation2",
-      condition: (npcOptions) => (npcOptions.classorprof === 1 && typeof npcOptions.occupation1 === "number"),
-      options: (npcOptions) => professionCategories[professions[npcOptions.occupation1 || 0].table]
-    },
-  ];
+  },
+  {
+    label: "Profession",
+    optionName: "occupation2",
+    condition: (npcOptions) =>
+      npcOptions.classorprof === 1 &&
+      typeof npcOptions.occupation1 === "number",
+    options: (npcOptions) =>
+      professionCategories[professions[npcOptions.occupation1 || 0].table],
+  },
+];
 
 export default class UserInput extends Component<IProps, IState> {
   constructor(props: IProps) {
     super(props);
     this.state = {
-      npcOptions: {}
+      npcOptions: {},
     };
   }
 
-  onSubmit(e: any) {
-    e.preventDefault();
+  onSubmit = (e: any) => {
     this.props.generate(this.state.npcOptions);
   }
 
-  _downloadTxtFile(e: any) {
-    e.preventDefault();
+  _downloadTxtFile = (e: any) => {
     const element = document.createElement("a");
     const name = this.props.npc.description.name.split(" ")[0];
     const gender = this.props.npc.description.gender;
     const race = this.props.npc.description.race.split(" ").join("_");
-    const occupation = this.props.npc.description.occupation.split(" ").join("_");
+    const occupation = this.props.npc.description.occupation
+      .split(" ")
+      .join("_");
     const elementData = document.getElementById("downloadData");
     if (!elementData) {
       throw new Error("Missing element downloadData");
     }
-    const file = new Blob([(elementData.textContent || "").split("#").join("\r\n").split("#").join("\r\n")], { type: 'text/plain' });
+    const file = new Blob(
+      [
+        (elementData.textContent || "")
+          .split("#")
+          .join("\r\n")
+          .split("#")
+          .join("\r\n"),
+      ],
+      { type: "text/plain" }
+    );
     element.href = URL.createObjectURL(file);
-    element.download = name + "_" + gender + "_" + race + "_" + occupation + ".txt";
+    element.download =
+      name + "_" + gender + "_" + race + "_" + occupation + ".txt";
     document.body.appendChild(element);
     element.click();
     document.body.removeChild(element);
@@ -162,13 +184,15 @@ export default class UserInput extends Component<IProps, IState> {
   }
 
   render() {
-    const npcOptions = userOptions.map(userOption => {
+    const npcOptions = userOptions.map((userOption) => {
       const enable = !(
-        userOption.condition &&
-        !userOption.condition(this.state.npcOptions)
+        userOption.condition && !userOption.condition(this.state.npcOptions)
       );
 
-      if (userOption.condition && !userOption.condition(this.state.npcOptions)) {
+      if (
+        userOption.condition &&
+        !userOption.condition(this.state.npcOptions)
+      ) {
         // Comment this if you want the disabled option
         return null;
       }
@@ -184,59 +208,69 @@ export default class UserInput extends Component<IProps, IState> {
           if (!opt.name) {
             return null;
           }
-          return <option value={i} key={i} selected={selectedOption === i}>{opt.name}</option>;
+          return (
+            <option value={i} key={i}>
+              {opt.name}
+            </option>
+          );
         });
       }
 
       return (
-        <Col xs={12} key={userOption.label}>
-          <FormGroup>
-            <ControlLabel>{userOption.label}</ControlLabel>
-            <FormControl componentClass="select"
-              onChange={
-                (e: any) => {
+        <Row key={userOption.label}>
+          <Col>
+            <FormGroup>
+              <FormLabel>{userOption.label}</FormLabel>
+              <Form.Select
+                value={selectedOption ?? undefined}
+                onChange={(e: any) => {
                   const npcOptions = this.state.npcOptions;
-                  npcOptions[userOption.optionName] = e.target.value === "random" ? null : parseInt(e.target.value);
+                  npcOptions[userOption.optionName] =
+                    e.target.value === "random"
+                      ? null
+                      : parseInt(e.target.value);
                   this.setState({ npcOptions }, () => {
                     if (userOption.onChange) {
                       userOption.onChange(this);
                     }
                   });
-                }
-              }
-              disabled={!enable}
-            >
-              <option value="random" key="random">Random</option>
-              {options}
-            </FormControl>
-          </FormGroup>
-        </Col>
+                }}
+                disabled={!enable}
+              >
+                <option value="random" key="random">
+                  Random
+                </option>
+                {options}
+              </Form.Select>
+            </FormGroup>
+          </Col>
+        </Row>
       );
     });
 
     const npcDataUrl = new URL(window.location.href);
-    npcDataUrl.searchParams.set('d', JSONCrush(JSON.stringify(this.props.npc)));
+    npcDataUrl.searchParams.set("d", jsoncrush.crush(JSON.stringify(this.props.npc)));
 
     return (
       <div>
-        <Panel className="hidden-panel">
-          <Panel.Body>
-            <form onSubmit={this.onSubmit.bind(this)}>
-              <Row>
-                {npcOptions}
-              </Row>
-              <Button type="submit" className="center-block generate-button" bsStyle="success" />
-            </form>
-
-            <form onSubmit={this._downloadTxtFile.bind(this)}>
-              <Button type="submit" className="center-block download-button download-button" bsStyle="success" />
-            </form>
-
-            <a className="center-block npc-link" href={npcDataUrl.toString()}>
-              🔗 Bookmark
-            </a>
-          </Panel.Body>
-        </Panel>
+        <div className={styles.npcOptions}>{npcOptions}</div>
+        <div className={styles.bottomOptions}>
+          <Button
+            type="submit"
+            className="generate-button"
+            variant="success"
+            onClick={this.onSubmit}
+          />
+          <Button
+            type="submit"
+            className="download-button"
+            variant="success"
+            onClick={this._downloadTxtFile}
+          />
+          <a className={styles.npcLink} href={npcDataUrl.toString()}>
+            🔗 Bookmark
+          </a>
+        </div>
       </div>
     );
   }

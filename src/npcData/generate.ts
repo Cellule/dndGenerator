@@ -8,6 +8,7 @@ import {
   SchemaResult,
   WeightedValue,
   Npc,
+  Operator,
 } from "./index.js";
 import schema from "./schema.json";
 import { getGroups, chooseRandomWithWeight, debugGen } from "./utils";
@@ -53,7 +54,7 @@ export function generate({
           debugNode = node;
         }
         if (typeof instruction === "function") {
-          const insRes = instruction(context, options);
+          const insRes = (instruction as Operator)(context, options);
           if (insRes !== undefined) {
             if (Array.isArray(insRes)) {
               result += String(processGroups(insRes));
