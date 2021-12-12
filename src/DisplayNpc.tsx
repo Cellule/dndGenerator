@@ -1,13 +1,12 @@
 import jsoncrush from "jsoncrush";
 import React, { Component } from "react";
 import { Col, Row } from "react-bootstrap";
+import styles from "./DisplayNpc.module.css";
 import Footer from "./Footer";
-import UserInput from "./UserInput";
 import NpcData from "./NpcData";
 import { generate, printDebugGen } from "./npcData/generate";
-import { NpcGenerateOptions, Npc } from "./npcData/index";
-
-import styles from "./DisplayNpc.module.css";
+import { Npc, NpcGenerateOptions } from "./npcData/index";
+import UserInput from "./UserInput";
 
 interface IState {
   npc: Npc;
@@ -23,9 +22,7 @@ export default class DisplayNpc extends Component<{}, IState> {
     if (url.searchParams.has("d")) {
       try {
         const crushedJson = url.searchParams.get("d") || "";
-        const npc = JSON.parse(
-          jsoncrush.uncrush(decodeURIComponent(crushedJson))
-        );
+        const npc = JSON.parse(jsoncrush.uncrush(decodeURIComponent(crushedJson)));
         this.state = { npc };
         loadedQueryData = true;
       } catch (e) {

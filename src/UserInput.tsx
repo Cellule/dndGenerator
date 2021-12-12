@@ -1,20 +1,8 @@
 import jsoncrush from "jsoncrush";
-import {
-  Col,
-  Row,
-  FormGroup,
-  FormControl,
-  FormLabel,
-  Button,
-  Form,
-} from "react-bootstrap";
 import React, { Component } from "react";
-import {
-  NamedOption,
-  getNamedTableOptions,
-  getTableReferenceOptions,
-} from "./npcData/tables";
-import { NpcGenerateOptions, Npc } from "./npcData/index";
+import { Button, Col, Form, FormGroup, FormLabel, Row } from "react-bootstrap";
+import { Npc, NpcGenerateOptions } from "./npcData/index";
+import { getNamedTableOptions, getTableReferenceOptions, NamedOption } from "./npcData/tables";
 import styles from "./UserInput.module.css";
 
 const races = getTableReferenceOptions("race");
@@ -62,9 +50,7 @@ interface IState {
 const userOptions: {
   label: string;
   optionName: keyof NpcGenerateOptions;
-  options:
-    | { name?: string }[]
-    | ((npcOptions: NpcGenerateOptions) => { name?: string }[]);
+  options: { name?: string }[] | ((npcOptions: NpcGenerateOptions) => { name?: string }[]);
   condition?: (npcOptions: NpcGenerateOptions) => boolean;
   onChange?: (component: Component<IProps, IState>) => void;
 }[] = [
@@ -82,8 +68,7 @@ const userOptions: {
     label: "Subrace",
     optionName: "subrace",
     condition: (npcOptions) =>
-      typeof npcOptions.race === "number" &&
-      subraces[races[npcOptions.race].table] !== undefined,
+      typeof npcOptions.race === "number" && subraces[races[npcOptions.race].table] !== undefined,
     options: (npcOptions) => subraces[races[npcOptions.race || 0].table],
   },
   {
@@ -133,10 +118,8 @@ const userOptions: {
     label: "Profession",
     optionName: "occupation2",
     condition: (npcOptions) =>
-      npcOptions.classorprof === 1 &&
-      typeof npcOptions.occupation1 === "number",
-    options: (npcOptions) =>
-      professionCategories[professions[npcOptions.occupation1 || 0].table],
+      npcOptions.classorprof === 1 && typeof npcOptions.occupation1 === "number",
+    options: (npcOptions) => professionCategories[professions[npcOptions.occupation1 || 0].table],
   },
 ];
 
@@ -150,49 +133,35 @@ export default class UserInput extends Component<IProps, IState> {
 
   onSubmit = (e: any) => {
     this.props.generate(this.state.npcOptions);
-  }
+  };
 
   _downloadTxtFile = (e: any) => {
     const element = document.createElement("a");
     const name = this.props.npc.description.name.split(" ")[0];
     const gender = this.props.npc.description.gender;
     const race = this.props.npc.description.race.split(" ").join("_");
-    const occupation = this.props.npc.description.occupation
-      .split(" ")
-      .join("_");
+    const occupation = this.props.npc.description.occupation.split(" ").join("_");
     const elementData = document.getElementById("downloadData");
     if (!elementData) {
       throw new Error("Missing element downloadData");
     }
     const file = new Blob(
-      [
-        (elementData.textContent || "")
-          .split("#")
-          .join("\r\n")
-          .split("#")
-          .join("\r\n"),
-      ],
-      { type: "text/plain" }
+      [(elementData.textContent || "").split("#").join("\r\n").split("#").join("\r\n")],
+      { type: "text/plain" },
     );
     element.href = URL.createObjectURL(file);
-    element.download =
-      name + "_" + gender + "_" + race + "_" + occupation + ".txt";
+    element.download = name + "_" + gender + "_" + race + "_" + occupation + ".txt";
     document.body.appendChild(element);
     element.click();
     document.body.removeChild(element);
     return false;
-  }
+  };
 
   render() {
     const npcOptions = userOptions.map((userOption) => {
-      const enable = !(
-        userOption.condition && !userOption.condition(this.state.npcOptions)
-      );
+      const enable = !(userOption.condition && !userOption.condition(this.state.npcOptions));
 
-      if (
-        userOption.condition &&
-        !userOption.condition(this.state.npcOptions)
-      ) {
+      if (userOption.condition && !userOption.condition(this.state.npcOptions)) {
         // Comment this if you want the disabled option
         return null;
       }
@@ -226,9 +195,7 @@ export default class UserInput extends Component<IProps, IState> {
                 onChange={(e: any) => {
                   const npcOptions = this.state.npcOptions;
                   npcOptions[userOption.optionName] =
-                    e.target.value === "random"
-                      ? null
-                      : parseInt(e.target.value);
+                    e.target.value === "random" ? null : parseInt(e.target.value);
                   this.setState({ npcOptions }, () => {
                     if (userOption.onChange) {
                       userOption.onChange(this);

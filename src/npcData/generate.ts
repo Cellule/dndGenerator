@@ -1,17 +1,16 @@
-
 import {
   DebugNode,
   Group,
+  Npc,
   NpcGenerateOptions,
+  Operator,
   SchemaDescriptor,
   SchemaElement,
   SchemaResult,
   WeightedValue,
-  Npc,
-  Operator,
 } from "./index.js";
 import schema from "./schema.json";
-import { getGroups, chooseRandomWithWeight, debugGen } from "./utils";
+import { chooseRandomWithWeight, debugGen, getGroups } from "./utils";
 
 function numberOrNull(v: any) {
   return typeof v === "number" ? v | 0 : null;
@@ -62,8 +61,7 @@ export function generate({
               result += String(insRes);
             }
           }
-        }
-        else if (Array.isArray(instruction)) {
+        } else if (Array.isArray(instruction)) {
           result += String(processGroups(instruction));
         }
         debugNode = oldNode;
@@ -120,8 +118,8 @@ export function printDebugGen(debugNode: DebugNode) {
         }
         depth--;
       }
-    }
+    };
     processNode(debugNode);
-    console.log(lines.join("\n"))
+    console.log(lines.join("\n"));
   }
 }

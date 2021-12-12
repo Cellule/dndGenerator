@@ -1,16 +1,16 @@
-import {expect} from 'chai';
-import 'mocha';
-import {getTableNames, getTable} from "./tables";
-import { StaticAnalysis, Definition, Use, AnalysisNode } from './staticAnalysis';
-import { reGroup, operators } from './utils';
+import { expect } from "chai";
+import "mocha";
 import schema from "./schema.json";
+import { AnalysisNode, Definition, StaticAnalysis, Use } from "./staticAnalysis";
+import { getTable, getTableNames } from "./tables";
+import { operators, reGroup } from "./utils";
 
 it("parses tables", () => {
   for (const tableName of getTableNames()) {
-    const {w: totalWeight, options} = getTable(tableName);
+    const { w: totalWeight, options } = getTable(tableName);
     let recalculatedTotalWeight = 0;
     for (const option of options) {
-      const {w, v, original} = option;
+      const { w, v, original } = option;
       // todo: find how to check if grouping was done correctly
       recalculatedTotalWeight += w;
     }
@@ -38,42 +38,46 @@ function getGroups(val: string) {
   const groups = (val.match(reGroup) || []).map(mapGroup);
   return {
     groups,
-    original: val
+    original: val,
   };
 }
 
-type UsesMap = {[name: string]: Use};
-type DefsMap = {[name: string]: Definition};
+type UsesMap = { [name: string]: Use };
+type DefsMap = { [name: string]: Definition };
 type Row = {
   isLeaf: boolean;
-  defs: Definition[],
-  uses: Use[],
+  defs: Definition[];
+  uses: Use[];
   hasRecursion?: boolean;
 };
 
 it("has valid table schema", () => {
   type TableAnalysis = {
-    groups: StaticAnalysis[],
-    original: string,
+    groups: StaticAnalysis[];
+    original: string;
   }[];
-  const tablesAnalysis: {[name: string]: {analysis: TableAnalysis} & Row} = {};
+  const tablesAnalysis: { [name: string]: { analysis: TableAnalysis } & Row } = {};
 
   for (const tableName of getTableNames()) {
-    const {options} = getTable(tableName);
-    const rows = options.map(({original}) => getGroups(original));
+    const { options } = getTable(tableName);
+    const rows = options.map(({ original }) => getGroups(original));
     tablesAnalysis[tableName] = {
       analysis: rows,
       defs: [],
       isLeaf: false,
-      uses: []
-    }
+      uses: [],
+    };
   }
   const analysis = getGroups(schema.options.initialisation);
   const result = processGroups(analysis.groups, ["schema"]);
-  processSchema(schema.output, ["output"], result.defs.reduce((a, d) => {
-    a[d.name] = d;
-    return a;
-  }, {} as DefsMap));
+  processSchema(
+    schema.output,
+    ["output"],
+    result.defs.reduce((a, d) => {
+      a[d.name] = d;
+      return a;
+    }, {} as DefsMap),
+  );
 
   function processSchema(schemaElement: any, paths: string[], defs: DefsMap) {
     if (typeof schemaElement === "string") {
@@ -94,18 +98,29 @@ it("has valid table schema", () => {
     }
   }
 
-
-  function processGroups(groupsAnalysis: StaticAnalysis[], tablePaths: string[], prevDef: DefsMap = {}): Row {
+  function processGroups(
+    groupsAnalysis: StaticAnalysis[],
+    tablePaths: string[],
+    prevDef: DefsMap = {},
+  ): Row {
     // shallow clone
-    const groupsDefinitions = {...prevDef};
+    const groupsDefinitions = { ...prevDef };
     const newDefs: DefsMap = {};
     const newUses: UsesMap = {};
 
     function checkIsDefined(node: AnalysisNode) {
       if (!groupsDefinitions[node.name]) {
-        console.log(tablePaths.join(" => ") + `: is using "${node.name}", but it hasn't been defined on the path`);
+        console.log(
+          tablePaths.join(" => ") +
+            `: is using "${node.name}", but it hasn't been defined on the path`,
+        );
       } else if (groupsDefinitions[node.name].type !== node.type) {
-        console.log(tablePaths.join(" => ") + `: is using "${node.name}" with type ${node.type}, but it has type ${groupsDefinitions[node.name].type} on the path`);
+        console.log(
+          tablePaths.join(" => ") +
+            `: is using "${node.name}" with type ${node.type}, but it has type ${
+              groupsDefinitions[node.name].type
+            } on the path`,
+        );
       }
       expect(groupsDefinitions).to.haveOwnProperty(node.name);
       expect(groupsDefinitions[node.name].type).to.equal(node.type);
@@ -128,30 +143,40 @@ it("has valid table schema", () => {
     function processTable(tableName: string, tableAnalysis: TableAnalysis) {
       const nextTablePaths = tablePaths.concat([tableName]);
       // Process all rows of that table
-      const rows: Row[] = tableAnalysis
-        .map(row => processGroups(row.groups, nextTablePaths, groupsDefinitions));
+      const rows: Row[] = tableAnalysis.map((row) =>
+        processGroups(row.groups, nextTablePaths, groupsDefinitions),
+      );
 
-      const defs = rows.reduce((p, row, iRow) => row.defs.reduce((a, def) => {
-        const key = def.name;
-        if (!a[key]) {
-          // First definition
-          a[key] = { count: 1, def, rows: {[iRow]: true} };
-        } else if (a[key].def.type === def.type) {
-          // Already defined by another row
-          a[key].count++;
-          a[key].rows[iRow] = true;
-        } else {
-          // Defined with a different type
-          console.log(tablePaths.join(" => ") + `:
+      const defs = rows.reduce(
+        (p, row, iRow) =>
+          row.defs.reduce((a, def) => {
+            const key = def.name;
+            if (!a[key]) {
+              // First definition
+              a[key] = { count: 1, def, rows: { [iRow]: true } };
+            } else if (a[key].def.type === def.type) {
+              // Already defined by another row
+              a[key].count++;
+              a[key].rows[iRow] = true;
+            } else {
+              // Defined with a different type
+              console.log(
+                tablePaths.join(" => ") +
+                  `:
   ${tableAnalysis[iRow].original}
-  is defining "${def.name}" with type "${def.type}", but it has type "${a[key].def.type}" in other rows`);
-          expect(def.type).to.equal(a[key].def.type);
-        }
-        return a;
-      }, p), {} as {[name: string] : {count: number, def: Definition, rows: {[index: number]: boolean}}});
+  is defining "${def.name}" with type "${def.type}", but it has type "${a[key].def.type}" in other rows`,
+              );
+              expect(def.type).to.equal(a[key].def.type);
+            }
+            return a;
+          }, p),
+        {} as {
+          [name: string]: { count: number; def: Definition; rows: { [index: number]: boolean } };
+        },
+      );
 
       // Ignore blocks with recursion for expected definitions since we can't easily find out
-      const expectedDefs = rows.length - rows.filter(block => block.hasRecursion).length;
+      const expectedDefs = rows.length - rows.filter((block) => block.hasRecursion).length;
       const commonDefs: Definition[] = [];
       for (const value of Object.values(defs)) {
         if (value.count < expectedDefs) {
@@ -219,7 +244,7 @@ it("has valid table schema", () => {
       defs: Object.values(newDefs),
       uses: Object.values(newUses),
       isLeaf,
-      hasRecursion
+      hasRecursion,
     };
   }
 });
