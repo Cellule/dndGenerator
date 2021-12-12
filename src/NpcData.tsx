@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Card, Col, Row } from "react-bootstrap";
-import "./NpcData.less";
 import { Npc, NpcAbilities } from "./npcData/index";
 
 const abilities: { key: keyof NpcAbilities; name: string }[] = [

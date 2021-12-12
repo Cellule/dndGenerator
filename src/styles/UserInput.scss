@@ -1,0 +1,87 @@
+.npc-options {
+  padding: 0 12px;
+}
+
+.npc-options > .row {
+  margin-bottom: 12px;
+}
+
+.bottom-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .generate-button,
+  .generate-button:focus {
+    color: #0000;
+    border: none;
+    margin-top: 38px;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+    background-image: url("../images/generate-button-1.png");
+    background-size: 100% 100%;
+    width: 100px;
+    height: 100px;
+    box-shadow: none;
+  }
+
+  .generate-button:hover {
+    filter: brightness(110%);
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+    background-image: url("../images/generate-button-1.png");
+    box-shadow: none;
+  }
+
+  .generate-button:active {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0) !important;
+    background-image: url("../images/generate-button-3.png");
+    box-shadow: none;
+  }
+
+  .download-button,
+  .download-button:focus {
+    color: #0000;
+    border: none;
+    margin-top: 63px;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+    background-image: url("../images/export-btn-1.png");
+    background-size: 100% 100%;
+    width: 105px;
+    height: 30px;
+    box-shadow: none;
+  }
+
+  .download-button:hover {
+    filter: brightness(120%);
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+    background-image: url("../images/export-btn-1.png");
+    box-shadow: none;
+  }
+
+  .download-button:active {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0) !important;
+    background-image: url("../images/export-btn-3.png");
+    box-shadow: none;
+  }
+
+  .npc-link {
+    margin-top: 30px;
+    font-size: 16px;
+    text-align: center;
+    color: #b3b3b3;
+  }
+
+  .npc-link:hover,
+  .npc-link:focus {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+
+

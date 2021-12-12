@@ -1,7 +1,6 @@
 import jsoncrush from "jsoncrush";
 import React, { Component } from "react";
 import { Col, Row } from "react-bootstrap";
-import styles from "./DisplayNpc.module.css";
 import Footer from "./Footer";
 import NpcData from "./NpcData";
 import { generate, printDebugGen } from "./npcData/generate";
@@ -49,12 +48,12 @@ export default class DisplayNpc extends Component<{}, IState> {
 
   render() {
     return (
-      <div className={styles.displayNpcRoot}>
+      <div className="display-npc-root">
         <Row>
-          <Col sm={12} md={4} lg={3} className={styles.userInfoCol}>
-            <div className={styles.userInfo}>
-              <div className={styles.titleImageWrapper}>
-                <div className={styles.titleImage} />
+          <Col sm={12} md={4} lg={3} className="user-info-col">
+            <div className="user-info">
+              <div className="title-image-wrapper">
+                <div className="title-image" />
               </div>
               <UserInput npc={this.state.npc} generate={this.generateNpc} />
             </div>
