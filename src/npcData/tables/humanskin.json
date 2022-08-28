@@ -4,6 +4,5 @@
   { "w":1, "v":"{$skin+red}"},
   { "w":1, "v":"{$skin+brown}"},
   { "w":1, "v":"{$skin+black}"},
-  { "w":1, "v":"{$skin+golden}"},
-  { "w":1, "v":"{$skin+chocolate}"}
+  { "w":1, "v":"{$skin+golden}"}
 ]
