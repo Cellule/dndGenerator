@@ -1,4 +1,3 @@
-import path from "path";
 import { Option, WeightedValue } from "./index";
 import { getGroups } from "./utils";
 
@@ -13,16 +12,24 @@ interface Tables {
 const tables = {} as Tables;
 let isInitialized = false;
 
+function jsonFileName(file: string) {
+  const m = /[/\\]?([^/\\]+)\.json$/.exec(file);
+  if (!m) {
+    throw new Error(`Unexpected json file name: ${file}`);
+  }
+  return m[1];
+}
+
 function initAvailableTables(files: string[]) {
   for (const file of files) {
-    const name = path.basename(file, ".json");
+    const name = jsonFileName(file);
     tables[name] = { w: 0, options: [] };
   }
   isInitialized = true;
 }
 
 function importTable(tableName: string, r: (id: string) => any) {
-  const name = path.basename(tableName, ".json");
+  const name = jsonFileName(tableName);
   const table: WeightedValue[] = r(tableName);
   let totalWeight = 0;
   const options = table.map((row) => {
@@ -42,6 +49,7 @@ function importTable(tableName: string, r: (id: string) => any) {
 function ensureTablesAreInitialized() {
   if (!isInitialized) {
     if (process.env.NODE_ENV === "test") {
+      const path = require("path");
       const fs = require("fs");
       const dir = path.join(__dirname, "./tables");
       const dirContent: string[] = fs.readdirSync(dir).filter((f: string) => f.endsWith(".json"));
