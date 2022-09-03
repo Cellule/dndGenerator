@@ -290,11 +290,7 @@ export const operators: {
         }
         if (
           isNumber(options.subrace) &&
-          (tablename === "raceelf" ||
-            tablename === "racedwarf" ||
-            tablename === "racegnome" ||
-            tablename === "racehalfling" ||
-            tablename === "racegenasi")
+          (tablename === "raceelf" || tablename === "racedwarf" || tablename === "racegnome" || tablename === "racehalfling" || tablename === "racegenasi")
         ) {
           return chooseOption(options.subrace);
         }
@@ -302,17 +298,9 @@ export const operators: {
         if (isNumber(options.classorprof)) {
           if (tablename === "occupation") {
             return chooseOption(options.classorprof);
-          } else if (
-            isNumber(options.occupation1) &&
-            options.classorprof === 0 &&
-            tablename === "class"
-          ) {
+          } else if (isNumber(options.occupation1) && options.classorprof === 0 && tablename === "class") {
             return chooseOption(options.occupation1);
-          } else if (
-            isNumber(options.occupation1) &&
-            options.classorprof === 1 &&
-            tablename === "profession"
-          ) {
+          } else if (isNumber(options.occupation1) && options.classorprof === 1 && tablename === "profession") {
             return chooseOption(options.occupation1);
           } else if (
             isNumber(options.occupation1) &&

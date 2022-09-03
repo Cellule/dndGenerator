@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import { Npc, NpcAbilities } from "./npcData/index";
 
@@ -91,8 +91,7 @@ export default class NpcData extends Component<IProps> {
                 </p>
                 <p hidden>#</p>
                 <p>
-                  {majP}stands {npc.physical.height}cm ({toFeet(npc.physical.height)}) tall and has{" "}
-                  {npc.physical.build}.
+                  {majP}stands {npc.physical.height}cm ({toFeet(npc.physical.height)}) tall and has {npc.physical.build}.
                 </p>
                 <p hidden>#</p>
                 <p>
@@ -203,17 +202,13 @@ export default class NpcData extends Component<IProps> {
                         <b>Neutral</b>
                       </td>
                       <td hidden>: </td>
-                      <td className="alignment-number">
-                        {Math.max(0, npc.alignment.moralneutral)}
-                      </td>
+                      <td className="alignment-number">{Math.max(0, npc.alignment.moralneutral)}</td>
                       <td hidden> </td>
                       <td className="width-thin">
                         <b>Neutral</b>
                       </td>
                       <td hidden>: </td>
-                      <td className="alignment-number">
-                        {Math.max(0, npc.alignment.ethicalneutral)}
-                      </td>
+                      <td className="alignment-number">{Math.max(0, npc.alignment.ethicalneutral)}</td>
                     </tr>
                     <tr hidden>
                       <td>#</td>

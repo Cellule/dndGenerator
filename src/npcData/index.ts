@@ -10,10 +10,7 @@ export interface Option {
   original: string;
 }
 
-export type Operator = ((
-  context: { vars: { [key: string]: Primitives } },
-  options: NpcGenerateOptions,
-) => Primitives | Group[] | void) & {
+export type Operator = ((context: { vars: { [key: string]: Primitives } }, options: NpcGenerateOptions) => Primitives | Group[] | void) & {
   original?: string;
 };
 export type Group = Operator | string;
