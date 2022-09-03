@@ -1,8 +1,8 @@
 [
-  { "w":1, "v":"{$skin+blueish}"},
-  { "w":2, "v":"{$skin+pink}"},
-  { "w":2, "v":"{$skin+golden}"},
-  { "w":2, "v":"{$skin+silver}"},
-  { "w":3, "v":"{$skin+green}"},
-  { "w":2, "v":"{$skin+copper}"}
+  { "w": 1, "v": "{$skin+blueish}" },
+  { "w": 2, "v": "{$skin+pink}" },
+  { "w": 2, "v": "{$skin+golden}" },
+  { "w": 2, "v": "{$skin+silver}" },
+  { "w": 3, "v": "{$skin+green}" },
+  { "w": 2, "v": "{$skin+copper}" }
 ]

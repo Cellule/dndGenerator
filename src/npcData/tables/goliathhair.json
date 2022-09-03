@@ -1,9 +1,9 @@
 [
-  { "w":8, "v":"{$hair=a bald head and }"},
-  { "w":5, "v":"{$hair=a bald head with tribal tatoos and }"},
-  { "w":2, "v":"{$hair=a bald head with abstract tatoos and }"},
-  { "w":2, "v":"{$hair=a bald head with fancy tatoos and }"},
-  { "w":2, "v":"{$hair=a bald head with vivid tatoos and }"},
-  { "w":2, "v":"{$hair=a bald head with bulky tatoos and }"},
-  { "w":2, "v":"{$hair=a bald head with gorgeous tatoos and }"}
+  { "w": 8, "v": "{$hair=a bald head and }" },
+  { "w": 5, "v": "{$hair=a bald head with tribal tatoos and }" },
+  { "w": 2, "v": "{$hair=a bald head with abstract tatoos and }" },
+  { "w": 2, "v": "{$hair=a bald head with fancy tatoos and }" },
+  { "w": 2, "v": "{$hair=a bald head with vivid tatoos and }" },
+  { "w": 2, "v": "{$hair=a bald head with bulky tatoos and }" },
+  { "w": 2, "v": "{$hair=a bald head with gorgeous tatoos and }" }
 ]

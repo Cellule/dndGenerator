@@ -37,8 +37,8 @@
     },
     "religion": {
       "description": [
-        {"w": 8, "v": "{$majPro}{$worship} worships {$god}{$goddescr}"},
-        {"w": 1, "v": "{$majPro}doesn't worship any god."}
+        { "w": 8, "v": "{$majPro}{$worship} worships {$god}{$goddescr}" },
+        { "w": 1, "v": "{$majPro}doesn't worship any god." }
       ]
     },
     "ptraits": {

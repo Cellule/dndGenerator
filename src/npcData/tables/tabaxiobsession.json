@@ -1,14 +1,14 @@
 [
-  { "w":5, "v":"{$quirks+$majPro}{$monster=}{monster1}{$quirks+is currently obsessed by }{$quirks+$monster}{$quirks+s. }"},
-  { "w":5, "v":"{$quirks+$majPro}{raceallergy}{$quirks+is currently obsessed by }{$quirks+$racea}{$quirks+. }"},
-  { "w":5, "v":"{$quirks+$majPro}{preciousitem}{$quirks+is currently obsessed by a }{$quirks+$precious}{$quirks+. }"},
-  { "w":2, "v":"{$quirks+$majPro}{$quirks+is currently obsessed by the current town. }"},
-  { "w":2, "v":"{$quirks+$majPro}{$quirks+is currently obsessed by a nearby house. }"},
-  { "w":2, "v":"{$quirks+$majPro}{$quirks+is currently obsessed by the nearest castle. }"},
-  { "w":2, "v":"{$quirks+$majPro}{$quirks+is currently obsessed by a nearby cave. }"},
-  { "w":2, "v":"{$quirks+$majPro}{$quirks+is currently obsessed by a forgotten legend. }"},
-  { "w":2, "v":"{$quirks+$majPro}{$quirks+is currently obsessed by a local legend. }"},
-  { "w":3, "v":"{$quirks+$majPro}{abstractword}{$quirks+is currently obsessed by a song about }{$quirks+$aword}{$quirks+. }"},
-  { "w":3, "v":"{$quirks+$majPro}{abstractword}{$quirks+is currently obsessed by a poem about }{$quirks+$aword}{$quirks+. }"},
-  { "w":3, "v":"{$quirks+$majPro}{abstractword}{$quirks+is currently obsessed by a book about }{$quirks+$aword}{$quirks+. }"}
+  { "w": 5, "v": "{$quirks+$majPro}{$monster=}{monster1}{$quirks+is currently obsessed by }{$quirks+$monster}{$quirks+s. }" },
+  { "w": 5, "v": "{$quirks+$majPro}{raceallergy}{$quirks+is currently obsessed by }{$quirks+$racea}{$quirks+. }" },
+  { "w": 5, "v": "{$quirks+$majPro}{preciousitem}{$quirks+is currently obsessed by a }{$quirks+$precious}{$quirks+. }" },
+  { "w": 2, "v": "{$quirks+$majPro}{$quirks+is currently obsessed by the current town. }" },
+  { "w": 2, "v": "{$quirks+$majPro}{$quirks+is currently obsessed by a nearby house. }" },
+  { "w": 2, "v": "{$quirks+$majPro}{$quirks+is currently obsessed by the nearest castle. }" },
+  { "w": 2, "v": "{$quirks+$majPro}{$quirks+is currently obsessed by a nearby cave. }" },
+  { "w": 2, "v": "{$quirks+$majPro}{$quirks+is currently obsessed by a forgotten legend. }" },
+  { "w": 2, "v": "{$quirks+$majPro}{$quirks+is currently obsessed by a local legend. }" },
+  { "w": 3, "v": "{$quirks+$majPro}{abstractword}{$quirks+is currently obsessed by a song about }{$quirks+$aword}{$quirks+. }" },
+  { "w": 3, "v": "{$quirks+$majPro}{abstractword}{$quirks+is currently obsessed by a poem about }{$quirks+$aword}{$quirks+. }" },
+  { "w": 3, "v": "{$quirks+$majPro}{abstractword}{$quirks+is currently obsessed by a book about }{$quirks+$aword}{$quirks+. }" }
 ]

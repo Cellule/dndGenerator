@@ -1,6 +1,6 @@
 [
-  { "w":35, "v":"{hairLength}{$hair+, }{hairType}{$hair+, }{hairColor}{$hair+hair and }"},
-  { "w":4, "v":"{hairLength}{$hair+, }{hairType}{$hair+, }{hairColor}{$hair+hair shaved on }{rlb}{$hair+$rl}{$hair+side and }"},
-  { "w":3, "v":"{hairLength}{$hair+, }{hairColor}{$hair+mohawk and }"},
-  { "w":8, "v":"{$hair=a bald head and }"}
+  { "w": 35, "v": "{hairLength}{$hair+, }{hairType}{$hair+, }{hairColor}{$hair+hair and }" },
+  { "w": 4, "v": "{hairLength}{$hair+, }{hairType}{$hair+, }{hairColor}{$hair+hair shaved on }{rlb}{$hair+$rl}{$hair+side and }" },
+  { "w": 3, "v": "{hairLength}{$hair+, }{hairColor}{$hair+mohawk and }" },
+  { "w": 8, "v": "{$hair=a bald head and }" }
 ]

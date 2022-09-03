@@ -98,11 +98,7 @@ it("has valid table schema", () => {
     }
   }
 
-  function processGroups(
-    groupsAnalysis: StaticAnalysis[],
-    tablePaths: string[],
-    prevDef: DefsMap = {},
-  ): Row {
+  function processGroups(groupsAnalysis: StaticAnalysis[], tablePaths: string[], prevDef: DefsMap = {}): Row {
     // shallow clone
     const groupsDefinitions = { ...prevDef };
     const newDefs: DefsMap = {};
@@ -110,16 +106,10 @@ it("has valid table schema", () => {
 
     function checkIsDefined(node: AnalysisNode) {
       if (!groupsDefinitions[node.name]) {
-        console.log(
-          tablePaths.join(" => ") +
-            `: is using "${node.name}", but it hasn't been defined on the path`,
-        );
+        console.log(tablePaths.join(" => ") + `: is using "${node.name}", but it hasn't been defined on the path`);
       } else if (groupsDefinitions[node.name].type !== node.type) {
         console.log(
-          tablePaths.join(" => ") +
-            `: is using "${node.name}" with type ${node.type}, but it has type ${
-              groupsDefinitions[node.name].type
-            } on the path`,
+          tablePaths.join(" => ") + `: is using "${node.name}" with type ${node.type}, but it has type ${groupsDefinitions[node.name].type} on the path`,
         );
       }
       expect(groupsDefinitions).to.haveOwnProperty(node.name);
@@ -143,9 +133,7 @@ it("has valid table schema", () => {
     function processTable(tableName: string, tableAnalysis: TableAnalysis) {
       const nextTablePaths = tablePaths.concat([tableName]);
       // Process all rows of that table
-      const rows: Row[] = tableAnalysis.map((row) =>
-        processGroups(row.groups, nextTablePaths, groupsDefinitions),
-      );
+      const rows: Row[] = tableAnalysis.map((row) => processGroups(row.groups, nextTablePaths, groupsDefinitions));
 
       const defs = rows.reduce(
         (p, row, iRow) =>

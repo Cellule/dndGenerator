@@ -1,5 +1,5 @@
 // Code taken from https://github.com/react-bootstrap/react-bootstrap/tree/master/docs
-import React, { Component } from "react";
+import { Component } from "react";
 import packageJSON from "../package.json";
 
 export default class PageFooter extends Component {
@@ -12,11 +12,7 @@ export default class PageFooter extends Component {
               <p className="footer-outline">
                 <b>Check out my latest video game!</b>
               </p>
-              <a
-                href="https://www.baronneriegames.com/breach-wanderers"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://www.baronneriegames.com/breach-wanderers" target="_blank" rel="noopener noreferrer">
                 <div className="center-block BW-button" />
               </a>
             </div>
@@ -55,11 +51,7 @@ export default class PageFooter extends Component {
         </div>
         <p>
           Code licensed under{" "}
-          <a
-            href="https://github.com/cellule/dndGenerator/blob/master/LICENSE"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://github.com/cellule/dndGenerator/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">
             MIT
           </a>
           .

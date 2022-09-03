@@ -1,26 +1,44 @@
 [
-  { "w":4, "v":"{$sphy1+has }{size}{$sphy1+$size}{$sphy1+scar on }{$sphy1+$minPoss}{bodypart}{$sphy1+$bp}"},
-  { "w":1, "v":"{$sphy1+has }{size}{$sphy1+$size}{$sphy1+scar on }{$sphy1+$minPoss}{bodypart}{$sphy1+$bp}{$sphy1+and }{size}{$sphy1+$size}{$sphy1+scar on }{$sphy1+$minPoss}{bodypart}{$sphy1+$bp}"},
-  { "w":4, "v":"{$sphy1+has }{atattooadj}{$sphy1+$tadj}{$sphy1+piercing on }{$sphy1+$minPoss}{head}{$sphy1+$bp}"},
-  { "w":2, "v":"{$sphy1+has }{atattooadj}{$sphy1+$tadj}{$sphy1+piercing on }{$sphy1+$minPoss}{head}{$sphy1+$bp}{$sphy1+ and }{atattooadj}{$sphy1+$tadj}{$sphy1+piercing on }{$sphy1+$minPoss}{head}{$sphy1+$bp}"},
-  { "w":1, "v":"{$sphy1+has }{atattooadj}{$sphy1+$tadj}{$sphy1+piercing on }{$sphy1+$minPoss}{head}{$sphy1+$bp}{$sphy1+, }{atattooadj}{$sphy1+$tadj}{$sphy1+piercing on }{$sphy1+$minPoss}{head}{$sphy1+$bp}{$sphy1+ and }{atattooadj}{$sphy1+$tadj}{$sphy1+piercing on }{$sphy1+$minPoss}{head}{$sphy1+$bp}"},
-  { "w":3, "v":"{$sphy1+has }{piercingnumber}{tattooadj}{$sphy1+$tadj}{$sphy1+piercings on }{$sphy1+$minPoss}{head}{$sphy1+$bp}"},
-  { "w":2, "v":"{$sphy1+has }{piercingnumber}{tattooadj}{$sphy1+$tadj}{$sphy1+piercings on }{$sphy1+$minPoss}{head}{$sphy1+$bp}{$sphy1+ and }{piercingnumber}{tattooadj}{$sphy1+$tadj}{$sphy1+piercings on }{$sphy1+$minPoss}{head}{$sphy1+$bp}"},
-  { "w":2, "v":"{$sphy1+has }{degree}{$sphy1+$degree}{$sphy1+limp}{%dex-2}"},
-  { "w":1, "v":"{$sphy1+has }{degree}{$sphy1+$degree}{$sphy1+hunch}{%dex-1}{%cha-2}"},
-  { "w":5, "v":"{$sphy1+has }{atattooadj}{$sphy1+$tadj}{tattoo}{$sphy1+ on }{$sphy1+$minPoss}{bodyparttat}{$sphy1+$bp}"},
-  { "w":2, "v":"{$sphy1+has }{atattooadj}{$sphy1+$tadj}{tattoo}{$sphy1+ on }{$sphy1+$minPoss}{bodyparttat}{$sphy1+$bp}{$sphy1+ and }{atattooadj}{$sphy1+$tadj}{tattoo}{$sphy1+ on }{$sphy1+$minPoss}{bodyparttat}{$sphy1+$bp}"},
-  { "w":1, "v":"{$sphy1+has }{atattooadj}{$sphy1+$tadj}{tattoo}{$sphy1+ on }{$sphy1+$minPoss}{bodyparttat}{$sphy1+$bp}{$sphy1+, }{atattooadj}{$sphy1+$tadj}{tattoo}{$sphy1+ on }{$sphy1+$minPoss}{bodyparttat}{$sphy1+$bp}{$sphy1+ and }{atattooadj}{$sphy1+$tadj}{tattoo}{$sphy1+ on }{$sphy1+$minPoss}{bodyparttat}{$sphy1+$bp}"},
-  { "w":2, "v":"{$sphy1+is branded as a }{brand}{$sphy1+ on }{$sphy1+$minPoss}{bodypart}{$sphy1+$bp}"},
-  { "w":1, "v":"{$sphy1+has }{degree}{$sphy1+$degree}{$sphy1+scoliose}{%dex-1}"},
-  { "w":3, "v":"{$sphy1+smells }{degree2}{$sphy1+$degree}{badsmell}{%cha-1}"},
-  { "w":3, "v":"{$sphy1+smells }{degree2}{$sphy1+$degree}{goodsmell}{%cha+1}"},
-  { "w":2, "v":"{$sphy1+is very nimble}{%dex+2}"},
-  { "w":2, "v":"{$sphy1+is very clumsy}{%dex-3}"},
-  { "w":3, "v":"{$sphy1+gestures profusely during a conversation}"},
-  { "w":2, "v":"{$sphy1+has a high-pitched voice}"},
-  { "w":2, "v":"{$sphy1+has a low-toned voice}"},
-  { "w":3, "v":"{$sphy1+is easily out of breath}{%con-2}"},
-  { "w":1, "v":"{$sphy1+has a sunken breastbone}"},
-  { "w":2, "v":"{$sphy1+cannot whistle}"}
+  { "w": 4, "v": "{$sphy1+has }{size}{$sphy1+$size}{$sphy1+scar on }{$sphy1+$minPoss}{bodypart}{$sphy1+$bp}" },
+  {
+    "w": 1,
+    "v": "{$sphy1+has }{size}{$sphy1+$size}{$sphy1+scar on }{$sphy1+$minPoss}{bodypart}{$sphy1+$bp}{$sphy1+and }{size}{$sphy1+$size}{$sphy1+scar on }{$sphy1+$minPoss}{bodypart}{$sphy1+$bp}"
+  },
+  { "w": 4, "v": "{$sphy1+has }{atattooadj}{$sphy1+$tadj}{$sphy1+piercing on }{$sphy1+$minPoss}{head}{$sphy1+$bp}" },
+  {
+    "w": 2,
+    "v": "{$sphy1+has }{atattooadj}{$sphy1+$tadj}{$sphy1+piercing on }{$sphy1+$minPoss}{head}{$sphy1+$bp}{$sphy1+ and }{atattooadj}{$sphy1+$tadj}{$sphy1+piercing on }{$sphy1+$minPoss}{head}{$sphy1+$bp}"
+  },
+  {
+    "w": 1,
+    "v": "{$sphy1+has }{atattooadj}{$sphy1+$tadj}{$sphy1+piercing on }{$sphy1+$minPoss}{head}{$sphy1+$bp}{$sphy1+, }{atattooadj}{$sphy1+$tadj}{$sphy1+piercing on }{$sphy1+$minPoss}{head}{$sphy1+$bp}{$sphy1+ and }{atattooadj}{$sphy1+$tadj}{$sphy1+piercing on }{$sphy1+$minPoss}{head}{$sphy1+$bp}"
+  },
+  { "w": 3, "v": "{$sphy1+has }{piercingnumber}{tattooadj}{$sphy1+$tadj}{$sphy1+piercings on }{$sphy1+$minPoss}{head}{$sphy1+$bp}" },
+  {
+    "w": 2,
+    "v": "{$sphy1+has }{piercingnumber}{tattooadj}{$sphy1+$tadj}{$sphy1+piercings on }{$sphy1+$minPoss}{head}{$sphy1+$bp}{$sphy1+ and }{piercingnumber}{tattooadj}{$sphy1+$tadj}{$sphy1+piercings on }{$sphy1+$minPoss}{head}{$sphy1+$bp}"
+  },
+  { "w": 2, "v": "{$sphy1+has }{degree}{$sphy1+$degree}{$sphy1+limp}{%dex-2}" },
+  { "w": 1, "v": "{$sphy1+has }{degree}{$sphy1+$degree}{$sphy1+hunch}{%dex-1}{%cha-2}" },
+  { "w": 5, "v": "{$sphy1+has }{atattooadj}{$sphy1+$tadj}{tattoo}{$sphy1+ on }{$sphy1+$minPoss}{bodyparttat}{$sphy1+$bp}" },
+  {
+    "w": 2,
+    "v": "{$sphy1+has }{atattooadj}{$sphy1+$tadj}{tattoo}{$sphy1+ on }{$sphy1+$minPoss}{bodyparttat}{$sphy1+$bp}{$sphy1+ and }{atattooadj}{$sphy1+$tadj}{tattoo}{$sphy1+ on }{$sphy1+$minPoss}{bodyparttat}{$sphy1+$bp}"
+  },
+  {
+    "w": 1,
+    "v": "{$sphy1+has }{atattooadj}{$sphy1+$tadj}{tattoo}{$sphy1+ on }{$sphy1+$minPoss}{bodyparttat}{$sphy1+$bp}{$sphy1+, }{atattooadj}{$sphy1+$tadj}{tattoo}{$sphy1+ on }{$sphy1+$minPoss}{bodyparttat}{$sphy1+$bp}{$sphy1+ and }{atattooadj}{$sphy1+$tadj}{tattoo}{$sphy1+ on }{$sphy1+$minPoss}{bodyparttat}{$sphy1+$bp}"
+  },
+  { "w": 2, "v": "{$sphy1+is branded as a }{brand}{$sphy1+ on }{$sphy1+$minPoss}{bodypart}{$sphy1+$bp}" },
+  { "w": 1, "v": "{$sphy1+has }{degree}{$sphy1+$degree}{$sphy1+scoliose}{%dex-1}" },
+  { "w": 3, "v": "{$sphy1+smells }{degree2}{$sphy1+$degree}{badsmell}{%cha-1}" },
+  { "w": 3, "v": "{$sphy1+smells }{degree2}{$sphy1+$degree}{goodsmell}{%cha+1}" },
+  { "w": 2, "v": "{$sphy1+is very nimble}{%dex+2}" },
+  { "w": 2, "v": "{$sphy1+is very clumsy}{%dex-3}" },
+  { "w": 3, "v": "{$sphy1+gestures profusely during a conversation}" },
+  { "w": 2, "v": "{$sphy1+has a high-pitched voice}" },
+  { "w": 2, "v": "{$sphy1+has a low-toned voice}" },
+  { "w": 3, "v": "{$sphy1+is easily out of breath}{%con-2}" },
+  { "w": 1, "v": "{$sphy1+has a sunken breastbone}" },
+  { "w": 2, "v": "{$sphy1+cannot whistle}" }
 ]

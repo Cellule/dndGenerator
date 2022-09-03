@@ -1,7 +1,7 @@
- [
-  { "w":3, "v":"{goliathmysticnoun}{goliathmysticaction}{%int+2}{%wis+2}"},
-  { "w":3, "v":"{goliathfightingnoun}{goliathfightingaction}{%str+2}{%con+2}"},
-  { "w":2, "v":"{goliathcraftnoun}{goliathcraftaction}{%dex+2}{%int+1}"},
-  { "w":3, "v":"{goliathanimalnoun}{goliathanimalaction}{%str+2}{%wis+2}"},
-  { "w":3, "v":"{goliathadj}{goliathnoun}"}
+[
+  { "w": 3, "v": "{goliathmysticnoun}{goliathmysticaction}{%int+2}{%wis+2}" },
+  { "w": 3, "v": "{goliathfightingnoun}{goliathfightingaction}{%str+2}{%con+2}" },
+  { "w": 2, "v": "{goliathcraftnoun}{goliathcraftaction}{%dex+2}{%int+1}" },
+  { "w": 3, "v": "{goliathanimalnoun}{goliathanimalaction}{%str+2}{%wis+2}" },
+  { "w": 3, "v": "{goliathadj}{goliathnoun}" }
 ]

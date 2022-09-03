@@ -1,16 +1,16 @@
 [
   {
-    "w":1,
-    "v":"{$do nothing=}"
+    "w": 1,
+    "v": "{$do nothing=}"
   },
   {
-    "w":0,
+    "w": 0,
     "name": "Good",
-    "v":"{%good+3}{%evil-5}{goodgod}"
+    "v": "{%good+3}{%evil-5}{goodgod}"
   },
   {
-    "w":0,
+    "w": 0,
     "name": "Evil",
-    "v":"{%good-5}{%evil+3}{evilgod}"
+    "v": "{%good-5}{%evil+3}{evilgod}"
   }
 ]

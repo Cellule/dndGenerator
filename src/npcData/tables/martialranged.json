@@ -1,6 +1,6 @@
 [
-  { "w":1, "v":"{$weapon=blowgun}"},
-  { "w":3, "v":"{$weapon=crossbow}"},
-  { "w":1, "v":"{$weapon=net}"},
-  { "w":3, "v":"{$weapon=longbow}"}
+  { "w": 1, "v": "{$weapon=blowgun}" },
+  { "w": 3, "v": "{$weapon=crossbow}" },
+  { "w": 1, "v": "{$weapon=net}" },
+  { "w": 3, "v": "{$weapon=longbow}" }
 ]

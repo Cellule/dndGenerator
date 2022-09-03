@@ -1,6 +1,6 @@
 [
-  { "w":5, "v":"{$mod=slightly }{%cha+1}"},
-  { "w":4, "v":"{$mod=very }{%cha+2}"},
-  { "w":2, "v":"{$mod=incredibly }{%cha+3}"},
-  { "w":1, "v":"{$mod=extremely }{%cha+5}"}
+  { "w": 5, "v": "{$mod=slightly }{%cha+1}" },
+  { "w": 4, "v": "{$mod=very }{%cha+2}" },
+  { "w": 2, "v": "{$mod=incredibly }{%cha+3}" },
+  { "w": 1, "v": "{$mod=extremely }{%cha+5}" }
 ]

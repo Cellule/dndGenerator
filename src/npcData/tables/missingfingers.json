@@ -1,7 +1,7 @@
 [
-  { "w":4, "v":"{$sphy2+is missing a single finger from }{%dex-1}"},
-  { "w":3, "v":"{$sphy2+is missing two fingers from }{%dex-1}"},
-  { "w":3, "v":"{$sphy2+is missing three fingers from }{%dex-2}"},
-  { "w":1, "v":"{$sphy2+is missing four fingers from }{%dex-2}"},
-  { "w":1, "v":"{$sphy2+is missing all the fingers from }{%dex-4}"}
+  { "w": 4, "v": "{$sphy2+is missing a single finger from }{%dex-1}" },
+  { "w": 3, "v": "{$sphy2+is missing two fingers from }{%dex-1}" },
+  { "w": 3, "v": "{$sphy2+is missing three fingers from }{%dex-2}" },
+  { "w": 1, "v": "{$sphy2+is missing four fingers from }{%dex-2}" },
+  { "w": 1, "v": "{$sphy2+is missing all the fingers from }{%dex-4}" }
 ]

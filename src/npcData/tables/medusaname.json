@@ -1,4 +1,4 @@
 [
-  { "w":1, "v":"{femaleelfname}{elfsurname}"},
-  { "w":1, "v":"{femalehumanname}{humansurname}"}
+  { "w": 1, "v": "{femaleelfname}{elfsurname}" },
+  { "w": 1, "v": "{femalehumanname}{humansurname}" }
 ]

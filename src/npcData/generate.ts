@@ -1,14 +1,4 @@
-import {
-  DebugNode,
-  Group,
-  Npc,
-  NpcGenerateOptions,
-  Operator,
-  SchemaDescriptor,
-  SchemaElement,
-  SchemaResult,
-  WeightedValue,
-} from "./index.js";
+import { DebugNode, Group, Npc, NpcGenerateOptions, Operator, SchemaDescriptor, SchemaElement, SchemaResult, WeightedValue } from "./index.js";
 import schema from "./schema.json";
 import { chooseRandomWithWeight, debugGen, getGroups } from "./utils";
 
@@ -16,16 +6,7 @@ function numberOrNull(v: any) {
   return typeof v === "number" ? v | 0 : null;
 }
 
-export function generate({
-  race,
-  subrace,
-  classorprof,
-  occupation1,
-  occupation2,
-  alignment,
-  plothook,
-  gender,
-}: NpcGenerateOptions = {}) {
+export function generate({ race, subrace, classorprof, occupation1, occupation2, alignment, plothook, gender }: NpcGenerateOptions = {}) {
   const options = {
     race: numberOrNull(race),
     subrace: numberOrNull(subrace),

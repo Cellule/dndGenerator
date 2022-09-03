@@ -1,9 +1,9 @@
 [
-  { "w":3, "v":"{$beard= with a medium}"},
-  { "w":3, "v":"{$beard= with a long}"},
-  { "w":2, "v":"{$beard= with a long, braided}"},
-  { "w":3, "v":"{$beard= with a very long}"},
-  { "w":2, "v":"{$beard= with a very long, braided}"},
-  { "w":3, "v":"{$beard= with a gigantic}"},
-  { "w":2, "v":"{$beard= with a gigantic, braided}"}
+  { "w": 3, "v": "{$beard= with a medium}" },
+  { "w": 3, "v": "{$beard= with a long}" },
+  { "w": 2, "v": "{$beard= with a long, braided}" },
+  { "w": 3, "v": "{$beard= with a very long}" },
+  { "w": 2, "v": "{$beard= with a very long, braided}" },
+  { "w": 3, "v": "{$beard= with a gigantic}" },
+  { "w": 2, "v": "{$beard= with a gigantic, braided}" }
 ]

@@ -1,15 +1,15 @@
 [
-  { "w":1, "v":"{$aword=bravery}"},
-  { "w":1, "v":"{$aword=fear}"},
-  { "w":1, "v":"{$aword=pain}"},
-  { "w":1, "v":"{$aword=freedom}"},
-  { "w":1, "v":"{$aword=happiness}"},
-  { "w":1, "v":"{$aword=joy}"},
-  { "w":1, "v":"{$aword=death}"},
-  { "w":1, "v":"{$aword=life}"},
-  { "w":1, "v":"{$aword=daylight}"},
-  { "w":1, "v":"{$aword=night}"},
-  { "w":1, "v":"{$aword=philosophy}"},
-  { "w":1, "v":"{$aword=music}"},
-  { "w":1, "v":"{$aword=love}"}
+  { "w": 1, "v": "{$aword=bravery}" },
+  { "w": 1, "v": "{$aword=fear}" },
+  { "w": 1, "v": "{$aword=pain}" },
+  { "w": 1, "v": "{$aword=freedom}" },
+  { "w": 1, "v": "{$aword=happiness}" },
+  { "w": 1, "v": "{$aword=joy}" },
+  { "w": 1, "v": "{$aword=death}" },
+  { "w": 1, "v": "{$aword=life}" },
+  { "w": 1, "v": "{$aword=daylight}" },
+  { "w": 1, "v": "{$aword=night}" },
+  { "w": 1, "v": "{$aword=philosophy}" },
+  { "w": 1, "v": "{$aword=music}" },
+  { "w": 1, "v": "{$aword=love}" }
 ]

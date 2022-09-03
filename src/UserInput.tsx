@@ -1,5 +1,5 @@
 import jsoncrush from "jsoncrush";
-import React, { Component } from "react";
+import { Component } from "react";
 import { Button, Col, Form, FormGroup, FormLabel, Row } from "react-bootstrap";
 import { Npc, NpcGenerateOptions } from "./npcData/index";
 import { getNamedTableOptions, getTableReferenceOptions, NamedOption } from "./npcData/tables";
@@ -66,8 +66,7 @@ const userOptions: {
   {
     label: "Subrace",
     optionName: "subrace",
-    condition: (npcOptions) =>
-      typeof npcOptions.race === "number" && subraces[races[npcOptions.race].table] !== undefined,
+    condition: (npcOptions) => typeof npcOptions.race === "number" && subraces[races[npcOptions.race].table] !== undefined,
     options: (npcOptions) => subraces[races[npcOptions.race || 0].table],
   },
   {
@@ -116,8 +115,7 @@ const userOptions: {
   {
     label: "Profession",
     optionName: "occupation2",
-    condition: (npcOptions) =>
-      npcOptions.classorprof === 1 && typeof npcOptions.occupation1 === "number",
+    condition: (npcOptions) => npcOptions.classorprof === 1 && typeof npcOptions.occupation1 === "number",
     options: (npcOptions) => professionCategories[professions[npcOptions.occupation1 || 0].table],
   },
 ];
@@ -144,10 +142,7 @@ export default class UserInput extends Component<IProps, IState> {
     if (!elementData) {
       throw new Error("Missing element downloadData");
     }
-    const file = new Blob(
-      [(elementData.textContent || "").split("#").join("\r\n").split("#").join("\r\n")],
-      { type: "text/plain" },
-    );
+    const file = new Blob([(elementData.textContent || "").split("#").join("\r\n").split("#").join("\r\n")], { type: "text/plain" });
     element.href = URL.createObjectURL(file);
     element.download = name + "_" + gender + "_" + race + "_" + occupation + ".txt";
     document.body.appendChild(element);
@@ -193,8 +188,7 @@ export default class UserInput extends Component<IProps, IState> {
                 value={selectedOption ?? undefined}
                 onChange={(e: any) => {
                   const npcOptions = this.state.npcOptions;
-                  npcOptions[userOption.optionName] =
-                    e.target.value === "random" ? null : parseInt(e.target.value);
+                  npcOptions[userOption.optionName] = e.target.value === "random" ? null : parseInt(e.target.value);
                   this.setState({ npcOptions }, () => {
                     if (userOption.onChange) {
                       userOption.onChange(this);
@@ -221,18 +215,8 @@ export default class UserInput extends Component<IProps, IState> {
       <div>
         <div className="npc-options">{npcOptions}</div>
         <div className="bottom-options">
-          <Button
-            type="submit"
-            className="generate-button"
-            variant="success"
-            onClick={this.onSubmit}
-          />
-          <Button
-            type="submit"
-            className="download-button"
-            variant="success"
-            onClick={this._downloadTxtFile}
-          />
+          <Button type="submit" className="generate-button" variant="success" onClick={this.onSubmit} />
+          <Button type="submit" className="download-button" variant="success" onClick={this._downloadTxtFile} />
           <a className="npc-link" href={npcDataUrl.toString()}>
             🔗 Bookmark
           </a>

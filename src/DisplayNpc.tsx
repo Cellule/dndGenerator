@@ -1,5 +1,5 @@
 import jsoncrush from "jsoncrush";
-import React, { Component } from "react";
+import { Component } from "react";
 import { Col, Row } from "react-bootstrap";
 import Footer from "./Footer";
 import NpcData from "./NpcData";
