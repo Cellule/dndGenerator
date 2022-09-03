@@ -349,7 +349,7 @@ $enable-important-utilities: true !default;
 
 // Prefix for :root CSS variables
 
-$variable-prefix: bs- !default;
+$prefix: bs- !default;
 
 // Gradient
 //
@@ -406,6 +406,7 @@ $body-text-align: null !default;
 // Come v6, we'll de-dupe these variables. Until then, for backward compatibility, we keep them to reassign.
 // scss-docs-start utilities-colors
 $utilities-colors: $theme-colors-rgb !default;
+$utilities-border-colors: $utilities-colors;
 // scss-docs-end utilities-colors
 
 // scss-docs-start utilities-text-colors
@@ -571,8 +572,8 @@ $font-family-serif: Georgia, "Times New Roman", Times, serif;
 $font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
 
 // stylelint-enable value-keyword-case
-$font-family-base: var(--#{$variable-prefix}font-sans-serif) !default;
-$font-family-code: var(--#{$variable-prefix}font-monospace) !default;
+$font-family-base: var(--#{$prefix}font-sans-serif) !default;
+$font-family-code: var(--#{$prefix}font-monospace) !default;
 
 // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
 // $font-size-base affects the font size of the body text
