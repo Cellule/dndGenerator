@@ -1,6 +1,6 @@
 [
-  { "w":1, "v":"{$sphy2+hand}"},
-  { "w":1, "v":"{$sphy2+arm}"},
-  { "w":1, "v":"{$sphy2+foot}"},
-  { "w":1, "v":"{$sphy2+leg}"}
+  { "w": 1, "v": "{$sphy2+hand}" },
+  { "w": 1, "v": "{$sphy2+arm}" },
+  { "w": 1, "v": "{$sphy2+foot}" },
+  { "w": 1, "v": "{$sphy2+leg}" }
 ]

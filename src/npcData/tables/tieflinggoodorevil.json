@@ -1,8 +1,8 @@
 [
-  { "w":3, "v":"{%good+3}{%moralneutral-2}{%evil-3}{tieflinggoodname}"},
-  { "w":2, "v":"{%good+3}{%moralneutral-2}{%evil-3}{tieflingneutralname}"},
-  { "w":5, "v":"{%good+3}{%moralneutral-2}{%evil-3}{tieflingname}"},
-  { "w":3, "v":"{%good-3}{%moralneutral-2}{%evil+3}{getevilgod}{tieflingevilname}"},
-  { "w":2, "v":"{%good-3}{%moralneutral-2}{%evil+3}{getevilgod}{tieflingneutralname}"},
-  { "w":5, "v":"{%good-3}{%moralneutral-2}{%evil+3}{getevilgod}{tieflingname}"}
+  { "w": 3, "v": "{%good+3}{%moralneutral-2}{%evil-3}{tieflinggoodname}" },
+  { "w": 2, "v": "{%good+3}{%moralneutral-2}{%evil-3}{tieflingneutralname}" },
+  { "w": 5, "v": "{%good+3}{%moralneutral-2}{%evil-3}{tieflingname}" },
+  { "w": 3, "v": "{%good-3}{%moralneutral-2}{%evil+3}{getevilgod}{tieflingevilname}" },
+  { "w": 2, "v": "{%good-3}{%moralneutral-2}{%evil+3}{getevilgod}{tieflingneutralname}" },
+  { "w": 5, "v": "{%good-3}{%moralneutral-2}{%evil+3}{getevilgod}{tieflingname}" }
 ]

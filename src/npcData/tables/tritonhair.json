@@ -1,4 +1,4 @@
 [
-  { "w":35, "v":"{hairLength}{$hair+, }{hairType}{$hair+, }{tritonhaircolor}{$hair+hair and }"},
-  { "w":8, "v":"{$hair=a bald head and }"}
+  { "w": 35, "v": "{hairLength}{$hair+, }{hairType}{$hair+, }{tritonhaircolor}{$hair+hair and }" },
+  { "w": 8, "v": "{$hair=a bald head and }" }
 ]

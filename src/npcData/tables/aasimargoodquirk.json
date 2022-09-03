@@ -1,12 +1,12 @@
 [
-  { "w":1, "v":"{$quirks+$majPro}{$quirks+seeks to spread compassion and hope. }{%good+2}"},
-  { "w":1, "v":"{$quirks+$majPro}{$quirks+seeks to spread knowledge and wisdom. }{%int+2}{%wis+2}"},
-  { "w":1, "v":"{$quirks+$majPro}{$quirks+seeks to spread humor and joy. }{%cha+2}"},
-  { "w":1, "v":"{$quirks+$majPro}{$quirks+seeks to teach people how to fight against evil. }{%int+2}"},
-  { "w":1, "v":"{$quirks+$majPro}{$quirks+seeks to forgive and reform evil creatures. }{%good+2}"},
-  { "w":1, "v":"{$quirks+$majPro}{$quirks+seeks to eradicate evil in all its forms. }{%chaotic+2}"},
-  { "w":1, "v":"{$quirks+$majPro}{$quirks+seeks to destroy fallen aasimars. }{%chaotic+2}"},
-  { "w":1, "v":"{$quirks+$majPro}{$quirks+seeks to punish wrongdoers. }{%lawful+2}"},
-  { "w":1, "v":"{$quirks+$majPro}{$quirks+seeks to nurture }{$quirks+$minPoss}{$quirks+community and help it grow.}"},
-  { "w":1, "v":"{$quirks+$majPro}{$quirks+seeks to undo all of evil's misdeeds. }"}
+  { "w": 1, "v": "{$quirks+$majPro}{$quirks+seeks to spread compassion and hope. }{%good+2}" },
+  { "w": 1, "v": "{$quirks+$majPro}{$quirks+seeks to spread knowledge and wisdom. }{%int+2}{%wis+2}" },
+  { "w": 1, "v": "{$quirks+$majPro}{$quirks+seeks to spread humor and joy. }{%cha+2}" },
+  { "w": 1, "v": "{$quirks+$majPro}{$quirks+seeks to teach people how to fight against evil. }{%int+2}" },
+  { "w": 1, "v": "{$quirks+$majPro}{$quirks+seeks to forgive and reform evil creatures. }{%good+2}" },
+  { "w": 1, "v": "{$quirks+$majPro}{$quirks+seeks to eradicate evil in all its forms. }{%chaotic+2}" },
+  { "w": 1, "v": "{$quirks+$majPro}{$quirks+seeks to destroy fallen aasimars. }{%chaotic+2}" },
+  { "w": 1, "v": "{$quirks+$majPro}{$quirks+seeks to punish wrongdoers. }{%lawful+2}" },
+  { "w": 1, "v": "{$quirks+$majPro}{$quirks+seeks to nurture }{$quirks+$minPoss}{$quirks+community and help it grow.}" },
+  { "w": 1, "v": "{$quirks+$majPro}{$quirks+seeks to undo all of evil's misdeeds. }" }
 ]

@@ -1,13 +1,13 @@
 [
-  { "w":18, "v":"{$quirks+}"},
-  { "w":3, "v":"{$quirks+$majPro}{$quirks+will always try to perch }{$quirks+$minHim}{$quirks+self on furniture. }"},
-  { "w":3, "v":"{$quirks+$majPro}{$quirks+spends most of }{$quirks+$minPoss}{$quirks+free time on the top of buildings. }"},
-  { "w":3, "v":"{$quirks+$majPro}{$quirks+finds repetitive tasks soothing. }"},
-  { "w":2, "v":"{$quirks+$majPro}{$quirks+enjoys drawing copies of other drawings. }"},
-  { "w":2, "v":"{$quirks+$majPro}{$quirks+excels at sculpting wooden replicas of objects. }"},
-  { "w":2, "v":"{$quirks+$majPro}{$quirks+highly values }{$quirks+$minPoss}{$quirks+flock's teachings. }"},
-  { "w":3, "v":"{$quirks+$majPro}{$quirks+enjoys mimicking the voice of }{$quirks+$minPoss}{$quirks+non-kenku friends. }"},
-  { "w":2, "v":"{$quirks+$majPro}{$quirks+uses a different voice for every word }{$quirks+$minPro}{$quirks+speaks. }"},
-  { "w":2, "v":"{$quirks+$majPro}{$quirks+is often found staring at the sky. }"},
-  { "w":3, "v":"{$quirks+$majPoss}{$quirks+sentences are always ponctuated with seemingly random sounds. }"}
+  { "w": 18, "v": "{$quirks+}" },
+  { "w": 3, "v": "{$quirks+$majPro}{$quirks+will always try to perch }{$quirks+$minHim}{$quirks+self on furniture. }" },
+  { "w": 3, "v": "{$quirks+$majPro}{$quirks+spends most of }{$quirks+$minPoss}{$quirks+free time on the top of buildings. }" },
+  { "w": 3, "v": "{$quirks+$majPro}{$quirks+finds repetitive tasks soothing. }" },
+  { "w": 2, "v": "{$quirks+$majPro}{$quirks+enjoys drawing copies of other drawings. }" },
+  { "w": 2, "v": "{$quirks+$majPro}{$quirks+excels at sculpting wooden replicas of objects. }" },
+  { "w": 2, "v": "{$quirks+$majPro}{$quirks+highly values }{$quirks+$minPoss}{$quirks+flock's teachings. }" },
+  { "w": 3, "v": "{$quirks+$majPro}{$quirks+enjoys mimicking the voice of }{$quirks+$minPoss}{$quirks+non-kenku friends. }" },
+  { "w": 2, "v": "{$quirks+$majPro}{$quirks+uses a different voice for every word }{$quirks+$minPro}{$quirks+speaks. }" },
+  { "w": 2, "v": "{$quirks+$majPro}{$quirks+is often found staring at the sky. }" },
+  { "w": 3, "v": "{$quirks+$majPoss}{$quirks+sentences are always ponctuated with seemingly random sounds. }" }
 ]

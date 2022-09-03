@@ -1,8 +1,8 @@
 [
-  { "w":3, "v":"{$quirks+castle}"},
-  { "w":4, "v":"{$quirks+farm}"},
-  { "w":2, "v":"{$quirks+manor}"},
-  { "w":2, "v":"{$quirks+small forest}"},
-  { "w":2, "v":"{$quirks+creepy house}"},
-  { "w":1, "v":"{$quirks+palace}"}
+  { "w": 3, "v": "{$quirks+castle}" },
+  { "w": 4, "v": "{$quirks+farm}" },
+  { "w": 2, "v": "{$quirks+manor}" },
+  { "w": 2, "v": "{$quirks+small forest}" },
+  { "w": 2, "v": "{$quirks+creepy house}" },
+  { "w": 1, "v": "{$quirks+palace}" }
 ]

@@ -1,9 +1,9 @@
 [
-  { "w":1, "v":"{$weapon=club}"},
-  { "w":1, "v":"{$weapon=greatclub}"},
-  { "w":1, "v":"{$weapon=javelin}"},
-  { "w":1, "v":"{$weapon=light hammer}"},
-  { "w":1, "v":"{$weapon=mace}"},
-  { "w":1, "v":"{$weapon=quarterstaff}"},
-  { "w":1, "v":"{$weapon=spear}"}
+  { "w": 1, "v": "{$weapon=club}" },
+  { "w": 1, "v": "{$weapon=greatclub}" },
+  { "w": 1, "v": "{$weapon=javelin}" },
+  { "w": 1, "v": "{$weapon=light hammer}" },
+  { "w": 1, "v": "{$weapon=mace}" },
+  { "w": 1, "v": "{$weapon=quarterstaff}" },
+  { "w": 1, "v": "{$weapon=spear}" }
 ]

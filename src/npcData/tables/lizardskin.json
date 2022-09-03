@@ -1,3 +1,1 @@
-[
-  { "w":1, "v":"{lizardcolors}{scaletexture}{$skin=$scaletexture}{$skin+ }{$skin+$lizardcolor}{$skintype= scales}"}
-]
+[{ "w": 1, "v": "{lizardcolors}{scaletexture}{$skin=$scaletexture}{$skin+ }{$skin+$lizardcolor}{$skintype= scales}" }]

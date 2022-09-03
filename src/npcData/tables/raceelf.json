@@ -1,17 +1,17 @@
 [
   {
-    "w":2,
+    "w": 2,
     "name": "Drow",
-    "v":"{$race=drow}{%str-1}{%dex+2}{%con-2}{%wis+2}{%int+2}{%cha+4}{%chaotic+3}{%evil+3}{drowgod}{$skin+black}{whitehair}{drowquirks}"
+    "v": "{$race=drow}{%str-1}{%dex+2}{%con-2}{%wis+2}{%int+2}{%cha+4}{%chaotic+3}{%evil+3}{drowgod}{$skin+black}{whitehair}{drowquirks}"
   },
   {
-    "w":6,
+    "w": 6,
     "name": "High Elf",
-    "v":"{$race=high elf}{%str-1}{%dex+2}{%con-2}{%wis+2}{%int+2}{%cha+2}{%chaotic+3}{%good+2}{elfgod}{elfskin}{elfquirks}"
+    "v": "{$race=high elf}{%str-1}{%dex+2}{%con-2}{%wis+2}{%int+2}{%cha+2}{%chaotic+3}{%good+2}{elfgod}{elfskin}{elfquirks}"
   },
   {
-    "w":8,
+    "w": 8,
     "name": "Wood Elf",
-    "v":"{$race=wood elf}{%str-1}{%dex+4}{%con-2}{%wis+4}{%int+4}{%cha+2}{%chaotic+3}{%good+2}{elfgod}{elfskin}{elfquirks}"
+    "v": "{$race=wood elf}{%str-1}{%dex+4}{%con-2}{%wis+4}{%int+4}{%cha+2}{%chaotic+3}{%good+2}{elfgod}{elfskin}{elfquirks}"
   }
 ]

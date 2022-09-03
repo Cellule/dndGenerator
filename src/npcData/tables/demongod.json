@@ -1,11 +1,17 @@
 [
-  { "w":1, "v":"{$god=the demon prince Baphomet}{%chaotic+3}{%evil+3}{$goddescr=, Demon lord of minotaurs, beasts, vengeance. (Chaotic Evil)}"},
-  { "w":1, "v":"{$god=the demon prince Demogorgon, the Iron Duke}{%chaotic+3}{%evil+3}{$goddescr=, Prince of Demons. (Chaotic Evil)}"},
-  { "w":1, "v":"{$god=the demon prince Eltab}{%chaotic+3}{%evil+3}{$goddescr=, Demon lord of hatred, retribution. (Chaotic Evil)}"},
-  { "w":1, "v":"{$god=the demon prince Graz'zt}{%chaotic+3}{%evil+3}{$goddescr=, Demon lord of darkness, seduction, guilde, debauchery. (Chaotic Evil)}"},
-  { "w":1, "v":"{$god=the demon prince Kostchtchie}{%chaotic+3}{%evil+3}{$goddescr=, Demon lord of frost giants, wrath, rage. (Chaotic Evil)}"},
-  { "w":1, "v":"{$god=the demon prince Orcus}{%chaotic+3}{%evil+3}{$goddescr=, Demon lord of undeath. (Chaotic Evil)}"},
-  { "w":1, "v":"{$god=the demon prince Pazrael, the Archduchess }{%chaotic+3}{%evil+3}{$goddescr=, Demon lord of evil flying creatures, corruption. (Chaotic Evil)}"},
-  { "w":1, "v":"{$god=the demon prince Sess'Innek, the Slug Archduke}{%chaotic+3}{%evil+3}{$goddescr=, Demon lord of khaastas, lizard kings, civilization, domination. (Chaotic Evil)}"},
-  { "w":1, "v":"{$god=the demon prince Yeenoghu}{%chaotic+3}{%evil+3}{$goddescr=, Demon lord of gnolls. (Chaotic Evil)}"}
+  { "w": 1, "v": "{$god=the demon prince Baphomet}{%chaotic+3}{%evil+3}{$goddescr=, Demon lord of minotaurs, beasts, vengeance. (Chaotic Evil)}" },
+  { "w": 1, "v": "{$god=the demon prince Demogorgon, the Iron Duke}{%chaotic+3}{%evil+3}{$goddescr=, Prince of Demons. (Chaotic Evil)}" },
+  { "w": 1, "v": "{$god=the demon prince Eltab}{%chaotic+3}{%evil+3}{$goddescr=, Demon lord of hatred, retribution. (Chaotic Evil)}" },
+  { "w": 1, "v": "{$god=the demon prince Graz'zt}{%chaotic+3}{%evil+3}{$goddescr=, Demon lord of darkness, seduction, guilde, debauchery. (Chaotic Evil)}" },
+  { "w": 1, "v": "{$god=the demon prince Kostchtchie}{%chaotic+3}{%evil+3}{$goddescr=, Demon lord of frost giants, wrath, rage. (Chaotic Evil)}" },
+  { "w": 1, "v": "{$god=the demon prince Orcus}{%chaotic+3}{%evil+3}{$goddescr=, Demon lord of undeath. (Chaotic Evil)}" },
+  {
+    "w": 1,
+    "v": "{$god=the demon prince Pazrael, the Archduchess }{%chaotic+3}{%evil+3}{$goddescr=, Demon lord of evil flying creatures, corruption. (Chaotic Evil)}"
+  },
+  {
+    "w": 1,
+    "v": "{$god=the demon prince Sess'Innek, the Slug Archduke}{%chaotic+3}{%evil+3}{$goddescr=, Demon lord of khaastas, lizard kings, civilization, domination. (Chaotic Evil)}"
+  },
+  { "w": 1, "v": "{$god=the demon prince Yeenoghu}{%chaotic+3}{%evil+3}{$goddescr=, Demon lord of gnolls. (Chaotic Evil)}" }
 ]

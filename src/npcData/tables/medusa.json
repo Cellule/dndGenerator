@@ -1,3 +1,1 @@
-[
-  { "w":1, "v":"{$gender=female}{$majPoss=Her }{$minPoss=her }{$majPro=She }{$minPro=she }{$workGender=woman}{$minHim=her}{$beard=}{medusahair}"}
-]
+[{ "w": 1, "v": "{$gender=female}{$majPoss=Her }{$minPoss=her }{$majPro=She }{$minPro=she }{$workGender=woman}{$minHim=her}{$beard=}{medusahair}" }]

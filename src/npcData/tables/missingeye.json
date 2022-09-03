@@ -1,5 +1,5 @@
 [
-  { "w":1, "v":"{$sphy2+wears an eyepatch on }{$sphy1+$minPoss}"},
-  { "w":1, "v":"{$sphy2+has a glass }"},
-  { "w":1, "v":"{$sphy2+is blind from }{$sphy1+$minPoss}"}
+  { "w": 1, "v": "{$sphy2+wears an eyepatch on }{$sphy1+$minPoss}" },
+  { "w": 1, "v": "{$sphy2+has a glass }" },
+  { "w": 1, "v": "{$sphy2+is blind from }{$sphy1+$minPoss}" }
 ]

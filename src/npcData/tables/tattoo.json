@@ -1,7 +1,7 @@
 [
-  { "w":3, "v":"{texttat}"},
-  { "w":4, "v":"{animaltat}"},
-  { "w":1, "v":"{$sphy1+tattoo of a }{weapon}{$sphy1+$weapon}"},
-  { "w":2, "v":"{$sphy1+abstract tattoo}"},
-  { "w":3, "v":"{$sphy1+tribal tattoo}"}
+  { "w": 3, "v": "{texttat}" },
+  { "w": 4, "v": "{animaltat}" },
+  { "w": 1, "v": "{$sphy1+tattoo of a }{weapon}{$sphy1+$weapon}" },
+  { "w": 2, "v": "{$sphy1+abstract tattoo}" },
+  { "w": 3, "v": "{$sphy1+tribal tattoo}" }
 ]

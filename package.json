@@ -8,7 +8,7 @@
     "build": "react-scripts build",
     "test": "mocha -r ./mocha-setup src/**/*.spec.ts",
     "eject": "react-scripts eject",
-    "prettyp": "prettier --write \"./src/**/*.{ts,tsx}\""
+    "prettyp": "prettier --write \"./src/**/*.{ts,tsx,scss,json}\""
   },
   "eslintConfig": {
     "extends": "react-app"

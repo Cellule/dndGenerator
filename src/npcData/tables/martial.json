@@ -1,20 +1,8 @@
 [
-  { "w":3,
-    "name":"Bodyguard",
-    "v":"{$occupation=bodyguard}{%wis+2}{militaryquirk}{kenkunamefighting}"},
-  { "w":1,
-    "name":"Bounty Hunter",
-    "v":"{$occupation=bounty hunter}{%int+3}{militaryquirk}{kenkunamefighting}"},
-  { "w":1,
-    "name":"Forester",
-    "v":"{$occupation=forester}{%wis+2}{%dex+1}{naturequirk}{kenkunameanimal}"},
-  { "w":1,
-    "name":"Gladiator",
-    "v":"{$occupation=gladiator}{%str+2}{%dex+1}{%con+1}{militaryquirk}{kenkunamefighting}"},
-  { "w":1,
-    "name":"Jailer",
-    "v":"{$occupation=jailer}{kenkuname}"},
-  { "w":3,
-    "name":"Soldier",
-    "v":"{$occupation=soldier}{%dex+1}{%str+1}{%con+1}{militaryquirk}{kenkunamefighting}"}
+  { "w": 3, "name": "Bodyguard", "v": "{$occupation=bodyguard}{%wis+2}{militaryquirk}{kenkunamefighting}" },
+  { "w": 1, "name": "Bounty Hunter", "v": "{$occupation=bounty hunter}{%int+3}{militaryquirk}{kenkunamefighting}" },
+  { "w": 1, "name": "Forester", "v": "{$occupation=forester}{%wis+2}{%dex+1}{naturequirk}{kenkunameanimal}" },
+  { "w": 1, "name": "Gladiator", "v": "{$occupation=gladiator}{%str+2}{%dex+1}{%con+1}{militaryquirk}{kenkunamefighting}" },
+  { "w": 1, "name": "Jailer", "v": "{$occupation=jailer}{kenkuname}" },
+  { "w": 3, "name": "Soldier", "v": "{$occupation=soldier}{%dex+1}{%str+1}{%con+1}{militaryquirk}{kenkunamefighting}" }
 ]

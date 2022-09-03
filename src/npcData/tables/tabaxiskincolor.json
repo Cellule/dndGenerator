@@ -1,11 +1,11 @@
- [
-  { "w":2, "v":"{$skin+ golden}"},
-  { "w":3, "v":"{$skin+ black}"},
-  { "w":3, "v":"{$skin+ gray}"},
-  { "w":4, "v":"{$skin+ dark gray}"},
-  { "w":2, "v":"{$skin+ orange}"},
-  { "w":1, "v":"{$skin+ red}"},
-  { "w":2, "v":"{$skin+ chestnut}"},
-  { "w":2, "v":"{$skin+ yellow}"},
-  { "w":3, "v":"{$skin+ white}"}
+[
+  { "w": 2, "v": "{$skin+ golden}" },
+  { "w": 3, "v": "{$skin+ black}" },
+  { "w": 3, "v": "{$skin+ gray}" },
+  { "w": 4, "v": "{$skin+ dark gray}" },
+  { "w": 2, "v": "{$skin+ orange}" },
+  { "w": 1, "v": "{$skin+ red}" },
+  { "w": 2, "v": "{$skin+ chestnut}" },
+  { "w": 2, "v": "{$skin+ yellow}" },
+  { "w": 3, "v": "{$skin+ white}" }
 ]
