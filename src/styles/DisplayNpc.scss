@@ -39,3 +39,48 @@
     margin-top: 1rem;
   }
 }
+
+.printing {
+  display: none;
+}
+
+.printing .card {
+  margin-bottom: 20px;
+}
+
+@media print {
+  @page {
+    size: 8.5in 11in;
+    margin: 14mm;
+  }
+  .printing {
+    display: block;
+    .row {
+      page-break-inside: avoid;
+    }
+    .card {
+      height: calc(100% - 20px);
+    }
+    .col-print-6 {
+      width: 50%;
+    }
+    .col-print-4 {
+      width: 33%;
+    }
+    .first-row-height {
+      min-height: unset !important;
+    }
+    .second-row-height {
+      min-height: unset !important;
+    }
+    .ability-table {
+      margin-left: 0px !important;
+    }
+    .ability-number {
+      padding-right: 0px !important;
+    }
+  }
+  .display-npc-root {
+    display: none;
+  }
+}

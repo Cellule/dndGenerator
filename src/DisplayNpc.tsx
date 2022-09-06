@@ -48,22 +48,28 @@ export default class DisplayNpc extends Component<{}, IState> {
 
   render() {
     return (
-      <div className="display-npc-root">
-        <Row>
-          <Col sm={12} md={4} lg={3} className="user-info-col">
-            <div className="user-info">
-              <div className="title-image-wrapper">
-                <div className="title-image" />
+      <>
+        <div className="display-npc-root">
+          <Row>
+            <Col sm={12} md={4} lg={3} className="user-info-col">
+              <div className="user-info">
+                <div className="title-image-wrapper">
+                  <div className="title-image" />
+                </div>
+                <UserInput npc={this.state.npc} generate={this.generateNpc} />
               </div>
-              <UserInput npc={this.state.npc} generate={this.generateNpc} />
-            </div>
-          </Col>
-          <Col sm={12} md={7} lg={9}>
-            <NpcData npc={this.state.npc} />
-            <Footer />
-          </Col>
-        </Row>
-      </div>
+            </Col>
+            <Col sm={12} md={7} lg={9}>
+              <NpcData npc={this.state.npc} />
+              <Footer />
+            </Col>
+          </Row>
+        </div>
+        <div className="printing">
+          <h1 className="print-title">{this.state.npc.description.name}</h1>
+          <NpcData npc={this.state.npc} />
+        </div>
+      </>
     );
   }
 }

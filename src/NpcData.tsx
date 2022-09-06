@@ -70,7 +70,7 @@ export default class NpcData extends Component<IProps> {
     return (
       <div className="npc-data" id="downloadData">
         <Row>
-          <Col sm={12} lg={6}>
+          <Col sm={12} lg={6} className="col-print-6">
             <Card className="first-row-height">
               <Card.Header>Description</Card.Header>
               <Card.Body>
@@ -105,7 +105,7 @@ export default class NpcData extends Component<IProps> {
               </Card.Body>
             </Card>
           </Col>
-          <Col sm={12} lg={6}>
+          <Col sm={12} lg={6} className="col-print-6">
             <Card className="first-row-height">
               <Card.Header>Personality Traits</Card.Header>
               <Card.Body>
@@ -125,7 +125,7 @@ export default class NpcData extends Component<IProps> {
           </Col>
         </Row>
         <Row>
-          <Col md={12} lg={6} xl={4}>
+          <Col md={12} lg={6} xl={4} className="col-print-4">
             <Card className="second-row-height">
               <Card.Header>Ability Scores</Card.Header>
               <Card.Body>
@@ -153,7 +153,7 @@ export default class NpcData extends Component<IProps> {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={12} lg={6} xl={4}>
+          <Col md={12} lg={6} xl={4} className="col-print-4">
             <Card className="second-row-height">
               <Card.Header>Relationships</Card.Header>
               <Card.Body>
@@ -174,7 +174,7 @@ export default class NpcData extends Component<IProps> {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={12} lg={12} xl={4}>
+          <Col md={12} lg={12} xl={4} className="col-print-4">
             <Card className="second-row-height">
               <Card.Header>Alignment Tendencies</Card.Header>
               <Card.Body>
