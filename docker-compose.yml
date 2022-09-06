@@ -1,0 +1,9 @@
+
+version: '3'
+services:
+  dndgenerator:
+    build: .
+    restart: unless-stopped
+    container_name: dndgenerator
+    ports:
+     - 3000:3000
