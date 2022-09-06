@@ -19,3 +19,10 @@ Start local server
 $ npm start
 ```
 
+## Run in Docker
+You can startup a local server using [Docker](https://www.docker.com/) & [Docker compose](https://docs.docker.com/compose/) with the included Dockerfile and docker-compose.yml
+The docker instance will listen on port 3000
+
+```
+$ docker compose up --build --detach
+```
