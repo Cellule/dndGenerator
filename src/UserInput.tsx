@@ -132,7 +132,7 @@ export default class UserInput extends Component<IProps, IState> {
     this.props.generate(this.state.npcOptions);
   };
 
-  _downloadTxtFile = (e: any) => {
+  _downloadTxtFile () {
     const element = document.createElement("a");
     const name = this.props.npc.description.name.split(" ")[0];
     const gender = this.props.npc.description.gender;
@@ -149,6 +149,43 @@ export default class UserInput extends Component<IProps, IState> {
     element.click();
     document.body.removeChild(element);
     return false;
+  };
+
+  _copyNpcToClipboard () {
+
+    if (!navigator.clipboard) {
+      throw new Error("Browser doesn't support clipboard");
+    }
+
+    const name = this.props.npc.description.name.split(" ")[0];
+    const gender = this.props.npc.description.gender;
+    const race = this.props.npc.description.race.split(" ").join("_");
+    const occupation = this.props.npc.description.occupation.split(" ").join("_");
+
+    const allText = name + "_" + gender + "_" + race + "_" + occupation + "\r\n";
+
+    const elementData = document.getElementById("downloadData");	
+
+    if (!elementData) {
+      throw new Error("Missing element downloadData");
+    }
+
+    const body = (elementData.textContent || "").split("#").join("\r\n").split("#").join("\r\n");
+
+    navigator.clipboard.writeText(allText + "\r\n" + body);
+
+    return false;
+  };
+  
+  _export = (e: any) => {
+
+      var copyCheckBox = document.getElementById('copy-checkbox') as HTMLInputElement | null;
+
+      if (copyCheckBox?.checked) {
+        return this._copyNpcToClipboard() } 
+    else {
+        return this._downloadTxtFile() }
+
   };
 
   render() {
@@ -216,7 +253,10 @@ export default class UserInput extends Component<IProps, IState> {
         <div className="npc-options">{npcOptions}</div>
         <div className="bottom-options">
           <Button type="submit" className="generate-button" variant="success" onClick={this.onSubmit} />
-          <Button type="submit" className="download-button" variant="success" onClick={this._downloadTxtFile} />
+          <Button type="submit" className="download-button" variant="success" onClick={this._export} />
+
+          <label><input type="checkbox" id="copy-checkbox" name="copy-checkbox"/> Copy to clipboard</label>
+
           <a className="npc-link" href={npcDataUrl.toString()}>
             🔗 Bookmark
           </a>
