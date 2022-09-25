@@ -1,3 +1,4 @@
+import copy from "copy-to-clipboard";
 import jsoncrush from "jsoncrush";
 import { Component } from "react";
 import { Button, Col, Form, FormGroup, FormLabel, Row } from "react-bootstrap";
@@ -44,6 +45,7 @@ interface IProps {
 
 interface IState {
   npcOptions: NpcGenerateOptions;
+  wasCopiedToClipboard?: boolean;
 }
 
 const userOptions: {
@@ -132,24 +134,79 @@ export default class UserInput extends Component<IProps, IState> {
     this.props.generate(this.state.npcOptions);
   };
 
-  _downloadTxtFile = (e: any) => {
-    const element = document.createElement("a");
+  private getCharacterText() {
+    const elementData = document.getElementById("downloadData");
+
+    if (!elementData) {
+      alert("Unable to find character data");
+      throw new Error("Missing element downloadData");
+    }
+
+    const body = (elementData.textContent || "").split("#").join("\r\n").split("#").join("\r\n");
+    return body;
+  }
+
+  private getExportFileName() {
     const name = this.props.npc.description.name.split(" ")[0];
     const gender = this.props.npc.description.gender;
     const race = this.props.npc.description.race.split(" ").join("_");
     const occupation = this.props.npc.description.occupation.split(" ").join("_");
-    const elementData = document.getElementById("downloadData");
-    if (!elementData) {
-      throw new Error("Missing element downloadData");
-    }
-    const file = new Blob([(elementData.textContent || "").split("#").join("\r\n").split("#").join("\r\n")], { type: "text/plain" });
+
+    const filename = name + "_" + gender + "_" + race + "_" + occupation;
+
+    return filename;
+  }
+
+  private downloadTxtFile: React.MouseEventHandler<HTMLButtonElement> = (ev) => {
+    ev.stopPropagation();
+
+    const element = document.createElement("a");
+    const characterDetails = this.getCharacterText();
+    const file = new Blob([characterDetails], { type: "text/plain" });
     element.href = URL.createObjectURL(file);
-    element.download = name + "_" + gender + "_" + race + "_" + occupation + ".txt";
+    element.download = this.getExportFileName() + ".txt";
     document.body.appendChild(element);
     element.click();
     document.body.removeChild(element);
+
+    // Do not leave the button in focus after clicking it
+    ev.currentTarget.blur();
     return false;
   };
+
+  private copyNpcToClipboard: React.MouseEventHandler<HTMLButtonElement> = (ev) => {
+    ev.stopPropagation();
+    const header = this.getExportFileName();
+    const characterDetails = this.getCharacterText();
+    const success = copy(`${header}\n${characterDetails}`, {
+      // Fallback message if browser doesn't support clipboard API
+      message: "Copy NPC",
+      debug: process.env.NODE_ENV === "development",
+    });
+
+    if (success) {
+      this.setState({ wasCopiedToClipboard: true });
+    }
+
+    return false;
+  };
+
+  renderCopyToClipboardButton() {
+    const { wasCopiedToClipboard } = this.state;
+
+    if (wasCopiedToClipboard) {
+      return (
+        <Button variant="outline-primary" title="Copied to clipboard" onBlur={() => void this.setState({ wasCopiedToClipboard: false })}>
+          Copied!
+        </Button>
+      );
+    }
+    return (
+      <Button variant="outline-secondary" title="Copy character to clipboard" onClick={this.copyNpcToClipboard}>
+        Copy to Clipboard
+      </Button>
+    );
+  }
 
   render() {
     const npcOptions = userOptions.map((userOption) => {
@@ -215,8 +272,11 @@ export default class UserInput extends Component<IProps, IState> {
       <div>
         <div className="npc-options">{npcOptions}</div>
         <div className="bottom-options">
-          <Button type="submit" className="generate-button" variant="success" onClick={this.onSubmit} />
-          <Button type="submit" className="download-button" variant="success" onClick={this._downloadTxtFile} />
+          <Button className="generate-button" variant="success" title="Generate" onClick={this.onSubmit} />
+          <Button variant="outline-secondary" title="Export character to .txt file" onClick={this.downloadTxtFile}>
+            Export
+          </Button>
+          {this.renderCopyToClipboardButton()}
           <a className="npc-link" href={npcDataUrl.toString()}>
             🔗 Bookmark
           </a>
