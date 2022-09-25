@@ -63,6 +63,7 @@ export default class DisplayNpc extends Component<{}, IState> {
               <NpcData npc={this.state.npc} />
               <Footer />
             </Col>
+            <Icons8Disclaimer name="Npc" iconId="aFoL19SWLxKa/npc" />
           </Row>
         </div>
         <div className="printing">
@@ -72,4 +73,18 @@ export default class DisplayNpc extends Component<{}, IState> {
       </>
     );
   }
+}
+
+function Icons8Disclaimer(props: { name: string; iconId: string }) {
+  return (
+    <div>
+      <a target="_blank" href={`https://icons8.com/icon/${props.iconId}`} rel="noreferrer">
+        {props.name}
+      </a>{" "}
+      icon by{" "}
+      <a target="_blank" href="https://icons8.com" rel="noreferrer">
+        Icons8
+      </a>
+    </div>
+  );
 }
