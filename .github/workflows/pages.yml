@@ -28,9 +28,9 @@ jobs:
           npm run build
 
       - name: upload artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-pages-artifact@v1.0.4
         with:
-          name: github-pages
+          # name: github-pages
           path: build
   deploy:
     runs-on: ubuntu-latest
