@@ -2,7 +2,7 @@
   { "w": 4, "v": "{$sphy1+has }{size}{$sphy1+$size}{$sphy1+scar on }{$sphy1+$minPoss}{bodypart}{$sphy1+$bp}" },
   {
     "w": 1,
-    "v": "{$sphy1+has }{size}{$sphy1+$size}{$sphy1+scar on }{$sphy1+$minPoss}{bodypart}{$sphy1+$bp}{$sphy1+and }{size}{$sphy1+$size}{$sphy1+scar on }{$sphy1+$minPoss}{bodypart}{$sphy1+$bp}"
+    "v": "{$sphy1+has }{size}{$sphy1+$size}{$sphy1+scar on }{$sphy1+$minPoss}{bodypart}{$sphy1+$bp}{$sphy1+ and }{size}{$sphy1+$size}{$sphy1+scar on }{$sphy1+$minPoss}{bodypart}{$sphy1+$bp}"
   },
   { "w": 4, "v": "{$sphy1+has }{atattooadj}{$sphy1+$tadj}{$sphy1+piercing on }{$sphy1+$minPoss}{head}{$sphy1+$bp}" },
   {
