@@ -1,26 +1,19 @@
-name: NodeJS with Webpack
+name: Deploy website to GitHub Pages
 
 on:
   push:
-    branches: ["master"]
-  pull_request:
     branches: ["master"]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [18.x]
-
     steps:
       - uses: actions/checkout@v3
 
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js 18.x
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 18.x
 
       - name: install
         run: |
@@ -38,7 +31,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: github-pages
-          path: dist
+          path: build
   deploy:
     runs-on: ubuntu-latest
     needs: build
@@ -51,7 +44,7 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: github-pages
-          path: dist
+          path: build
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
