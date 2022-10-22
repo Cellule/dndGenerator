@@ -1,14 +1,14 @@
+import { Npc, NpcAbilities } from "npc-generator";
 import { Component } from "react";
 import { Card, Col, Row } from "react-bootstrap";
-import { Npc, NpcAbilities } from "./npcData/index";
 
 const abilities: { key: keyof NpcAbilities; name: string }[] = [
-  { key: "str", name: "Strength" },
-  { key: "dex", name: "Dexterity" },
-  { key: "con", name: "Constitution" },
-  { key: "int", name: "Intellect" },
-  { key: "wis", name: "Wisdom" },
-  { key: "cha", name: "Charisma" },
+  { key: "strength", name: "Strength" },
+  { key: "dexterity", name: "Dexterity" },
+  { key: "constitution", name: "Constitution" },
+  { key: "intelligence", name: "Intellect" },
+  { key: "wisdom", name: "Wisdom" },
+  { key: "charisma", name: "Charisma" },
 ];
 
 function toFeet(n: number) {

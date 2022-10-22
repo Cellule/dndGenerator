@@ -1,10 +1,9 @@
 import jsoncrush from "jsoncrush";
+import { debugNodeToString, generate, Npc, NpcGenerateOptions } from "npc-generator";
 import { Component } from "react";
 import { Col, Row } from "react-bootstrap";
 import Footer from "./Footer";
 import NpcData from "./NpcData";
-import { generate, printDebugGen } from "./npcData/generate";
-import { Npc, NpcGenerateOptions } from "./npcData/index";
 import UserInput from "./UserInput";
 
 interface IState {
@@ -33,16 +32,16 @@ export default class DisplayNpc extends Component<{}, IState> {
     // Generate initial npc, if we didn't load data from url query
     if (!loadedQueryData) {
       const { npc, debugNode } = generate({});
-      printDebugGen(debugNode);
+      console.log(debugNodeToString(debugNode));
       this.state = { npc };
     }
 
     this.generateNpc = this.generateNpc.bind(this);
   }
 
-  generateNpc(options: NpcGenerateOptions) {
-    const { npc, debugNode } = generate(options);
-    printDebugGen(debugNode);
+  generateNpc(npcOptions: NpcGenerateOptions) {
+    const { npc, debugNode } = generate({ npcOptions });
+    console.log(debugNodeToString(debugNode));
     this.setState({ npc });
   }
 

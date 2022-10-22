@@ -1,9 +1,0 @@
-[
-  { "w": 12, "v": "{$kenkuname+}" },
-  { "w": 1, "v": "{$kenkuname=Bang}" },
-  { "w": 1, "v": "{$kenkuname=Clang}" },
-  { "w": 1, "v": "{$kenkuname=Scissor}" },
-  { "w": 1, "v": "{$kenkuname=Hammer}" },
-  { "w": 1, "v": "{$kenkuname=Click}" },
-  { "w": 1, "v": "{$kenkuname=Anvil}" }
-]

@@ -1,5 +1,0 @@
-[
-  { "w": 1, "v": "{$name+carver}" },
-  { "w": 1, "v": "{$name+maker}" },
-  { "w": 1, "v": "{$name+finder}" }
-]

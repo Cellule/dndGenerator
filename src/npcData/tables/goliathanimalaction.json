@@ -1,6 +1,0 @@
-[
-  { "w": 1, "v": "{$name+killer}" },
-  { "w": 1, "v": "{$name+tamer}{%wis+1}" },
-  { "w": 1, "v": "{$name+hunter}" },
-  { "w": 1, "v": "{$name+stalker}" }
-]

@@ -1,9 +1,0 @@
-[
-  { "w": 1, "v": "{$name=House}" },
-  { "w": 1, "v": "{$name=Flint}" },
-  { "w": 1, "v": "{$name=Gold}" },
-  { "w": 1, "v": "{$name=Diamond}" },
-  { "w": 1, "v": "{$name=Tool}" },
-  { "w": 1, "v": "{$name=Fort}" },
-  { "w": 1, "v": "{$name=Horn}" }
-]

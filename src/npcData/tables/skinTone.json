@@ -1,6 +1,0 @@
-[
-  { "w": 20, "v": "{$skintone= }" },
-  { "w": 3, "v": "{$skintone=, sunburned, }" },
-  { "w": 1, "v": "{$skintone=, dirty, }" },
-  { "w": 3, "v": "{$skintone=, pockmarked, }" }
-]
