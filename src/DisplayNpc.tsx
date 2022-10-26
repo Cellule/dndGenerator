@@ -32,7 +32,9 @@ export default class DisplayNpc extends Component<{}, IState> {
     // Generate initial npc, if we didn't load data from url query
     if (!loadedQueryData) {
       const { npc, debugNode } = generate({});
-      console.log(debugNodeToString(debugNode));
+      if (process.env.NODE_ENV === "development") {
+        console.log(debugNodeToString(debugNode));
+      }
       this.state = { npc };
     }
 
@@ -41,7 +43,9 @@ export default class DisplayNpc extends Component<{}, IState> {
 
   generateNpc(npcOptions: NpcGenerateOptions) {
     const { npc, debugNode } = generate({ npcOptions });
-    console.log(debugNodeToString(debugNode));
+    if (process.env.NODE_ENV === "development") {
+      console.log(debugNodeToString(debugNode));
+    }
     this.setState({ npc });
   }
 
