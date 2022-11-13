@@ -1,8 +1,0 @@
-[
-  { "w": 2, "v": "{$degree=a slight }" },
-  { "w": 2, "v": "{$degree=a light }" },
-  { "w": 5, "v": "{$degree=a }" },
-  { "w": 2, "v": "{$degree=an impressive }" },
-  { "w": 2, "v": "{$degree=a heavy }" },
-  { "w": 1, "v": "{$degree=a severe }" }
-]

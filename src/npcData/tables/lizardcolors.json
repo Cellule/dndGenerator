@@ -1,8 +1,0 @@
-[
-  { "w": 2, "v": "{$lizardcolor=black}" },
-  { "w": 2, "v": "{$lizardcolor=gray}" },
-  { "w": 2, "v": "{$lizardcolor=brown}" },
-  { "w": 3, "v": "{$lizardcolor=emerald}" },
-  { "w": 3, "v": "{$lizardcolor=dark green}" },
-  { "w": 3, "v": "{$lizardcolor=green}" }
-]

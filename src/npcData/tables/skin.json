@@ -1,1 +1,0 @@
-[{ "w": 1, "v": "{skinTone}{skinTexture}{$skin=$skintexture}{$skin+$skintone}{$skintype= skin}" }]

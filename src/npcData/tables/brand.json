@@ -1,5 +1,0 @@
-[
-  { "w": 8, "v": "{$sphy1+slave}" },
-  { "w": 2, "v": "{$sphy1+felon}" },
-  { "w": 5, "v": "{$sphy1+prisoner}" }
-]

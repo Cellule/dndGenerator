@@ -1,6 +1,0 @@
-[
-  { "w": 5, "v": "{$skintexture+}" },
-  { "w": 1, "v": "{$skintexture+, spotted,}" },
-  { "w": 1, "v": "{$skintexture+, patterned,}" },
-  { "w": 1, "v": "{$skintexture+, striped,}" }
-]

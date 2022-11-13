@@ -1,6 +1,0 @@
-[
-  { "w": 6, "v": "{$skin+green}" },
-  { "w": 2, "v": "{$skin+brown}" },
-  { "w": 1, "v": "{$skin+red}" },
-  { "w": 4, "v": "{$skin+gray}" }
-]

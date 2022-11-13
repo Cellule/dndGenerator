@@ -1,9 +1,0 @@
-[
-  { "w": 2, "v": "{$feathertexture=rough}" },
-  { "w": 1, "v": "{$feathertexture=smooth}" },
-  { "w": 1, "v": "{$feathertexture=shiny}" },
-  { "w": 1, "v": "{$feathertexture=lustrous}" },
-  { "w": 1, "v": "{$feathertexture=soft}" },
-  { "w": 1, "v": "{$feathertexture=fluffy}" },
-  { "w": 1, "v": "{$feathertexture=fuzzy}" }
-]

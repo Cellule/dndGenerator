@@ -1,42 +1,10 @@
 import copy from "copy-to-clipboard";
 import jsoncrush from "jsoncrush";
+import { getNpcOptionsValues, Npc, NpcGenerateOptions } from "npc-generator";
 import { Component } from "react";
 import { Button, Col, Form, FormGroup, FormLabel, Row } from "react-bootstrap";
-import { Npc, NpcGenerateOptions } from "./npcData/index";
-import { getNamedTableOptions, getTableReferenceOptions, NamedOption } from "./npcData/tables";
 
-const races = getTableReferenceOptions("race");
-
-const subraces: { [race: string]: NamedOption[] } = {
-  elf: getNamedTableOptions("raceelf"),
-  dwarf: getNamedTableOptions("racedwarf"),
-  gnome: getNamedTableOptions("racegnome"),
-  halfling: getNamedTableOptions("racehalfling"),
-};
-
-const genders = getNamedTableOptions("gender");
-const alignments = getNamedTableOptions("forcealign");
-const plothooks = getNamedTableOptions("hooks");
-const classes = getNamedTableOptions("class");
-const professions = getTableReferenceOptions("profession");
-
-const professionCategories: { [prof: string]: NamedOption[] } = {
-  learned: getNamedTableOptions("learned"),
-  lesserNobility: getNamedTableOptions("lesserNobility"),
-  professional: getNamedTableOptions("professional"),
-  workClass: getNamedTableOptions("workClass"),
-  martial: getNamedTableOptions("martial"),
-  underclass: getNamedTableOptions("underclass"),
-  entertainer: getNamedTableOptions("entertainer"),
-};
-
-if (process.env.NODE_ENV === "development") {
-  for (const prof of professions) {
-    if (!professionCategories[prof.table]) {
-      throw new Error(`Missing profession category "${prof.table}"`);
-    }
-  }
-}
+const { alignments, occupations, classes, genders, plothooks, professions, races } = getNpcOptionsValues();
 
 interface IProps {
   npc: Npc;
@@ -48,10 +16,18 @@ interface IState {
   wasCopiedToClipboard?: boolean;
 }
 
+type UserOption = {
+  name: string;
+  value: number;
+};
+
+const classOccupationValue = occupations.find((o) => !!o.classes)?.value ?? -1;
+const professionOccupationValue = occupations.find((o) => !!o.professions)?.value ?? -1;
+
 const userOptions: {
   label: string;
   optionName: keyof NpcGenerateOptions;
-  options: { name?: string }[] | ((npcOptions: NpcGenerateOptions) => { name?: string }[]);
+  options: UserOption[] | ((npcOptions: NpcGenerateOptions) => UserOption[]);
   condition?: (npcOptions: NpcGenerateOptions) => boolean;
   onChange?: (component: Component<IProps, IState>) => void;
 }[] = [
@@ -68,8 +44,8 @@ const userOptions: {
   {
     label: "Subrace",
     optionName: "subrace",
-    condition: (npcOptions) => typeof npcOptions.race === "number" && subraces[races[npcOptions.race].table] !== undefined,
-    options: (npcOptions) => subraces[races[npcOptions.race || 0].table],
+    condition: (npcOptions) => typeof npcOptions.race === "number" && !!races[npcOptions.race].subraces?.length,
+    options: (npcOptions) => races[npcOptions.race || 0]?.subraces || [],
   },
   {
     label: "Sex",
@@ -89,7 +65,7 @@ const userOptions: {
   {
     label: "Occupation",
     optionName: "classorprof",
-    options: [{ name: "Class" }, { name: "Profession" }],
+    options: occupations,
     onChange: (component) => {
       const npcOptions = component.state.npcOptions;
       npcOptions.occupation1 = null;
@@ -100,13 +76,13 @@ const userOptions: {
   {
     label: "Class",
     optionName: "occupation1",
-    condition: (npcOptions) => npcOptions.classorprof === 0,
+    condition: (npcOptions) => npcOptions.classorprof === classOccupationValue,
     options: classes,
   },
   {
     label: "Social Class",
     optionName: "occupation1",
-    condition: (npcOptions) => npcOptions.classorprof === 1,
+    condition: (npcOptions) => npcOptions.classorprof === professionOccupationValue,
     options: professions,
     onChange: (component) => {
       const npcOptions = component.state.npcOptions;
@@ -117,8 +93,8 @@ const userOptions: {
   {
     label: "Profession",
     optionName: "occupation2",
-    condition: (npcOptions) => npcOptions.classorprof === 1 && typeof npcOptions.occupation1 === "number",
-    options: (npcOptions) => professionCategories[professions[npcOptions.occupation1 || 0].table],
+    condition: (npcOptions) => npcOptions.classorprof === professionOccupationValue && typeof npcOptions.occupation1 === "number",
+    options: (npcOptions) => professions[npcOptions.occupation1 || 0]?.professionCategories || [],
   },
 ];
 
@@ -229,7 +205,7 @@ export default class UserInput extends Component<IProps, IState> {
             return null;
           }
           return (
-            <option value={i} key={i}>
+            <option value={opt.value} key={i}>
               {opt.name}
             </option>
           );

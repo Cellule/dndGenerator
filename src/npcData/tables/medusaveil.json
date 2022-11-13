@@ -1,7 +1,0 @@
-[
-  { "w": 4, "v": "{$quirks+$majPro}{$quirks+always wears a veil to mask her eyes. }" },
-  { "w": 2, "v": "{$quirks+$majPro}{$quirks+always wears a hood to mask her eyes. }" },
-  { "w": 1, "v": "{$quirks+$majPro}{$quirks+never opens her eyes. }" },
-  { "w": 2, "v": "{$quirks+$majPro}{$quirks+always wears dark glasses to mask her eyes. }" },
-  { "w": 3, "v": "{$quirks+$majPro}{$quirks+always wears a mask to hide her gaze. }" }
-]

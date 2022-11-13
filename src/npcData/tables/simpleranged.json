@@ -1,5 +1,0 @@
-[
-  { "w": 1, "v": "{$weapon=light crossbow}" },
-  { "w": 1, "v": "{$weapon=shortbow}" },
-  { "w": 1, "v": "{$weapon=sling}" }
-]

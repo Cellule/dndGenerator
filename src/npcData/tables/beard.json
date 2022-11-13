@@ -1,4 +1,0 @@
-[
-  { "w": 2, "v": "{beardlength}{beardshape}" },
-  { "w": 3, "v": "{$beard=}" }
-]

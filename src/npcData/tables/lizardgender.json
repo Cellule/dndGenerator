@@ -1,4 +1,0 @@
-[
-  { "w": 1, "v": "{male}{dragonbornname}{$race=lizardman}" },
-  { "w": 1, "v": "{female}{dragonbornname}{$race=lizardwoman}" }
-]
