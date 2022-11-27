@@ -173,13 +173,18 @@ export default class UserInput extends Component<IProps, IState> {
 
     if (wasCopiedToClipboard) {
       return (
-        <Button variant="outline-primary" title="Copied to clipboard" onBlur={() => void this.setState({ wasCopiedToClipboard: false })}>
+        <Button
+          variant="outline-primary"
+          title="Copied to clipboard"
+          data-test="copy-button"
+          onBlur={() => void this.setState({ wasCopiedToClipboard: false })}
+        >
           Copied!
         </Button>
       );
     }
     return (
-      <Button variant="outline-secondary" title="Copy character to clipboard" onClick={this.copyNpcToClipboard}>
+      <Button variant="outline-secondary" title="Copy character to clipboard" data-test="copy-button" onClick={this.copyNpcToClipboard}>
         Copy to Clipboard
       </Button>
     );
@@ -249,13 +254,15 @@ export default class UserInput extends Component<IProps, IState> {
       <div>
         <div className="npc-options">{npcOptions}</div>
         <div className="bottom-options">
-          <Button className="generate-button" variant="success" title="Generate" onClick={this.onSubmit} />
-          <Button variant="outline-secondary" title="Export character to .txt file" onClick={this.downloadTxtFile}>
+          <Button className="generate-button" variant="success" title="Generate" data-test="generate-button" onClick={this.onSubmit} />
+          <Button variant="outline-secondary" title="Export character to .txt file" data-test="export-button" onClick={this.downloadTxtFile}>
             Export
           </Button>
           {this.renderCopyToClipboardButton()}
-          <Button className="history" variant="outline-secondary" title="History" onClick={this.props.onToggleHistory}>History</Button>
-          <a className="npc-link" href={npcDataUrl.toString()}>
+          <Button className="history" variant="outline-secondary" title="History" data-test="history-button" onClick={this.props.onToggleHistory}>
+            History
+          </Button>
+          <a className="npc-link" href={npcDataUrl.toString()} data-test="bookmark-button">
             🔗 Bookmark
           </a>
         </div>
