@@ -73,7 +73,7 @@ export default class NpcData extends Component<IProps> {
           <Col sm={12} lg={6} className="col-print-6">
             <Card className="first-row-height">
               <Card.Header>Description</Card.Header>
-              <Card.Body>
+              <Card.Body data-test="npc-description">
                 <p hidden>#</p>
                 <p>
                   {npc.description.name} is a {npc.description.age + " "}
@@ -108,7 +108,7 @@ export default class NpcData extends Component<IProps> {
           <Col sm={12} lg={6} className="col-print-6">
             <Card className="first-row-height">
               <Card.Header>Personality Traits</Card.Header>
-              <Card.Body>
+              <Card.Body data-test="npc-personality">
                 <p hidden>#</p>
                 <p>{npc.religion.description}</p>
                 <p hidden>#</p>
@@ -128,7 +128,7 @@ export default class NpcData extends Component<IProps> {
           <Col md={12} lg={6} xl={4} className="col-print-4">
             <Card className="second-row-height">
               <Card.Header>Ability Scores</Card.Header>
-              <Card.Body>
+              <Card.Body data-test="npc-ability-table">
                 <p hidden>#</p>
                 <table className="ability-table">
                   <tbody>
@@ -156,7 +156,7 @@ export default class NpcData extends Component<IProps> {
           <Col md={12} lg={6} xl={4} className="col-print-4">
             <Card className="second-row-height">
               <Card.Header>Relationships</Card.Header>
-              <Card.Body>
+              <Card.Body data-test="npc-relationships">
                 <p hidden>#</p>
                 <p>
                   <b>Sexual Orientation </b>
@@ -177,7 +177,7 @@ export default class NpcData extends Component<IProps> {
           <Col md={12} lg={12} xl={4} className="col-print-4">
             <Card className="second-row-height">
               <Card.Header>Alignment Tendencies</Card.Header>
-              <Card.Body>
+              <Card.Body data-test="npc-alignment">
                 <p hidden>#</p>
                 <table className="alignment-table">
                   <tbody>
@@ -238,7 +238,7 @@ export default class NpcData extends Component<IProps> {
           <Col sm={12}>
             <Card className="align-center">
               <Card.Header>Plot Hook</Card.Header>
-              <Card.Body>
+              <Card.Body data-test="npc-plot-hook">
                 <p hidden>#</p>
                 {npc.hook.description}
                 <p hidden>#</p>
