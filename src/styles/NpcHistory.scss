@@ -1,0 +1,14 @@
+.npc-history {
+  $npc-bold-color: #813619;
+  .card-header {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: $npc-bold-color;
+  }
+
+  b {
+    font-size: 16px;
+    color: $npc-bold-color;
+  }
+}

@@ -9,6 +9,7 @@ const { alignments, occupations, classes, genders, plothooks, professions, races
 interface IProps {
   npc: Npc;
   generate: (options: NpcGenerateOptions) => void;
+  onToggleHistory: () => void;
 }
 
 interface IState {
@@ -253,6 +254,7 @@ export default class UserInput extends Component<IProps, IState> {
             Export
           </Button>
           {this.renderCopyToClipboardButton()}
+          <Button className="history" variant="outline-secondary" title="History" onClick={this.props.onToggleHistory}>History</Button>
           <a className="npc-link" href={npcDataUrl.toString()}>
             🔗 Bookmark
           </a>
