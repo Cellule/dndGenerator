@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
-    "@types/react": "^18.0.18",
+    "@types/react": "^18.0.34",
     "@types/react-dom": "^18.0.6",
     "@types/uuid": "^9.0.0",
     "@types/webpack-env": "^1.18.0",
