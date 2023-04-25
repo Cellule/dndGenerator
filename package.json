@@ -35,7 +35,7 @@
     "@types/react-dom": "^18.0.6",
     "@types/uuid": "^9.0.0",
     "@types/webpack-env": "^1.18.0",
-    "cypress": "^12.2.0",
+    "cypress": "^12.10.0",
     "npc-generator": "^1.0.2",
     "patch-package": "^6.4.7",
     "prettier": "^2.8.8",
