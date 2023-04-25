@@ -42,5 +42,5 @@ jobs:
         # https://github.com/marketplace/actions/cypress-io
         uses: cypress-io/github-action@v4.2.1 # use the explicit version number
         with:
-          start: npm start
+          start: npm run dev
           wait-on: "http://localhost:3000"
