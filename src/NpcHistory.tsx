@@ -8,7 +8,7 @@ export function NpcHistory(props: { activeNpcUid: string; npcHistory: GeneratedN
       <Card.Header>NPC History</Card.Header>
       <Card.Body>
         <ListGroup>
-          {props.npcHistory.map(({ npc, uid }, i) => (
+          {props.npcHistory.map(({ npc, uid }) => (
             <ListGroup.Item key={uid} active={uid === props.activeNpcUid} action={true} onClick={() => props.onLoadNpc({ npc, uid })}>
               {npc.description.name} is a {npc.description.age + " "}
               year old {npc.description.gender} {npc.description.race + " "}

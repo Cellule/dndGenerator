@@ -11,7 +11,8 @@ import { useNpcHistory } from "./useNpcHistory";
 import UserInput from "./UserInput";
 
 export default function DisplayNpc() {
-  let [npcUid, setNpc] = React.useState(useNpcFromQuery());
+  const [_npcUid, setNpc] = React.useState(useNpcFromQuery());
+  let npcUid = _npcUid;
   const [isShowingHistory, setShowHistory] = React.useState(false);
   const { npcHistory, pushNpc } = useNpcHistory();
 

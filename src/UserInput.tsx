@@ -107,7 +107,7 @@ export default class UserInput extends Component<IProps, IState> {
     };
   }
 
-  onSubmit = (e: any) => {
+  onSubmit = () => {
     this.props.generate(this.state.npcOptions);
   };
 
