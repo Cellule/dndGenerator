@@ -18,7 +18,7 @@ $ npm install
 
 Start local server
 ```
-$ npm start
+$ npm run dev
 ```
 
 ### Test changes from the npc-generator library

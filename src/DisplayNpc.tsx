@@ -1,5 +1,10 @@
 import jsoncrush from "jsoncrush";
-import { debugNodeToString, generate, Npc, NpcGenerateOptions } from "npc-generator";
+import {
+  debugNodeToString,
+  generate,
+  Npc,
+  NpcGenerateOptions,
+} from "npc-generator";
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { v4 as uuidV4 } from "uuid";
@@ -11,7 +16,8 @@ import { useNpcHistory } from "./useNpcHistory";
 import UserInput from "./UserInput";
 
 export default function DisplayNpc() {
-  let [npcUid, setNpc] = React.useState(useNpcFromQuery());
+  const [_npcUid, setNpc] = React.useState(useNpcFromQuery());
+  let npcUid = _npcUid;
   const [isShowingHistory, setShowHistory] = React.useState(false);
   const { npcHistory, pushNpc } = useNpcHistory();
 
@@ -52,11 +58,23 @@ export default function DisplayNpc() {
               <div className="title-image-wrapper">
                 <div className="title-image" />
               </div>
-              <UserInput npc={npcUid.npc} generate={generateNpc} onToggleHistory={handleToggleHistory} />
+              <UserInput
+                npc={npcUid.npc}
+                generate={generateNpc}
+                onToggleHistory={handleToggleHistory}
+              />
             </div>
           </Col>
           <Col sm={12} md={7} lg={9}>
-            {isShowingHistory ? <NpcHistory activeNpcUid={npcUid.uid || ""} npcHistory={npcHistory} onLoadNpc={handleLoadNpc} /> : <NpcData npc={npcUid.npc} />}
+            {isShowingHistory ? (
+              <NpcHistory
+                activeNpcUid={npcUid.uid || ""}
+                npcHistory={npcHistory}
+                onLoadNpc={handleLoadNpc}
+              />
+            ) : (
+              <NpcData npc={npcUid.npc} />
+            )}
             <Footer />
           </Col>
           <Icons8Disclaimer name="Npc" iconId="aFoL19SWLxKa/npc" />
@@ -75,7 +93,9 @@ function useNpcFromQuery(): GeneratedNpc | null {
   if (url.searchParams.has("d")) {
     try {
       const crushedJson = url.searchParams.get("d") || "";
-      const npc: Npc | null = JSON.parse(jsoncrush.uncrush(decodeURIComponent(crushedJson)));
+      const npc: Npc | null = JSON.parse(
+        jsoncrush.uncrush(decodeURIComponent(crushedJson))
+      );
       return npc ? { npc, uid: crushedJson } : null;
     } catch (e) {
       console.error(e);
@@ -87,7 +107,11 @@ function useNpcFromQuery(): GeneratedNpc | null {
 function Icons8Disclaimer(props: { name: string; iconId: string }) {
   return (
     <div>
-      <a target="_blank" href={`https://icons8.com/icon/${props.iconId}`} rel="noreferrer">
+      <a
+        target="_blank"
+        href={`https://icons8.com/icon/${props.iconId}`}
+        rel="noreferrer"
+      >
         {props.name}
       </a>{" "}
       icon by{" "}
