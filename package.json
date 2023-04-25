@@ -38,7 +38,7 @@
     "cypress": "^12.2.0",
     "npc-generator": "^1.0.2",
     "patch-package": "^6.4.7",
-    "prettier": "^2.7.1",
+    "prettier": "^2.8.8",
     "prettier-plugin-organize-imports": "^3.1.1",
     "react-scripts": "^5.0.1",
     "start-server-and-test": "^2.0.0",
