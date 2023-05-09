@@ -3,6 +3,10 @@
   "version": "0.5.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "npm": ">=9.0.0 <10.0.0",
+    "node": ">=18.0.0 <21.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -23,7 +27,7 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "@types/node": "^18.16.0",
+    "@types/node": "^20.1.1",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@types/uuid": "^9.0.1",
