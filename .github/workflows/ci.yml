@@ -1,6 +1,7 @@
 name: Build and Test website
 
 on:
+  workflow_run:
   pull_request:
     branches: ["master"]
 
