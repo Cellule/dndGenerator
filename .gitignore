@@ -23,6 +23,6 @@ dist-ssr
 *.sw?
 
 build
-tsconfig.node.tsbuildinfo
+*.tsbuildinfo
 vite.config.d.ts
 vite.config.js

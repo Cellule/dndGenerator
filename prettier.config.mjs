@@ -1,8 +1,6 @@
-module.exports = {
+export default {
   printWidth: 160,
   trailingComma: "all",
-  // Plugins are now loaded explicitly
-  pluginSearchDirs: false,
   overrides: [
     {
       files: ["*.ts", "*.tsx"],

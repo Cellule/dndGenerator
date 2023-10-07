@@ -199,7 +199,7 @@ export default class UserInput extends Component<IProps, IState> {
         return null;
       }
 
-      let options: any = [];
+      let options: React.ReactNode[] = [];
       const selectedOption = this.state.npcOptions[userOption.optionName];
       if (enable) {
         let opts = userOption.options;
