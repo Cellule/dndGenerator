@@ -11,37 +11,34 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x, 20.x]
+        node-version: [22.x]
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: install
-        run: |
-          npm install
-
-      - name: build
-        run: |
-          npm run build
+      - run: npm install
+      - run: npm run build
 
   cypress:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - name: install
-        run: |
-          npm install
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
 
       # https://docs.cypress.io/guides/continuous-integration/github-actions
       - name: Cypress run
         # https://github.com/marketplace/actions/cypress-io
-        uses: cypress-io/github-action@v4.2.1 # use the explicit version number
+        uses: cypress-io/github-action@v6.7.16 # use the explicit version number
         with:
           start: npm run dev -- --host
           wait-on: "http://localhost:3000"
