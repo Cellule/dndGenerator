@@ -60,7 +60,6 @@ export default function DisplayNpc() {
             {isShowingHistory ? <NpcHistory activeNpcUid={npcUid.uid || ""} npcHistory={npcHistory} onLoadNpc={handleLoadNpc} /> : <NpcData npc={npcUid.npc} />}
             <Footer />
           </Col>
-          <Icons8Disclaimer name="Npc" iconId="aFoL19SWLxKa/npc" />
         </Row>
       </div>
       <div className="printing">
@@ -83,18 +82,4 @@ function useNpcFromQuery(): GeneratedNpc | null {
     }
   }
   return null;
-}
-
-function Icons8Disclaimer(props: { name: string; iconId: string }) {
-  return (
-    <div>
-      <a target="_blank" href={`https://icons8.com/icon/${props.iconId}`} rel="noreferrer">
-        {props.name}
-      </a>{" "}
-      icon by{" "}
-      <a target="_blank" href="https://icons8.com" rel="noreferrer">
-        Icons8
-      </a>
-    </div>
-  );
 }
