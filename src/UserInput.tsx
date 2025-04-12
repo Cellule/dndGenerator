@@ -2,7 +2,7 @@ import copy from "copy-to-clipboard";
 import jsoncrush from "jsoncrush";
 import { getNpcOptionsValues, Npc, NpcGenerateOptions } from "npc-generator";
 import { Component } from "react";
-import styles from './UserInput.module.css';
+import styles from "./UserInput.module.css";
 
 const { alignments, occupations, classes, genders, plothooks, professions, races } = getNpcOptionsValues();
 
@@ -107,7 +107,8 @@ export default class UserInput extends Component<IProps, IState> {
     };
   }
 
-  onSubmit = () => {
+  onSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
     this.props.generate(this.state.npcOptions);
   };
 
@@ -151,8 +152,13 @@ export default class UserInput extends Component<IProps, IState> {
     return false;
   };
 
+  private handleCopyBlur: React.FocusEventHandler<HTMLButtonElement> = () => {
+    this.setState({ wasCopiedToClipboard: false });
+  };
+
   private copyNpcToClipboard: React.MouseEventHandler<HTMLButtonElement> = (ev) => {
     ev.stopPropagation();
+    ev.preventDefault();
     const header = this.getExportFileName();
     const characterDetails = this.getCharacterText();
     const success = copy(`${header}\n${characterDetails}`, {
@@ -177,7 +183,8 @@ export default class UserInput extends Component<IProps, IState> {
           className={`${styles.button} ${styles.buttonOutline} ${styles.buttonOutlinePrimary}`}
           title="Copied to clipboard"
           data-test="copy-button"
-          onBlur={() => void this.setState({ wasCopiedToClipboard: false })}
+          onBlur={this.handleCopyBlur}
+          onClick={this.copyNpcToClipboard}
         >
           Copied!
         </button>
@@ -260,18 +267,10 @@ export default class UserInput extends Component<IProps, IState> {
             Generate
           </button>
           {this.renderCopyToClipboardButton()}
-          <button
-            type="button"
-            className={`${styles.button} ${styles.buttonOutline} ${styles.buttonOutlineSecondary}`}
-            onClick={this.downloadTxtFile}
-          >
+          <button type="button" className={`${styles.button} ${styles.buttonOutline} ${styles.buttonOutlineSecondary}`} onClick={this.downloadTxtFile}>
             Download
           </button>
-          <button
-            type="button"
-            className={`${styles.button} ${styles.buttonOutline} ${styles.buttonOutlineSecondary}`}
-            onClick={this.props.onToggleHistory}
-          >
+          <button type="button" className={`${styles.button} ${styles.buttonOutline} ${styles.buttonOutlineSecondary}`} onClick={this.props.onToggleHistory}>
             History
           </button>
         </div>

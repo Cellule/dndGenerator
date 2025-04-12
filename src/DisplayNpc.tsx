@@ -37,7 +37,10 @@ export default function DisplayNpc() {
     npcUid = generateNpc({});
   }
 
-  const handleToggleHistory = () => setShowHistory(!isShowingHistory);
+  const handleToggleHistory = () => {
+    setShowHistory(!isShowingHistory);
+    document.scrollingElement?.scrollTo?.(0, 0);
+  };
   const handleLoadNpc = (npc: GeneratedNpc): void => {
     setNpc(npc);
     setShowHistory(false);
