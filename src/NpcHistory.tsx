@@ -1,22 +1,29 @@
-import { Card, ListGroup } from "react-bootstrap";
-import "./styles/scss/NpcHistory.scss";
 import { GeneratedNpc } from "./typings";
+import styles from './NpcHistory.module.css';
 
-export function NpcHistory(props: { activeNpcUid: string; npcHistory: GeneratedNpc[]; onLoadNpc: (npc: GeneratedNpc) => void }) {
+interface Props {
+  npcHistory: GeneratedNpc[];
+  activeNpcUid: string;
+  onLoadNpc: (npc: GeneratedNpc) => void;
+}
+
+export  function NpcHistory({ npcHistory, activeNpcUid, onLoadNpc }: Props) {
   return (
-    <Card className="npc-history">
-      <Card.Header>NPC History</Card.Header>
-      <Card.Body>
-        <ListGroup>
-          {props.npcHistory.map(({ npc, uid }) => (
-            <ListGroup.Item key={uid} active={uid === props.activeNpcUid} action={true} onClick={() => props.onLoadNpc({ npc, uid })}>
-              {npc.description.name} is a {npc.description.age + " "}
-              year old {npc.description.gender} {npc.description.race + " "}
-              {npc.description.occupation}.
-            </ListGroup.Item>
-          ))}
-        </ListGroup>
-      </Card.Body>
-    </Card>
+    <div className={styles.historyContainer}>
+      <h2 className={styles.historyHeader}>NPC History</h2>
+      <ul className={styles.historyList}>
+        {npcHistory.map(({ npc, uid }) => (
+          <li
+            key={uid}
+            className={`${styles.historyItem} ${activeNpcUid === uid ? styles.selected : ''}`}
+            onClick={() => onLoadNpc({ npc, uid })}
+          >
+            {npc.description.name} is a {npc.description.age} year old{' '}
+            {npc.description.gender.toLowerCase()} {npc.description.race.toLowerCase()}{' '}
+            {npc.description.occupation.toLowerCase()}.
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
