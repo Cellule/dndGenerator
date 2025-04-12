@@ -180,6 +180,7 @@ export default class UserInput extends Component<IProps, IState> {
     if (wasCopiedToClipboard) {
       return (
         <button
+          type="button"
           className={`${styles.button} ${styles.buttonOutline} ${styles.buttonOutlinePrimary}`}
           title="Copied to clipboard"
           data-test="copy-button"
@@ -192,6 +193,7 @@ export default class UserInput extends Component<IProps, IState> {
     }
     return (
       <button
+        type="button"
         className={`${styles.button} ${styles.buttonOutline} ${styles.buttonOutlineSecondary}`}
         title="Copy character to clipboard"
         data-test="copy-button"
@@ -263,7 +265,7 @@ export default class UserInput extends Component<IProps, IState> {
       <form onSubmit={this.onSubmit}>
         {npcOptions}
         <div className={styles.buttonGroup}>
-          <button type="submit" className={`${styles.button} ${styles.buttonPrimary}`}>
+          <button type="submit" className={`${styles.button} ${styles.buttonPrimary}`} data-test="generate-button">
             Generate
           </button>
           {this.renderCopyToClipboardButton()}
