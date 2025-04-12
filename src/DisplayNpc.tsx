@@ -16,6 +16,15 @@ export default function DisplayNpc() {
   const [isShowingHistory, setShowHistory] = React.useState(false);
   const { npcHistory, pushNpc } = useNpcHistory();
 
+  // Update document title when NPC changes
+  React.useEffect(() => {
+    if (npcUid?.npc?.description?.name) {
+      document.title = `${npcUid.npc.description.name} - NPC Generator`;
+    } else {
+      document.title = "NPC Generator";
+    }
+  }, [npcUid]);
+
   const generateNpc = (npcOptions: NpcGenerateOptions) => {
     const result = generate({ npcOptions });
     if (process.env.NODE_ENV === "development") {
