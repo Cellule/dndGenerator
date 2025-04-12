@@ -1,7 +1,7 @@
 .npcData {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .card {
@@ -41,7 +41,7 @@
 .firstRow {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .firstRowCard {
@@ -57,7 +57,7 @@
 .secondRow {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .secondRowCard {

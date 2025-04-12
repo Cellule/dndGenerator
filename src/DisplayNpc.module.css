@@ -1,14 +1,14 @@
 .displayNpcRoot {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   margin-bottom: 2rem;
 }
 
 .layout {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .userInfoCol {
