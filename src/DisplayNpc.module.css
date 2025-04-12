@@ -43,7 +43,7 @@
 .titleImage {
   width: 100%;
   max-width: 200px;
-  height: 100px;
+  height: 32px;
   margin: 0 auto;
   background-image: url("./images/npcgenerator.png");
   background-size: contain;

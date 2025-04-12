@@ -273,6 +273,13 @@ export default class UserInput extends Component<IProps, IState> {
           <button type="button" className={`${styles.button} ${styles.buttonOutline} ${styles.buttonOutlineSecondary}`} onClick={this.props.onToggleHistory}>
             History
           </button>
+          <a
+            className={`${styles.button} ${styles.buttonOutline} ${styles.buttonOutlineSecondary} ${styles.bookmarkButton}`}
+            href={npcDataUrl.toString()}
+            data-test="bookmark-button"
+          >
+            🔗 Bookmark
+          </a>
         </div>
       </form>
     );

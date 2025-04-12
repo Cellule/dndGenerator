@@ -139,6 +139,12 @@
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.25);
 }
 
+.bookmarkButton {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
 @media (max-width: 768px) {
   .buttonGroup {
     grid-template-columns: 1fr;

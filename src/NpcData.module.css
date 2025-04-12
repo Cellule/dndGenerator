@@ -1,3 +1,4 @@
+
 .npcData {
   display: flex;
   flex-direction: column;
@@ -176,19 +177,18 @@
   }
 
   .cardHeader {
-    background-color: #8b4513 !important;
-    color: white !important;
+    background: unset !important;
+    color: unset !important;
+    text-shadow: unset !important;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
 
   .firstRowCard {
-    width: 50%;
-    float: left;
+    grid-column: span 12;
   }
 
   .secondRowCard {
-    width: 33.33%;
-    float: left;
+    grid-column: span 6;
   }
 } 
