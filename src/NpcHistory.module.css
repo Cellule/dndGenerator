@@ -8,7 +8,7 @@
 }
 
 .historyHeader {
-  background: linear-gradient(to bottom, #8B6B57, #7B5B47);
+  background: linear-gradient(to bottom, #8b6b57, #7b5b47);
   color: #fff;
   padding: 1rem 1.25rem;
   font-weight: 600;
@@ -54,23 +54,23 @@
 }
 
 .selected {
-  background-color: #8B6B57 !important;
+  background-color: #8b6b57 !important;
   color: white;
   position: relative;
 }
 
 .selected:hover {
-  background-color: #7B5B47 !important;
+  background-color: #7b5b47 !important;
 }
 
 .selected::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
   width: 4px;
-  background-color: #A68B7B;
+  background-color: #a68b7b;
 }
 
 /* Scrollbar styling */
@@ -99,7 +99,7 @@
     margin-top: 1rem;
     margin-bottom: 1.5rem;
   }
-  
+
   .historyItem {
     padding: 0.875rem 1.25rem;
   }
@@ -108,4 +108,4 @@
     min-height: 400px;
     max-height: 600px;
   }
-} 
+}

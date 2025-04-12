@@ -1,6 +1,6 @@
 import { Component } from "react";
-import DisplayNpc from "./DisplayNpc";
 import styles from "./App.module.css";
+import DisplayNpc from "./DisplayNpc";
 
 export default class App extends Component {
   render() {

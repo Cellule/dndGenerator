@@ -1,6 +1,6 @@
 import { Npc, NpcAbilities } from "npc-generator";
 import { Component } from "react";
-import styles from './NpcData.module.css';
+import styles from "./NpcData.module.css";
 
 const abilities: { key: keyof NpcAbilities; name: string }[] = [
   { key: "strength", name: "Strength" },

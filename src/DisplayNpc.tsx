@@ -2,13 +2,13 @@ import jsoncrush from "jsoncrush";
 import { debugNodeToString, generate, Npc, NpcGenerateOptions } from "npc-generator";
 import React from "react";
 import { v4 as uuidV4 } from "uuid";
+import styles from "./DisplayNpc.module.css";
 import Footer from "./Footer";
 import NpcData from "./NpcData";
 import { NpcHistory } from "./NpcHistory";
 import { GeneratedNpc } from "./typings";
 import { useNpcHistory } from "./useNpcHistory";
 import UserInput from "./UserInput";
-import styles from './DisplayNpc.module.css';
 
 export default function DisplayNpc() {
   const [_npcUid, setNpc] = React.useState(useNpcFromQuery());
@@ -60,11 +60,7 @@ export default function DisplayNpc() {
             </div>
           </div>
           <div className={styles.contentCol}>
-            {isShowingHistory ? (
-              <NpcHistory activeNpcUid={npcUid.uid || ""} npcHistory={npcHistory} onLoadNpc={handleLoadNpc} />
-            ) : (
-              <NpcData npc={npcUid.npc} />
-            )}
+            {isShowingHistory ? <NpcHistory activeNpcUid={npcUid.uid || ""} npcHistory={npcHistory} onLoadNpc={handleLoadNpc} /> : <NpcData npc={npcUid.npc} />}
             <Footer />
           </div>
         </div>
@@ -90,4 +86,3 @@ function useNpcFromQuery(): GeneratedNpc | null {
   }
   return null;
 }
-

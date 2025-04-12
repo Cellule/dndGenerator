@@ -127,18 +127,18 @@
     width: 250px;
     height: 125px;
   }
-  
+
   .githubButtons {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
   }
-  
+
   .version {
     flex-direction: column;
     gap: 0.5rem;
   }
-  
+
   .version span:not(:last-child)::after {
     display: none;
   }
@@ -197,13 +197,13 @@
     flex-direction: column;
     align-items: center;
   }
-  
+
   .footerLinks {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
   }
-  
+
   .footerLinks li:not(:last-child)::after {
     display: none;
   }
@@ -217,8 +217,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-} 
-
+}
 
 .iconsDisclaimer {
   margin-top: 1rem;
@@ -235,4 +234,4 @@
 .iconsDisclaimer a:hover {
   text-decoration: underline;
   color: #fff;
-} 
+}
