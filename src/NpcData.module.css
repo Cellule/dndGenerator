@@ -1,3 +1,7 @@
+:root {
+  --table-padding: 0.25rem;
+}
+
 .npcData {
   display: flex;
   flex-direction: column;
@@ -82,7 +86,7 @@
 }
 
 .abilityTable td {
-  padding: 0.75rem 0.5rem;
+  padding: var(--table-padding);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -98,7 +102,7 @@
 }
 
 .alignmentTable td {
-  padding: 0.75rem 0.5rem;
+  padding: var(--table-padding);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
