@@ -5,10 +5,10 @@
   color: #f2e5de;
   background-color: #1a1a1aa9;
   border-radius: 0.5rem;
+}
 
-  a {
-    color: #f2e5de;
-  }
+.footer a {
+  color: #f2e5de;
 }
 
 .gamePromo {
