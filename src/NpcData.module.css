@@ -1,0 +1,194 @@
+.npcData {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background: linear-gradient(to bottom, #8B6B57, #7B5B47);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem 0.25rem 0 0;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.cardBody {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.firstRow {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+}
+
+.firstRowCard {
+  grid-column: span 12;
+}
+
+@media (min-width: 992px) {
+  .firstRowCard {
+    grid-column: span 6;
+  }
+}
+
+.secondRow {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+}
+
+.secondRowCard {
+  grid-column: span 12;
+}
+
+@media (min-width: 768px) {
+  .secondRowCard {
+    grid-column: span 6;
+  }
+}
+
+@media (min-width: 1200px) {
+  .secondRowCard {
+    grid-column: span 4;
+  }
+}
+
+.abilityTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.abilityTable td {
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.abilityNumber {
+  text-align: right;
+  font-family: monospace;
+  font-size: 1.1rem;
+}
+
+.alignmentTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.alignmentTable td {
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.alignmentNumber {
+  text-align: right;
+  font-family: monospace;
+  font-size: 1.1rem;
+}
+
+.widthThin {
+  width: 30%;
+}
+
+.statBlock {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.statItem {
+  text-align: center;
+  padding: 0.5rem;
+  background-color: rgba(44, 62, 80, 0.05);
+  border-radius: 0.25rem;
+}
+
+.statLabel {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.statValue {
+  font-size: 1.125rem;
+  color: #34495e;
+}
+
+.description {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+.trait {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.trait:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #7B5B47;
+}
+
+@media (max-width: 768px) {
+  .statBlock {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media print {
+  .npcData {
+    display: block;
+  }
+
+  .card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    background-color: white;
+    box-shadow: none;
+  }
+
+  .cardHeader {
+    background-color: #8b4513 !important;
+    color: white !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .firstRowCard {
+    width: 50%;
+    float: left;
+  }
+
+  .secondRowCard {
+    width: 33.33%;
+    float: left;
+  }
+} 

@@ -13,18 +13,16 @@
     "tsc": "tsc -p tsconfig.json && tsc -p cypress/tsconfig.json",
     "cypress:open": "cypress open",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "prettyp": "prettier --write \"./src/**/*.{ts,tsx,scss,json}\"",
+    "prettyp": "prettier --write \"./src/**/*.{ts,tsx,css,json}\"",
     "preview": "vite preview"
   },
   "dependencies": {
-    "bootstrap": "~5.2.3",
     "copy-to-clipboard": "^3.3.3",
     "jsoncrush": "^1.1.8",
     "npc-generator": "^1.0.2",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
-    "sass": "^1.62.0",
+    "typescript-plugin-css-modules": "^5.1.0",
     "uuid": "^9.0.0"
   },
   "devDependencies": {

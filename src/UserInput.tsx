@@ -2,7 +2,7 @@ import copy from "copy-to-clipboard";
 import jsoncrush from "jsoncrush";
 import { getNpcOptionsValues, Npc, NpcGenerateOptions } from "npc-generator";
 import { Component } from "react";
-import { Button, Col, Form, FormGroup, FormLabel, Row } from "react-bootstrap";
+import styles from './UserInput.module.css';
 
 const { alignments, occupations, classes, genders, plothooks, professions, races } = getNpcOptionsValues();
 
@@ -173,20 +173,25 @@ export default class UserInput extends Component<IProps, IState> {
 
     if (wasCopiedToClipboard) {
       return (
-        <Button
-          variant="outline-primary"
+        <button
+          className={`${styles.button} ${styles.buttonOutline} ${styles.buttonOutlinePrimary}`}
           title="Copied to clipboard"
           data-test="copy-button"
           onBlur={() => void this.setState({ wasCopiedToClipboard: false })}
         >
           Copied!
-        </Button>
+        </button>
       );
     }
     return (
-      <Button variant="outline-secondary" title="Copy character to clipboard" data-test="copy-button" onClick={this.copyNpcToClipboard}>
+      <button
+        className={`${styles.button} ${styles.buttonOutline} ${styles.buttonOutlineSecondary}`}
+        title="Copy character to clipboard"
+        data-test="copy-button"
+        onClick={this.copyNpcToClipboard}
+      >
         Copy to Clipboard
-      </Button>
+      </button>
     );
   }
 
@@ -219,31 +224,28 @@ export default class UserInput extends Component<IProps, IState> {
       }
 
       return (
-        <Row key={userOption.label}>
-          <Col>
-            <FormGroup>
-              <FormLabel>{userOption.label}</FormLabel>
-              <Form.Select
-                value={selectedOption ?? undefined}
-                onChange={(e: any) => {
-                  const npcOptions = this.state.npcOptions;
-                  npcOptions[userOption.optionName] = e.target.value === "random" ? null : parseInt(e.target.value);
-                  this.setState({ npcOptions }, () => {
-                    if (userOption.onChange) {
-                      userOption.onChange(this);
-                    }
-                  });
-                }}
-                disabled={!enable}
-              >
-                <option value="random" key="random">
-                  Random
-                </option>
-                {options}
-              </Form.Select>
-            </FormGroup>
-          </Col>
-        </Row>
+        <div key={userOption.label} className={styles.formGroup}>
+          <label className={styles.formLabel}>{userOption.label}</label>
+          <select
+            className={styles.formSelect}
+            value={selectedOption ?? undefined}
+            onChange={(e: any) => {
+              const npcOptions = this.state.npcOptions;
+              npcOptions[userOption.optionName] = e.target.value === "random" ? null : parseInt(e.target.value);
+              this.setState({ npcOptions }, () => {
+                if (userOption.onChange) {
+                  userOption.onChange(this);
+                }
+              });
+            }}
+            disabled={!enable}
+          >
+            <option value="random" key="random">
+              Random
+            </option>
+            {options}
+          </select>
+        </div>
       );
     });
 
@@ -251,22 +253,29 @@ export default class UserInput extends Component<IProps, IState> {
     npcDataUrl.searchParams.set("d", jsoncrush.crush(JSON.stringify(this.props.npc)));
 
     return (
-      <div>
-        <div className="npc-options">{npcOptions}</div>
-        <div className="bottom-options">
-          <Button className="generate-button" variant="success" title="Generate" data-test="generate-button" onClick={this.onSubmit} />
-          <Button variant="outline-secondary" title="Export character to .txt file" data-test="export-button" onClick={this.downloadTxtFile}>
-            Export
-          </Button>
+      <form onSubmit={this.onSubmit}>
+        {npcOptions}
+        <div className={styles.buttonGroup}>
+          <button type="submit" className={`${styles.button} ${styles.buttonPrimary}`}>
+            Generate
+          </button>
           {this.renderCopyToClipboardButton()}
-          <Button className="history" variant="outline-secondary" title="History" data-test="history-button" onClick={this.props.onToggleHistory}>
+          <button
+            type="button"
+            className={`${styles.button} ${styles.buttonOutline} ${styles.buttonOutlineSecondary}`}
+            onClick={this.downloadTxtFile}
+          >
+            Download
+          </button>
+          <button
+            type="button"
+            className={`${styles.button} ${styles.buttonOutline} ${styles.buttonOutlineSecondary}`}
+            onClick={this.props.onToggleHistory}
+          >
             History
-          </Button>
-          <a className="npc-link" href={npcDataUrl.toString()} data-test="bookmark-button">
-            🔗 Bookmark
-          </a>
+          </button>
         </div>
-      </div>
+      </form>
     );
   }
 }

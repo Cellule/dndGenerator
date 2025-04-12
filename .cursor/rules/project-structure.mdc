@@ -1,0 +1,17 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Project Structure Rules
+
+## Directory Organization
+- `src/`: Source code directory
+  - `components/`: React components
+  - `styles/`: CSS modules for styling
+  - `utils/`: Utility functions and helpers
+
+## Component Guidelines
+- Keep components focused and single-purpose
+- Use proper prop typing
+- Document complex logic with comments 

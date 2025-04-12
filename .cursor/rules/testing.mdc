@@ -1,0 +1,128 @@
+---
+description: How to test change done on the website 
+globs: 
+alwaysApply: false
+---
+# Testing Rules
+
+## Local Development Testing
+1. Setup:
+   ```bash
+   npm install
+   npm run dev
+   ```
+   - Access the development server at localhost:5173
+
+## Automated Browser Testing with AI Agent
+AI agents should use browser MCP tools to perform automated testing:
+
+1. Navigation Testing:
+   - Use `browser_navigate` to access the application
+   - Use `browser_snapshot` to capture the page state
+   - Verify all pages load correctly
+
+2. Interactive Elements Testing:
+   - Use `browser_click` to test buttons and interactive elements
+   - Use `browser_type` to input form data
+   - Use `browser_select_option` for dropdown menus
+   - Test Generate and Reset button functionality
+
+3. Responsive Testing:
+   - Take snapshots at different viewport sizes:
+     - Desktop (1920x1080)
+     - Tablet (768px)
+     - Mobile (375px)
+   - Verify layout adjusts appropriately
+
+4. Visual Regression Testing:
+   - Use `browser_screenshot` to capture UI state
+   - Compare with previous screenshots for changes
+   - Verify styling consistency
+
+5. Error Handling:
+   - Use `browser_get_console_logs` to check for errors
+   - Test form validation
+   - Verify error messages display correctly
+
+## Manual Testing Checklist
+1. Form Controls:
+   - [ ] All dropdowns are functional
+   - [ ] Generate button triggers NPC creation
+   - [ ] Reset button clears all fields
+   
+2. Responsive Design:
+   - [ ] Test on desktop (1920x1080)
+   - [ ] Test on tablet (768px)
+   - [ ] Test on mobile (375px)
+   
+3. Card Display:
+   - [ ] Headers have correct gradient styling
+   - [ ] Content is properly formatted
+   - [ ] Stats are correctly calculated and displayed
+
+4. Browser Testing:
+   - Test in latest versions of:
+     - [ ] Chrome
+     - [ ] Firefox
+     - [ ] Safari
+
+## Performance Testing
+1. Load Time Testing:
+   - Use `browser_wait` to measure load times
+   - Monitor initial page load
+   - Test generation response time
+
+2. Resource Usage:
+   - Monitor generation speed
+   - Check memory usage
+   - Verify smooth animations
+   - Test build optimization
+   - Verify code splitting effectiveness
+
+## Testing Flow for AI Agents
+1. Initial Setup:
+   ```javascript
+   // Navigate to application
+   browser_navigate(url)
+   
+   // Take initial snapshot
+   browser_snapshot()
+   
+   // Test form inputs
+   browser_type(nameField, "Test NPC")
+   browser_select_option(raceDropdown, ["Human"])
+   
+   // Generate NPC
+   browser_click(generateButton)
+   
+   // Verify results
+   browser_snapshot()
+   browser_get_console_logs()
+   ```
+
+2. Error Testing:
+   ```javascript
+   // Test invalid inputs
+   browser_type(invalidField, "!!!!")
+   browser_click(generateButton)
+   
+   // Check error messages
+   browser_snapshot()
+   browser_get_console_logs()
+   ```
+
+3. Visual Testing:
+   ```javascript
+   // Take screenshots at different viewports
+   browser_screenshot()
+   
+   // Test hover states
+   browser_hover(generateButton)
+   browser_screenshot()
+   ```
+
+## Reporting Issues
+- Document steps to reproduce using browser MCP commands
+- Include relevant screenshots and console logs
+- Note browser version and viewport size
+- Reference specific test cases that failed 

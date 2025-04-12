@@ -1,5 +1,5 @@
 import { Card, ListGroup } from "react-bootstrap";
-import "./styles/NpcHistory.scss";
+import "./styles/scss/NpcHistory.scss";
 import { GeneratedNpc } from "./typings";
 
 export function NpcHistory(props: { activeNpcUid: string; npcHistory: GeneratedNpc[]; onLoadNpc: (npc: GeneratedNpc) => void }) {

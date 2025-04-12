@@ -1,0 +1,238 @@
+.footer {
+  margin-top: 0.5rem;
+  padding: 1rem 0;
+  text-align: center;
+  color: #f2e5de;
+  background-color: #1a1a1aa9;
+  border-radius: 0.5rem;
+
+  a {
+    color: #f2e5de;
+  }
+}
+
+.gamePromo {
+  margin-bottom: 2rem;
+}
+
+.gamePromoTitle {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.gameButton {
+  display: inline-block;
+  width: 300px;
+  height: 150px;
+  margin: 0 auto;
+  background-image: url("./images/BW_Header_Capsule.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.gameButton:hover {
+  transform: scale(1.05);
+}
+
+.contactSection {
+  margin: 2rem 0;
+  color: var(--primary-color);
+}
+
+.contactText {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.emailLink {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.emailLink:hover {
+  text-decoration: underline;
+  color: #1d4ed8;
+}
+
+.social {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.githubButtons {
+  display: inline-flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.githubButton {
+  border: 0;
+  margin: 0;
+}
+
+.metaInfo {
+  margin-top: 1.5rem;
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.metaInfo a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.metaInfo a:hover {
+  text-decoration: underline;
+  color: #1d4ed8;
+}
+
+.version {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--primary-color);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.version a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.version a:hover {
+  text-decoration: underline;
+  color: #1d4ed8;
+}
+
+.version span:not(:last-child)::after {
+  content: "·";
+  margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .gameButton {
+    width: 250px;
+    height: 125px;
+  }
+  
+  .githubButtons {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .version {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .version span:not(:last-child)::after {
+    display: none;
+  }
+}
+
+.socialButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.socialItem {
+  text-align: center;
+}
+
+.footerOutline {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.footerLinks a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
+
+.footerLinks a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.footerLinks li:not(:last-child)::after {
+  content: "·";
+  margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .socialButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footerLinks {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .footerLinks li:not(:last-child)::after {
+    display: none;
+  }
+}
+
+.steamLink {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/BW_Header_Capsule.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} 
+
+
+.iconsDisclaimer {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+
+.iconsDisclaimer a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
+
+.iconsDisclaimer a:hover {
+  text-decoration: underline;
+  color: #fff;
+} 
