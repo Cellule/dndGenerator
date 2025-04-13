@@ -81,9 +81,12 @@
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .buttonPrimary {
+  composes: button;
   color: #fff;
   background: linear-gradient(to bottom, #d35400, #c0392b);
   border: none;
@@ -107,28 +110,19 @@
 
 .buttonOutline {
   background: rgba(44, 62, 80, 0.4);
-}
-
-.buttonOutlinePrimary {
   color: #fff;
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-.buttonOutlinePrimary:hover {
+.buttonOutline:hover {
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-.buttonOutlineSecondary {
-  color: #fff;
-  border-color: rgba(255, 255, 255, 0.3);
-}
-
-.buttonOutlineSecondary:hover {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.5);
+.buttonSecondary {
+  composes: button;
+  composes: buttonOutline;
 }
 
 .button:disabled {
@@ -147,8 +141,62 @@
   font-size: 0.9rem;
 }
 
+.optionsContainer {
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.secondaryButtons {
+  composes: buttonGroup;
+  /* The transition doesn't work as good because of the display: none on the buttons */
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  margin-top: 0;
+}
+
 @media (max-width: 768px) {
   .buttonGroup {
     grid-template-columns: 1fr;
+  }
+
+  .secondaryButtons.collapsed {
+    max-height: 0;
+    opacity: 0;
+
+    * {
+      /* Hide all buttons otherwise they'll be clickable but not visible */
+      display: none;
+    }
+  }
+
+  .secondaryButtons.expanded {
+    max-height: 1000px;
+    opacity: 1;
+  }
+
+  .optionsContainer.collapsed {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  .optionsContainer.expanded {
+    max-height: 1000px;
+    opacity: 1;
+  }
+
+  .expandButton {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .optionsContainer {
+    max-height: none;
+    opacity: 1;
+  }
+
+  .expandButton {
+    display: none;
   }
 }

@@ -2,6 +2,7 @@ import copy from "copy-to-clipboard";
 import jsoncrush from "jsoncrush";
 import { getNpcOptionsValues, Npc, NpcGenerateOptions } from "npc-generator";
 import { Component } from "react";
+import { cs } from "./core/classSet";
 import styles from "./UserInput.module.css";
 
 const { alignments, occupations, classes, genders, plothooks, professions, races } = getNpcOptionsValues();
@@ -15,6 +16,7 @@ interface IProps {
 interface IState {
   npcOptions: NpcGenerateOptions;
   wasCopiedToClipboard?: boolean;
+  isExpanded: boolean;
 }
 
 type UserOption = {
@@ -104,8 +106,20 @@ export default class UserInput extends Component<IProps, IState> {
     super(props);
     this.state = {
       npcOptions: {},
+      isExpanded: localStorage.getItem("isExpanded") === "true",
     };
   }
+
+  toggleExpand = () => {
+    this.setState(
+      (prevState) => ({
+        isExpanded: !prevState.isExpanded,
+      }),
+      () => {
+        localStorage.setItem("isExpanded", this.state.isExpanded.toString());
+      },
+    );
+  };
 
   onSubmit = (event: React.FormEvent) => {
     event.preventDefault();
@@ -181,7 +195,7 @@ export default class UserInput extends Component<IProps, IState> {
       return (
         <button
           type="button"
-          className={`${styles.button} ${styles.buttonOutline} ${styles.buttonOutlinePrimary}`}
+          className={styles.buttonSecondary}
           title="Copied to clipboard"
           data-test="copy-button"
           onBlur={this.handleCopyBlur}
@@ -194,7 +208,7 @@ export default class UserInput extends Component<IProps, IState> {
     return (
       <button
         type="button"
-        className={`${styles.button} ${styles.buttonOutline} ${styles.buttonOutlineSecondary}`}
+        className={styles.buttonSecondary}
         title="Copy character to clipboard"
         data-test="copy-button"
         onClick={this.copyNpcToClipboard}
@@ -205,6 +219,8 @@ export default class UserInput extends Component<IProps, IState> {
   }
 
   render() {
+    const { isExpanded } = this.state;
+
     const npcOptions = userOptions.map((userOption) => {
       const enable = !(userOption.condition && !userOption.condition(this.state.npcOptions));
 
@@ -263,25 +279,26 @@ export default class UserInput extends Component<IProps, IState> {
 
     return (
       <form onSubmit={this.onSubmit}>
-        {npcOptions}
+        <div className={cs(styles.optionsContainer, isExpanded ? styles.expanded : styles.collapsed)}>{npcOptions}</div>
         <div className={styles.buttonGroup}>
-          <button type="submit" className={`${styles.button} ${styles.buttonPrimary}`} data-test="generate-button">
+          <button type="submit" className={styles.buttonPrimary} data-test="generate-button">
             Generate
           </button>
-          {this.renderCopyToClipboardButton()}
-          <button type="button" className={`${styles.button} ${styles.buttonOutline} ${styles.buttonOutlineSecondary}`} onClick={this.downloadTxtFile}>
-            Download
+          <div className={cs(styles.secondaryButtons, isExpanded ? styles.expanded : styles.collapsed)}>
+            {this.renderCopyToClipboardButton()}
+            <button type="button" className={styles.buttonSecondary} onClick={this.downloadTxtFile}>
+              Download
+            </button>
+            <button type="button" className={styles.buttonSecondary} onClick={this.props.onToggleHistory}>
+              History
+            </button>
+            <a className={cs(styles.buttonSecondary, styles.bookmarkButton)} href={npcDataUrl.toString()} data-test="bookmark-button">
+              🔗 Bookmark
+            </a>
+          </div>
+          <button type="button" className={cs(styles.buttonSecondary, styles.expandButton)} onClick={this.toggleExpand}>
+            {isExpanded ? "Hide Options ▲" : "Show Options ▼"}
           </button>
-          <button type="button" className={`${styles.button} ${styles.buttonOutline} ${styles.buttonOutlineSecondary}`} onClick={this.props.onToggleHistory}>
-            History
-          </button>
-          <a
-            className={`${styles.button} ${styles.buttonOutline} ${styles.buttonOutlineSecondary} ${styles.bookmarkButton}`}
-            href={npcDataUrl.toString()}
-            data-test="bookmark-button"
-          >
-            🔗 Bookmark
-          </a>
         </div>
       </form>
     );
