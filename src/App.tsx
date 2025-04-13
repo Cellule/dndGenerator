@@ -1,14 +1,17 @@
 import { Component } from "react";
-import { Container } from "react-bootstrap";
+import styles from "./App.module.css";
 import DisplayNpc from "./DisplayNpc";
-import "./styles/main.scss";
 
 export default class App extends Component {
   render() {
     return (
-      <Container>
-        <DisplayNpc />
-      </Container>
+      <div className={styles.app}>
+        <main className={styles.main}>
+          <div className={styles.container}>
+            <DisplayNpc />
+          </div>
+        </main>
+      </div>
     );
   }
 }

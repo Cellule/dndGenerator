@@ -1,0 +1,111 @@
+.historyContainer {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.historyHeader {
+  background: linear-gradient(to bottom, #8b6b57, #7b5b47);
+  color: #fff;
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.historyList {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
+  min-height: 300px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.historyItem {
+  padding: 0.75rem 1.25rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #2c3e50;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.historyItem:last-child {
+  border-bottom: none;
+}
+
+.historyItem:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.historyItem:hover {
+  background-color: rgba(139, 107, 87, 0.08);
+}
+
+.selected {
+  background-color: #8b6b57 !important;
+  color: white;
+  position: relative;
+}
+
+.selected:hover {
+  background-color: #7b5b47 !important;
+}
+
+.selected::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #a68b7b;
+}
+
+/* Scrollbar styling */
+.historyList::-webkit-scrollbar {
+  width: 10px;
+}
+
+.historyList::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+}
+
+.historyList::-webkit-scrollbar-thumb {
+  background-color: rgba(139, 107, 87, 0.3);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.historyList::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(139, 107, 87, 0.5);
+}
+
+@media (max-width: 768px) {
+  .historyContainer {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .historyItem {
+    padding: 0.875rem 1.25rem;
+  }
+
+  .historyList {
+    min-height: 400px;
+    max-height: 600px;
+  }
+}

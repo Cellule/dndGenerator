@@ -1,0 +1,88 @@
+.displayNpcRoot {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.userInfoCol {
+  grid-column: span 12;
+  background-color: rgba(44, 62, 80, 0.8);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .userInfoCol {
+    grid-column: span 4;
+  }
+}
+
+@media (min-width: 992px) {
+  .userInfoCol {
+    grid-column: span 3;
+  }
+}
+
+.userInfo {
+  color: #fff;
+}
+
+.titleImageWrapper {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.titleImage {
+  width: 100%;
+  max-width: 200px;
+  height: 32px;
+  margin: 0 auto;
+  background-image: url("./images/npcgenerator.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contentCol {
+  grid-column: span 12;
+}
+
+@media (min-width: 768px) {
+  .contentCol {
+    grid-column: span 8;
+  }
+}
+
+@media (min-width: 992px) {
+  .contentCol {
+    grid-column: span 9;
+  }
+}
+
+.printing {
+  display: none;
+}
+
+@media print {
+  .displayNpcRoot {
+    display: none;
+  }
+
+  .printing {
+    display: block;
+  }
+
+  .printTitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+  }
+}

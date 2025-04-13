@@ -1,37 +1,36 @@
-// Code taken from https://github.com/react-bootstrap/react-bootstrap/tree/master/docs
 import { Component } from "react";
 import packageJSON from "../package.json";
+import styles from "./Footer.module.css";
 
 export default class PageFooter extends Component {
   render() {
     return (
-      <footer className="bs-docs-footer" role="contentinfo">
-        <ul className="bs-docs-social-buttons">
-          <li>
+      <footer className={styles.footer} role="contentinfo">
+        <ul className={styles.socialButtons}>
+          <li className={styles.socialItem}>
             <div>
-              <p className="footer-outline">
+              <p className={styles.footerOutline}>
                 <b>Check out my latest video game!</b>
               </p>
               <a href="https://www.baronneriegames.com/breach-wanderers" target="_blank" rel="noopener noreferrer">
-                <div className="center-block BW-button" />
+                <div className={styles.gameButton} />
               </a>
             </div>
           </li>
         </ul>
         <div>
-          <p className="footer-outline">
+          <p className={styles.footerOutline}>
             <b> Comments, suggestions, crazy hook or trait idea? </b>
           </p>
           <p>
-            {" "}
             Email me at: <a href="mailto:etienspb@gmail.com">EtiensPB@gmail.com</a>!
           </p>
         </div>
-        <div className="bs-docs-social">
-          <ul className="bs-docs-social-buttons">
+        <div className={styles.social}>
+          <ul className={styles.socialButtons}>
             <li>
               <iframe
-                className="github-btn"
+                className={styles.githubButton}
                 src="https://ghbtns.com/github-btn.html?user=cellule&repo=dndGenerator&type=watch&count=true"
                 width={95}
                 height={20}
@@ -40,7 +39,7 @@ export default class PageFooter extends Component {
             </li>
             <li>
               <iframe
-                className="github-btn"
+                className={styles.githubButton}
                 src="https://ghbtns.com/github-btn.html?user=cellule&repo=dndGenerator&type=fork&count=true"
                 width={92}
                 height={20}
@@ -56,22 +55,34 @@ export default class PageFooter extends Component {
           </a>
           .
         </p>
-        <ul className="bs-docs-footer-links muted">
+        <ul className={styles.footerLinks}>
           <li>Currently v{packageJSON.version}</li>
-          <li>·</li>
           <li>
             <a href="https://github.com/cellule/dndGenerator/">GitHub</a>
           </li>
-          <li>·</li>
           <li>
             <a href="https://github.com/cellule/dndGenerator/issues?state=open">Issues</a>
           </li>
-          <li>·</li>
           <li>
             <a href="https://github.com/cellule/dndGenerator/releases">Releases</a>
           </li>
         </ul>
+        <Icons8Disclaimer />
       </footer>
     );
   }
+}
+
+function Icons8Disclaimer() {
+  return (
+    <div className={styles.iconsDisclaimer}>
+      <a target="_blank" href={`https://icons8.com/icon/aFoL19SWLxKa/npc`} rel="noreferrer">
+        Npc
+      </a>{" "}
+      icon by{" "}
+      <a target="_blank" href="https://icons8.com" rel="noreferrer">
+        Icons8
+      </a>
+    </div>
+  );
 }

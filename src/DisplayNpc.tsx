@@ -1,8 +1,8 @@
 import jsoncrush from "jsoncrush";
 import { debugNodeToString, generate, Npc, NpcGenerateOptions } from "npc-generator";
 import React from "react";
-import { Col, Row } from "react-bootstrap";
 import { v4 as uuidV4 } from "uuid";
+import styles from "./DisplayNpc.module.css";
 import Footer from "./Footer";
 import NpcData from "./NpcData";
 import { NpcHistory } from "./NpcHistory";
@@ -15,6 +15,15 @@ export default function DisplayNpc() {
   let npcUid = _npcUid;
   const [isShowingHistory, setShowHistory] = React.useState(false);
   const { npcHistory, pushNpc } = useNpcHistory();
+
+  // Update document title when NPC changes
+  React.useEffect(() => {
+    if (npcUid?.npc?.description?.name) {
+      document.title = `${npcUid.npc.description.name} - NPC Generator`;
+    } else {
+      document.title = "NPC Generator";
+    }
+  }, [npcUid]);
 
   const generateNpc = (npcOptions: NpcGenerateOptions) => {
     const result = generate({ npcOptions });
@@ -37,7 +46,10 @@ export default function DisplayNpc() {
     npcUid = generateNpc({});
   }
 
-  const handleToggleHistory = () => setShowHistory(!isShowingHistory);
+  const handleToggleHistory = () => {
+    setShowHistory(!isShowingHistory);
+    document.scrollingElement?.scrollTo?.(0, 0);
+  };
   const handleLoadNpc = (npc: GeneratedNpc): void => {
     setNpc(npc);
     setShowHistory(false);
@@ -46,25 +58,24 @@ export default function DisplayNpc() {
 
   return (
     <>
-      <div className="display-npc-root">
-        <Row>
-          <Col sm={12} md={4} lg={3} className="user-info-col">
-            <div className="user-info">
-              <div className="title-image-wrapper">
-                <div className="title-image" />
+      <div className={styles.displayNpcRoot}>
+        <div className={styles.layout}>
+          <div className={styles.userInfoCol}>
+            <div className={styles.userInfo}>
+              <div className={styles.titleImageWrapper}>
+                <div className={styles.titleImage} />
               </div>
               <UserInput npc={npcUid.npc} generate={generateNpc} onToggleHistory={handleToggleHistory} />
             </div>
-          </Col>
-          <Col sm={12} md={7} lg={9}>
+          </div>
+          <div className={styles.contentCol}>
             {isShowingHistory ? <NpcHistory activeNpcUid={npcUid.uid || ""} npcHistory={npcHistory} onLoadNpc={handleLoadNpc} /> : <NpcData npc={npcUid.npc} />}
             <Footer />
-          </Col>
-          <Icons8Disclaimer name="Npc" iconId="aFoL19SWLxKa/npc" />
-        </Row>
+          </div>
+        </div>
       </div>
-      <div className="printing">
-        <h1 className="print-title">{npcUid.npc.description.name}</h1>
+      <div className={styles.printing}>
+        <h1 className={styles.printTitle}>{npcUid.npc.description.name}</h1>
         <NpcData npc={npcUid.npc} />
       </div>
     </>
@@ -83,18 +94,4 @@ function useNpcFromQuery(): GeneratedNpc | null {
     }
   }
   return null;
-}
-
-function Icons8Disclaimer(props: { name: string; iconId: string }) {
-  return (
-    <div>
-      <a target="_blank" href={`https://icons8.com/icon/${props.iconId}`} rel="noreferrer">
-        {props.name}
-      </a>{" "}
-      icon by{" "}
-      <a target="_blank" href="https://icons8.com" rel="noreferrer">
-        Icons8
-      </a>
-    </div>
-  );
 }

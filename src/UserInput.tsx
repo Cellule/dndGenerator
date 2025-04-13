@@ -2,7 +2,8 @@ import copy from "copy-to-clipboard";
 import jsoncrush from "jsoncrush";
 import { getNpcOptionsValues, Npc, NpcGenerateOptions } from "npc-generator";
 import { Component } from "react";
-import { Button, Col, Form, FormGroup, FormLabel, Row } from "react-bootstrap";
+import { cs } from "./core/classSet";
+import styles from "./UserInput.module.css";
 
 const { alignments, occupations, classes, genders, plothooks, professions, races } = getNpcOptionsValues();
 
@@ -15,6 +16,7 @@ interface IProps {
 interface IState {
   npcOptions: NpcGenerateOptions;
   wasCopiedToClipboard?: boolean;
+  isExpanded: boolean;
 }
 
 type UserOption = {
@@ -104,10 +106,23 @@ export default class UserInput extends Component<IProps, IState> {
     super(props);
     this.state = {
       npcOptions: {},
+      isExpanded: localStorage.getItem("isExpanded") === "true",
     };
   }
 
-  onSubmit = () => {
+  toggleExpand = () => {
+    this.setState(
+      (prevState) => ({
+        isExpanded: !prevState.isExpanded,
+      }),
+      () => {
+        localStorage.setItem("isExpanded", this.state.isExpanded.toString());
+      },
+    );
+  };
+
+  onSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
     this.props.generate(this.state.npcOptions);
   };
 
@@ -151,8 +166,13 @@ export default class UserInput extends Component<IProps, IState> {
     return false;
   };
 
+  private handleCopyBlur: React.FocusEventHandler<HTMLButtonElement> = () => {
+    this.setState({ wasCopiedToClipboard: false });
+  };
+
   private copyNpcToClipboard: React.MouseEventHandler<HTMLButtonElement> = (ev) => {
     ev.stopPropagation();
+    ev.preventDefault();
     const header = this.getExportFileName();
     const characterDetails = this.getCharacterText();
     const success = copy(`${header}\n${characterDetails}`, {
@@ -173,24 +193,34 @@ export default class UserInput extends Component<IProps, IState> {
 
     if (wasCopiedToClipboard) {
       return (
-        <Button
-          variant="outline-primary"
+        <button
+          type="button"
+          className={styles.buttonSecondary}
           title="Copied to clipboard"
           data-test="copy-button"
-          onBlur={() => void this.setState({ wasCopiedToClipboard: false })}
+          onBlur={this.handleCopyBlur}
+          onClick={this.copyNpcToClipboard}
         >
           Copied!
-        </Button>
+        </button>
       );
     }
     return (
-      <Button variant="outline-secondary" title="Copy character to clipboard" data-test="copy-button" onClick={this.copyNpcToClipboard}>
+      <button
+        type="button"
+        className={styles.buttonSecondary}
+        title="Copy character to clipboard"
+        data-test="copy-button"
+        onClick={this.copyNpcToClipboard}
+      >
         Copy to Clipboard
-      </Button>
+      </button>
     );
   }
 
   render() {
+    const { isExpanded } = this.state;
+
     const npcOptions = userOptions.map((userOption) => {
       const enable = !(userOption.condition && !userOption.condition(this.state.npcOptions));
 
@@ -219,31 +249,28 @@ export default class UserInput extends Component<IProps, IState> {
       }
 
       return (
-        <Row key={userOption.label}>
-          <Col>
-            <FormGroup>
-              <FormLabel>{userOption.label}</FormLabel>
-              <Form.Select
-                value={selectedOption ?? undefined}
-                onChange={(e: any) => {
-                  const npcOptions = this.state.npcOptions;
-                  npcOptions[userOption.optionName] = e.target.value === "random" ? null : parseInt(e.target.value);
-                  this.setState({ npcOptions }, () => {
-                    if (userOption.onChange) {
-                      userOption.onChange(this);
-                    }
-                  });
-                }}
-                disabled={!enable}
-              >
-                <option value="random" key="random">
-                  Random
-                </option>
-                {options}
-              </Form.Select>
-            </FormGroup>
-          </Col>
-        </Row>
+        <div key={userOption.label} className={styles.formGroup}>
+          <label className={styles.formLabel}>{userOption.label}</label>
+          <select
+            className={styles.formSelect}
+            value={selectedOption ?? undefined}
+            onChange={(e: any) => {
+              const npcOptions = this.state.npcOptions;
+              npcOptions[userOption.optionName] = e.target.value === "random" ? null : parseInt(e.target.value);
+              this.setState({ npcOptions }, () => {
+                if (userOption.onChange) {
+                  userOption.onChange(this);
+                }
+              });
+            }}
+            disabled={!enable}
+          >
+            <option value="random" key="random">
+              Random
+            </option>
+            {options}
+          </select>
+        </div>
       );
     });
 
@@ -251,22 +278,29 @@ export default class UserInput extends Component<IProps, IState> {
     npcDataUrl.searchParams.set("d", jsoncrush.crush(JSON.stringify(this.props.npc)));
 
     return (
-      <div>
-        <div className="npc-options">{npcOptions}</div>
-        <div className="bottom-options">
-          <Button className="generate-button" variant="success" title="Generate" data-test="generate-button" onClick={this.onSubmit} />
-          <Button variant="outline-secondary" title="Export character to .txt file" data-test="export-button" onClick={this.downloadTxtFile}>
-            Export
-          </Button>
-          {this.renderCopyToClipboardButton()}
-          <Button className="history" variant="outline-secondary" title="History" data-test="history-button" onClick={this.props.onToggleHistory}>
-            History
-          </Button>
-          <a className="npc-link" href={npcDataUrl.toString()} data-test="bookmark-button">
-            🔗 Bookmark
-          </a>
+      <form onSubmit={this.onSubmit}>
+        <div className={cs(styles.optionsContainer, isExpanded ? styles.expanded : styles.collapsed)}>{npcOptions}</div>
+        <div className={styles.buttonGroup}>
+          <button type="submit" className={styles.buttonPrimary} data-test="generate-button">
+            Generate
+          </button>
+          <div className={cs(styles.secondaryButtons, isExpanded ? styles.expanded : styles.collapsed)}>
+            {this.renderCopyToClipboardButton()}
+            <button type="button" className={styles.buttonSecondary} onClick={this.downloadTxtFile}>
+              Download
+            </button>
+            <button type="button" className={styles.buttonSecondary} onClick={this.props.onToggleHistory}>
+              History
+            </button>
+            <a className={cs(styles.buttonSecondary, styles.bookmarkButton)} href={npcDataUrl.toString()} data-test="bookmark-button">
+              🔗 Bookmark
+            </a>
+          </div>
+          <button type="button" className={cs(styles.buttonSecondary, styles.expandButton)} onClick={this.toggleExpand}>
+            {isExpanded ? "Hide Options ▲" : "Show Options ▼"}
+          </button>
         </div>
-      </div>
+      </form>
     );
   }
 }

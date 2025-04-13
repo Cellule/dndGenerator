@@ -1,0 +1,202 @@
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 0.95rem;
+}
+
+.formSelect {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+  background: linear-gradient(to bottom, rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.8));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.25rem;
+  transition:
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem center;
+  background-size: 0.65rem auto;
+  padding-right: 2rem;
+}
+
+.formSelect:hover {
+  background: linear-gradient(to bottom, rgba(52, 73, 94, 0.9), rgba(52, 73, 94, 0.8));
+  border-color: rgba(255, 255, 255, 0.3);
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem center;
+  background-size: 0.65rem auto;
+}
+
+.formSelect:focus {
+  border-color: rgba(255, 255, 255, 0.4);
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.formSelect:disabled {
+  background: rgba(44, 62, 80, 0.4);
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.formSelect option {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.buttonGroup {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.button {
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.buttonPrimary {
+  composes: button;
+  color: #fff;
+  background: linear-gradient(to bottom, #d35400, #c0392b);
+  border: none;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+.buttonPrimary:hover {
+  background: linear-gradient(to bottom, #e67e22, #d35400);
+}
+
+.buttonPrimary:active {
+  background: linear-gradient(to bottom, #c0392b, #d35400);
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.2),
+    0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.buttonOutline {
+  background: rgba(44, 62, 80, 0.4);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.buttonOutline:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.buttonSecondary {
+  composes: button;
+  composes: buttonOutline;
+}
+
+.button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.button:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.25);
+}
+
+.bookmarkButton {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.optionsContainer {
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.secondaryButtons {
+  composes: buttonGroup;
+  /* The transition doesn't work as good because of the display: none on the buttons */
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .buttonGroup {
+    grid-template-columns: 1fr;
+  }
+
+  .secondaryButtons.collapsed {
+    max-height: 0;
+    opacity: 0;
+
+    * {
+      /* Hide all buttons otherwise they'll be clickable but not visible */
+      display: none;
+    }
+  }
+
+  .secondaryButtons.expanded {
+    max-height: 1000px;
+    opacity: 1;
+  }
+
+  .optionsContainer.collapsed {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  .optionsContainer.expanded {
+    max-height: 1000px;
+    opacity: 1;
+  }
+
+  .expandButton {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .optionsContainer {
+    max-height: none;
+    opacity: 1;
+  }
+
+  .expandButton {
+    display: none;
+  }
+}
