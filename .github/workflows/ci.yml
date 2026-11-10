@@ -23,23 +23,6 @@ jobs:
       - run: npm run lint
       - run: npm run fmt:check
 
-  cypress:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # actions/checkout v7.0.1
-      - name: Setup tools with mise
-        uses: jdx/mise-action@b44d12e7d0d8ee7461bb893e1b1993500433185b # jdx/mise-action v5.2.7
-      - run: npm install
-
-      # https://docs.cypress.io/guides/continuous-integration/github-actions
-      - name: Cypress run
-        # https://github.com/marketplace/actions/cypress-io
-        uses: cypress-io/github-action@18016a55674bd02cabf197de5762a1710cb5577c # cypress-io/github-action v7.4.9
-        with:
-          start: npm run dev -- --host
-          wait-on: "http://localhost:3000"
-
   playwright:
     runs-on: ubuntu-latest
 
