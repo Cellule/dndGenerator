@@ -206,13 +206,7 @@ export default class UserInput extends Component<IProps, IState> {
       );
     }
     return (
-      <button
-        type="button"
-        className={styles.buttonSecondary}
-        title="Copy character to clipboard"
-        data-test="copy-button"
-        onClick={this.copyNpcToClipboard}
-      >
+      <button type="button" className={styles.buttonSecondary} title="Copy character to clipboard" data-test="copy-button" onClick={this.copyNpcToClipboard}>
         Copy to Clipboard
       </button>
     );

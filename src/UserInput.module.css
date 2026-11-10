@@ -142,14 +142,18 @@
 }
 
 .optionsContainer {
-  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition:
+    max-height 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
   overflow: hidden;
 }
 
 .secondaryButtons {
   composes: buttonGroup;
   /* The transition doesn't work as good because of the display: none on the buttons */
-  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition:
+    max-height 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
   margin-top: 0;
 }
 
