@@ -29,3 +29,8 @@ build
 *.tsbuildinfo
 vite.config.d.ts
 vite.config.js
+
+# Playwright
+test-results
+playwright-report
+blob-report

@@ -197,7 +197,7 @@ export default class UserInput extends Component<IProps, IState> {
           type="button"
           className={styles.buttonSecondary}
           title="Copied to clipboard"
-          data-test="copy-button"
+          data-testid="copy-button"
           onBlur={this.handleCopyBlur}
           onClick={this.copyNpcToClipboard}
         >
@@ -206,7 +206,7 @@ export default class UserInput extends Component<IProps, IState> {
       );
     }
     return (
-      <button type="button" className={styles.buttonSecondary} title="Copy character to clipboard" data-test="copy-button" onClick={this.copyNpcToClipboard}>
+      <button type="button" className={styles.buttonSecondary} title="Copy character to clipboard" data-testid="copy-button" onClick={this.copyNpcToClipboard}>
         Copy to Clipboard
       </button>
     );
@@ -275,7 +275,7 @@ export default class UserInput extends Component<IProps, IState> {
       <form onSubmit={this.onSubmit}>
         <div className={cs(styles.optionsContainer, isExpanded ? styles.expanded : styles.collapsed)}>{npcOptions}</div>
         <div className={styles.buttonGroup}>
-          <button type="submit" className={styles.buttonPrimary} data-test="generate-button">
+          <button type="submit" className={styles.buttonPrimary} data-testid="generate-button">
             Generate
           </button>
           <div className={cs(styles.secondaryButtons, isExpanded ? styles.expanded : styles.collapsed)}>
@@ -286,7 +286,7 @@ export default class UserInput extends Component<IProps, IState> {
             <button type="button" className={styles.buttonSecondary} onClick={this.props.onToggleHistory}>
               History
             </button>
-            <a className={cs(styles.buttonSecondary, styles.bookmarkButton)} href={npcDataUrl.toString()} data-test="bookmark-button">
+            <a className={cs(styles.buttonSecondary, styles.bookmarkButton)} href={npcDataUrl.toString()} data-testid="bookmark-button">
               🔗 Bookmark
             </a>
           </div>

@@ -39,3 +39,31 @@ jobs:
         with:
           start: npm run dev -- --host
           wait-on: "http://localhost:3000"
+
+  playwright:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # actions/checkout v7.0.1
+      - name: Setup tools with mise
+        uses: jdx/mise-action@b44d12e7d0d8ee7461bb893e1b1993500433185b # jdx/mise-action v5.2.7
+      - run: npm install
+
+      # https://playwright.dev/docs/ci#github-actions
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      # The dev server is started by playwright.config.ts webServer
+      - name: Playwright run
+        run: npm run test:e2e
+
+      - name: Upload Playwright artifacts
+        if: failure()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # actions/upload-artifact v7.0.2
+        with:
+          name: playwright-artifacts
+          path: |
+            test-results/
+            playwright-report/
+          retention-days: 7
+          if-no-files-found: ignore
