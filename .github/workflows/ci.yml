@@ -30,7 +30,7 @@ jobs:
       # https://docs.cypress.io/guides/continuous-integration/github-actions
       - name: Cypress run
         # https://github.com/marketplace/actions/cypress-io
-        uses: cypress-io/github-action@be1bab96b388bbd9ce3887e397d373c8557e15af # cypress-io/github-action v6.9.2
+        uses: cypress-io/github-action@18016a55674bd02cabf197de5762a1710cb5577c # cypress-io/github-action v7.4.9
         with:
           start: npm run dev -- --host
           wait-on: "http://localhost:3000"
