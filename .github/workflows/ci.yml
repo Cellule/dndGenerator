@@ -9,17 +9,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [26.x]
-
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # actions/checkout v4.4.0
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
+      - name: Setup tools with mise
+        uses: jdx/mise-action@b44d12e7d0d8ee7461bb893e1b1993500433185b # jdx/mise-action v5.2.7
 
       - run: npm install
       - run: npm run build
@@ -28,17 +22,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-      - name: Use Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 26
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # actions/checkout v4.4.0
+      - name: Setup tools with mise
+        uses: jdx/mise-action@b44d12e7d0d8ee7461bb893e1b1993500433185b # jdx/mise-action v5.2.7
       - run: npm install
 
       # https://docs.cypress.io/guides/continuous-integration/github-actions
       - name: Cypress run
         # https://github.com/marketplace/actions/cypress-io
-        uses: cypress-io/github-action@v6.7.16 # use the explicit version number
+        uses: cypress-io/github-action@be1bab96b388bbd9ce3887e397d373c8557e15af # cypress-io/github-action v6.9.2
         with:
           start: npm run dev -- --host
           wait-on: "http://localhost:3000"

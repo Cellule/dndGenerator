@@ -29,23 +29,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 26
-          cache: "npm"
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # actions/checkout v4.4.0
+      - name: Setup tools with mise
+        uses: jdx/mise-action@b44d12e7d0d8ee7461bb893e1b1993500433185b # jdx/mise-action v5.2.7
       - name: Install dependencies
         run: npm install
       - name: Build
         run: npm run build
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # actions/configure-pages v5.0.0
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # actions/upload-pages-artifact v3.0.1
         with:
           # Upload dist repository
           path: "./dist"
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # actions/deploy-pages v4.0.5
