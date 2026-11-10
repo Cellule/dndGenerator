@@ -170,12 +170,12 @@ export default class UserInput extends Component<IProps, IState> {
     this.setState({ wasCopiedToClipboard: false });
   };
 
-  private copyNpcToClipboard: React.MouseEventHandler<HTMLButtonElement> = (ev) => {
+  private copyNpcToClipboard: React.MouseEventHandler<HTMLButtonElement> = async (ev) => {
     ev.stopPropagation();
     ev.preventDefault();
     const header = this.getExportFileName();
     const characterDetails = this.getCharacterText();
-    const success = copy(`${header}\n${characterDetails}`, {
+    const success = await copy(`${header}\n${characterDetails}`, {
       // Fallback message if browser doesn't support clipboard API
       message: "Copy NPC",
       debug: process.env.NODE_ENV === "development",
