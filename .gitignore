@@ -11,6 +11,9 @@ node_modules
 dist
 dist-ssr
 *.local
+.mise/*
+!.mise/locks/
+mise.local.toml
 
 # Editor directories and files
 !.vscode/extensions.json
