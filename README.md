@@ -6,13 +6,16 @@ Uses the [NPC Generator library](https://github.com/Cellule/npc-generator) to ge
 ## Development
 ### Setup
 
-You will need to install [Node](https://nodejs.org/) on your system.
+This project uses [mise](https://mise.jdx.dev/) to manage the Node.js version (see `mise.toml`).
 
 ```
 $ git clone https://github.com/Cellule/dndGenerator.git
 $ cd dndGenerator
+$ mise install
 $ npm install
 ```
+
+Alternatively, install [Node](https://nodejs.org/) (>=26.0.0) manually.
 
 ### Run locally
 
