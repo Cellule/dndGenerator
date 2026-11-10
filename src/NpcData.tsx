@@ -72,7 +72,7 @@ export default class NpcData extends Component<IProps> {
         <div className={styles.firstRow}>
           <div className={`${styles.card} ${styles.firstRowCard}`}>
             <div className={styles.cardHeader}>Description</div>
-            <div className={styles.cardBody} data-test="npc-description">
+            <div className={styles.cardBody} data-testid="npc-description">
               <p hidden>#</p>
               <p>
                 {npc.description.name} is a {npc.description.age + " "}
@@ -105,7 +105,7 @@ export default class NpcData extends Component<IProps> {
           </div>
           <div className={`${styles.card} ${styles.firstRowCard}`}>
             <div className={styles.cardHeader}>Personality Traits</div>
-            <div className={styles.cardBody} data-test="npc-personality">
+            <div className={styles.cardBody} data-testid="npc-personality">
               <p hidden>#</p>
               <p>{npc.religion.description}</p>
               <p hidden>#</p>
@@ -123,7 +123,7 @@ export default class NpcData extends Component<IProps> {
         <div className={styles.secondRow}>
           <div className={`${styles.card} ${styles.secondRowCard}`}>
             <div className={styles.cardHeader}>Ability Scores</div>
-            <div className={styles.cardBody} data-test="npc-ability-table">
+            <div className={styles.cardBody} data-testid="npc-ability-table">
               <p hidden>#</p>
               <table className={styles.abilityTable}>
                 <tbody>
@@ -149,7 +149,7 @@ export default class NpcData extends Component<IProps> {
           </div>
           <div className={`${styles.card} ${styles.secondRowCard}`}>
             <div className={styles.cardHeader}>Relationships</div>
-            <div className={styles.cardBody} data-test="npc-relationships">
+            <div className={styles.cardBody} data-testid="npc-relationships">
               <p hidden>#</p>
               <p>
                 <b>Sexual Orientation </b>
@@ -168,7 +168,7 @@ export default class NpcData extends Component<IProps> {
           </div>
           <div className={`${styles.card} ${styles.secondRowCard}`}>
             <div className={styles.cardHeader}>Alignment Tendencies</div>
-            <div className={styles.cardBody} data-test="npc-alignment">
+            <div className={styles.cardBody} data-testid="npc-alignment">
               <p hidden>#</p>
               <table className={styles.alignmentTable}>
                 <tbody>
@@ -226,7 +226,7 @@ export default class NpcData extends Component<IProps> {
         <p hidden>#</p>
         <div className={styles.card}>
           <div className={styles.cardHeader}>Plot Hook</div>
-          <div className={styles.cardBody} data-test="npc-plot-hook">
+          <div className={styles.cardBody} data-testid="npc-plot-hook">
             <p hidden>#</p>
             {npc.hook.description}
             <p hidden>#</p>

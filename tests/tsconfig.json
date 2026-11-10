@@ -6,6 +6,7 @@
     "moduleResolution": "bundler",
     "skipLibCheck": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "types": ["cypress"]
-  }
+    "types": ["node"]
+  },
+  "include": ["**/*.spec.ts", "../playwright.config.ts"]
 }

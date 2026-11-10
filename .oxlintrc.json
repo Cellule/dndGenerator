@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
   "plugins": ["typescript", "react"],
-  "ignorePatterns": ["dist", "node_modules", "cypress"],
+  "ignorePatterns": ["dist", "node_modules", "tests"],
   "env": {
     "browser": true
   },
