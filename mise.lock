@@ -34,9 +34,3 @@ url = "https://nodejs.org/dist/v26.13.0/node-v26.13.0-darwin-x64.tar.gz"
 [tools.node."platforms.windows-x64"]
 checksum = "sha256:dcc60d59a0746999f99064a01c020445d54d84228c691cdbf25b49ac3b59150a"
 url = "https://nodejs.org/dist/v26.13.0/node-v26.13.0-win-x64.zip"
-
-[[tools.npm]]
-version = "11.20.0"
-aube = { path = ".mise/locks/npm/11.20.0", digest = "sha256:a1be33d8ef156827a96387760640c1089899d19ec09d15423ed9e91cfd7adc71" }
-backend = "npm:npm"
-specifiers = ["11.20.0"]

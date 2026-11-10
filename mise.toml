@@ -3,7 +3,6 @@
 
 [tools]
 node = "26.13.0" # keep in sync with .nvmrc
-npm = "11.20.0"
 
 [settings]
 lockfile = true
