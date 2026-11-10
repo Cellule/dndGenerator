@@ -1,0 +1,8 @@
+# mise (https://mise.jdx.dev) - pinned Node/npm for local and CI.
+# Keep node in sync with .nvmrc.
+
+[tools]
+node = "26.13.0" # keep in sync with .nvmrc
+
+[settings]
+lockfile = true
