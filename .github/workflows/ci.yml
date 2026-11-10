@@ -17,6 +17,8 @@ jobs:
 
       - run: npm install
       - run: npm run build
+      - run: npm run lint
+      - run: npm run fmt:check
 
   cypress:
     runs-on: ubuntu-latest

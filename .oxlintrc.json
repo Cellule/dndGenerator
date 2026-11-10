@@ -1,0 +1,14 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "react"],
+  "ignorePatterns": ["dist", "node_modules", "cypress"],
+  "env": {
+    "browser": true
+  },
+  "jsPlugins": ["oxlint-plugin-organize-imports"],
+  "rules": {
+    "react/rules-of-hooks": "error",
+    "react/exhaustive-deps": "warn",
+    "organize-imports/organize-imports": "error"
+  }
+}

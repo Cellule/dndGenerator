@@ -24,6 +24,7 @@ export default function DisplayNpc() {
     const npc: GeneratedNpc = {
       npc: result.npc,
       uid: uuidV4(),
+      // oxlint-disable-next-line react/purity -- pre-existing: generateNpc() is also called during the initial render
       generatedAt: new Date().toISOString(),
     };
     setShowHistory(false);
